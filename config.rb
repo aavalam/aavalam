@@ -2,10 +2,10 @@
 project_type = :stand_alone
 
 # Publishing paths
-http_path = "/"
-http_images_path = "/images"
-http_fonts_path = "/fonts"
-css_dir = "public/stylesheets"
+http_path = "/aavalam/"
+http_images_path = "/aavalam/images"
+http_fonts_path = "/aavalam/fonts"
+css_dir = "public/aavalam/stylesheets"
 
 # Local development paths
 sass_dir = "sass"
