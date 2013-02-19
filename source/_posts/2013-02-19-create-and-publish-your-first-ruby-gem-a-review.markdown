@@ -6,7 +6,7 @@ date: 2013-02-19 01:57
 comments: true
 categories: [Ruby, Gem, Book, Review]
 ---
-A book(let) review by Victor Goff
+A book(let) review.
 
 A hands on guide for Ruby newbies to create and publish their first Ruby
 gem.
