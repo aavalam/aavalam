@@ -4,7 +4,7 @@ title: "Simplifying Profiler and Benchmark measurements"
 author: Victor Goff
 date: 2008-09-04 02:43
 comments: true
-categories: [benchmark, profiler, ruby, wrapper]
+categories: [Benchmark, Profiler, Ruby, Wrapper]
 ---
 
 Performance should be pretty close to the end of the list of things to do when programming in Ruby.  Yes, it can be important to get the timing down on your code.  But this is after you verify that it is running as you need it to, and it is actually usable.<!-- more --> 

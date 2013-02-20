@@ -4,7 +4,7 @@ title: "Why isn't this a standard option for Ruby?"
 author: Victor Goff
 date: 2008-09-03 13:16
 comments: true
-categories: 
+categories: [Ruby, Prompt] 
 ---
 
 Hints for use:

@@ -4,7 +4,7 @@ title: "Programming User Interfaces"
 author: José Carlos Monteiro
 date: 2010-07-20 1:31
 comments: true
-categories: [guest post, programming, general]
+categories: [Guest Post, Programming, General]
 ---
 (Original post date: 03/Mar/2010)
 
