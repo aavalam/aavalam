@@ -1,0 +1,49 @@
+<item>
+	<title>Search Sample in Green Shoes</title>
+	<link>http://vgoff.posterous.com/search-sample-in-green-shoes</link>
+	<pubDate>Tue Nov 16 06:28:00 -0800 2010</pubDate>
+	
+	<dc:creator><![CDATA[ashbb]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/search-sample-in-green-shoes</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p><div class='p_embed p_image_embed'>
+<img alt="Search_in_green_shoes" height="438" src="http://getfile3.posterous.com/getfile/files.posterous.com/vgoff/GDLUbjN2ygpe7VASWHzsFqdIIJdmpxiSRM2jg41bcfXsQMpzk0FQCmbBt134/search_in_green_shoes.png" width="316" />
+</div>
+</p>
+<p>I've read Steve's nice blog series "<a href="http://blog.shoesrb.com/post/1453664385/other-ruby-gui-toolkits-shoes">Other Ruby GUI toolkits</a>" before.<p />I love <a href="http://blog.shoesrb.com/post/1480014928/other-ruby-gui-toolkits-qtruby">Search Sample</a>. :)<br /><a href="https://github.com/ashbb/green_shoes"><br />Green Shoes</a> doesn't aim to fully compatibility with <a href="https://github.com/shoes/shoes">Red Shoes</a>.<p />And at that time, Green Shoes had not enough capabilities.<p /> But now, let me show you a tiny code for Green Shoes. ;-)<p />Online Demo : <a href="http://www.rin-shun.com/shoes/search_sample_with_red_shoes.swf.html">Red Shoes</a> / <a href="http://www.rin-shun.com/shoes/search_sample_with_green_shoes.swf.html">Green Shoes</a><p />Code : <a href="http://github.com/shoes/shoes-contrib/raw/master/basic/search.rb">Red Shoes</a> / <a href="https://gist.github.com/701880">Green Shoes</a><p />Hope you'll like it,<br />ashbb</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[I've read Steve's nice blog series "Other Ruby GUI toolkits" before.I love Search Sample. :)Green Shoes doesn't aim to fully compatibility with Red Shoes.And at that time, Green Shoes had not enough capabilities. But now, let me show you a tiny co...]]></excerpt:encoded>	
+
+	<wp:post_date>Tue Nov 16 06:28:00 -0800 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>search-sample-in-green-shoes</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[r4ito]]></wp:comment_author>
+			<wp:comment_author_email>r4ito@yahoo.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Tue Nov 16 08:22:48 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Tue Nov 16 08:22:48 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I like a lot your code, I didn't know using include? would work so I learned something, thanks!]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

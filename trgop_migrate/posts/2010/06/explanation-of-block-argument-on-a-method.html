@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/06/explicit-and-implicit-string-conversion-in-ru.html">Previous</a>
+&nbsp; 
+<a href="../../../index-7.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/06/shoes-piano-v04a.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Explanation of block argument on a method.</h3>
+<div class='post_info'>
+<span class='post_time'>June 13 2010, 10:59 PM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'><p><script src="https://gist.github.com/437118.js?file=irb_output.rb"></script></p>
+<div>This shows the IRB output when used with the my_method listed below...</div>
+<div> </div>
+<div>Notice the <span style="color: #33cccc;">puts</span> command in the block argument on line 1.  You will notice that it just isn't there in line 6, though everything else is identical.</div>
+<div> </div>
+<div>The important thing to realize here is:</div>
+<div><ol>
+<li>The return doesn't change between the two variances </li>
+<li>The puts may be appropriate, because the <em>USER</em> is placing the block there (the user in this case being the <em>developer</em>)</li>
+</ol></div>
+<div> </div>
+<div><script src="https://gist.github.com/437118.js?file=passing_block_to_method.rb"></script></div>
+<div> </div>
+<div>The magic with the block happens with the <span style="color: #33cccc;">yield</span> statement on line 4.</div>
+<div> </div>
+<div>Hope this helps you with writing your methods with blocks.  The other arguments are simply noise in this sample... they are there to show only that you can do things with arguments that can be determined outside of the methods direct control.</div>
+<div> </div>
+<div>Thanks to Edo for allowing me to answer his question about method block arguments.</div>
+<div> </div>
+<div> </div></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>blocks, methods</div>
+</div>
+<div class='post_responses'>
+<h4>362 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2012/08/shoes-large-analog-clock.html">Previous</a>
+&nbsp; 
+<a href="../../../index.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2012/07/exploring-everday-things-with-r-and-ruby-book.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Shoes in the Book</h3>
+<div class='post_info'>
+<span class='post_time'>July 10 2012,  4:52 AM</span>
+<span class='author'>&nbsp;by ashbb</span>
+</div>
+</div>
+<div class='post_body'><p><div class='p_embed p_image_embed'>
+<img src='../../../image/2012/07/42830471-roids_purple_shoes.png'>
+</div>
+I read the book, <a href="http://shop.oreilly.com/product/0636920022626.do">Exploring Everyday Things with R and Ruby</a> by Sau Sheong Chang. Not all the pages, but all Shoes code. ;-)<p />Roids,... fantastic Boids program in Ruby. <br />Watch these tiny flash videos:<p />- <a href="http://www.rin-shun.com/shoes/roid_from_everyday_things.swf.html">Red Shoes version</a> : <a href="https://github.com/sausheong/everyday/blob/master/Chapter%207%20-%20Schooling%20Fish%20and%20Flocking%20Birds/roids.rb">code</a><br />- <a href="http://www.rin-shun.com/shoes/roids_purple.swf.html">Purple Shoes version</a> : <a href="https://gist.github.com/3076442">code</a><p />I'd like to highly recommend reading Chapter 7. Author explains the code in detail. It's very helpful. Awesome!<p />BTW, the following is my two cents.<p />1. Example 1-2. Shoes doodler<p />&nbsp;&nbsp;&nbsp; button, left, top = self.mouse<p />&nbsp; This is okay, but no need to add `self.` in this case.<br />&nbsp; You can write like this:<p />&nbsp;&nbsp;&nbsp; button, left, top = mouse<p /><br />2. Example 7-13. Obstacles<p />&nbsp;&nbsp;&nbsp; animate(FPS) do<br />&nbsp;&nbsp;&nbsp; &nbsp; click do |button, left, top|<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; $obstacles &lt;&lt; Vector[left,top]<br />&nbsp;&nbsp;&nbsp; &nbsp; end<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; :<br />&nbsp;&nbsp;&nbsp; end<p />The click block is written within animate block. But it's better to remove the click block from the animate block like this:<p />&nbsp;&nbsp;&nbsp; click do |button, left, top|<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; $obstacles &lt;&lt; Vector[left,top]<br />&nbsp;&nbsp;&nbsp; end<br />&nbsp;&nbsp;&nbsp; animate(FPS) do<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; :<br />&nbsp;&nbsp;&nbsp; end<p />Because the click block is called when user click mouse button automatically.<p />Let's write simulations in Shoes to explore anything you are interested in. ;-)<p />ashbb</p></div>
+<div class='post_responses'>
+<h4>821 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

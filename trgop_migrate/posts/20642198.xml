@@ -1,0 +1,62 @@
+<item>
+	<title>Fuzzy Equality in RubyDocTest</title>
+	<link>http://vgoff.posterous.com/fuzzy-equality-in-rubydoctest</link>
+	<pubDate>Thu Sep 11 06:00:00 -0700 2008</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/fuzzy-equality-in-rubydoctest</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>I was working on some tests for a standard exercise with temperature
+conversion. I then realized that there was no provision for testing if
+something is equal to a certain precision. As happens with different
+math problems concerning Float, different actions and different
+processors can give different answers. It doesn&rsquo;t matter to me in this
+instance, as long as it is within a &lsquo;tolerance&rsquo;.</p>
+
+<p>So, I hopped into my favorite editor, to quickly write some code to
+generate some ranges of acceptable answers for my method.</p>
+
+<p>I wanted my method to respond with numbers that aren&rsquo;t formatted to
+any precision, just native floating point numbers, but as this is an
+exercise that students are going to write, it is common for some of
+them to return answers that are &lsquo;correct&rsquo; to the 10ths place, or
+100ths place.</p>
+
+<p>I want to be able to check the work semi-automatically, and so I used
+this for my doctest:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>&gt;&gt; ((<span class="float">37.74</span>)..(<span class="float">37.8155555555556</span>)) === convert(<span class="float">100.0</span>)
+=&gt; <span class="predefined-constant">true</span>
+&gt;&gt; ((<span class="float">-17.205</span>)..(<span class="float">-17.2394444444444</span>)) === convert(<span class="float">1.0</span>)
+=&gt; <span class="predefined-constant">true</span></pre></div>
+</div>
+
+
+<p>And it works well&hellip; I can now use any student supplied method, and
+find out if their math is &lsquo;close&rsquo;. But, now I can do it from different
+locations, so if I am working on an older system with a floating point
+error, my tests should pass, even if the results aren&rsquo;t exactly on.</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[I was working on some tests for a standard exercise with temperature conversion. I then realized that there was no provision for testing if something is equal to a certain precision. As happens with different math problems concerning Float, differ...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Sep 11 06:00:00 -0700 2008</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>fuzzy-equality-in-rubydoctest</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

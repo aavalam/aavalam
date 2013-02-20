@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/02/greenshoes-gem-is-now-on-rubygemsorg.html">Previous</a>
+&nbsp; 
+<a href="../../../index-5.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/01/green-shoes-manual-colors-list.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Install and run Green Shoes for Windows in 3 steps</h3>
+<div class='post_info'>
+<span class='post_time'>January 31 2011,  7:27 AM</span>
+<span class='author'>&nbsp;by ashbb</span>
+</div>
+</div>
+<div class='post_body'><p><a href="http://ruby-gnome2.sourceforge.jp/?News_20110130_1">Ruby-GNOME2 0.90.6 released</a><p />This is awesome. Now you can install and run Green Shoes for Windows in just 3 steps.<p />1. <strong>download and install</strong> <a href="http://rubyinstaller.org/downloads/">rubyinstaller-1.9.2-p136.exe</a><p />&nbsp;&nbsp;&nbsp; C:\&gt;<strong>ruby -v</strong><br />&nbsp;&nbsp;&nbsp; ruby 1.9.2p136 (2010-12-25) [i386-mingw32]<p /> 2. <strong>gem install gtk2 --no-ri --no-rdoc</strong><p />&nbsp;&nbsp;&nbsp; C:\&gt;<strong>gem install gtk2 --no-ri --no-rdoc</strong><br />&nbsp;&nbsp;&nbsp; Successfully installed pkg-config-1.0.8<br />&nbsp;&nbsp;&nbsp; Successfully installed glib2-0.90.6-x86-mingw32<br />&nbsp;&nbsp;&nbsp; Successfully installed atk-0.90.6-x86-mingw32<br /> &nbsp;&nbsp;&nbsp; Successfully installed cairo-1.10.0-x86-mingw32<br />&nbsp;&nbsp;&nbsp; Successfully installed pango-0.90.6-x86-mingw32<br />&nbsp;&nbsp;&nbsp; Successfully installed gdk_pixbuf2-0.90.6-x86-mingw32<br />&nbsp;&nbsp;&nbsp; Successfully installed gtk2-0.90.6-x86-mingw32<br /> &nbsp;&nbsp;&nbsp; 7 gems installed<br />&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp; C:\Users\asa&gt;<strong>gem list</strong><br />&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp; *** LOCAL GEMS ***<br />&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp; atk (0.90.6 x86-mingw32)<br />&nbsp;&nbsp;&nbsp; cairo (1.10.0 x86-mingw32)<br />&nbsp;&nbsp;&nbsp; gdk_pixbuf2 (0.90.6 x86-mingw32)<br />&nbsp;&nbsp;&nbsp; glib2 (0.90.6 x86-mingw32)<br /> &nbsp;&nbsp;&nbsp; gtk2 (0.90.6 x86-mingw32)<br />&nbsp;&nbsp;&nbsp; minitest (1.6.0)<br />&nbsp;&nbsp;&nbsp; pango (0.90.6 x86-mingw32)<br />&nbsp;&nbsp;&nbsp; pkg-config (1.0.8)<br />&nbsp;&nbsp;&nbsp; rake (0.8.7)<br />&nbsp;&nbsp;&nbsp; rdoc (2.5.8)<p />3. <strong>git clone git://github.com/ashbb/green_shoes.git</strong><p /> That's it!<br />Now you can run all samples.<p />&nbsp;&nbsp;&nbsp; C:\ashbb\tmp\green_shoes\samples&gt;<strong>ruby sample1.rb</strong></p>
+<p>You will look at this:</p>
+<p><div class='p_embed p_image_embed'>
+<img src='../../../image/2011/01/20842632-green-shoes-sample1.png'>
+</div>
+</p>
+<p>Let's have fun with Green Shoes,<br />ashbb</p></div>
+<div class='post_responses'>
+<h4>4001 views and 2 responses</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jan 31 2011, 11:19 AM</div>
+<div class='response_name'>Victor Goff responded:</div>
+</div>
+<div class='response_body'>Awesome!  I will see if I can post instructions to run on Ubuntu later.  (You may have to remind me to do so!)</div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jan 31 2011,  2:19 PM</div>
+<div class='response_name'>ashbb responded:</div>
+</div>
+<div class='response_body'>Oops, forgot to mention an important thing. xx-P<p>Have to do the following:</p><p>- make this file:<br />  %{your path of gtk2 gem}\vendor\local\etc\gtk-2.0\gtkrc</p><p>included just one line:</p><p>gtk-theme-name = "MS-Windows"</p><p>Then you can look at good-looking button on Green Shoes.<br />(left button of this snapshot: <a href="http://www.rin-shun.com/tmp/ruby-gtk2-buttons.png)" rel="nofollow">http://www.rin-shun.com/tmp/ruby-gtk2-buttons.png)</a></p><p>Ruby-GNOME2 developer Kou (Kouhei Sutou) said he'd include gtkrc in the next distribution of Ruby/GTK2.</p></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

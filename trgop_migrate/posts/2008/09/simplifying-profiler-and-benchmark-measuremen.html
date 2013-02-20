@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2008/09/colorizing-your-nt-console-with-ruby.html">Previous</a>
+&nbsp; 
+<a href="../../../index-8.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2008/09/using-rubydoctest-for-development.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Simplifying Profiler and Benchmark measurements</h3>
+<div class='post_info'>
+<span class='post_time'>September  4 2008,  7:43 AM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'>Performance should be pretty close to the end of the list of things to do when programming in Ruby.  Yes, it can be important to get the timing down on your code.  But this is after you verify that it is running as you need it to, and it is actually usable.<div>
+<p />
+<div>That being said, there are two tools that can give you some pretty nice information when you want to know how your code is performing.  It can even be nice to know what is being called.  This blog will assume you know what these are, as I don't want to describe what they do, or how to use them.  I simply want to show a away to simplify using these tools for when you may want to use them.<br />
+</div>
+<p />
+<div>What I have done for my use is put together a small collection of tools I use occasionally.  One such tool is for Benchmark (in the standard library).  I put it in a file, like so... '../site_ruby/1.8/mytools.rb, and you know the rest...<br />
+</div>
+<p />
+<div><span style="">I can then send blocks of code that I may want some time information on...</span></div>
+<p />
+<div><span style="">v_benchmark("Loop 1 million times") {1.upto(1000000) {do whatever here}}</span></div>
+<p />
+<div><span style="">Or your more traditional block with do..end block, etc...</span></div>
+<p />The same thing works for Profiler... </div><div>
+<p />It is used identically the same was as the v_benchmark sample above. </div><p /><div> Have fun with this, I know I have had hours of enjoyment with it... and hopefully you will too... (though hopefully not with just one run...)</div><p /><div>There is so much you can do with it, I will leave experiments to you...</div><p /><div>Here are the code blocks....<br />
+</div><p /><div class="CodeRay">
+  <div class="code"><pre>require 'rubygems'require 'profiler'require 'benchmark'=begin rdocProvide v_benchmark with a report description as a string, and a block.=enddef v_benchmark(test_description, &amp;block)  Benchmark.bmbm(test_description.size) do |x|    x.report(&quot;#{test_description}&quot;) {yield}  endend=begin rdocv_profile will give you profile information.  Provide it with aString argument and a block.  The String argument is used for labellingthe report.=enddef v_profile (block_description, &amp;block)  puts &quot;BEGIN: #{block_description} profile:&quot;  Profiler__::start_profile    yield  Profiler__::print_profile($stderr)  puts &quot;END: #{block_description} profile report.&quot;end</pre></div>
+</div>
+<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-2180108142583314342?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div></div>
+<div class='post_responses'>
+<h4>48 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

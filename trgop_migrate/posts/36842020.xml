@@ -1,0 +1,54 @@
+<item>
+	<title>being agile: Creating and publishing your first ruby gem</title>
+	<link>http://vgoff.posterous.com/being-agile-creating-and-publishing-your-firs</link>
+	<pubDate>Sat Dec 18 23:58:00 -0800 2010</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="bundler"><![CDATA[bundler]]></category>
+	
+		<category domain="tag" nicename="gem"><![CDATA[gem]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/being-agile-creating-and-publishing-your-firs</guid>
+	<description></description>
+	<content:encoded><![CDATA[<div class="posterous_bookmarklet_entry">
+<blockquote>
+<p />
+</blockquote>
+<div>
+<h3><a href="http://blog.thepete.net/2010/11/creating-and-publishing-your-first-ruby.html" title="See the original post for all the juicy details!" target="_blank">See the original post for all the juicy details!</a></h3>
+</div>
+<p />
+<blockquote>
+<div>
+<h3>Introduction</h3>
+<p>In this post I&rsquo;m going to cover the basics of creating and publishing a gem using the <code>bundle gem</code> command provided by <a href="http://gembundler.com/">Bundler</a>. We&rsquo;re going to use bundler to create a gem template for us. We&rsquo;ll then take that skeleton gem, add some functionality to it, and publish it for all the world to use.</p>
+</div>
+</blockquote>
+<p>&nbsp;</p>
+<h2>
+</h2><p><span style="font-weight: normal; font-size: 13px;">Awesome!</span></p>
+
+</div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[See the original post for all the juicy details! Introduction In this post I’m going to cover the basics of creating and publishing a gem using the bundle gem command provided by Bundler. We’re going to use bundler to create a gem template for us....]]></excerpt:encoded>	
+
+	<wp:post_date>Sat Dec 18 23:58:00 -0800 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>being-agile-creating-and-publishing-your-firs</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

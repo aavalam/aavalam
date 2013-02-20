@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2008/09/why-picked-up-my-trivial-shoes-tutorial.html">Previous</a>
+&nbsp; 
+<a href="../../../index-8.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2008/10/teeny-weeny-mp3-player-v08.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Text message slide-in!</h3>
+<div class='post_info'>
+<span class='post_time'>October  1 2008,  3:30 PM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'>_why gave us his one thousandth commit of Shoes on 24th Sep. And a new sample code <a href="http://github.com/why/shoes/tree/master/samples/simple-slide.rb">simple-slide.rb</a>: testing slide-in slide-out animation, too.<p /># simple-slide.rb screenshot<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/06/9821155-media_http3bpblogspot_Ccckq.png'>
+</div>
+<p />Text slot slide-in and slide-out functions are implemented by changing the slot height size. Cool!<p />So, I tried to write a tiny code sample37.rb which works almost similar behavior of the text message slide-in by using mask and animate methods. ;-)<p /><div class="CodeRay">
+  <div class="code"><pre># sample37.rbepisode1 =&lt;&lt;-EOSEpisode I THE PHANTOM MENACE Turmoil has engulfed the Galactic Republic. The taxation of trade routes to outlying star systems is in dispute. \Hoping to resolve the matter with a blockade of deadly battleships, the greedy Trade Federation has stopped all shipping to the small planet of Naboo. \While the Congress of the Republic endlessly debates this alarming chain of events, the Supreme Chanccellor has secretly dispatched two Jedi Knights, the guardians of peace and justice in the galaxy, to settle the conflict... \    [Quote]  http://www.starwars.com/episode-iii/bts/production/f20050126/indexp2.html EOSShoes.app :width =&gt; 400, :height =&gt; 380, :title =&gt; 'Episode I' do  rect 0, 0, 400, 380, :fill =&gt; sandybrown  rect 10, 10, 380, 360, :fill =&gt; lavender, :curve =&gt; 10  stack do    rect 10, 10, 380, 360, :fill =&gt; lightblue    oval 50, 40, 100, :fill =&gt; green    star 250, 245, 5, 100, 40, :fill =&gt; deeppink, :angle =&gt; 90    mask do      @t = para strong(episode1), :left =&gt; 15, :top =&gt; 340, :width =&gt; 380    end      @a = animate(36) do |i|      @t.left, @t.top = 15, 340 - i      @a.stop if i &gt; 330    end  endend</pre></div>
+</div>
+<p /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/06/9821157-media_http4bpblogspot_oslbk.png'>
+</div>
+<p />Ruby and Shoes programming is so interesting!<br />Have fun! :-D<br />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-7040655014195935177?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div></div>
+<div class='post_responses'>
+<h4>20 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<item>
+	<title>30 lines Pong in Shoes</title>
+	<link>http://vgoff.posterous.com/30-lines-pong-in-shoes</link>
+	<pubDate>Thu Dec 25 17:24:00 -0800 2008</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/30-lines-pong-in-shoes</guid>
+	<description></description>
+	<content:encoded><![CDATA[We could creat simple Pong in Shoes during the <a href="http://rubylearning.com/blog/2008/10/30/ruby-and-shoes-programming-a-new-course/">Shoes programming course</a> 2nd batch.<p /><a href="http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00704_Assignment_3_Pong_in_Shoes.mdown">Assignment 3 Pong in Shoes</a> (sample58.rb)<br /><div class="CodeRay">
+  <div class="code"><pre># sample58.rbShoes.app :width =&gt; 400, :height =&gt; 400, :resizable =&gt; false do  vx, vy = 3, 4    nostroke  @ball = oval 0, 0, 20, :fill =&gt; forestgreen  @comp = rect 0, 0, 75, 4, :curve =&gt; 2  @you = rect 0, 396, 75, 4, :curve =&gt; 2   @anim = animate 40 do    nx, ny = @ball.left + vx.to_i, @ball.top + vy.to_i        if @ball.top + 20 &lt; 0 or @ball.top &gt; 400      para strong(&quot;GAME OVER&quot;, :size =&gt; 32), &quot;\n&quot;,        @ball.top &lt; 0 ? &quot;You win!&quot; : &quot;Computer wins&quot;, :top =&gt; 140, :align =&gt; 'center'      @ball.hide and @anim.stop    end         vx = -vx  if nx + 20 &gt; 400 or nx &lt; 0        if ny + 20 &gt; 400 and nx + 20 &gt; @you.left and nx &lt; @you.left + 75      vy = -vy * 1.2      vx = (nx - @you.left - (75 / 2)) * 0.25    end        if ny &lt; 0 and nx + 20 &gt; @comp.left and nx &lt; @comp.left + 75      vy = -vy * 1.2      vx = (nx - @comp.left - (75 / 2)) * 0.25    end        @ball.move nx, ny    @you.left = mouse[1] - (75 / 2)    @comp.left += 10  if @comp.left + 75 &lt; @ball.left    @comp.left -= 10  if @ball.left + 20 &lt; @comp.left  endend</pre></div>
+</div>
+<br />Thank you so much, <span style="font-weight: bold;">_why</span> and all pong game creators!<p />We could learn Ruby and Shoes programming. And had lots of fun! :-D<p />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-3769564040104497860?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[We could creat simple Pong in Shoes during the Shoes programming course 2nd batch.Assignment 3 Pong in Shoes (sample58.rb) # sample58.rbShoes.app :width => 400, :height => 400, :resizable => false do vx, vy = 3, 4 nostroke @ball = oval 0, 0, 20, :...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Dec 25 17:24:00 -0800 2008</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>30-lines-pong-in-shoes</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

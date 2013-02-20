@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/06/exception-to-rule-string-class-and-tos-and-to.html">Previous</a>
+&nbsp; 
+<a href="../../../index-7.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/06/have-you-heard-some-game-sounds-created-by-wh.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Fuzzy Equality in RubyDocTest</h3>
+<div class='post_info'>
+<span class='post_time'>September 11 2008,  6:00 AM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'><p>I was working on some tests for a standard exercise with temperature
+conversion. I then realized that there was no provision for testing if
+something is equal to a certain precision. As happens with different
+math problems concerning Float, different actions and different
+processors can give different answers. It doesn&rsquo;t matter to me in this
+instance, as long as it is within a &lsquo;tolerance&rsquo;.</p>
+
+<p>So, I hopped into my favorite editor, to quickly write some code to
+generate some ranges of acceptable answers for my method.</p>
+
+<p>I wanted my method to respond with numbers that aren&rsquo;t formatted to
+any precision, just native floating point numbers, but as this is an
+exercise that students are going to write, it is common for some of
+them to return answers that are &lsquo;correct&rsquo; to the 10ths place, or
+100ths place.</p>
+
+<p>I want to be able to check the work semi-automatically, and so I used
+this for my doctest:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>&gt;&gt; ((<span class="float">37.74</span>)..(<span class="float">37.8155555555556</span>)) === convert(<span class="float">100.0</span>)
+=&gt; <span class="predefined-constant">true</span>
+&gt;&gt; ((<span class="float">-17.205</span>)..(<span class="float">-17.2394444444444</span>)) === convert(<span class="float">1.0</span>)
+=&gt; <span class="predefined-constant">true</span></pre></div>
+</div>
+
+
+<p>And it works well&hellip; I can now use any student supplied method, and
+find out if their math is &lsquo;close&rsquo;. But, now I can do it from different
+locations, so if I am working on an older system with a floating point
+error, my tests should pass, even if the results aren&rsquo;t exactly on.</p></div>
+<div class='post_responses'>
+<h4>37 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

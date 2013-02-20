@@ -1,0 +1,50 @@
+<item>
+	<title>Simplifying Profiler and Benchmark measurements</title>
+	<link>http://vgoff.posterous.com/simplifying-profiler-and-benchmark-measuremen</link>
+	<pubDate>Thu Sep 04 07:43:00 -0700 2008</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/simplifying-profiler-and-benchmark-measuremen</guid>
+	<description></description>
+	<content:encoded><![CDATA[Performance should be pretty close to the end of the list of things to do when programming in Ruby.  Yes, it can be important to get the timing down on your code.  But this is after you verify that it is running as you need it to, and it is actually usable.<div>
+<p />
+<div>That being said, there are two tools that can give you some pretty nice information when you want to know how your code is performing.  It can even be nice to know what is being called.  This blog will assume you know what these are, as I don't want to describe what they do, or how to use them.  I simply want to show a away to simplify using these tools for when you may want to use them.<br />
+</div>
+<p />
+<div>What I have done for my use is put together a small collection of tools I use occasionally.  One such tool is for Benchmark (in the standard library).  I put it in a file, like so... '../site_ruby/1.8/mytools.rb, and you know the rest...<br />
+</div>
+<p />
+<div><span style="">I can then send blocks of code that I may want some time information on...</span></div>
+<p />
+<div><span style="">v_benchmark("Loop 1 million times") {1.upto(1000000) {do whatever here}}</span></div>
+<p />
+<div><span style="">Or your more traditional block with do..end block, etc...</span></div>
+<p />The same thing works for Profiler... </div><div>
+<p />It is used identically the same was as the v_benchmark sample above. </div><p /><div> Have fun with this, I know I have had hours of enjoyment with it... and hopefully you will too... (though hopefully not with just one run...)</div><p /><div>There is so much you can do with it, I will leave experiments to you...</div><p /><div>Here are the code blocks....<br />
+</div><p /><div class="CodeRay">
+  <div class="code"><pre>require 'rubygems'require 'profiler'require 'benchmark'=begin rdocProvide v_benchmark with a report description as a string, and a block.=enddef v_benchmark(test_description, &amp;block)  Benchmark.bmbm(test_description.size) do |x|    x.report(&quot;#{test_description}&quot;) {yield}  endend=begin rdocv_profile will give you profile information.  Provide it with aString argument and a block.  The String argument is used for labellingthe report.=enddef v_profile (block_description, &amp;block)  puts &quot;BEGIN: #{block_description} profile:&quot;  Profiler__::start_profile    yield  Profiler__::print_profile($stderr)  puts &quot;END: #{block_description} profile report.&quot;end</pre></div>
+</div>
+<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-2180108142583314342?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Performance should be pretty close to the end of the list of things to do when programming in Ruby. Yes, it can be important to get the timing down on your code. But this is after you verify that it is running as you need it to, and it is actually...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Sep 04 07:43:00 -0700 2008</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>simplifying-profiler-and-benchmark-measuremen</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2008/09/understanding-modulo.html">Previous</a>
+&nbsp; 
+<a href="../../../index-8.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2008/09/new-shoes-today.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Let's enjoy programming with Ruby and Shoes!</h3>
+<div class='post_info'>
+<span class='post_time'>September 11 2008,  2:32 PM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'>Hi,<br />I'm Satoshi Asakawa, online nickname is ashbb, a Japanese Ruby and Shoes enthusiast. And now an Asst. Teacher of the <a href="http://www.rubylearning.org/">RubyLearning.org</a> with this blog master Vic. He invited me to write a blog about Shoes a few days ago. So, I'm here. :)<p />I'm now writing Shoes Tutorial as the text of <a href="http://rubylearning.com/satishtalim/intermediate_ruby_course.html">POIRPC101</a>. If you are interesting about Ruby and Shoes programming, you can enroll in the course.<p />Okay, this is one of the tiny Shoes sample apps written for the last page of the tutorial today. :-D<span style="font-family: monospace;"><br /><div class="CodeRay">
+  <div class="code"><pre># sample93.rbShoes.app :width =&gt; 400, :height =&gt; 75,                        :title =&gt; 'Lovely Creaturs' do background &quot;#D0A&quot;..&quot;#F90&quot;, :angle =&gt; 90 x = 0 creatures = %w(loogink yar cy kamome shaha).collect do |c|   image Dir.pwd + &quot;/#{c}.png&quot;, :left =&gt; x += 60 end                   messages =&lt;&lt;-EOSThx for reading. :)See you!Enjoy Ruby and Shoes!EOS messages = messages.to_a msg = subtitle '', :top =&gt; 30, :stroke =&gt; white animate(3) do   creatures.each{|c| c.move c.left, rand(15)} end creatures.each do |c|   c.hover{msg.text = strong messages[rand(messages.length)]}   c.leave{msg.text = ''} endend</pre></div>
+</div>
+
+<br /></span>Screenshot is here:<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/06/9821170-media_http4bpblogspot_lGAin.png'>
+</div>
+Download all code and data files from <a href="http://www.rin-shun.com/rubylearning/shoes/shoes_sample93.zip">here</a>.<p />Let's enjoy programming with Ruby and Shoes!<br />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-7285967955593788837?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div></div>
+<div class='post_responses'>
+<h4>71 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Aug 19 2011,  9:02 AM</div>
+<div class='response_name'>Regis d'Aubarede responded:</div>
+</div>
+<div class='response_body'>Hello,<br />Welcome in posterous !<p>dear Teacher...</p></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

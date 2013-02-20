@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/10/victor-goff-shared-a-post-with-you.html">Previous</a>
+&nbsp; 
+<a href="../../../index-3.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/09/an-online-virtual-vim-interactive-tutorial.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>*Do you know how to write an internal DSL...</h3>
+<div class='post_info'>
+<span class='post_time'>September 30 2011, 10:57 PM</span>
+<span class='author'>&nbsp;by Victor Goff (Google+)</span>
+</div>
+</div>
+<div class='post_body'><div style="border: solid 1px #dfdfdf; color: #686868; font: 13px Arial;">
+<div style="background-color: #fff; padding: 20px;">
+<div style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: solid 1px #dfdfdf;">
+<div style="padding: 15px 0; color: #686868; font: 16px Arial;"><span style="font-size: 13px;"> </span> 
+<table>
+
+<tr>
+<td style="padding-right: 15px; vertical-align: top;"><a href="https://plus.google.com/_/notifications/ngemlink?&amp;emid=COifw9vmxqsCFUiJ3AodWnAAAA&amp;path=%2F116568773932133159290"><img src="https://lh4.googleusercontent.com/-PJ_tC585kNE/AAAAAAAAAAI/AAAAAAAACpc/E6to8yFNOkw/s75-k-a/photo.jpg" height="75" alt="" style="border: solid 1px #cccccc;" width="75" /></a></td>
+<td style="color: #333; font: 13px Arial; vertical-align: top;">
+<div style="color: #686868; font: 16px Arial; padding-bottom: 15px;">Victor Goff shared Satish Talim's <a href="https://plus.google.com/107809992818057105754/posts/WKaBRjEKmWE" title="Satish Talim's DSL GPlus Course Post" target="_blank">post</a> with you.</div>
+<div style="padding-bottom: 10px;">Latest update to the DSL course.&nbsp;</div>
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+<table style="color: #686868;">
+
+<tr>
+<td style="padding-right: 15px; vertical-align: top;"><a href="https://plus.google.com/_/notifications/ngemlink?&amp;emid=COifw9vmxqsCFUiJ3AodWnAAAA&amp;path=%2F107809992818057105754"><img src="https://lh6.googleusercontent.com/-i8inHiTjgVI/AAAAAAAAAAI/AAAAAAAAMFE/CPhGTmVrXqM/s75-k-a/photo.jpg" height="75" alt="" style="border: solid 1px #cccccc;" width="75" /></a></td>
+<td style="color: #333; font: 13px Arial; vertical-align: top;">
+<div style="font-weight: bold; padding-bottom: 10px;">Satish Talim</div>
+<div style="padding-bottom: 10px;"><strong>Do you know how to write an internal DSL in Ruby?</strong><p /><br /><strong>1.0 Introduction</strong><p />A <strong>DSL</strong> is a (usually small) programming or description language designed for a fairly narrow purpose. <strong>DSLs</strong> are targeted at end users or domain specialists who are not expert programmers. Fowler classifies DSLs into two styles - external and internal. An <em>external DSL</em> is a language that is different from the main programming language for an application, but that is interpreted by or translated into a program in the main language. An <em>internal DSL</em> transforms the main programming language itself into the DSL (the DSL is tied to the Ruby language).<p />In the Ruby environment, there is significant interest in developing internal DSLs that are made possible by the extensive reflexive meta-programming facilities of Ruby.<p />Ruby has two groups of features that especially support defining internal DSLs - its <em>flexible syntax</em> and its <em>support for blocks</em> (i.e., closures).<p />For Ruby's flexible syntax of special importance is the syntax for method calls because methods are the primary means for adding operators and declarators - the verbs - to an internal DSL. Ruby method calls are flexible in three key ways:<br />a. the parentheses enclosing argument lists are optional, <br />b. methods may have a variable number of arguments, <br />c. and the use of hash data structures in argument lists provides a mechanism similar to keyword arguments.<p />Any Ruby method call may have a block attached. A block is a group of executable statements defined in the environment of the caller and passed un-evaluated as an implicit argument to the called method. The called method may then execute the block zero or more times, supplying any needed arguments for each call. The block executes with access to the environment in which<br />it was defined.<p /><em>Reflexive meta-programming</em> is possible primarily because Ruby is an interpreted language whose interpreter provides programmers with hooks into its internal state. Ruby&rsquo;s facilities include the ability to query an object to determine its methods, instance variables, and class.<p /><br /><strong>2.0 Useful Ruby stuff</strong><br /><strong>a. Ruby Blocks</strong><br />Ruby Code blocks (called closures in other languages) are chunks of code between braces or between do- end that you can associate with method invocations, almost as if they were parameters. A Ruby block is a way of grouping statements, and may appear only in the source adjacent to a method call; the block is written starting on the same line as the method call's last parameter (or the closing parenthesis of the parameter list). The code in the block is not executed at the time it is encountered. Instead, Ruby remembers the context in which the block appears (the local variables, the current object, and so on) and then enters the method.<p />Within a method, you can ask Ruby whether the current call includes a block. You can do that with the <strong>Object#block_given?</strong> method:<br /><strong>if block_given?</strong><p />Matz says that any method can be called with a block as an implicit argument. Inside the method, you can call the block using the <strong>yield</strong> keyword with a value:<br /><script src="https://gist.github.com/1246935.js?file=dsl12.rb"></script><p /><em>Remember</em> In Ruby, <strong>nil</strong> and <strong>false</strong> evaluate to <strong>false,</strong> everything else (including true, 0) means <strong>true.</strong><p /><strong>b. Blocks and Bindings</strong><br />Entities like local variables, instance variables, self. . . are basically names bound to objects. We call them bindings.<p /><script src="https://gist.github.com/1244863.js?file=dsl6.rb"></script><br />Observe that the code in the block sees the <em>person</em> variable that was around when the block was defined, <em>not the</em> method's <em>person</em> variable. When you define the block, it simply grabs the bindings that are there at that moment, and then it carries those bindings along when you pass the block into a method. Hence a block captures the local bindings and carries them along with it. Because of this property, a computer scientist would say that a block is a <em>closure.</em> You can also define additional bindings inside the block, but they disappear after the block ends. Thus blocks contain both the code and a set of bindings.<p /><strong>c. Blocks and Procs</strong><br />Ruby&rsquo;s blocks are chunks of code attached to a method. Blocks are not objects, but they can be converted into objects of class <strong>Proc.</strong> This can be done by calling the <strong>lambda</strong> method of the class <strong>Object.</strong> A block created with <strong>lambda</strong> acts like a Ruby method. Some of the ways a block can be converted to a <strong>Proc</strong> object:<p />- By passing a block to a method whose last parameter is prefixed with an ampersand. That parameter will receive the block as a <strong>Proc</strong> object:<br /><strong>def my_method(p1, &amp;block); end</strong><br />This creates a "raw" proc which is basically designed to work as a body of control structures such as loops.<p />- By calling the method <strong>Object#lambda,</strong> associating a block with the call:<br /><strong>p lambda { |x| "Hello #{x}!" }.call 'World'</strong><br />This creates a "lambdas" object, which is intended to act like a method.<p /><strong>d. send</strong><br /><strong>send</strong> is an instance method of the <strong>Object</strong> class. The first argument to <strong>send</strong> is the message that you're sending to the object - that is, the name of a method. You can use a string or a symbol, but <em>symbols are preferred.</em> Any remaining...</div>
+<span style="color: #3366cc;"><a href="https://plus.google.com/107809992818057105754/posts/WKaBRjEKmWE" title="Satish Talim DSL Google Plus Course" target="_blank">View or comment on Satish Talim's post &raquo;</a>&nbsp;<span style="color: #888888;"><strong>Or you can comment below</strong></span></span></td>
+</tr>
+
+</table>
+</div>
+</div></div>
+<div class='post_responses'>
+<h4>405 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

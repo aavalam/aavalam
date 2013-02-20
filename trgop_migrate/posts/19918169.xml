@@ -1,0 +1,35 @@
+<item>
+	<title>Building Shoes with Windows DDK</title>
+	<link>http://vgoff.posterous.com/building-shoes-with-windows-ddk</link>
+	<pubDate>Fri Apr 10 16:21:00 -0700 2009</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/building-shoes-with-windows-ddk</guid>
+	<description></description>
+	<content:encoded><![CDATA[Finally, I could build the latest Shoes on my Windows XP laptop! Just following <a href="http://wiki.github.com/why/shoes/buildingshoeswithwindowsddk">_why's guide</a>. Very easy! B-)<p /># Windows_DDK.png<br /><div class='p_embed p_image_embed'>
+<img alt="Media_http3bpblogspot_abigf" height="74" src="http://getfile6.posterous.com/getfile/files.posterous.com/import-koee/fmaEkopcxhzhglCCrHijhewAzmzEqiimJwBIJpdileDacFbGgEyohdJyqfag/media_http3bpblogspot_ABIGF.png.scaled500.png" width="320" />
+</div>
+<br />Yay!<br />ashbb<p /><span style="font-weight: bold;">Note</span>: At first, when I `rake`, the following error occured.<p />    C:\Documents and Settings\asa\Git\shoes&gt;rake<br />    (in C:/Documents and Settings/asa/Git/shoes)<br />    rake aborted!<br />    No such file or directory - git rev-list HEAD<br />    C:/Documents and Settings/asa/Git/shoes/rakefile:16:in ``'<br />    (See full trace by running task with --trace)<p />So, I replaced rakefile:16<p />    #REVISION = (`#{GIT} rev-list HEAD`.split.length + 1).to_s<br />    REVISION = '1229'<p />Then `rake` was run completely.<p /><span style="font-weight: bold;">Note2</span>: I got '1229' from the following.<p />    asa@IBM-5F6B2053D28 /c/Documents and Settings/asa/Git/shoes<br />    $ irb<br />    irb(main):001:0&gt; (`git rev-list HEAD`.split.length + 1).to_s<br />    =&gt; "1229"<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-609990108757226207?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Finally, I could build the latest Shoes on my Windows XP laptop! Just following _why's guide. Very easy! B-)# Windows_DDK.pngYay!ashbbNote: At first, when I `rake`, the following error occured. C:\Documents and Settings\asa\Git\shoes>rake (in C:/D...]]></excerpt:encoded>	
+
+	<wp:post_date>Fri Apr 10 16:21:00 -0700 2009</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>building-shoes-with-windows-ddk</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

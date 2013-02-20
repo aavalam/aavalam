@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2008/11/stringgsub-with-block.html">Previous</a>
+&nbsp; 
+<a href="../../../index-9.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2008/11/little-known-ways-to-ruby-mastery-by-jonathan.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Easy and light: Code Highlighter</h3>
+<div class='post_info'>
+<span class='post_time'>November  9 2008,  5:06 AM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'>Shoes-0.r1057 uses Code Highlighter to create Shoes Manual into local your pc.<p /><a href="http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00503_shoes_--help.mdown">shoes --manual-html</a><p />I took a look around. ;-)<p />Download <a href="http://www.rin-shun.com/rubylearning/tools/code_highlighter_ruby.zip">the zip file</a>. It is included the following.<p />- Javascript: <span style="font-weight: bold;">code_highlighter.js</span>, <span style="font-weight: bold;">code_highlighter_ruby.js</span><br />- html script: <span style="font-weight: bold;">style.css</span><br />- <span style="font-weight: bold;">sample.html</span> is below.<br /><div class="CodeRay">
+  <div class="code"><pre># sample.rbdef helloputs 'Hello world!'endhello</pre></div>
+</div>
+<br />Run the following Ruby snippet: <span style="font-weight: bold;">mkhtml.rb</span><br /><div class="CodeRay">
+  <div class="code"><pre># mkhtml.rbcode = IO.read('sample.rb')style_css = IO.read('style.css')open('sample.html', 'w') do |f|f.puts style_cssf.print '&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;'f.puts codef.puts '&lt;/code&gt;&lt;/pre&gt;'end</pre></div>
+</div>
+<br />The <span style="font-weight: bold;">sample.html</span> will be created.<br />Open the file with your browser. You can get code highlighted web page.<p />So easy, isn't it? :-D<br />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-8810263642930656601?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div></div>
+<div class='post_responses'>
+<h4>21 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<item>
+	<title>simple-sqlite3.rb works with Green Shoes</title>
+	<link>http://vgoff.posterous.com/simple-sqlite3rb-works-with-green-shoes</link>
+	<pubDate>Sat Apr 09 08:09:00 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[ashbb]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/simple-sqlite3rb-works-with-green-shoes</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p><div class='p_embed p_image_embed'>
+<img alt="Simple-sqlite3-snapshot-with-g" height="168" src="http://getfile2.posterous.com/getfile/files.posterous.com/vgoff/CRUMCthrc99gVOq0VfAydOIKxhuBCqY2MIcBPzGvMNeXLuzIWE9iQsCGhKhp/simple-sqlite3-snapshot-with-g.png" width="366" />
+</div>
+</p>
+<p>I could run the Red Shoes' simple-sqlite3.rb with Green Shoes on my Windows 7 laptop!<p />Green Shoes doesn't include sqlite3 library. So, need a little bit preparation.<p />- download <a href="http://rubygems.org/downloads/sqlite3-1.3.3-x86-mswin32-60.gem">sqlite3-1.3.3-x86-mswin32-60.gem</a><br /> - gem install sqlite3-1.3.3-x86-mswin32-60.gem<br />- download <a href="http://www.rin-shun.com/shoes/sqlite3.dll">sqlite3.dll</a> and bring it under c:\ruby\bin<p />That's it!</p>
+<p>Now you can run <a href="https://gist.github.com/911475">this snippet</a> with Green Shoes. ;-)<p />Have fun,<br />ashbb</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[I could run the Red Shoes' simple-sqlite3.rb with Green Shoes on my Windows 7 laptop!Green Shoes doesn't include sqlite3 library. So, need a little bit preparation.- download sqlite3-1.3.3-x86-mswin32-60.gem - gem install sqlite3-1.3.3-x86-mswin32...]]></excerpt:encoded>	
+
+	<wp:post_date>Sat Apr 09 08:09:00 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>simple-sqlite3rb-works-with-green-shoes</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

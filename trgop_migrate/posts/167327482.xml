@@ -1,0 +1,52 @@
+<item>
+	<title>Programming for the Web With Ruby promotion.</title>
+	<link>http://vgoff.posterous.com/programming-for-the-web-with-ruby-promotion</link>
+	<pubDate>Mon Dec 31 22:40:00 -0800 2012</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="course"><![CDATA[course]]></category>
+	
+		<category domain="tag" nicename="rubylearning"><![CDATA[rubylearning]]></category>
+	
+		<category domain="tag" nicename="web"><![CDATA[web]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/programming-for-the-web-with-ruby-promotion</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>We are gearing up for another fun and exciting 2 weeks of Programming for the Web With Ruby and I wanted to post it here, and let you guys know.</p>
+<p>When letting folks know about the course, you can tweet the following, or post it on facebook, or in Google Plus or where ever it is that you hang out.</p>
+<ul>
+<li>A 'Free' online course: #Programming the web with #Ruby. Registrations open <a href="http://ow.ly/eUdcZ" title="Programming for the Web With Ruby" target="_blank">ow.ly/eUdcZ</a></li>
+</ul>
+<p>Satish has decided that he wants to give out my popular blog post about RubyDocTest. &nbsp;And I thought it was a good idea. &nbsp;I like simple tools especially for those that are learning, it reduces the yak <span style="color: #993300;">(*)</span> hair that gets on your tongue. &nbsp;RubyDoctest is the "simple to use, stays out of your way, everyone uses IRB anyway, so you might as well use it for documentation and usage examples that prove themselves" testing framework with only 4 things to know about it.</p>
+<p>Of course, you can read it here or download it or pass it on.</p>
+<p><div class='p_embed p_file_embed'>
+<a href="http://getfile3.posterous.com/getfile/files.posterous.com/temp-2012-11-01/mmDxbaojbIyHwEdastvAdgfdHCkrCmdwAAnuvalnpayyvwjIgvcafnCpdeAb/RubyDoctest.pdf"><div class='p_icon'></div>
+<div class='p_text'>RubyDoctest.pdf</div>
+</a></div>
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: #993300;">(*)</span> <span style="font-size: x-small;">Shaving yaks, you can find out what this is, but the point here is that it is better to test immediately, well enough, rather than putting it off. &nbsp;Later, you can learn testing frameworks and you might even still finding yourself using rubydoctest for quick explorations, and maybe even leaving them to document those explorations, even if you are using minitest or rspec or cucumber or any other number of more robust testing tools.</span></p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[We are gearing up for another fun and exciting 2 weeks of Programming for the Web With Ruby and I wanted to post it here, and let you guys know. When letting folks know about the course, you can tweet the following, or post it on facebook, or in G...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Dec 31 22:40:00 -0800 2012</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>programming-for-the-web-with-ruby-promotion</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

@@ -1,0 +1,79 @@
+<item>
+	<title>Explicit and Implicit string conversion in Ruby</title>
+	<link>http://vgoff.posterous.com/explicit-and-implicit-string-conversion-in-ru</link>
+	<pubDate>Thu Jun 17 23:36:00 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="ruby"><![CDATA[ruby]]></category>
+	
+		<category domain="tag" nicename="string"><![CDATA[string]]></category>
+	
+		<category domain="tag" nicename="to_s"><![CDATA[to_s]]></category>
+	
+		<category domain="tag" nicename="to_str"><![CDATA[to_str]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/explicit-and-implicit-string-conversion-in-ru</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>Subtitle:  <strong>to_s and to_str: Not just implicit and explicit!</strong></p>
+
+<p>Recently, it has been bothering me why subclasses of String do not use to_s or to_str when being interpolated using the #{} form or sprintf or % inside a double quoted string.</p>
+
+<p>But before I get into this, I wanted to remind people about how to_s and to_str can be used to your advantage in your programs.  The above question about subclass of String and to_s and/or to_str will be a future post.</p>
+
+<p>I have been told over and over again that to_s is explicit and to_str is implicit.  But in reality I have found that it just isn&rsquo;t (strictly) the case.</p>
+
+<p>Look at the program below that highlights the differences based on string interpolation, and how puts uses &lt;&lt; and + a bit differently.  It really isn&rsquo;t documented that String#+ does this.
+From the RI documentation:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>&gt;&gt; ri <span class="string"><span class="delimiter">'</span><span class="content">String#+</span><span class="delimiter">'</span></span>
+--------------------------------------------------------------- <span class="constant">String</span><span class="comment">#+</span>
+     str + other_str   =&gt; new_str
+
+     <span class="constant">From</span> <span class="constant">Ruby</span> <span class="float">1.9</span>.<span class="error">1</span>
+------------------------------------------------------------------------
+     <span class="constant">Concatenation</span>---<span class="constant">Returns</span> a new +<span class="constant">String</span>+ containing _other_str_
+     concatenated to _str_.
+
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">Hello from </span><span class="delimiter">&quot;</span></span> + <span class="predefined-constant">self</span>.to_s   <span class="comment">#=&gt; &quot;Hello from main&quot;</span></pre></div>
+</div>
+
+
+<p>As you can see from the documentation, and maybe it is causing some confusion, to_s is being used here.  Though from the code sample below, it is indicating that to_str is being evoked.  Perhaps a more clear example would be &ldquo;Hello from &rdquo; + &ldquo;Rubyland!&rdquo;  #=> &ldquo;Hello from Rubyland!&rdquo;.  Of course, if you already are familiar with Ruby it isn&rsquo;t a stretch to understand the original example.  Enough of my side-rant&hellip; let&rsquo;s get to what we really are investigating.</p>
+
+<p><p><a href="https://gist.github.com/443312">https://gist.github.com/443312</a></p></p>
+
+<p>As you can see, the fluff of the program is just to get us something that makes sense, in the use of to_s as an abbreviation, or not a full string.  And to_str to represent something that is much more a &lsquo;normal&rsquo; word (or string-like), disregarding the definition of a string as &ldquo;a collection of alpha-numeric characters&rdquo;.</p>
+
+<p>The real meat of this is the demonstration of the use of the strings and puts, and the differences in to_s and to_str methods for the class Month_Sampler.</p>
+
+<p>So, the simple explanation of to_s being used explicitly and to_str being implicit just doesn&rsquo;t ring true here.</p>
+
+<p>And now that you can see the different application, I hope that it makes doing some things easier for you.</p>
+
+<p>Thanks to Hal Fulton for some insight to the difference in the %, sprintf, + and &lt;&lt; behaviors, as it regards to_str.  I would not have noticed it otherwise.</p>
+
+<p>Thanks for reading this post, and I really do welcome comments, and suggestions.</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Subtitle: to_s and to_str: Not just implicit and explicit! Recently, it has been bothering me why subclasses of String do not use to_s or to_str when being interpolated using the #{} form or sprintf or % inside a double quoted string. But before I...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Jun 17 23:36:00 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>explicit-and-implicit-string-conversion-in-ru</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

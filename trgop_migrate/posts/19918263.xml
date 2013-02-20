@@ -1,0 +1,35 @@
+<item>
+	<title>Just one-liner solution playing YouTube video on Shoes!</title>
+	<link>http://vgoff.posterous.com/just-one-liner-solution-playing-youtube-video</link>
+	<pubDate>Mon Dec 29 08:27:00 -0800 2008</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/just-one-liner-solution-playing-youtube-video</guid>
+	<description></description>
+	<content:encoded><![CDATA[<div class="CodeRay">
+  <div class="code"><pre># sample59-1.rbShoes.app(:width =&gt; 400, :height =&gt; 300){video \&quot;http://jp.youtube.com/get_video?video_id=8hBrRZuXjHA&amp;t=\OEgsToPDskKhuXfknhF5eWPOvhe-nw5P&quot;, :autoplay =&gt; true}</pre></div>
+</div>
+<br />Shoes can get and control a video data by Shoes::Video object. Cool! B-)<p />I referred to the following web site. Thank you so much.<br /><a href="http://advent2008.hackruby.com/past/2008/12/13/_guify_your_ruby_apps_with_shoes/">GUIfy your Ruby apps with Shoes</a><p />Regards,<br />ashbb<p />ps. For more information, see the <a href="http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00534_Video_playback.mdown">Shoes Tutorial Note</a>. :)<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-5732446059682364951?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[# sample59-1.rbShoes.app(:width => 400, :height => 300){video \"http://jp.youtube.com/get_video?video_id=8hBrRZuXjHA&t=\OEgsToPDskKhuXfknhF5eWPOvhe-nw5P", :autoplay => true} Shoes can get and control a video data by Shoes::Video object. Cool! B-)I...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Dec 29 08:27:00 -0800 2008</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>just-one-liner-solution-playing-youtube-video</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

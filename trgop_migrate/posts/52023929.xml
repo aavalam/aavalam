@@ -1,0 +1,36 @@
+<item>
+	<title>HHGS shows a list of lessons</title>
+	<link>http://vgoff.posterous.com/hhgs-shows-a-list-of-lessons</link>
+	<pubDate>Fri May 06 04:55:00 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[ashbb]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/hhgs-shows-a-list-of-lessons</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p><div class='p_embed p_image_embed'>
+<a href="http://getfile6.posterous.com/getfile/files.posterous.com/vgoff/95prm65dxHReNxEKngUgMWqTbW5Jh3QPcPmJieoL4p2WftT9sByXS1diGdLO/HHGS_lesson_tag_window.png"><img alt="Hhgs_lesson_tag_window" height="365" src="http://getfile7.posterous.com/getfile/files.posterous.com/vgoff/nNLhwBXrnr8CnIRga0X6a4rJzxOBqHtg968LSVbMRMv3ZgeNBKybgdPedcWO/HHGS_lesson_tag_window.png.scaled.500.jpg" width="500" /></a>
+</div>
+</p>
+<p>Got to work on showing the Lesson tag window. The commit is <a href="https://github.com/ashbb/hacketyhack/commit/7e240ae4370df4f76208a182869f7176f450baeb">this</a>.<br />A trivial progress, but continuing step by step. ;-)<p />ashbb<p /></p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Got to work on showing the Lesson tag window. The commit is this.A trivial progress, but continuing step by step. ;-)ashbb]]></excerpt:encoded>	
+
+	<wp:post_date>Fri May 06 04:55:00 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>hhgs-shows-a-list-of-lessons</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

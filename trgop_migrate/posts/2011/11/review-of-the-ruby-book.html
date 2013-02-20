@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../index-3.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/10/green-shoes-turtle.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Review of "The Book of Ruby"</h3>
+<div class='post_info'>
+<span class='post_time'>November  1 2011,  2:06 PM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'><p>Review of "<strong>The Book of Ruby</strong>" by Huw Collingbourne<p />TL;DR Good book, not without its pain points, and not totally for the beginner of Ruby, though there are some definite juicy parts that I would share with them, some of which are noted in a list near the end of this post.<p />&nbsp; <strong>This review is written by Victor Goff.</strong></p>
+<p><br /><!--more-->&nbsp; First things I noticed about the book is the table of contents and it is looking very good. It is well organized and chock full of goodies. As far as the index goes it is very good also. &nbsp;<p />&nbsp; The second thing I did was flipped through the book looking at the code snippets (It is a programming book after all) and noticed that apparently quite a few people had provided code, as the style is pretty consistently not consistent with indentation, and even block styles. It goes deeper, even the use of parentheses around puts calls is not consistent, sometimes they are there (actually very often) and sometimes they are not. Seldom it is to show the occasional places that it is required to get away from ambiguity.<p />&nbsp; However, upon starting to read the book, and Mr. Collingbourne's notice that this book "does not preach on matters of style.", indeed, it sometimes seems to not follow its own style.&nbsp; Having completed the reading of this book, I can confirm that for me, it was somewhat distracting.<p />&nbsp; There was some other distracting things about the book, but I think (hope) in further editions they may be alleviated. Two samples are below.<p />&nbsp; Page 126: Problem: Using Integer to prove assignment of a variable doesn't affect the object ID is not a proof. It is good though that shortly after the examples, he does mention that Integers are 'special'. It would be better if a String or some other mutable object were used to provide the point earlier, instead of using integers though.&nbsp; He isn't the only one that does this example... I have seen it in a lot of places in the web, and each gives me the same bad taste.<p />&nbsp; Related to the above, he even suggests that the object_id of 10 is 21, and 23 is the object_id of 11, and that it may vary. This is not the case, the object_id will not vary, and can lead students down the wrong path, the wrong assumptions if they aren't familiar with what he explains starting on the following page. And that is that Integers are special. Their ID doesn't change.<p />&nbsp; So it is things like this that cause me to not trust the other information. Even though the next page he reverses his statement of 'may be' to how Integer is special, and those ids never change.<p />&nbsp; There was also information I expected to be there in the Digging Deeper sections, though they were mostly tasty, that was missing. For example 'next' for blocks wasn't discussed, and allocate method wasn't covered. Just a few notable exclusions. But understandably, you can't cover everything in a book. &nbsp;<p />&nbsp; If you are comfortable with Ruby, and willing to proof the concepts here, it is very likely you will learn some new things. It will likely help to make your understanding of Ruby more complete.&nbsp; One such area of "proof this" exists in the Digging Deeper section for Chapter 6, where it is presented that:<p /><script src="https://gist.github.com/1329944.js?file=1.rb"></script></p>
+<p>will error in Ruby 1.8. And it will. But only because of his habit of (usually) placing parenthesis directly after puts.&nbsp; If you were to use:<p /><script src="https://gist.github.com/1329949.js?file=2.rb"></script><p />You will find that it is perfectly legal in Ruby 1.8.<p />Examine the following test in IRB:<p /><script src="https://gist.github.com/1329944.js?file=1.rb"></script></p>
+<p>Will give you this error:</p>
+<p><script src="https://gist.github.com/1329950.js?file=error1.txt"></script></p>
+<p>And finally:</p>
+<p><script src="https://gist.github.com/1329951.js?file=file3.rb"></script></p>
+<p>Gives you this error:</p>
+<p><script src="https://gist.github.com/1329953.js?file=error3.txt"></script></p>
+<p>All of the samples ran using this version:</p>
+<p><script src="https://gist.github.com/1324181.js?file=version.rb"></script><p />&nbsp; As you see, the premise is actually truthful.&nbsp; And if you are paying close attention here you will realize that there is something going on that may be easy to miss (I just wish he would expound on this) and that is the fact that an open parenthesis right next to your method means something different than a parenthesis one space away.&nbsp; puts( is different than puts ( in how the parser parses the code.&nbsp; It is hard to see this if you are new to Ruby and may cause confusion.&nbsp; If you have some experience then it isn't so hard to see what is going on.<p />&nbsp; A friend of mine asked me if I couldn't write something different in this review... some more positive oriented points.<p />&nbsp; I hope that this review doesn't portray the message that I thought the book was terrible, or bad.&nbsp; It really isn't.&nbsp; I just can't see handing this book to someone new to Ruby and stating "This is the book for you!&nbsp; Read it and work through the presented examples, and you will understand Ruby."&nbsp; It is possible that this would happen, but because of the inconsistencies, the lack of experience of that person to make informed opinions of where style is important, some of the potential goose chases presented in the book, and the 'proof this' areas, without walking through some of these ares, makes it a book that may confuse more than enlighten.<p />&nbsp; I won't list all of the sections where a beginner to Ruby would benefit, but a couple of notable inclusions would be:<br />&nbsp;* A quick overview of Documenting Ruby with RDoc that gives a quick and not-in-depth introduction to RDoc.<br />&nbsp;* The same for Apendix&nbsp; B, a quick set of instructions for "Installing MySQL for Ruby on Rails"&nbsp;&nbsp;&nbsp; &nbsp;<p />&nbsp;* Speaking of Rails, about 24 pages or so of Ruby On Rails, just enough to get your teeth into it</p>
+<p>The long and the short of it.&nbsp; If you are just learning Ruby there are less frustrating books to purchase.&nbsp; Having said that, if you have some experience with Ruby, and are wanting a good reference book, and wanting to exercise your skepticism, it is a good book.&nbsp; It definitely forced me to learn a bit more, and that is never a bad thing.</p>
+<p>&nbsp; I will use it as a reference, it will stay in my library of books  on Ruby.&nbsp; It has value, and it has insights.&nbsp; There is no question of  that.&nbsp; I will likely even read it again.</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>book, bookreview, huwcollingbourne, nostarchpress, review, ruby, ruby19</div>
+</div>
+<div class='post_responses'>
+<h4>844 views and 3 responses</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Nov  1 2011,  4:33 AM</div>
+<div class='response_name'>Manimaran Malaichamy responded:</div>
+</div>
+<div class='response_body'>A very useful review that clearly indicates what is exactly needed for a good Ruby Book. Initially i thought that there are more negative comments about the book but finally i got the point for whom this book is mostly useful for. <p>Also, the point of how the parentheses entirely change its usage if we not use it properly is a worthy point to not it down.</p><p>Thanks Victor for this review which gives me the guideline of what are the things we need to look for a good Ruby book.</p><p>Mani</p></div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Nov  1 2011,  2:04 PM</div>
+<div class='response_name'>Victor Goff responded:</div>
+</div>
+<div class='response_body'>Thank you Manimaran for the comment.<p>It was important for me to show the use of the book, and to provide an honest review.  Huw Collingbourne initially had gotten his feelings hurt apparently, because of some of the criticisms of his book when it was first released.  And I thought that it was important to not only address the style, but some of the reasons for some pain points in the book.</p><p>A style followed blindly, any style, will introduce these kinds of problems, but if you can understand the reasons behind style, and know that there is a technical reason for using one style over the other, then you are better armed.</p><p>I like to say "Learn the rules, so that you know how to break them."  This goes for bending them too.</p><p>I am glad that you did read the review fully.  To get the real point of the review.  I hope that this book continues to improve, and gets to the point where I think Mr. Collingbourne would like it to be.</p></div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Nov  1 2011,  9:29 PM</div>
+<div class='response_name'>Mani responded:</div>
+</div>
+<div class='response_body'>   <div class="Section1"> <p class="MsoNormal"><span>I got your point Victor.&lt;o:p>&lt;/o:p></span></p> <p class="MsoNormal"><span></span></p> <p class="MsoNormal"><span>Whenever I start to read a book, I thought to review the books like what you did.&lt;o:p>&lt;/o:p></span></p> <p class="MsoNormal"><span></span></p> <p class="MsoNormal"><span>But I didn't get a perfect example of how to get start with and I think your post help me to get started.&lt;o:p>&lt;/o:p></span></p> <p class="MsoNormal"><span></span></p> <p class="MsoNormal"><span>The main idea behind is to refine it better to make reach of the Book to many people.&lt;o:p>&lt;/o:p></span></p> <p class="MsoNormal"><span></span></p> <p class="MsoNormal"><span>And definitely it will be useful for the people like me who love to read books.&lt;o:p>&lt;/o:p></span></p> <p class="MsoNormal"><span></span></p> <div> <p class="MsoNormal"><span></span></p></div></div></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

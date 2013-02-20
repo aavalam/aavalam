@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2008/09/simplifying-profiler-and-benchmark-measuremen.html">Previous</a>
+&nbsp; 
+<a href="../../../index-8.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2008/09/understanding-modulo.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Using RubyDocTest for development.</h3>
+<div class='post_info'>
+<span class='post_time'>September  7 2008,  7:10 AM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'><p>First of all, you must have installed rubydoctest which can be installed as a gem, or from source.  Source can be found here: <a href="http://rubyforge.org/projects/rubydoctest/">http://rubyforge.org/projects/rubydoctest/</a> and the handy gem install rubydoctest can be used as well.</p>
+
+<p>I just want to introduce you to the tool.  I find it handy when I want to verify things in irb, which I have open anyway, and it helps to document my code inline, or to have a .doctest file sitting next to my file (or in the ../tests directory)
+Of course, we are going to use a very contrived example.  I doubt anyone would code this way for such a simple solution (and a little bit not accurate in the calculations).  But it does show a few things about doctest.
+We have covered shortly how to acquire rubydoctest.  Now let&rsquo;s talk about using it.  There are two ways to use it.  Internal to your code, and external as a .doctest document.  We will be using it in line with our code.
+Our code problem will be this:  How many minutes are in a year.
+What we are going to do, just for this exercise, is setup a hash, like this:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="doctype">#!/usr/bin/ruby</span>
+<span class="comment"># Write a program that will give you minutes in a year.</span>
+
+leap = <span class="predefined-constant">false</span>
+<span class="constant">TimeUnits</span> = {<span class="symbol">:seconds</span> =&gt; <span class="integer">60</span>, <span class="symbol">:minutes</span> =&gt; <span class="integer">60</span>,   <span class="symbol">:hours</span> =&gt; <span class="integer">24</span>,
+<span class="symbol">:days</span> =&gt; (leap ? <span class="float">30.5</span> : <span class="float">30.4167</span>), <span class="symbol">:months</span> =&gt; <span class="integer">12</span>}</pre></div>
+</div>
+
+
+<p>(I warned you this was contrived!)  Obviously the first couple of things we want to confirm is that leapyear indeed affects the assignment of your constant TimeUnits value of :days.
+We can do this in IRB: (and it may be that we were playing in IRB first, testing other ideas, before we came up with this, which will be the start of our program!)</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>&gt;&gt; leap = <span class="predefined-constant">false</span>
+=&gt; <span class="predefined-constant">false</span>
+&gt;&gt; <span class="constant">TimeUnits</span> = {<span class="symbol">:seconds</span> =&gt; <span class="integer">60</span>, <span class="symbol">:minutes</span> =&gt; <span class="integer">60</span>,   <span class="symbol">:hours</span> =&gt; <span class="integer">24</span>,
+<span class="integer">?&gt;</span> <span class="symbol">:days</span> =&gt; (leap ? <span class="float">30.5</span> : <span class="float">30.4167</span>), <span class="symbol">:months</span> =&gt; <span class="integer">12</span>}
+=&gt; {<span class="symbol">:minutes</span>=&gt;<span class="integer">60</span>, <span class="symbol">:hours</span>=&gt;<span class="integer">24</span>, <span class="symbol">:days</span>=&gt;<span class="float">30.4167</span>, <span class="symbol">:months</span>=&gt;<span class="integer">12</span>, <span class="symbol">:seconds</span>=&gt;<span class="integer">60</span>}
+&gt;&gt;</pre></div>
+</div>
+
+
+<p>And as you can see, we now have the makings of our first doctest.  But it also brings up the question of &ldquo;How?&rdquo;
+So, a little explanation&hellip;  DocTests are comments inside your code that you create to give a test name, and the results of any tests, as they are expected to be.  So, here is the format to create what we have above&hellip; (I use multi-line comments in block format (=begin, =end), you can use the hash comment style if you like).  So below my code, I place the following lines:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>&gt;&gt; leap = <span class="predefined-constant">false</span>
+&gt;&gt; <span class="constant">TimeUnits</span>.merge!( {<span class="symbol">:days</span> =&gt; (leap ? <span class="float">30.5</span> : <span class="float">30.4167</span>)})
+=&gt; {<span class="symbol">:minutes</span>=&gt;<span class="integer">60</span>, <span class="symbol">:hours</span>=&gt;<span class="integer">24</span>, <span class="symbol">:days</span>=&gt;<span class="float">30.4167</span>, <span class="symbol">:months</span>=&gt;<span class="integer">12</span>, <span class="symbol">:seconds</span>=&gt;<span class="integer">60</span>}</pre></div>
+</div>
+
+
+<p>You can see that this is the exact same output from IRB if you use the irb &mdash;simple-prompt command at your console.  As easy as copy/paste to get your tests and assertions, and I consider this a BIG plus!
+However&hellip; we are not ready to test yet.  Remember I stated that doctests are comments.  This is not a comment&hellip; so we have some setup work to do&hellip; simply we will start our comment block, above the lines shown, and name our test.  It looks like this:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">=begin 
+doctest: Setup Time Units values in hash (not leap year)
+&gt;&gt; leap = false
+&gt;&gt; TimeUnits.merge!( {:days =&gt; (leap ? 30.5 : 30.4167)}) 
+=&gt; {:minutes=&gt;60, :hours=&gt;24, :days=&gt;30.4167, :months=&gt;12, :seconds=&gt;60}
+=end</span></pre></div>
+</div>
+
+
+<p>Now we have a doctest with a test name of &ldquo;Setup Time Units values in hash (not leap year).  The second line of test is  >> leap = false.  You can note that there is no &lsquo;results&rsquo; line underneath.  This is because we don&rsquo;t actually want to test for a result&hellip; we just want to setup the state in IRB.  We are assuming that the assignment here will be successful.
+Now it is time to test it.  How to do this?  We save the file, and (I will use test.rb) run rubydoctest test.rb like so:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>c:&gt;rubydoctest test.rb
+=== Testing 'test.rb'...
+OK  | Setup Time Units values in hash (not leap year)
+1 comparisons, 1 doctests, 0 failures, 0 errors</pre></div>
+</div>
+
+
+<p>If you are in windows,  you may not see the color, but the OK here is green.  (In the final view of the file, you will see how I get color&hellip; but that is mentioned in another blog post here.)  In any case&hellip; we now have the beginning of our program, complete with a test.  If we were to refactor later, obviously, we would likely need to change our test (It won&rsquo;t fail, due to being self contained&hellip;) but it will remind is via documentation what we were doing when we come back and look at it.<br />
+On to the next portion of our program.
+We want to make sure that our hash is working with the ternary operator, so we type and see the following in IRB:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>&gt;&gt; <span class="constant">TimeUnits</span>[<span class="symbol">:days</span>]
+=&gt; <span class="float">30.4167</span></pre></div>
+</div>
+
+
+<p>And we see it is good, so we can add it to our doctest area.
+Hint:  You may be asking &ldquo;Why am I testing such a simple thing?&rdquo;  Extra credit for you if you do this exercise and use merge method, rather than merge! method&hellip; If you did not use this test, you would not catch that bug.
+But we also want to check if it is working for leap = true.  We must setup the constant TimeUnits again&hellip;
+in IRB:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">=begin
+doctest: Test our leap year true case for TimeUnits
+&gt;&gt; leap = true
+=&gt; true
+&gt;&gt; TimeUnits.merge!( {:days =&gt; (leap ? 30.5 : 30.4167) } )
+=&gt; {:months=&gt;12, :days=&gt;30.5, :minutes=&gt;60, :hours=&gt;24, :seconds=&gt;60}
+&gt;&gt; TimeUnits[:days]
+=end</span></pre></div>
+</div>
+
+
+<p>Which we have confirmed, so we can place the lines into our doctest comments.
+We haven&rsquo;t changed our code at all, yet, right now, just documenting what we want it to do based on different conditions.
+So, let&rsquo;s think in IRB about how we are going to calculate minutes in a year.
+I end up doing this:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>&gt;&gt; leap = <span class="predefined-constant">false</span> =&gt; <span class="predefined-constant">false</span>
+&gt;&gt; <span class="constant">TimeUnits</span>.merge!( {<span class="symbol">:days</span> =&gt; (leap ? <span class="float">30.5</span> : <span class="float">30.4167</span>)})
+=&gt; {<span class="symbol">:months</span>=&gt;<span class="integer">12</span>, <span class="symbol">:days</span>=&gt;<span class="float">30.4167</span>, <span class="symbol">:minutes</span>=&gt;<span class="integer">60</span>, <span class="symbol">:hours</span>=&gt;<span class="integer">24</span>, <span class="symbol">:seconds</span>=&gt;<span class="integer">60</span>}
+&gt;&gt; x = <span class="integer">1</span>
+=&gt; <span class="integer">1</span>
+&gt;&gt; <span class="constant">TimeUnits</span>.each_pair {|key, value| x = x * value <span class="keyword">unless</span> key == <span class="symbol">:seconds</span>}
+=&gt; {<span class="symbol">:months</span>=&gt;<span class="integer">12</span>, <span class="symbol">:days</span>=&gt;<span class="float">30.4167</span>, <span class="symbol">:minutes</span>=&gt;<span class="integer">60</span>, <span class="symbol">:hours</span>=&gt;<span class="integer">24</span>, <span class="symbol">:seconds</span>=&gt;<span class="integer">60</span>}
+&gt;&gt; x =&gt; <span class="float">525600.576</span></pre></div>
+</div>
+
+
+<p>And everything looks &lsquo;ok&rsquo; to me.  I am sure the result is not totally accurate&hellip; but good enough for me&hellip;
+It goes into my doctest as well, and then the code goes into my program&hellip;   I will call the test as follows:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>doctest: <span class="constant">Setup</span> <span class="keyword">for</span> minutes <span class="keyword">in</span> non-leapyear
+&gt;&gt; leap = <span class="predefined-constant">false</span>
+=&gt; <span class="predefined-constant">false</span>
+&gt;&gt; <span class="constant">TimeUnits</span>.merge!( {<span class="symbol">:days</span> =&gt; (leap ? <span class="float">30.5</span> : <span class="float">30.4167</span>)})
+=&gt; {<span class="symbol">:months</span>=&gt;<span class="integer">12</span>, <span class="symbol">:days</span>=&gt;<span class="float">30.4167</span>, <span class="symbol">:minutes</span>=&gt;<span class="integer">60</span>, <span class="symbol">:hours</span>=&gt;<span class="integer">24</span>, <span class="symbol">:seconds</span>=&gt;<span class="integer">60</span>}
+doctest: compute minutes <span class="keyword">in</span> a non-leapyear
+&gt;&gt; x = <span class="integer">1</span>
+=&gt; <span class="integer">1</span>
+&gt;&gt; <span class="constant">TimeUnits</span>.each_pair {|key, value| x = x * value <span class="keyword">unless</span> key == <span class="symbol">:seconds</span>}
+=&gt; {<span class="symbol">:months</span>=&gt;<span class="integer">12</span>, <span class="symbol">:days</span>=&gt;<span class="float">30.4167</span>, <span class="symbol">:minutes</span>=&gt;<span class="integer">60</span>, <span class="symbol">:hours</span>=&gt;<span class="integer">24</span>, <span class="symbol">:seconds</span>=&gt;<span class="integer">60</span>}
+&gt;&gt; x
+=&gt; <span class="float">525600.576</span></pre></div>
+</div>
+
+
+<p>And hopefully if I have done everything right, with my notes, and such, you should end up with a rubydoctest that ends up something like this:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>=== Testing 'test.rb'...
+OK  | Setup Time Units values in hash (not leap year)
+OK  | Test our leap year true case for TimeUnits
+OK  | Setup for minutes in non-leapyaer
+OK  | compute minutes in a non-leapyear
+9 comparisons, 4 doctests, 0 failures, 0 errors</pre></div>
+</div>
+
+
+<p>Perhaps this is almost the code you ended up with&hellip;</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="doctype">#!/usr/bin/ruby</span>
+<span class="comment"># Write a program that will give you minutes in a year.</span>
+
+leap = <span class="predefined-constant">false</span>
+<span class="constant">TimeUnits</span> = {<span class="symbol">:seconds</span> =&gt; <span class="integer">60</span>, <span class="symbol">:minutes</span> =&gt; <span class="integer">60</span>,   <span class="symbol">:hours</span> =&gt; <span class="integer">24</span>,
+  <span class="symbol">:days</span> =&gt; (leap ? <span class="float">30.5</span> : <span class="float">30.4167</span>), <span class="symbol">:months</span> =&gt; <span class="integer">12</span>}
+
+<span class="comment">=begin 
+doctest: Setup Time Units values in hash (not leap year)
+&gt;&gt; leap = false
+&gt;&gt; TimeUnits.merge!( {:days =&gt; (leap ? 30.5 : 30.4167)}) 
+=&gt; {:minutes=&gt;60, :hours=&gt;24, :days=&gt;30.4167, :months=&gt;12, :seconds=&gt;60}
+=end</span>
+
+<span class="comment">=begin
+doctest: Test our leap year true case for TimeUnits
+&gt;&gt; leap = true
+=&gt; true
+&gt;&gt; TimeUnits.merge!( {:days =&gt; (leap ? 30.5 : 30.4167) } )
+=&gt; {:months=&gt;12, :days=&gt;30.5, :minutes=&gt;60, :hours=&gt;24, :seconds=&gt;60}
+&gt;&gt; TimeUnits[:days]
+=end</span>
+
+<span class="comment"># some additional notes:  doctests can contain comments like this inside, </span>
+<span class="comment">#for further documenting thoughts.</span>
+<span class="comment"># I chose not to do this.</span>
+<span class="comment"># Also, as you can see below, doctests don't have to be seperated as above,</span>
+<span class="comment"># they could be as below.</span>
+
+<span class="comment">=begin
+doctest: Setup for minutes in non-leapyaer
+&gt;&gt; leap = false
+=&gt; false
+&gt;&gt; TimeUnits.merge!( {:days =&gt; (leap ? 30.5 : 30.4167)})
+=&gt; {:months=&gt;12, :days=&gt;30.4167, :minutes=&gt;60, :hours=&gt;24, :seconds=&gt;60}
+doctest: compute minutes in a non-leapyear
+&gt;&gt; x = 1
+=&gt; 1
+&gt;&gt; TimeUnits.each_pair {|key, value| x = x * value unless key == :seconds}
+=&gt; {:months=&gt;12, :days=&gt;30.4167, :minutes=&gt;60, :hours=&gt;24, :seconds=&gt;60}
+&gt;&gt; x
+=&gt; 525600.576
+=end</span>
+
+leap = <span class="predefined-constant">false</span>
+<span class="constant">TimeUnits</span>.merge!( {<span class="symbol">:days</span> =&gt; (leap ? <span class="float">30.5</span> : <span class="float">30.4167</span>)})
+x = <span class="integer">1</span>
+<span class="constant">TimeUnits</span>.each_pair {|key, value| x = x * value <span class="keyword">unless</span> key == <span class="symbol">:seconds</span>}</pre></div>
+</div>
+
+
+<p>I hope you enjoyed this walk through.  If you have any questions or comments, please feel free!</p></div>
+<div class='post_responses'>
+<h4>200 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

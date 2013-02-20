@@ -1,0 +1,56 @@
+<item>
+	<title>Let's enjoy programming with Ruby and Shoes!</title>
+	<link>http://vgoff.posterous.com/lets-enjoy-programming-with-ruby-and-shoes</link>
+	<pubDate>Thu Sep 11 14:32:00 -0700 2008</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/lets-enjoy-programming-with-ruby-and-shoes</guid>
+	<description></description>
+	<content:encoded><![CDATA[Hi,<br />I'm Satoshi Asakawa, online nickname is ashbb, a Japanese Ruby and Shoes enthusiast. And now an Asst. Teacher of the <a href="http://www.rubylearning.org/">RubyLearning.org</a> with this blog master Vic. He invited me to write a blog about Shoes a few days ago. So, I'm here. :)<p />I'm now writing Shoes Tutorial as the text of <a href="http://rubylearning.com/satishtalim/intermediate_ruby_course.html">POIRPC101</a>. If you are interesting about Ruby and Shoes programming, you can enroll in the course.<p />Okay, this is one of the tiny Shoes sample apps written for the last page of the tutorial today. :-D<span style="font-family: monospace;"><br /><div class="CodeRay">
+  <div class="code"><pre># sample93.rbShoes.app :width =&gt; 400, :height =&gt; 75,                        :title =&gt; 'Lovely Creaturs' do background &quot;#D0A&quot;..&quot;#F90&quot;, :angle =&gt; 90 x = 0 creatures = %w(loogink yar cy kamome shaha).collect do |c|   image Dir.pwd + &quot;/#{c}.png&quot;, :left =&gt; x += 60 end                   messages =&lt;&lt;-EOSThx for reading. :)See you!Enjoy Ruby and Shoes!EOS messages = messages.to_a msg = subtitle '', :top =&gt; 30, :stroke =&gt; white animate(3) do   creatures.each{|c| c.move c.left, rand(15)} end creatures.each do |c|   c.hover{msg.text = strong messages[rand(messages.length)]}   c.leave{msg.text = ''} endend</pre></div>
+</div>
+
+<br /></span>Screenshot is here:<br /><div class='p_embed p_image_embed'>
+<img alt="Media_http4bpblogspot_lgain" height="86" src="http://getfile6.posterous.com/getfile/files.posterous.com/import-koee/HeyHfcoonCIJrHlJbatBmxAyfzeJxusntaDoqiAekuwkxcoplFFHtwlwIBpB/media_http4bpblogspot_lGAin.png.scaled500.png" width="320" />
+</div>
+Download all code and data files from <a href="http://www.rin-shun.com/rubylearning/shoes/shoes_sample93.zip">here</a>.<p />Let's enjoy programming with Ruby and Shoes!<br />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-7285967955593788837?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Hi,I'm Satoshi Asakawa, online nickname is ashbb, a Japanese Ruby and Shoes enthusiast. And now an Asst. Teacher of the RubyLearning.org with this blog master Vic. He invited me to write a blog about Shoes a few days ago. So, I'm here. :)I'm now w...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Sep 11 14:32:00 -0700 2008</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>lets-enjoy-programming-with-ruby-and-shoes</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Aug 19 09:02:31 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Fri Aug 19 09:02:31 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hello,
+Welcome in posterous !
+
+dear Teacher...
+]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

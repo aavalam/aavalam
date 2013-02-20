@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2009/03/code-wrapper-on-shoes-v05-mouse-hovering-help.html">Previous</a>
+&nbsp; 
+<a href="../../../index-12.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2009/03/interview-michael-morin-creator-of-using-twit.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Interview: Adam Keys on Sinatra</h3>
+<div class='post_info'>
+<span class='post_time'>March  3 2009,  5:55 AM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'> The following is an excerpt of the full interview, which you can view by clicking the title of this article above, or <a href="http://rubylearning.com/blog/2009/03/03/interview-adam-keys-on-sinatra/">here</a> .<p /><span style="font-family: Trebuchet MS; font-size: 14px; line-height: 22px;"></span><br /><div style="margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><span style="color: #cc3333; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Satish Talim&gt;&gt;</strong> Welcome, Adam and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your self?</span></div><div style="margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Adam Keys&gt;&gt;</strong> I enjoy exploring all sorts of topics that are coincidental with Ruby: information design, functional languages, linguistics, architecture and other sorts of semi-boring topics. Entertaining people makes me happy. I live with my wife, three dogs and two cats in Dallas, TX. My website is<a href="http://therealadam.com/" style="color: #2361a1; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-decoration: underline;">http://therealadam.com/</a> and I’m <a href="http://twitter.com/therealadam" style="color: #2361a1; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-decoration: underline;">therealadam</a> on Twitter.</div><blockquote class="right" style="border-bottom-color: rgb(170, 170, 170); border-bottom-width: 3px !important; border-color: initial; border-left-color: rgb(170, 170, 170); border-left-width: 0px !important; border-right-color: rgb(170, 170, 170); border-right-width: 0px !important; border-top-color: rgb(170, 170, 170); border-top-width: 3px !important; color: #666666; float: right; font-size: 1.4em; line-height: 1.222em; margin-bottom: 5px; margin-left: 15px; margin-right: 0px; margin-top: 5px; padding-bottom: 0px !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; text-align: center;"><div style="margin-bottom: 0px !important; margin-left: 0px !important; margin-right: 0px !important; margin-top: 0px !important; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Sinatra - quickly create tiny web apps and services</div></blockquote><div style="margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><span style="color: #cc3333; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Satish&gt;&gt;</strong> What’s Sinatra and how did you get involved with it?</span></div><div style="margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Adam&gt;&gt;</strong> Sinatra is a tiny little library for writing web applications. I like to say it’s the smallest possible DSL for describing HTTP interactions. <span style="background-color: #ffffcc; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">It’s great for building small to medium-size web apps and also for building web APIs, REST services, and web hooks</span>.</div><div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-6860963118573236649?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div></div>
+<div class='post_responses'>
+<h4>8 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

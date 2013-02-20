@@ -1,0 +1,540 @@
+<item>
+	<title>Rubydoctest DRAFT</title>
+	<link>http://vgoff.posterous.com/private/EHwHdcylvn</link>
+	<pubDate>Mon Sep 26 17:35:00 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/private/EHwHdcylvn</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p style="text-align: right;"><span style="color: #666666; font-family: DejaVu Serif; font-size: 53px; font-weight: bold; letter-spacing: 4px; line-height: 60px;">3</span><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<h1 class="P96" style="margin-top: 0px; margin-bottom: 0px; margin-left: 0in; clear: both; background-color: transparent; border-left-style: none; border-right-style: solid; border-right-color: #0066cc; color: #0066cc; font-size: 30pt; font-style: normal; font-weight: bold; letter-spacing: 0.0417in; line-height: 60px; text-align: right !important; text-indent: 0in; font-family: DejaVu Serif; vertical-align: middle; border-top-style: none; border-bottom-style: none;">Ruby<br style="margin: 0px;" />Doctest</h1>
+<p class="P15_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none; padding: 0in;"><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T16" style="font-style: normal; margin: 0px;">Rubydoctest is a gem that we will be&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T16" style="font-style: normal; margin: 0px;">installing. &nbsp;The purpose of&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T39" style="font-style: italic; margin: 0px;">the</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T16" style="font-style: normal; margin: 0px;">&nbsp;gem is simply to provide a way to&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T16" style="font-style: normal; margin: 0px;">document our programs using&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T16" style="font-style: normal; margin: 0px;">IRB sessions, resulting in a way to provide usage examples as well as knowing when an&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T16" style="font-style: normal; margin: 0px;">expected use fails because of some update or changes to our&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T16" style="font-style: normal; margin: 0px;">program or environment.</span></span></p>
+<p class="P120" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #0066cc; font-size: 14pt; font-style: italic; font-weight: bold; letter-spacing: 0.0209in; line-height: 19px; padding-right: 0in; padding-left: 0in; text-align: left !important; text-indent: 0in; font-family: DejaVu Serif; vertical-align: middle; border-style: none;">Installing Ruby Doctest</p>
+<p class="P106_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;">Rubydoctest can be installed by doing the following from the command line:</p>
+<p>&nbsp;</p>
+<table class="Table3" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="Table3_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P124" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">$: gem install rubydoctest</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P106_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none; padding: 0in;">If you are running Windows or using RVM the above should work (pending network/internet connectivity) but you may need to use sudo to install depending on your set up.</p>
+<p class="P120" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #0066cc; font-size: 14pt; font-style: italic; font-weight: bold; letter-spacing: 0.0209in; line-height: 19px; padding-right: 0in; padding-left: 0in; text-align: left !important; text-indent: 0in; font-family: DejaVu Serif; vertical-align: middle; border-style: none;">The parts of RubyDoctest</p>
+<p class="BOOK_5f_Body_5f_Text" style="margin-top: 0px; margin-bottom: 0px; font-size: 10pt; font-family: Bitstream Charter; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; background-color: transparent; padding-right: 0in; padding-left: 0in; vertical-align: middle; color: #000000; letter-spacing: normal; padding-bottom: 0in; border-style: none;">&nbsp;<span class="T57" style="margin: 0px;">Rubydoctest information can be contained within a comment or a comment block.</span></p>
+<p class="P34_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;">Let's start with the prior example of hello.rb</p>
+<p>&nbsp;</p>
+<table class="hello" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="hello_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P58" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">def hello name</p>
+<p class="P57" style="font-size: 10pt; font-family: LMMono10; margin: 0px;"><span class="T58" style="margin: 0px;">&nbsp; &ldquo;Hello &ldquo;&nbsp;</span><span class="T59" style="margin: 0px;">+&nbsp;</span><span class="T58" style="margin: 0px;">name</span></p>
+<p class="P58" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">end</p>
+<p class="P58" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=begin # This is the beginning of a comment block</p>
+<p class="P58" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">doctest: hello &ldquo;World&rdquo; will return &ldquo;Hello World&rdquo;</p>
+<p class="P58" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&gt;&gt; hello &ldquo;World&rdquo;</p>
+<p class="P58" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=&gt; &ldquo;Hello World&rdquo;</p>
+<p class="P58" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P35_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none; padding: 0in;">We have our trusty method called hello, but we have added a comment block with doctest information inside. &nbsp;Other than the doctest: directive, it should remind you of an IRB session.</p>
+<p class="P35" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;">The doctest: directive is the human readable title of the test. &nbsp;If this isn't supplied you would end up seeing 'default' as the title.</p>
+<p class="P35_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;">Let's go ahead and run the following command to see what happens here:</p>
+<p>&nbsp;</p>
+<table class="doctest_5f_run" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="doctest_5f_run_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P87" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P87" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">&nbsp;OK &nbsp;| hello "World" will return "Hello World"</p>
+<p class="P87" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">1 comparisons, 1 doctests, 0 failures, 0 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P35_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none; padding: 0in;">As you can see, we get passing tests. &nbsp;And if this were above the method definition it may even be collected during ri and rdoc generation. &nbsp;(This process is outside the scope of this book.)</p>
+<p class="BOOK_5f_Chapter_5f_Heading_5f_1" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #0066cc; font-size: 14pt; font-weight: bold; letter-spacing: 0.0209in; line-height: 19px; padding-right: 0in; padding-left: 0in; text-align: left !important; text-indent: 0in; font-family: DejaVu Serif; vertical-align: middle; font-style: italic; border-style: none;">&nbsp;<span class="T59" style="margin: 0px;">Refactoring with RubyDoctest</span></p>
+<p class="P16" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;"><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">Once we have a simple test in place, and that test is passing, we can refactor it, with confidence that the&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">method</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">&nbsp;still passes.</span></span></p>
+<p class="P16_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;"><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">I noticed that I used &ldquo;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">String&rdquo; + variable in this&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">method, but realized that it may read a little better (and create only one object) if I use&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">string interpolation.</span></span></p>
+<p>&nbsp;</p>
+<table class="refactor" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="refactor_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P88" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">def hello name</p>
+<p class="P71" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &ldquo;Hello #{name}&rdquo;</p>
+<p class="P72" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P16" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;"><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">Which I think should pass the test, but just for good measure, we want to actually test it.</span></span></p>
+<p>&nbsp;</p>
+<table class="test1" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="test1_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P88" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P88" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">&nbsp;OK &nbsp;| hello "World" will return "Hello World"</p>
+<p class="P88" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">1 comparisons, 1 doctests, 0 failures, 0 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P16_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none; padding: 0in;"><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">And as we can see, it passes.</span></span></p>
+<p class="P55" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #0066cc; font-size: 10pt; font-style: normal; letter-spacing: 0.0209in; line-height: 13px; padding-right: 0in; padding-left: 0in; text-align: left !important; text-indent: 0in; font-family: DejaVu Serif; vertical-align: middle; border-style: none;"><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">In conclusion</span></span></p>
+<p class="P16" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;"><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">We have quickly gone over the&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">installation</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">&nbsp;of&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">RubyDoctest and we have shown an example (simple as it was) on how to write and test against the&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">RubyDoctest information.</span></span></p>
+<p class="P16" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;"><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">Next we will fully develop our hello&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">method so that it has some nice features.</span></span></p>
+<p class="P16" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;"><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">Of course we could do this in a TDD manner, using TestUnit, or minitest or Rspec. &nbsp;But we will do so using&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">IRB and&nbsp;</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">RubyDoctest, as that is the goal of this book.</span></span></p>
+<p class="P16_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;"><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">Let's get started!</span></span></p>
+<h1 class="P100" style="margin-top: 0px; margin-bottom: 0px; margin-left: 0in; clear: both; background-color: transparent; border-left-style: none; border-right-style: solid; border-right-color: #0066cc; color: #0066cc; font-size: 30pt; font-style: normal; font-weight: bold; letter-spacing: 0.0417in; line-height: 60px; text-align: right !important; text-indent: 0in; font-family: DejaVu Serif; vertical-align: middle; border-top-style: none; border-bottom-style: none;">
+<p />
+<div class="P130" style="font-size: 40pt; font-family: DejaVu Serif; text-align: right !important; color: #666666; font-weight: bold; height: 0.6512in; float: left; padding: 0px; margin: 0px;">
+<div style="margin: 0px;">
+<p class="P129" style="font-size: 12pt; font-family: Liberation Serif; text-align: right !important; margin: 0px;"><span class="T81" style="color: #666666; font-family: DejaVu Serif; font-size: 40pt; font-weight: bold; margin: 0px;">4</span></p>
+</div>
+</div>
+<p />
+<span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T11" style="font-style: normal; margin: 0px;"><br style="margin: 0px;" /></span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">Using</span></span><span class="Emphasis" style="font-style: italic; margin: 0px;"><span class="T19" style="font-style: normal; margin: 0px;">RubyDoctest in a TDD manner</span></span></h1>
+<p class="P114_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; border-style: none; padding: 0in;">We will be starting our hello method over from scratch. &nbsp;Going through the full life cycle of a small method, and testing along the way. &nbsp;It will be conversational, and demonstrative, so that you can follow along as we go.</p>
+<p class="P54" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #0066cc; font-size: 14pt; font-style: italic; font-weight: bold; letter-spacing: 0.0209in; line-height: 19px; padding-right: 0in; padding-left: 0in; text-align: left !important; text-indent: 0in; font-family: DejaVu Serif; vertical-align: middle; border-style: none;"><span class="T36" style="font-style: italic; margin: 0px;">Starting</span>&nbsp;with an idea</p>
+<p class="P43" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; padding-bottom: 0in; border-style: none;"><span class="T59" style="margin: 0px;">It all starts with an idea:&nbsp;</span><span class="T37" style="font-style: italic; margin: 0px;">I would like a hello method that will simply state &ldquo;Hello World!&rdquo;</span></p>
+<p class="P43_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; border-style: none;"><span class="T64" style="margin: 0px;">In order to make this happen, and have the documentation and the tests that I would eventually like to have, I place this</span><span class="T60" style="margin: 0px;">&nbsp;in my hello.rb file:</span></p>
+<p>&nbsp;</p>
+<table class="tddhello1" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="tddhello1_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P73" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=begin</p>
+<p class="P73" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">doctest: hello returns &ldquo;Hello World!&rdquo;</p>
+<p class="P74" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&gt;&gt; hello</p>
+<p class="P74" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=&gt; &ldquo;Hello World!&rdquo;</p>
+<p class="P74" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P45" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; padding-bottom: 0in; border-style: none;">And to ensure that it is written correctly, we do want to run the following command and get the information back from our test:</p>
+<p>&nbsp;</p>
+<table class="TDDHello2" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDHello2_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P89" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">&nbsp;$: rubydoctest hello.rb</p>
+<p class="P89" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P86" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;"><span class="T62" style="color: #ffd320; margin: 0px;">ERR</span><span class="T61" style="margin: 0px;">&nbsp;&nbsp;| hello returns "Hello World!"</span></p>
+<p class="P89" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;NameError: undefined local variable or method `hello' for main:Object</p>
+<p class="P89" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from hello.rb:3</p>
+<p class="P89" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;hello</p>
+<p class="P89" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">1 comparisons, 1 doctests, 0 failures, 1 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P44_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; border-style: none; padding: 0in;"><span class="T59" style="margin: 0px;">&nbsp;</span><span class="T61" style="margin: 0px;">This information, if we pause and read it, tells us exactly what we need to get it pas</span><span class="T74" style="margin: 0px;">t this error</span><span class="T61" style="margin: 0px;">. &nbsp;It states &ldquo;undefined local variable or method 'hello'&rdquo; and from which line it was called. &nbsp;We have already made the assumption that we want a method, and so we can do the least amount to cause this ERR to no longer exist. &nbsp;(You may see it as a shade of yellow in your console.)</span></p>
+<p class="P46_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; border-style: none;">So let's write the least amount of code that we can think of to get it to not error (I placed the following on lines 6 and 7, just below the comment block):</p>
+<p>&nbsp;</p>
+<table class="TDDhello3" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello3_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P76" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">def hello</p>
+<p class="P76" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P46" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; padding-bottom: 0in; border-style: none;">Once I save this, and run the rubydoctest command, I get the following:</p>
+<p>&nbsp;</p>
+<table class="TDDhello5" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello5_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P75" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="code_5f_section" style="font-size: 10pt; font-family: LMMono10; margin: 0px;"><span class="T63" style="color: #ff0000; margin: 0px;">FAIL</span><span class="T61" style="margin: 0px;">&nbsp;| hello returns "Hello World!"</span></p>
+<p class="P75" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;Got: nil</p>
+<p class="P75" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;Expected: "Hello World!"</p>
+<p class="P75" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from hello.rb:4</p>
+<p class="P75" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">1 comparisons, 1 doctests, 1 failures, 0 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P46_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; border-style: none; padding: 0in;">Depending on your settings, you should get a red &ldquo;FAIL&rdquo; message as well as the next three lines. &nbsp;Regardless you will get the summary information with 1 comparisons, 1 doctests, 1 failures and 0 errors.</p>
+<p class="P46" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; padding-bottom: 0in; border-style: none;">The error count is 0, which means that we have progressed past the yellow ERR message. &nbsp;We will generally always want to work past ERR messages first, then FAIL messages, until we get to OK.</p>
+<p class="P46" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; padding-bottom: 0in; border-style: none;">Let's go forward in our journey and get past this FAIL message.</p>
+<p class="P46_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; border-style: none;">Paying attention to the feedback we get, it states that we are getting nil when we are expecting &ldquo;Hello World!&rdquo;. &nbsp;I think it is fairly obvious that we can simply have the method return the string &ldquo;Hello World!&rdquo; and get this to pass. &nbsp;Simplistic, and exactly what we want:</p>
+<p>&nbsp;</p>
+<table class="TDD6hello" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDD6hello_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P75" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">def hello</p>
+<p class="P75" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; "Hello World!"</p>
+<p class="P75" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P46" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; padding-bottom: 0in; border-style: none;">Simplistic and rids us of the failure in our test:</p>
+<p>&nbsp;</p>
+<table class="TDDhello7" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello7_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="code_5f_section" style="font-size: 10pt; font-family: LMMono10; margin: 0px;"><span class="T61" style="margin: 0px;">&nbsp;$:&nbsp;</span><span class="T64" style="margin: 0px;">rubydoctest hello.rb</span></p>
+<p class="P75" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P75" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp;<span class="T79" style="color: #008000; background-color: transparent; margin: 0px;">OK</span>&nbsp;&nbsp;| hello returns "Hello World!"</p>
+<p class="P75" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">1 comparisons, 1 doctests, 0 failures, 0 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P47_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; font-style: normal; border-style: none; padding: 0in;">Again, in your console, you may actually see a green OK. &nbsp;The important thing to note is the 0 failures and 0 errors.</p>
+<p class="P51" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #0066cc; font-size: 13pt; font-style: italic; font-weight: bold; letter-spacing: 0.0209in; line-height: 17px; padding-right: 0in; padding-left: 0in; text-align: left !important; text-indent: 0in; font-family: DejaVu Serif; vertical-align: middle; border-style: none;">It continues with expanding ideas</p>
+<p class="P36" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;">Let's think about what we have; A hello method that greets the world. &nbsp;Not too bad. &nbsp;But let's say that we want to be able to use it to greet the world, but also to greet someone in particular.</p>
+<p class="P36_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;">Continuing our program documentation, we add the following:</p>
+<p>&nbsp;</p>
+<table class="TDDhello8" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello8_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">doctest: hello "reader" returns "Hello reader!"</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&gt;&gt; hello "student"</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=&gt; "Hello student!"</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P36" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;">Those three lines should be added to comment block and our entire file looks like so:</p>
+<p>&nbsp;</p>
+<table class="TDDhello9" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello9_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=begin</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">doctest: hello returns "Hello World!"</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&gt;&gt; hello</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=&gt; "Hello World!"</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">doctest: hello "reader" returns "Hello reader!"</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&gt;&gt; hello "student"</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=&gt; "Hello student!"</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=end</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">def hello</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; "Hello World!"</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P17" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;"><span class="T65" style="margin: 0px;">When we run the doctest (which we should do any time we make a change in either the documentation or in the code itself</span><span class="T77" style="margin: 0px;">)</span><span class="T65" style="margin: 0px;">, we should get:</span></p>
+<p>&nbsp;</p>
+<table class="TDDhello10" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello10_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp;OK &nbsp;| hello returns "Hello World!"</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">ERR &nbsp;| hello "reader" returns "Hello reader!"</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;ArgumentError: wrong number of arguments (1 for 0)</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from hello.rb:6</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;hello "student"</p>
+<p class="P77" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">2 comparisons, 2 doctests, 0 failures, 1 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P109_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none; padding: 0in;">From this we can see that the current way we want to use it by giving one argument is in error on line 6, because our method wants 0. &nbsp;That is what the &ldquo;(1 for 0)&rdquo; means. &nbsp; We are giving it one argument &ldquo;student&rdquo; and it is really what we want.</p>
+<p class="P18" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;"><span class="T66" style="margin: 0px;">You may think that if we fix the error, the first test with either error or fail, and you would be right. &nbsp;When going through this process, you want to be careful to make small changes, as well as concentrating on the feature you are working on. &nbsp;So we will work on test&nbsp;</span><span class="T38" style="font-style: italic; margin: 0px;">hello &ldquo;reader&rdquo; returns &ldquo;Hello reader!&rdquo;</span><span class="T66" style="margin: 0px;">&nbsp;until it passes. &nbsp;</span><span class="T67" style="margin: 0px;">Until that happens, we will ignore the first test.</span></p>
+<p class="P37_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;">How might we get out of our error condition? &nbsp;Perhaps like this?</p>
+<p>&nbsp;</p>
+<table class="TDDHello12" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDHello12_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P60" style="font-size: 10pt; font-family: LMMono10; margin: 0px;"><span class="T67" style="margin: 0px;">def hello&nbsp;</span><span class="T29" style="font-weight: bold; margin: 0px;">name</span></p>
+<p class="P78" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; "Hello World!"</p>
+<p class="P78" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P39_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none; padding: 0in;"><span class="T67" style="margin: 0px;">Notice how we added the argument of name to our method. &nbsp;</span><span class="T77" style="margin: 0px;">We could have used something instead of name, perhaps arg or argument, but that simply states what it is, not what we should pass. &nbsp;In this way, what we call the argument helps to document our method as well.</span></p>
+<p class="P110_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;">&nbsp; As we have made a change, it is time to run rubydoctest again and see if we got past the error.</p>
+<p>&nbsp;</p>
+<table class="TDDhello11" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello11_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P78" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P78" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">ERR &nbsp;| hello returns "Hello World!"</p>
+<p class="P78" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;ArgumentError: wrong number of arguments (0 for 1)</p>
+<p class="P78" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from hello.rb:3</p>
+<p class="P78" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;hello</p>
+<p class="P61" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">FAIL | hello "reader" returns "Hello reader!"</p>
+<p class="P61" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;Got: "Hello World!"</p>
+<p class="P61" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;Expected: "Hello student!"</p>
+<p class="P61" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from hello.rb:7</p>
+<p class="P78" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">2 comparisons, 2 doctests, 1 failures, 1 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P19" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;"><span class="T67" style="margin: 0px;">As you can see, we went from ERR to FAIL, which is where we want to be. &nbsp;Ignoring the first test, we go from FAIL to OK (pass)</span><span class="T68" style="margin: 0px;">&nbsp;in the simplest change we can think of.</span></p>
+<p>&nbsp;</p>
+<table class="TDDHello13" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDHello13_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">def hello name</p>
+<p class="P63" style="font-size: 10pt; font-family: LMMono10; margin: 0px;"><span class="T68" style="margin: 0px;">&nbsp; "Hello&nbsp;</span><span class="T30" style="font-weight: bold; margin: 0px;">student</span><span class="T68" style="margin: 0px;">!"</span></p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P38" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;">Simply replacing 'World' with 'student', I think, should get this test to pass.</p>
+<p>&nbsp;</p>
+<table class="TDDhello14" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello14_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">ERR &nbsp;| hello returns "Hello World!"</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;ArgumentError: wrong number of arguments (0 for 1)</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from hello.rb:3</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;hello</p>
+<p class="P62" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">&nbsp;OK &nbsp;| hello "reader" returns "Hello reader!"</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">2 comparisons, 2 doctests, 0 failures, 1 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P38_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none; padding: 0in;">There we go. &nbsp;Now we can look for any ERR messages as they are critical to allowing our program to run. &nbsp;It is complaining about wrong number of arguments, this time in reverse of what our second test was complaining about a few moments ago.</p>
+<p class="P38" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;">Do we want to change the test? &nbsp;It is something we could consider. &nbsp;I think I like having the ability to have default behavior of no argument to say greet the world. &nbsp;And so I would leave the test as it is.</p>
+<p class="P38_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;">Changing the method itself to accept 0 or more arguments is likely the right thing to do here. &nbsp;Let's give that a shot:</p>
+<p>&nbsp;</p>
+<table class="TDDHello15" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDHello15_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P63" style="font-size: 10pt; font-family: LMMono10; margin: 0px;"><span class="T68" style="margin: 0px;">def&nbsp;</span><span class="T30" style="font-weight: bold; margin: 0px;">*</span><span class="T68" style="margin: 0px;">name</span></p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &ldquo;Hello student!&rdquo;</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P38" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;">Adding the * to the argument will give us the ability to accept 0 or more arguments. &nbsp;Let's test and see if we are still in an error condition:</p>
+<p>&nbsp;</p>
+<table class="TDDHello16" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDHello16_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P62" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">FAIL | hello returns "Hello World!"</p>
+<p class="P62" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;Got: "Hello student!"</p>
+<p class="P62" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;Expected: "Hello World!"</p>
+<p class="P62" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from hello.rb:4</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp;OK &nbsp;| hello "reader" returns "Hello reader!"</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">2 comparisons, 2 doctests, 1 failures, 0 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P38" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;">Seems to be OK, as we are no longer in an error condition. &nbsp;And a fail condition leads us where to go. &nbsp;We are getting &ldquo;Hello student!&rdquo; when we don't give any argument. &nbsp;Looking above at our program, we want something a little more dynamic. &nbsp;Let's use name variable to give us what we want in the string.</p>
+<p>&nbsp;</p>
+<table class="TDDhello17" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello17_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P90" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">def hello *name</p>
+<p class="P90" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">&nbsp; "Hello " + name + "!"</p>
+<p class="P90" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P38" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;">It looks good to me, let's see what our tests tell us?</p>
+<p>&nbsp;</p>
+<table class="TDDhello18" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello18_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">ERR &nbsp;| hello returns "Hello World!"</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;TypeError: can't convert Array into String</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from hello.rb:3</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;hello</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">ERR &nbsp;| hello "reader" returns "Hello reader!"</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;TypeError: can't convert Array into String</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from hello.rb:6</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;hello "student"</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">2 comparisons, 2 doctests, 0 failures, 2 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P38_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none; padding: 0in;">As know that prior to this change, the additional feature passed, we will ignore any change to that, and continue to make our default behavior work.</p>
+<p class="P21_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;"><span class="T68" style="margin: 0px;">What is Ruby telling us? &nbsp;That we can't convert Array into String on line 3. &nbsp;It must be the +() method. &nbsp;Let's use .</span><span class="T69" style="margin: 0px;">to_s method to convert&nbsp;</span><span class="T68" style="margin: 0px;">the name&nbsp;</span><span class="T69" style="margin: 0px;">variable&nbsp;</span><span class="T68" style="margin: 0px;">explicitly to a string</span></p>
+<p>&nbsp;</p>
+<table class="TDDhello21" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello21_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P80" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">def hello *name</p>
+<p class="P64" style="font-size: 10pt; font-family: LMMono10; margin: 0px;"><span class="T69" style="margin: 0px;">&nbsp; "Hello " +&nbsp;</span><span class="T31" style="font-weight: bold; margin: 0px;">name.</span><span class="T32" style="font-weight: bold; margin: 0px;">to_s</span><span class="T31" style="font-weight: bold; margin: 0px;">&nbsp;+ "!"</span></p>
+<p class="P80" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P21" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;"><span class="T68" style="margin: 0px;">&nbsp;and see if that&nbsp;</span><span class="T69" style="margin: 0px;">takes us away from</span><span class="T68" style="margin: 0px;">&nbsp;the error.</span></p>
+<p>&nbsp;</p>
+<table class="TDDhello19" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello19_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P62" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">FAIL | hello returns "Hello World!"</p>
+<p class="P62" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;Got: "Hello []!"</p>
+<p class="P62" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;Expected: "Hello World!"</p>
+<p class="P62" style="font-size: 10pt; font-family: LMMono10; font-weight: bold; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from hello.rb:4</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">FAIL | hello "reader" returns "Hello reader!"</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;Got: "Hello [\"student\"]!"</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp;Expected: "Hello student!"</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from hello.rb:7</p>
+<p class="P79" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">2 comparisons, 2 doctests, 2 failures, 0 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P20" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;"><span class="T68" style="margin: 0px;">Good, we are out of error mode again, and back to FAIL mode. &nbsp;We can deal with that, and we got some more information. &nbsp;We got what appears to be an empty Array&nbsp;</span><span class="T69" style="margin: 0px;">as indicated by the [] in the string</span><span class="T68" style="margin: 0px;">. &nbsp;I would guess it is because of the&nbsp;</span><span class="T30" style="font-weight: bold; margin: 0px;">*name</span><span class="T3" style="margin: 0px;">&nbsp;that we added. &nbsp;Let's try a default value instead. &nbsp;Still not changing any tests... but paying attention to the</span><span class="T4" style="margin: 0px;">feedback from the first</span><span class="T3" style="margin: 0px;">&nbsp;test.</span></p>
+<p>&nbsp;</p>
+<table class="TDDHello22" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDHello22_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P65" style="font-size: 10pt; font-family: LMMono10; margin: 0px;"><span class="T70" style="margin: 0px;">def hello&nbsp;</span><span class="T32" style="font-weight: bold; margin: 0px;">name='World'</span></p>
+<p class="P81" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp; "Hello " + name.to_s + "!"</p>
+<p class="P81" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P27" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;">That gets us out of fail and into OK (pass) for each test as indicated below:</p>
+<p>&nbsp;</p>
+<table class="TDDhello20" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello20_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P80" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P80" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp;OK &nbsp;| hello returns "Hello World!"</p>
+<p class="P80" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp;OK &nbsp;| hello "reader" returns "Hello reader!"</p>
+<p class="P80" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">2 comparisons, 2 doctests, 0 failures, 0 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P50_borderStart" style="margin-bottom: 0px; background-color: transparent; border-left-style: none; border-right-style: none; border-top-style: solid; border-top-color: #0066cc; color: #0066cc; font-size: 13pt; font-style: italic; font-weight: bold; letter-spacing: 0.0209in; line-height: 17px; padding-top: 0in; padding-right: 0in; padding-left: 0in; text-align: left !important; text-indent: 0in; font-family: DejaVu Serif; vertical-align: middle; border-bottom-style: none;"><span class="T8" style="margin: 0px;">Refactoring&nbsp;</span><span class="T10" style="margin: 0px;">in the Green</span></p>
+<p class="P22_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;"><span class="T5" style="margin: 0px;">You might think we are done. &nbsp;But&nbsp;</span><span class="T6" style="margin: 0px;">we&nbsp;</span><span class="T5" style="margin: 0px;">are in 'green' mode and so are free to refactor our code. &nbsp;And looking at our code I see some things that can be improved.</span></p>
+<p>&nbsp;</p>
+<table class="TDDHello23" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDHello23_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P82" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">def hello name='World'</p>
+<p class="code_5f_section" style="font-size: 10pt; font-family: LMMono10; margin: 0px;"><span class="T71" style="margin: 0px;">&nbsp; "Hello&nbsp;</span><span class="T72" style="margin: 0px;">+&nbsp;</span><span class="T33" style="font-weight: bold; margin: 0px;">name&nbsp;</span><span class="T34" style="font-weight: bold; margin: 0px;">+ &ldquo;</span><span class="T71" style="margin: 0px;">!"</span></p>
+<p class="P82" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P24" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;"><span class="T6" style="margin: 0px;">Let's use&nbsp;</span><span class="T7" style="margin: 0px;">remove the .to_s&nbsp;</span><span class="T6" style="margin: 0px;">method&nbsp;</span><span class="T7" style="margin: 0px;">as we know we are going to get a string</span><span class="T6" style="margin: 0px;">. &nbsp;Of course, we test after refactoring to make sure we are still good.</span></p>
+<p>&nbsp;</p>
+<table class="TDDhello24" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+
+<tr style="margin: 0px;">
+<td class="TDDhello24_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P83" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">=== Testing 'hello.rb'...</p>
+<p class="P83" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp;OK &nbsp;| hello returns "Hello World!"</p>
+<p class="P83" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">&nbsp;OK &nbsp;| hello "reader" returns "Hello reader!"</p>
+<p class="P83" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">2 comparisons, 2 doctests, 0 failures, 0 errors</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P28_borderStart" style="margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none; padding: 0in;">And we see we are still golden.</p>
+<p class="P112_borderEnd" style="margin-top: 0px; margin-bottom: 0in; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-bottom: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; border-style: none;">And on second thought, we can use string interpolation which to me makes it more readable, but also creates only one String object.</p>
+<p>&nbsp;</p>
+<table class="TDDhello25" border="0" style="border-collapse: collapse; float: none; margin: 0px;">
+ 
+
+<tr style="margin: 0px;">
+<td class="TDDhello25_A1" style="vertical-align: top; font-size: 12pt; text-align: left; margin: 0px;">
+<p class="P84" style="font-size: 10pt; font-family: LMMono10; margin: 0px;">def hello name='World'</p>
+<p class="P66" style="font-size: 10pt; font-family: LMMono10; margin: 0px;"><span class="T71" style="margin: 0px;">&nbsp; "Hello&nbsp;</span><span class="T73" style="margin: 0px;">#{</span><span class="T33" style="font-weight: bold; margin: 0px;">name</span><span class="T35" style="font-weight: bold; margin: 0px;">}</span><span class="T71" style="margin: 0px;">!"</span></p>
+<p class="P85" style="font-size: 10pt; font-family: Bitstream Charter; text-align: justify !important; margin: 0px;">end</p>
+</td>
+</tr>
+
+</table>
+<p style="text-align: right;"><span style="font-family: Times New Roman; font-size: medium;"> </span></p>
+<p class="P112" style="margin-top: 0px; margin-bottom: 0px; background-color: transparent; color: #000000; font-size: 10pt; letter-spacing: normal; line-height: 0.1965in; padding-right: 0in; padding-left: 0in; text-align: justify !important; text-indent: 0.2953in; font-family: Bitstream Charter; vertical-align: middle; padding-bottom: 0in; border-style: none;">And of course, we run rubydoctest again to make sure we didn't break anything, and we see that we are good.</p>
+<p>&nbsp;</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[3 RubyDoctest Rubydoctest is a gem that we will be installing. The purpose of the gem is simply to provide a way to document our programs using IRB sessions, resulting in a way to provide usage examples as well as knowing when an expected use fail...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Sep 26 17:35:00 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>rubydoctest-draft</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

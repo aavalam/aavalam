@@ -1,0 +1,46 @@
+<item>
+	<title>You can now vote on the Course you would like to see!</title>
+	<link>http://vgoff.posterous.com/you-can-now-vote-on-the-course-you-would-like</link>
+	<pubDate>Sat Nov 15 05:34:00 -0800 2008</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/you-can-now-vote-on-the-course-you-would-like</guid>
+	<description></description>
+	<content:encoded><![CDATA[<span style="font-family: Trebuchet MS; font-size: 12px; line-height: 19px;"><h3 style="font-size: 1.286em; font-weight: normal; line-height: 1.222em; margin-left: 0px; margin-right: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">New Course Offerings</h3></span><br /><div class="update" style="">We’re rapidly expanding our course offerings here at RubyLearning, trying to keep up with the enormous and ever-growing interest in<strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Ruby</strong>. But we need your <b style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">YOUR</b> help because, as you know, Ruby is a big subject, and we’d like to be sure to focus in on the areas of most interest to <b style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">you</b>.</div><div style="margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">A Note regarding the courses mentioned in the poll below</strong>:</div><ul style="margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<li style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Ruby Testing and TDD</strong>: (starting from the concepts of testing in general, Test::Unit and other tools are discussed. RSpec is not discussed. Suited for people trying to code test code.)</li>
+<li style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Ruby GUI</strong>: (GUI programming. Which library do you recommend - Shoes, FXRuby?)</li>
+<li style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Ruby: Git and GitHub</strong>: (A short course where you study Git and GitHub. Basic operations are discussed. Publishing a gem using GitHub.)</li>
+<li style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Ruby &amp; SQLite3 database</strong>: (Learn SQLite3 using Ruby. Beneficial for those who already know another database and for those are relatively new to database itself.)</li>
+<li style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">JRuby</strong>: This course is already available, but wanted to check whether you want it.</li>
+<li style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<strong style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Merb</strong>: This is becoming very popular in the community.</li>
+</ul><div style="margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><span style="color: #cc3333; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><em style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Please take a moment to complete a brief poll about the new course offerings we’re considering. Also, please post your suggestions as comments to this blog post. It won’t take more than a minute or two.</em></span></div><div style="margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">NOTE:  You can pick all six choices, but pick the ones you feel most strongly about.</div><div style="margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">Please click on the title to vote, or you can<a href="http://rubylearning.com/blog/2008/11/15/can-you-help-rubylearning-with-your-suggestions/"> click here </a> as well.</div><div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-4516217994449679740?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[New Course OfferingsWe’re rapidly expanding our course offerings here at RubyLearning, trying to keep up with the enormous and ever-growing interest inRuby. But we need your YOUR help because, as you know, Ruby is a big subject, and we’d like to b...]]></excerpt:encoded>	
+
+	<wp:post_date>Sat Nov 15 05:34:00 -0800 2008</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>you-can-now-vote-on-the-course-you-would-like</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

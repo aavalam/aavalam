@@ -1,0 +1,37 @@
+<item>
+	<title>Text Game on Purple Shoes</title>
+	<link>http://vgoff.posterous.com/text-game-on-purple-shoes</link>
+	<pubDate>Sat Apr 28 08:15:00 -0700 2012</pubDate>
+	
+	<dc:creator><![CDATA[ashbb]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/text-game-on-purple-shoes</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p><div class='p_embed p_image_embed'>
+<a href="http://getfile9.posterous.com/getfile/files.posterous.com/vgoff/W2mv3jrG87AV8BKC5iei9qcnqmttlb1goYgUTxly8UaizcajkyV9REvMG2IU/text_game_on_purple_shoes.png"><img alt="Text_game_on_purple_shoes" height="437" src="http://getfile0.posterous.com/getfile/files.posterous.com/vgoff/fdo1MWQLwSKR2JSV7DxLsFSctvuNbuZVjE0kDtCS9FIc5vU4MBgoRFL6KwjX/text_game_on_purple_shoes.png.scaled.500.jpg" width="500" /></a>
+</div>
+</p>
+<p>I read <a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/395141">Jared's post</a> in ruby-talk ML.<p />He said,<p />&gt; my game is a long piece of code: <a href="https://gist.github.com/2500159">https://gist.github.com/2500159</a><br />&gt; <br />&gt; My question is, I have the game fully coded out in standard Ruby and it <br /> &gt; runs in terminal.&nbsp; I know I won't be able to simply call the class or <br />&gt; whatever and run it perfectly as it is.&nbsp; Ruby uses "puts" and Shoes uses <br />&gt; "para".&nbsp; Ruby uses "sleep" and Shoes uses "timer" and a do loop for it.<br /> &gt; <br />&gt; Is it going to be possible to have this run without doing a massive <br />&gt; rewrite or am I screwed on this?<p />Oh, umm,...<br />I think it's a bit difficult with Red Shoes... <br />But with Green or Purple?<p /> After some trials, got a solution for Purple Shoes.<br />I've not changed his original code, just only added a small snippet.<p />Look at the code ( <a href="https://gist.github.com/2516799">https://gist.github.com/2516799</a> ) and watch <a href="http://www.rin-shun.com/shoes/text-game-with-purple-shoes.swf.html">a tiny flush demo</a>. ;-)<p />ashbb</p>
+<p>&nbsp;</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[I read Jared's post in ruby-talk ML.He said,> my game is a long piece of code: https://gist.github.com/2500159> > My question is, I have the game fully coded out in standard Ruby and it > runs in terminal. I know I won't be able to simply call the...]]></excerpt:encoded>	
+
+	<wp:post_date>Sat Apr 28 08:15:00 -0700 2012</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>text-game-on-purple-shoes</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/06/chipmunk-physics-on-shoes.html">Previous</a>
+&nbsp; 
+<a href="../../../index-7.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2008/09/fuzzy-equality-in-rubydoctest.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Exception to Rule: String Class and to_s and to_str</h3>
+<div class='post_info'>
+<span class='post_time'>June 25 2010,  8:33 AM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'><p>One of the sample programs given while learning Ruby can be an
+Unpredictable String that is a subclass of String.  This exercise can
+bring up some nuances that otherwise may not be learned.  Of course,
+the original lesson is subclassing, and using the super class for
+functionality.</p>
+
+<p>But, if you dig into it a little bit further, to really make the
+UnpredictableString unpredictable, you soon find out that your
+expectations on how string interpolation works just doesn&rsquo;t follow on
+with this subclass, due to being a #kind_of?(String).</p>
+
+<p>See <a href="http://www.cmplngrb.tk/to_s-and">http://www.cmplngrb.tk/to_s-and</a> for an in depth discussion on this
+in the comments, especially starting about halfway down..  I have so
+far seen no way to enforce the use with a class subclassing String
+though.</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>ruby, string, to_s, to_str</div>
+</div>
+<div class='post_responses'>
+<h4>508 views and 2 responses</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jun 27 2010,  6:55 AM</div>
+<div class='response_name'>marcric (Twitter) responded:</div>
+</div>
+<div class='response_body'>I still didn't understand which is the point...<p>Duck typing doesn't work that way, period. <a href="http://tw0.us/Hvl" rel="nofollow">http://tw0.us/Hvl</a></p><p>The guy has an Array object full of different kinds of item objects, and try to inject they all into a string.</p><p>Here is the thing:</p><p>list = [1, 2.3, 'four', false]<br />puts list<br />puts '============'<br />puts list.respond_to?(:to_str)<br />puts list.class<br />puts '============'<br />list.each {|i| puts i.class}</p><p>It works and shows what is going on.</p><p>Or not?</p></div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jun 28 2010,  7:46 PM</div>
+<div class='response_name'>Victor Goff responded:</div>
+</div>
+<div class='response_body'>Yes, it works, but you are not really doing anything with each individual object other than displaying them.<p>I think the point is that if we were to do something (or rather attempt) with 'four' as a string, if it quacks like an array (can split) and walks like an array (can sort) then we can assume it is array enough to do those things, and maybe index them, and do some basic comparisons to a true Array object.</p><p>This means that if I implement to_str on my class, I should probably implement other behaviors that are minimally expected of a string in my class so that other objects that see mine can say "That looks like a Duck!  Let's use it!" and have some success.</p><p>This brings up another point though, respond_to?() is not duck typing.  It is simply a check.  Duck Typing is more of a superficial observance.  If something appears like a Duck it isn't necessarily a duck.  It does mean that duck-like objects can be processed, regardless of their true "duckiness".  It doesn't mean that treating something exactly like a duck when it is duck-like isn't going to fail.  It just means that you may get further with it than you would otherwise.</p><p>With Ruby 1.9 removing to_str from even Exception class (String now is the only built in class with to_str() ) this means we now have one point of functionality to determine if our class is "Like a Duck" by determining if to_str method is available (responds_to?), and acting on that as though it is a string.</p></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

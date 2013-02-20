@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/07/pending-permission-from-jose-montiero-and-fur.html">Previous</a>
+&nbsp; 
+<a href="../../../index-7.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/07/sing-a-song-with-bloops-sound-on-shoes.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Ternary Operator vs. OR Operator vs. AND Operator</h3>
+<div class='post_info'>
+<span class='post_time'>July 11 2010,  3:38 PM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'><p><span style="font-family: Trebuchet MS, Verdana, Helvetica, Arial, sans-serif;"><strong>The Ternary Operator and the OR Operator</strong><p />The <strong>ternary operator</strong> is not reasonable for a situation that returns true or false; if the goal is to get a result of true or false from your decision, it is better to simply evaluate the statement itself.<p />For example, if it reduces to this statement:<br /> </span></p>
+<div class="CodeRay">
+  <div class="code"><pre>some_condition ? true : false</pre></div>
+</div>
+
+<p>then you are better off just simply using some_statement, it will evaluate to either true or false.<p />If, however, you have a statement that evaluates such as&nbsp;</p>
+<div class="CodeRay">
+  <div class="code"><pre>some_condition ? true : (some_action or other value)</pre></div>
+</div>
+
+<p>What you may be asking for and really wanting is the <strong>OR Operator</strong>, rather than the ternary:</p>
+<p><span style="font-family: Trebuchet MS, Verdana, Helvetica, Arial, sans-serif;"> </span></p>
+<div class="CodeRay">
+  <div class="code"><pre>some_condition || do_this_if_&quot;some_statement&quot;_evaluates_as_false</pre></div>
+</div>
+
+<p><br />If this doesn't immediately look familiar, look at this:</p>
+<div class="CodeRay">
+  <div class="code"><pre>assign_this = evaluated_condition ? true : expression_if_evaluated_statement_is_false</pre></div>
+</div>
+
+<p>Is the same as:<sup> <a href="http://#footnote-1">[1]</a></sup></p>
+<div class="CodeRay">
+  <div class="code"><pre>assign_this = evaluated_statement_if_true or expression_if_evaluated_statement_is_false</pre></div>
+</div>
+
+<p>On the other side of the spectrum, when you have&nbsp;</p>
+<p>&nbsp;</p>
+<div class="CodeRay">
+  <div class="code"><pre>some_statement ? (some_action or other value) : false (or nil)</pre></div>
+</div>
+
+<p />
+<div>You will want to use the AND operator:</div>
+<p />
+<div>
+<div class="CodeRay">
+  <div class="code"><pre>some_condition &amp;&amp; do_this_if_&quot;some_condition&quot;_evaluates_as_true</pre></div>
+</div>
+
+<p>Rather than using the ternary with a false return like:</p>
+</div>
+<div>
+<div class="CodeRay">
+  <div class="code"><pre>assign_this = evaluated_condition ?  (some_action or other value)  : false</pre></div>
+</div>
+
+</div>
+<p />
+<p />
+<div>Remember, the point of either is having an evaluated statement that <strong>has the possibility of being false (or nil) as well as the possibility of being true.</strong>&nbsp;&nbsp;If your evaluated statement never has both possibilities, then these aren't the operators for you at this moment.</div>
+<p>In conclusion, we use the ternary operator when we have a simple if..then operation that does not return either <em>true</em> or <em>false</em> itself. &nbsp;We use the OR and AND operator when we need one evaluation or the other. &nbsp;Yes, they are both derived from logical expression of <em>true</em> or <em>false</em>, but when using the ternary operator, we don't use it to return <em>true</em> or <em>false</em>, there are easier ways to do that.</p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; color: #808080;"><span style="color: #000000; font-size: 16px;"> </span></span></p>
+<p><sup><a href="http://#footnote-1">[1]</a>&nbsp;&nbsp;</sup>I am actually getting into the habit of using 'or' rather than || but in this case I can use it, and it does read well, taking care to realize that the precedence matters.</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>andoperator, oroperator, ternary</div>
+</div>
+<div class='post_responses'>
+<h4>790 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

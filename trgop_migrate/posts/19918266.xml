@@ -1,0 +1,35 @@
+<item>
+	<title>Code Wrapper on Shoes v0.4a</title>
+	<link>http://vgoff.posterous.com/code-wrapper-on-shoes-v04a</link>
+	<pubDate>Tue Dec 23 07:57:00 -0800 2008</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/code-wrapper-on-shoes-v04a</guid>
+	<description></description>
+	<content:encoded><![CDATA[CWoS does not work on Ubuntu 7.10 for assigning to self.clipboard.<br />Umm.... sad. :(<br />So, I tried to add a new link to open dialog window for showing clipboard data. You can copy the formatted data from the extra window. Uploaded <span style="font-weight: bold;">v0.4a</span> intothe  github repo.<br /># GC_CWoS_snapshot_081223.png<br /><div class='p_embed p_image_embed'>
+<img alt="Media_http2bpblogspot_lsfcp" height="186" src="http://getfile0.posterous.com/getfile/files.posterous.com/import-koee/sbnimHkammlDsrEbFAGuzsJvxBHfoChzjkFkHBxgFzvvemBadDgJdphHuntv/media_http2bpblogspot_lsFCp.png.scaled500.png" width="320" />
+</div>
+<p />This idea was born from the participants' good suggestion in the Shoes programming course. Cool!<p />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-4617072400646412804?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[CWoS does not work on Ubuntu 7.10 for assigning to self.clipboard.Umm.... sad. :(So, I tried to add a new link to open dialog window for showing clipboard data. You can copy the formatted data from the extra window. Uploaded v0.4a intothe github r...]]></excerpt:encoded>	
+
+	<wp:post_date>Tue Dec 23 07:57:00 -0800 2008</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>code-wrapper-on-shoes-v04a</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

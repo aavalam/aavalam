@@ -1,0 +1,37 @@
+<item>
+	<title>Shoes Logo Icons</title>
+	<link>http://vgoff.posterous.com/shoes-logo-icons</link>
+	<pubDate>Fri Aug 19 18:57:00 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[ashbb]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/shoes-logo-icons</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>I read <a href="http://librelist.com/browser//shoes/2011/8/19/new-icon/">Noah's post</a> in Shoes ML.<br />He said,<p />-<em> I'm not yet  proficient enough in Ruby to code anything of great value to Shoes, but I  really would like to contribute for Whyday. So I created this new icon  for Shoes.</em><p /> Fantastic! He's got the spirit for Whyday!<p />Inspired by his post, I gathered Shoes Logo Icons I've seen before and wrote a tiny snippet: <p />&nbsp;&nbsp;&nbsp; require 'green_shoes'<br />&nbsp;&nbsp;&nbsp; Shoes.app title: 'Shoes Logo Icons', width: 330, height: 220 do<br /> &nbsp;&nbsp;&nbsp; &nbsp; Dir["./*{png,jpg}"].each do |icon|<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; image icon, width: 100, height: 100, margin: 5<br />&nbsp;&nbsp;&nbsp; &nbsp; end<br />&nbsp;&nbsp;&nbsp; end<p />and got this:</p>
+<p><div class='p_embed p_image_embed'>
+<img alt="Shoes_logo_icons" height="258" src="http://getfile2.posterous.com/getfile/files.posterous.com/vgoff/FhgI3JdYh52wwN8Yjfft03MAHKyBgVq0Fe4g1atHEUHX4giRe3c2xRecaxM8/shoes_logo_icons.png" width="346" />
+</div>
+</p>
+<p><br />Have you seen all of them? ;-)<p />Enjoy on Whyday!<p /> ashbb</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[I read Noah's post in Shoes ML.He said,- I'm not yet proficient enough in Ruby to code anything of great value to Shoes, but I really would like to contribute for Whyday. So I created this new icon for Shoes. Fantastic! He's got the spirit for Why...]]></excerpt:encoded>	
+
+	<wp:post_date>Fri Aug 19 18:57:00 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>shoes-logo-icons</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

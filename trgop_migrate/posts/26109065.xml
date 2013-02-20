@@ -1,0 +1,34 @@
+<item>
+	<title>Shoes 3 Just Released</title>
+	<link>http://vgoff.posterous.com/shoes-3-just-released</link>
+	<pubDate>Thu Aug 19 11:17:28 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="shoes"><![CDATA[shoes]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/shoes-3-just-released</guid>
+	<description></description>
+	<content:encoded><![CDATA[<div>Date: Thurs, Aug 19 2010 9:04 am</div><div>From: Steve Klabnik</div><p /><p /><div>Hey there everyone. We&#39;ve just released Shoes 3, &quot;Policeman&quot;, to</div><div>celebrate Whyday!</div><p /><div>You can get it here: <a href="http://shoes.heroku.com/downloads">http://shoes.heroku.com/downloads</a></div><p /><div>== About Shoes</div><p /><div>Shoes is a cross-platform toolkit for writing graphical apps easily</div> <div>and artfully using Ruby.</div><div>Unlike most other GUI toolkits, Shoes is designed to be easy and</div><div>straightforward without losing power. Really, it’s easy!</div><p /><div>== Release notes</div><p /><div>- This brings Shoes to use Ruby 1.9.1.</div><div>- All dependancies have been updated to their latest versions</div><div>- General stability improvements</div><div>- Currently, the OSX build is only for Snow Leopard, 64 bit. We&#39;d love</div> <div>to make a version for Leopard, 32 bit systems, but we don&#39;t have</div><div>anyone with the hardware. If that interests you, please send a message</div><div>to our mailing list, <a href="mailto:shoes@librelist.com">shoes@librelist.com</a></div> <div>- Have fun on Whyday!</div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Date: Thurs, Aug 19 2010 9:04 amFrom: Steve KlabnikHey there everyone. We've just released Shoes 3, "Policeman", tocelebrate Whyday!You can get it here: http://shoes.heroku.com/downloads== About ShoesShoes is a cross-platform toolkit for writing g...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Aug 19 11:17:28 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>shoes-3-just-released</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

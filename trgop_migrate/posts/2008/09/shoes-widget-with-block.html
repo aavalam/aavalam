@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2008/09/shoes-new-methods-arc-and-cap.html">Previous</a>
+&nbsp; 
+<a href="../../../index-8.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2008/09/towers-of-honoi.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Shoes widget with block</h3>
+<div class='post_info'>
+<span class='post_time'>September 21 2008,  4:31 PM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'>I attempted to write a tiny sample code for learning about Shoes widget with block.<br /><div class="CodeRay">
+  <div class="code"><pre># widget_with_block.rbclass Creature &lt; Widget def initialize   msg = para '', :stroke =&gt; white   c = image Dir.pwd + '/yar.png'   yield c, msg endendShoes.app :width =&gt; 140, :height =&gt; 70 do flow :left =&gt; 10, :top =&gt; 10 do   background blue.to_s..green.to_s, :width =&gt; 100,                                     :height =&gt; 30   creature  do |c, msg|     c.click do       msg.text = 'Uhhhh...'       a = animate(20){|i| c.rotate(-15);                           a.remove if i &gt; 22}     end     c.hover{msg.text = 'hello'}     c.leave{msg.text = ''}   end endend</pre></div>
+</div>
+<p /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/06/9821161-media_http3bpblogspot_vFsFB.png'>
+</div>
+<p />Is this useful... or not? :-P<p />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-3124931574373063554?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div></div>
+<div class='post_responses'>
+<h4>84 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

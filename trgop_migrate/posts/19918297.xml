@@ -1,0 +1,38 @@
+<item>
+	<title>First Shoes course came to an end successfully!</title>
+	<link>http://vgoff.posterous.com/first-shoes-course-came-to-an-end-successfull</link>
+	<pubDate>Sat Nov 29 13:35:00 -0800 2008</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/first-shoes-course-came-to-an-end-successfull</guid>
+	<description></description>
+	<content:encoded><![CDATA[Thank you so much for all your contributions and encouragement!<p />The RubyLeaning first Shoes programming course came to an end successfully yesterday. I'd been really enjoying this batch and learning a lot.<p />I got an <span style="font-weight: bold;">VERY</span> interesting behavior (code). <p /># sample52-render.rb<br /><div class="CodeRay">
+  <div class="code"><pre>ROOMS.each_with_index do |r, i|  name, paths = r.chomp.split(':')  @rooms[i].style :name =&gt; name, :paths =&gt; pathsend</pre></div>
+</div>
+<br />I have noticed that if we add an undefined option like <span style="font-weight: bold;">:oops</span> as one of the arguments, no error will occur and nothing will happen, it will just be ignored.<p />But I didn't understand the real effect of Shoes <span style="font-weight: bold;">style</span> method. We can add (use) any symbols as like as Ruby <span style="font-weight: bold;">attr_accessor</span>!!<p />We did <a href="http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00703_Assignment_3_Mini_Adventure_Game_GUI_Part.mdown">this exercise</a> in the first Shoes course. Then I could find this usage. ;-)<br /><div class='p_embed p_image_embed'>
+<img alt="Media_http3bpblogspot_aytef" height="287" src="http://getfile0.posterous.com/getfile/files.posterous.com/import-koee/sDdrtBaxwHfynojoIElHomddqqirbJnFwpEprkBBJcCDxfivvilaeDenJhrb/media_http3bpblogspot_AytEf.png.scaled500.png" width="320" />
+</div>
+<br />Is it confusing for you? Or <span style="font-weight: bold;">curious?</span> hahaha<p />I'm now thinking about next 2nd batch and going to prepare new exercises. <br /><span style="font-weight: bold;">See you all in the next batch!!</span><p />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-459254953577688703?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Thank you so much for all your contributions and encouragement!The RubyLeaning first Shoes programming course came to an end successfully yesterday. I'd been really enjoying this batch and learning a lot.I got an VERY interesting behavior (code). ...]]></excerpt:encoded>	
+
+	<wp:post_date>Sat Nov 29 13:35:00 -0800 2008</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>first-shoes-course-came-to-an-end-successfull</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

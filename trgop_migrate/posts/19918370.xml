@@ -1,0 +1,38 @@
+<item>
+	<title>Shoes widget with block</title>
+	<link>http://vgoff.posterous.com/shoes-widget-with-block</link>
+	<pubDate>Sun Sep 21 16:31:00 -0700 2008</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/shoes-widget-with-block</guid>
+	<description></description>
+	<content:encoded><![CDATA[I attempted to write a tiny sample code for learning about Shoes widget with block.<br /><div class="CodeRay">
+  <div class="code"><pre># widget_with_block.rbclass Creature &lt; Widget def initialize   msg = para '', :stroke =&gt; white   c = image Dir.pwd + '/yar.png'   yield c, msg endendShoes.app :width =&gt; 140, :height =&gt; 70 do flow :left =&gt; 10, :top =&gt; 10 do   background blue.to_s..green.to_s, :width =&gt; 100,                                     :height =&gt; 30   creature  do |c, msg|     c.click do       msg.text = 'Uhhhh...'       a = animate(20){|i| c.rotate(-15);                           a.remove if i &gt; 22}     end     c.hover{msg.text = 'hello'}     c.leave{msg.text = ''}   end endend</pre></div>
+</div>
+<p /><div class='p_embed p_image_embed'>
+<img alt="Media_http3bpblogspot_vfsfb" height="108" src="http://getfile9.posterous.com/getfile/files.posterous.com/import-koee/wuDfeyzwbqgHrDGzHclzFrqifChxcjJbbIqdmnbEAwabCoIxcwCmqesykqIs/media_http3bpblogspot_vFsFB.png.scaled500.png" width="150" />
+</div>
+<p />Is this useful... or not? :-P<p />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-3124931574373063554?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[I attempted to write a tiny sample code for learning about Shoes widget with block. # widget_with_block.rbclass Creature white c = image Dir.pwd + '/yar.png' yield c, msg endendShoes.app :width => 140, :height => 70 do flow :left => 10, :top => 10...]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Sep 21 16:31:00 -0700 2008</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>shoes-widget-with-block</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/11/review-of-the-ruby-book.html">Previous</a>
+&nbsp; 
+<a href="../../../index-3.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/10/hackety-hack-lesson-viewer-with-green-shoes.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Green Shoes Turtle</h3>
+<div class='post_info'>
+<span class='post_time'>October 25 2011,  6:34 AM</span>
+<span class='author'>&nbsp;by ashbb</span>
+</div>
+</div>
+<div class='post_body'><p><a href="http://www.rubyquiz.com/quiz104.html">Turtle Graphics</a> is a simple and famous Ruby DSL exercise. I've tried to write <a href="http://github.com/ashbb/ruby_metaprogramming_study_note/tree/master/notes/Turtle_Graphics_with_Shoes.md">Turtle Graphics with Shoes</a>&nbsp;once before with Red Shoes. But this time, I found an interesting spec from <a href="https://github.com/hacketyhack/hacketyhack/blob/markdown-lessons/lessons/beginner/programming.md">one of Hackety Hack Lessons</a>.<p /> We can tell the `Turtle` two things:</p>
+<ul>
+<li>`draw`: the turtle will follow our instructions at lightning speed, </li>
+</ul>
+<ul>
+<li>`start`: a start button will appear, which lets you see the turtle move at each step in the program. </li>
+</ul>
+<p>So, <strong>how do you implement this spec?</strong><p />At first, you can get the below snapshot with this snippet.</p>
+<p style="padding-left: 30px;">require 'green_shoes'<br />require_relative 'turtle'<br />&nbsp;&nbsp;&nbsp; <br />class Turtle<br />&nbsp; def jump x, y<br />&nbsp;&nbsp;&nbsp; turtle.move x, y<br />&nbsp; end<br />end<br />&nbsp;&nbsp;&nbsp; <br />Turtle.draw do<br />&nbsp; def go<br />&nbsp;&nbsp;&nbsp; [green, red, yellow].each do |color|<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pencolor color<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forward 20<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; turnleft 30<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; backward 10<br />&nbsp;&nbsp;&nbsp; end<br />&nbsp; end</p>
+<p style="padding-left: 30px;">&nbsp; background lightskyblue..palegreen<br />&nbsp; 20.times do<br />&nbsp;&nbsp;&nbsp; 4.times{go}<br />&nbsp;&nbsp;&nbsp; jump 50+rand(300), 50+rand(300)<br />&nbsp; end<br />end</p>
+<p><div class='p_embed p_image_embed'>
+<img src='../../../image/2011/10/33439904-green_shoes_turtle_graphics.png'>
+</div>
+</p>
+<p>Then replace `Turtle.draw` with `Turtle.start`.<br />You can see the turtle move like <a href="http://www.rin-shun.com/shoes/green_shoes_turtle_graphics.swf.html">this</a>.<p /> My <a href="https://github.com/ashbb/hacketyhack_lesson_viewer/blob/master/turtle.rb">turtle.rb</a> is here. <p />Would you like to write your own turtle.rb with Green Shoes?<p />This is a good exercise for learning Ruby Metaprogramming, IMHO. ;-)<p />ashbb</p></div>
+<div class='post_responses'>
+<h4>836 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Oct 26 2011, 10:50 AM</div>
+<div class='response_name'>Regis d'Aubarede responded:</div>
+</div>
+<div class='response_body'>Hello,<br />I will try this weekend ...<br />by</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

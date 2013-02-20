@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2008/10/shoes-tutorial-note-r081007.html">Previous</a>
+&nbsp; 
+<a href="../../../index-8.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2008/10/little-known-ways-to-ruby-mastery-by-dr-nic-w.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Optional Arguments</h3>
+<div class='post_info'>
+<span class='post_time'>October 12 2008,  5:09 PM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'>We can use the <span style="font-weight: bold;">:center</span> option to specify the coordinates. But it works well only in the case of the <span style="font-weight: bold;">oval</span> and <span style="font-weight: bold;">rect</span> methods except the <span style="font-weight: bold;">star</span> method. If we add undefined option, like <span style="font-weight: bold;">:oops</span>, as one of the arguments, no error will occur and nothing will happen, just ignored. Now I mention about Shoes-0.r970 on Windows XP.<p /><div class="CodeRay">
+  <div class="code"><pre># sample40-1.rbShoes.app  do  stack :width =&gt; 0.3 do    nofill    strokewidth 2    oval 50, 50, 1, :stroke =&gt; red, :fill =&gt; red    @o = oval 50, 50, 50, :stroke =&gt; blue, :center =&gt; false, :oops =&gt; true    @p1 = para '', :top =&gt; 150  end    stack :width =&gt; 0.3 do    nofill    strokewidth 2    oval 50, 50, 1, :stroke =&gt; red, :fill =&gt; red    @r = rect 50, 50, 50, 50, :stroke =&gt; green, :center =&gt; true, :oops =&gt; true    @p2 = para '', :top =&gt; 150  end    stack :width =&gt; 0.4 do    nofill    strokewidth 2    oval 50, 50, 1, :stroke =&gt; red, :fill =&gt; red    @s = star 50, 50, 5, 30, 20, :stroke =&gt; black, :center =&gt; false, :oops =&gt; true    @p3 = para '', :top =&gt; 150  end    @p1.text = @o.style.map{|e| e.join(': ')}.sort.join(&quot;\n&quot;)  @p2.text = @r.style.map{|e| e.join(': ')}.sort.join(&quot;\n&quot;)  @p3.text = @s.style.map{|e| e.join(': ')}.sort.join(&quot;\n&quot;)end</pre></div>
+</div>
+<br /># sample41-1.png<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/06/9821150-media_http2bpblogspot_nHszu.png'>
+</div>
+<p />I'm not sure if the above behavior is useful, though... :-P<p />ashbb<p />ps. Updated my <a href="http://github.com/ashbb/shoes_tutorial/tree/master">Shoes Tutorial Note</a> to <span style="font-weight: bold;">r081013</span> on Github. Included this topic, too.<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-5644793762453953737?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div></div>
+<div class='post_responses'>
+<h4>37 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

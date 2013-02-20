@@ -1,0 +1,61 @@
+<item>
+	<title>Green Shoes Turtle</title>
+	<link>http://vgoff.posterous.com/green-shoes-turtle</link>
+	<pubDate>Tue Oct 25 06:34:00 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[ashbb]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/green-shoes-turtle</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p><a href="http://www.rubyquiz.com/quiz104.html">Turtle Graphics</a> is a simple and famous Ruby DSL exercise. I've tried to write <a href="http://github.com/ashbb/ruby_metaprogramming_study_note/tree/master/notes/Turtle_Graphics_with_Shoes.md">Turtle Graphics with Shoes</a>&nbsp;once before with Red Shoes. But this time, I found an interesting spec from <a href="https://github.com/hacketyhack/hacketyhack/blob/markdown-lessons/lessons/beginner/programming.md">one of Hackety Hack Lessons</a>.<p /> We can tell the `Turtle` two things:</p>
+<ul>
+<li>`draw`: the turtle will follow our instructions at lightning speed, </li>
+</ul>
+<ul>
+<li>`start`: a start button will appear, which lets you see the turtle move at each step in the program. </li>
+</ul>
+<p>So, <strong>how do you implement this spec?</strong><p />At first, you can get the below snapshot with this snippet.</p>
+<p style="padding-left: 30px;">require 'green_shoes'<br />require_relative 'turtle'<br />&nbsp;&nbsp;&nbsp; <br />class Turtle<br />&nbsp; def jump x, y<br />&nbsp;&nbsp;&nbsp; turtle.move x, y<br />&nbsp; end<br />end<br />&nbsp;&nbsp;&nbsp; <br />Turtle.draw do<br />&nbsp; def go<br />&nbsp;&nbsp;&nbsp; [green, red, yellow].each do |color|<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pencolor color<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forward 20<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; turnleft 30<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; backward 10<br />&nbsp;&nbsp;&nbsp; end<br />&nbsp; end</p>
+<p style="padding-left: 30px;">&nbsp; background lightskyblue..palegreen<br />&nbsp; 20.times do<br />&nbsp;&nbsp;&nbsp; 4.times{go}<br />&nbsp;&nbsp;&nbsp; jump 50+rand(300), 50+rand(300)<br />&nbsp; end<br />end</p>
+<p><div class='p_embed p_image_embed'>
+<a href="http://getfile4.posterous.com/getfile/files.posterous.com/vgoff/YpJfmxmhMQu96c7Ry4xB0yCmdXseK1hnuTRU9EVxQXT29qDJmmgAbLnX2qhh/green_shoes_turtle_graphics.png"><img alt="Green_shoes_turtle_graphics" height="437" src="http://getfile5.posterous.com/getfile/files.posterous.com/vgoff/8LYOdYggzaBcOLbUf8aN8vjFiNpmbt1d7dR4dO4pRofhK0eekQHZlpjyW39f/green_shoes_turtle_graphics.png.scaled.500.jpg" width="500" /></a>
+</div>
+</p>
+<p>Then replace `Turtle.draw` with `Turtle.start`.<br />You can see the turtle move like <a href="http://www.rin-shun.com/shoes/green_shoes_turtle_graphics.swf.html">this</a>.<p /> My <a href="https://github.com/ashbb/hacketyhack_lesson_viewer/blob/master/turtle.rb">turtle.rb</a> is here. <p />Would you like to write your own turtle.rb with Green Shoes?<p />This is a good exercise for learning Ruby Metaprogramming, IMHO. ;-)<p />ashbb</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Turtle Graphics is a simple and famous Ruby DSL exercise. I've tried to write Turtle Graphics with Shoes once before with Red Shoes. But this time, I found an interesting spec from one of Hackety Hack Lessons. We can tell the `Turtle` two things: ...]]></excerpt:encoded>	
+
+	<wp:post_date>Tue Oct 25 06:34:00 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>green-shoes-turtle</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Wed Oct 26 10:50:50 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Wed Oct 26 10:50:50 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hello,
+I will try this weekend ...
+by]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

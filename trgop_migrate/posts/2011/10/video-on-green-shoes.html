@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/10/a-little-insight-in-steven-klabniks-thoughts.html">Previous</a>
+&nbsp; 
+<a href="../../../index-3.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/10/teeny-weeny-mp3-player-on-green-shoes.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Video on Green Shoes</h3>
+<div class='post_info'>
+<span class='post_time'>October  3 2011,  5:05 AM</span>
+<span class='author'>&nbsp;by ashbb</span>
+</div>
+</div>
+<div class='post_body'><p><div class='p_embed p_image_embed'>
+<img src='../../../image/2011/10/32538757-video_on_green_shoes.png'>
+</div>
+Luckily I found a solution to make Ruby/GStreamer work well on Windows!<p />- Just only download and install: <a href="http://code.google.com/p/ossbuild/downloads/detail?name=GStreamer-WinBuilds-GPL-x86.msi">GStreamer-WinBuilds-GPL-x86.msi<br /></a> <br />The latest Green Shoes for Windows can run the following snippet. <br />Look at <a href="http://www.rin-shun.com/shoes/video_on_green_shoes.swf.html">a tiny demo</a>.<p />require 'green_shoes'<br />Shoes.app do<br />&nbsp; v = video '<a href="http://www.rin-shun.com/shoes/AdventureTimewithFinnandJakeFinnTime.mp4">http://www.rin-shun.com/shoes/AdventureTimewithFinnandJakeFinnTime.mp4</a>'<br /> &nbsp; button('play'){v.play}<br />&nbsp; button('pause'){v.pause}<br />&nbsp; button('stop'){v.stop}<br />&nbsp; button('+5 sec') {v.time += 5000}<br />end<p />I know there are still <a href="https://github.com/ashbb/green_shoes/commit/0c91206f77e56ed921d2b85bfb9da0ea49ba971b">some kinks</a> to be worked out. <br /> But today must be my lucky day. :)<p />ashbb</p></div>
+<div class='post_responses'>
+<h4>607 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

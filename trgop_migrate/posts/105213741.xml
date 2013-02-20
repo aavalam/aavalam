@@ -1,0 +1,233 @@
+<item>
+	<title>A trial of building Red Shoes for Windows with Ruby 1.9.3p125</title>
+	<link>http://vgoff.posterous.com/a-trial-of-building-red-shoes-for-windows-wit</link>
+	<pubDate>Sat Feb 25 22:29:00 -0800 2012</pubDate>
+	
+	<dc:creator><![CDATA[ashbb]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/a-trial-of-building-red-shoes-for-windows-wit</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p><div class='p_embed p_image_embed'>
+<img alt="Red_shoes_r1777_snapshot" height="232" src="http://getfile4.posterous.com/getfile/files.posterous.com/vgoff/0jDkNXs6FHaHfXaCEqVr8XuHcod8dg4mOVL71Dh7HriL0n5TXAEQildfDb1O/red_shoes_r1777_snapshot.png" width="340" />
+</div>
+</p>
+<p>I've tried to build Red Shoes for Windows <span class="midashi">for the first time in a year. </span><p />Not complete, just a trial. ;-)<p />The following is the commits: <br />- <a href="https://github.com/ashbb/rubyinstaller">ashbb/rubyinstaller</a><br />- <a href="https://github.com/ashbb/shoes/tree/develop">ashbb/shoes/tree/develop</a><p /> </p>
+<p>Well anyway, try out <a href="http://www.rin-shun.com/shoes/shoes-0.r1777.exe">Shoes-0.r1777.exe</a>. But, there are many restrictions. :-P<p />ashbb</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[I've tried to build Red Shoes for Windows for the first time in a year. Not complete, just a trial. ;-)The following is the commits: - ashbb/rubyinstaller- ashbb/shoes/tree/develop Well anyway, try out Shoes-0.r1777.exe. But, there are many restri...]]></excerpt:encoded>	
+
+	<wp:post_date>Sat Feb 25 22:29:00 -0800 2012</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>a-trial-of-building-red-shoes-for-windows-wit</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Douglas]]></wp:comment_author>
+			<wp:comment_author_email>kb9agt@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Mon Feb 27 11:44:36 -0800 2012</wp:comment_date>
+			<wp:comment_date_gmt>Mon Feb 27 11:44:36 -0800 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[&lt;a href=&quot;http://edgecase.com/newcontext&quot;&gt;http://edgecase.com/newcontext&lt;/a&gt;&lt;br&gt;and &lt;a href=&quot;http://s3.amazonaws.com/dnr/dotnetrocks_0636_joe_obrien.mp3&quot;&gt;http://s3.amazonaws.com/dnr/dotnetrocks_0636_joe_obrien.mp3&lt;/a&gt;]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Douglas]]></wp:comment_author>
+			<wp:comment_author_email>kb9agt@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Sat Oct 13 11:46:02 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Sat Oct 13 11:46:02 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I want that app that shows the pretty version stuff.
+Where can I find it?]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu Oct 18 16:00:28 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Thu Oct 18 16:00:28 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I honestly had no idea what I was looking for when I read Douglas comment here, so I had little incentive to go through it.  I wish he had described what he wanted us to hear, I could have known that there was some relevant things in here.
+
+Here is the show link.  You can look at the transcript, to view if you want to listen to the soundtrack.  http://www.dotnetrocks.com/default.aspx?ShowNum=636  
+
+Hope it helps you to make a decision to listen to it or not.
+
+I still haven't looked at the linked edgecase.com link past the page it opens up, no idea what Douglas was trying to share with us in that regard.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Oct 19 17:30:04 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Fri Oct 19 17:30:04 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I thought that this was the Joe Obrian that the Ruby community knows. &lt;br/&gt;Maybe I'm full of errors here. Besides this is old. Can you just &lt;br/&gt;delete it if it is not relevant? ]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Oct 19 18:54:22 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Fri Oct 19 18:54:22 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[No, it was very interesting, and I believe it was the very same Joe you are thinking of.  I simply did not get the information initially that it was very important or timely nor what to look for, what you were trying to communicate, so it took rather long for me to get to this place on my &quot;to read/listen to&quot; list.
+
+Still no clue on the other link though.
+
+Probably something in there that is related to Shoes, or Ruby 1.9.3 or maybe even something you wanted to share about Windows.  I just don't really know where to go to get the value that you intended for us in that link.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Douglas]]></wp:comment_author>
+			<wp:comment_author_email>kb9agt@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Mon Oct 22 18:06:03 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Mon Oct 22 18:06:03 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[At the time I may have known but now I can't remember what the first link there was about. I think it may have just been an example of company and it's simple website. 
+I would say google edgecase to find more about them. That's what I'll do and see what's up with that. I know that dot net rocks is just an casted talk show but it's an example of one that has been around for a long time now. Some times I just like to listen while I work and if there are any shows about ruby like this I would like to here some.
+Ah! here is why. They did some stuff at the last Rails conf and are active on github https://github.com/edgecase]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Douglas]]></wp:comment_author>
+			<wp:comment_author_email>kb9agt@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Mon Oct 22 18:52:08 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Mon Oct 22 18:52:08 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[It seems that that whole talk sort of missed this.
+http://www.sapphiresteel.com/Products/Ruby-In-Steel/Ruby-In-Steel-Developer-Overview
+Which is not free so that leaves out open source.
+It is the VS shell that is used.
+I did use the trial version for a time but only got into just that, a trial.
+This is by the same fellow who wrote the Book of Ruby.
+
+As for my other question there, I was referring to the colorful image there of the Ruby and Shoes version info. I can do the values but was interested in the gradient color background. Any samples that I could refer to?]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Douglas]]></wp:comment_author>
+			<wp:comment_author_email>kb9agt@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Mon Oct 22 19:03:01 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Mon Oct 22 19:03:01 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Yes. I 'm sorry that I did not think to write about the link so you could decide what to do.
+It's a bad habit of mine from chatting with folks who want to know stuff. Here I should take my time and just explain things a little more. Just trying to share a little info and a perspective that is open to anyone with an interest. We don't often get to hear about what the enterprises are up to. The company is mentioned in the talk and so I just posted the url. See the github one though as it will be more relative.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Douglas]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Mon Oct 22 19:22:07 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Mon Oct 22 19:22:07 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I built shoes on windows with what I could find just before shoes 4 came out about two weeks ago. My issues with it are here. https://github.com/shoes/shoes/issues/190
+Here is the official shoes on github https://github.com/shoes
+I was trying to follow directions from here https://github.com/whymirror/shoes for building it with windows xp. It seems the rake files could use some improvement.
+Shoes will not build from devkit. It requires that you make a sandbox and get the similar files as devkit or msysgit have. I'm sorry to say that I have since deleted all that but I did keep the shoes build. I downloaded all these files buy hand and just commented out the download portions of all the rake tasks. It was tedious but did work after that.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Mon Oct 22 20:45:49 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Mon Oct 22 20:45:49 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Good that it is formulated out as a problem on github, good place for issues to go and get detailed.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Douglas]]></wp:comment_author>
+			<wp:comment_author_email>kb9agt@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Mon Oct 22 22:19:05 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Mon Oct 22 22:19:05 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I figured out some color now too. But it was a green shoes example that showed it.
+
+background deeppink..forestgreen]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Douglas]]></wp:comment_author>
+			<wp:comment_author_email>kb9agt@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Tue Oct 23 19:33:07 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Tue Oct 23 19:33:07 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I 've had the flu and it left me with a chest full of yuck. Now I need relaxing things like
+https://github.com/edgecase/ruby_koans]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Douglas]]></wp:comment_author>
+			<wp:comment_author_email>kb9agt@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Tue Oct 23 19:38:17 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Tue Oct 23 19:38:17 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Just rake the sand. It will show you the path.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

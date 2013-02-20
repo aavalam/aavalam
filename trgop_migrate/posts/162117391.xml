@@ -1,0 +1,50 @@
+<item>
+	<title>Git Bundle notes.</title>
+	<link>http://vgoff.posterous.com/git-bundle-notes</link>
+	<pubDate>Wed Sep 19 22:04:00 -0700 2012</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="bundle"><![CDATA[bundle]]></category>
+	
+		<category domain="tag" nicename="git"><![CDATA[git]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/git-bundle-notes</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>
+<p>This week I needed to send a git repository over to another machine without access to my repository. &nbsp;I wanted to keep it intact.</p>
+<p>So here comes the git bundle command to the rescue.</p>
+<p>First I had to find the references that I needed to bundle, and I found that the hash for the initial commit was f787346 (short form) and then performed this command:</p>
+<p>&nbsp; &nbsp; git bundle create my_cool_project.bundle master f787e46</p>
+<p>I then moved it to my desktop just to work on it for a moment and confirm that it was intact.</p>
+<p>&nbsp; &nbsp; mv my_cool_project.bundle ~/Desktop/<br />&nbsp; &nbsp; cd ~/Desktop/</p>
+<p>Once I had it in place, I decided to clone it (though I could have simply done a git ls-remote my_cool_project.bundle to check the references, or a git verify my_cool_project.bundle) right there on my desktop.</p>
+<p>&nbsp; &nbsp; git clone my_cool_project.bundle&nbsp;</p>
+<p>This will give an error if the branch doesn't exist, as I found out. &nbsp;</p>
+<p>&nbsp; &nbsp; git clone my_cool_project.bundle -b master</p>
+<p>This provided a master branch for me, and I am ready to go.</p>
+<p>Remember, a .bundle file is simply a git repository that is 'bundled' so you are free to fetch or pull or merge or clone it. &nbsp;You are also not restricted to naming it with a .bundle extension. &nbsp;But it may help to idenitfy the file later.</p>
+<p />
+</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[This week I needed to send a git repository over to another machine without access to my repository. I wanted to keep it intact. So here comes the git bundle command to the rescue. First I had to find the references that I needed to bundle, and I ...]]></excerpt:encoded>	
+
+	<wp:post_date>Wed Sep 19 22:04:00 -0700 2012</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>git-bundle-notes</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

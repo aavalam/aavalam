@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/08/gnomes-gedit-editors-external-tool-settings-i.html">Previous</a>
+&nbsp; 
+<a href="../../../index-6.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/08/shoes-3-policeman-0r1514-is-go.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Using .gitignore file to feed your .autotest exceptions</h3>
+<div class='post_info'>
+<span class='post_time'>August 20 2010,  2:48 PM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'><p>I realized that I could use my .gitignore file to feed my ZenTest
+autotest habit today, so I created this autotest file.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">###  uncomment any of the following requires applicable for your system</span>
+<span class="comment">###  and then copy this to .autotest if you are using the ZenTest autotest.</span>
+<span class="comment"># require &quot;autotest/restart&quot;</span>
+<span class="comment"># require &quot;test_notifier/runner/autotest&quot;</span>
+<span class="comment"># require &quot;redgreen/autotest&quot;</span>
+<span class="comment"># require &quot;autotest/timestamp&quot;</span>
+
+<span class="comment"># adds exceptions from .gitignore file, please modify exceptions there!</span>
+imported_exceptions =  <span class="constant">IO</span>.readlines(<span class="string"><span class="delimiter">'</span><span class="content">.gitignore</span><span class="delimiter">'</span></span>).collect {|line| (line[<span class="integer">0</span>] != <span class="string"><span class="delimiter">'</span><span class="content">#</span><span class="delimiter">'</span></span> &amp;&amp; line != <span class="string"><span class="delimiter">&quot;</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>) || line.strip }
+imported_exceptions.delete <span class="predefined-constant">true</span>
+<span class="constant">Autotest</span>.add_hook <span class="symbol">:initialize</span> <span class="keyword">do</span> |autotest|
+  imported_exceptions.each <span class="keyword">do</span> |exception|
+    autotest.add_exception(exception)
+  <span class="keyword">end</span>
+<span class="keyword">end</span></pre></div>
+</div>
+
+
+<p>Now you can use your .gitignore file to manage your .autotest for that
+project.
+Management in one place!</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>autotest, zentest</div>
+</div>
+<div class='post_responses'>
+<h4>1242 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<item>
+	<title>Ruby MetaClass and Constants -- Extra: Simple Ruby Module Example</title>
+	<link>http://vgoff.posterous.com/ruby-metaclass-and-constants-extra-simple-rub</link>
+	<pubDate>Tue Jun 08 04:33:00 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="metaclass"><![CDATA[metaclass]]></category>
+	
+		<category domain="tag" nicename="module"><![CDATA[module]]></category>
+	
+		<category domain="tag" nicename="ruby"><![CDATA[ruby]]></category>
+	
+		<category domain="tag" nicename="simple"><![CDATA[simple]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/ruby-metaclass-and-constants-extra-simple-rub</guid>
+	<description></description>
+	<content:encoded><![CDATA[<h2>Ruby MetaClass and Constants and a Simple Module Sample</h2>
+
+<p>This MetaClass subject, came up in class the other day, and it totally
+slipped my mind, until a colleague reminded me.  So I will post it here.</p>
+
+<p>The following sample is showing how to access Time constants in it&rsquo;s
+metaclass.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>&gt;&gt; require <span class="string"><span class="delimiter">'</span><span class="content">time</span><span class="delimiter">'</span></span>
+=&gt; <span class="predefined-constant">true</span>
+&gt;&gt; (<span class="keyword">class</span> &lt;&lt; <span class="class">Time</span> ; <span class="predefined-constant">self</span> ; <span class="keyword">end</span>)::<span class="constant">CommonYearMonthDays</span>
+=&gt; [<span class="integer">31</span>, <span class="integer">28</span>, <span class="integer">31</span>, <span class="integer">30</span>, <span class="integer">31</span>, <span class="integer">30</span>, <span class="integer">31</span>, <span class="integer">31</span>, <span class="integer">30</span>, <span class="integer">31</span>, <span class="integer">30</span>, <span class="integer">31</span>]
+&gt;&gt; (<span class="keyword">class</span> &lt;&lt; <span class="class">Time</span> ; <span class="predefined-constant">self</span> ; <span class="keyword">end</span>)::<span class="constant">LeapYearMonthDays</span>
+=&gt; [<span class="integer">31</span>, <span class="integer">29</span>, <span class="integer">31</span>, <span class="integer">30</span>, <span class="integer">31</span>, <span class="integer">30</span>, <span class="integer">31</span>, <span class="integer">31</span>, <span class="integer">30</span>, <span class="integer">31</span>, <span class="integer">30</span>, <span class="integer">31</span>]</pre></div>
+</div>
+
+
+<p>How we are getting to them, is because self is being returned, and self is
+the metaclass of Time, so we can get to its constants.  Thanks M.K. for the
+answer and Matz for the hint.</p>
+
+<h2>EXTRA!!!</h2>
+
+<h2>Simple Module Use</h2>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="keyword">module</span> <span class="class">Prompt</span>
+  <span class="keyword">def</span> <span class="function">prompt</span>(prompt = <span class="string"><span class="delimiter">&quot;</span><span class="content">:&gt; </span><span class="delimiter">&quot;</span></span>, chomp = <span class="predefined-constant">true</span>)
+    puts <span class="predefined-constant">self</span> &lt;&lt; prompt
+    chomp ? gets.chomp! : gets
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">class</span> <span class="class">String</span>
+  include <span class="constant">Prompt</span>
+<span class="keyword">end</span>
+<span class="string"><span class="delimiter">&quot;</span><span class="content">This is a question</span><span class="delimiter">&quot;</span></span>.prompt <span class="comment"># Returns a string</span></pre></div>
+</div>
+
+
+<p>Hope this simple sample answers some questions!</p>
+
+<p>Either way, feel free to comment below.</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Ruby MetaClass and Constants and a Simple Module Sample This MetaClass subject, came up in class the other day, and it totally slipped my mind, until a colleague reminded me. So I will post it here. The following sample is showing how to access Ti...]]></excerpt:encoded>	
+
+	<wp:post_date>Tue Jun 08 04:33:00 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>ruby-metaclass-and-constants-extra-simple-rub</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

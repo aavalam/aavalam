@@ -1,0 +1,75 @@
+<item>
+	<title>Shoes 10 essentials are available on Purple Shoes</title>
+	<link>http://vgoff.posterous.com/shoes-10-essentials-are-available-on-purple-s</link>
+	<pubDate>Fri Feb 10 17:28:00 -0800 2012</pubDate>
+	
+	<dc:creator><![CDATA[ashbb]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/shoes-10-essentials-are-available-on-purple-s</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p><div class='p_embed p_image_embed'>
+<img alt="Sample35" height="158" src="http://getfile1.posterous.com/getfile/files.posterous.com/vgoff/oGefqqOQNDRHP5bFOAQYJ2vcIH3APXKZm5tmewK71Gr54oJWkbPqVt93bPao/sample35.png" width="438" />
+</div>
+</p>
+<p><a href="https://github.com/ashbb/purple_shoes/commit/e3c9f9d842abc9632c13c84b7433c984357dd111">Today</a>, <a href="https://github.com/ashbb/purple_shoes">Purple Shoes</a> became a minimum Shoes to have the following 10 essentials. :)<p />1.&nbsp;&nbsp;&nbsp; para<br />2&amp;3.&nbsp;&nbsp;&nbsp; stacks &amp; flows<br />4.&nbsp;&nbsp;&nbsp; button<br />5.&nbsp;&nbsp;&nbsp; image<br />6.&nbsp;&nbsp;&nbsp; edit_line<br />7.&nbsp;&nbsp;&nbsp; LINK<br />8.&nbsp;&nbsp;&nbsp; background<br /> 9.&nbsp;&nbsp;&nbsp; Shoes.url<br />10.&nbsp;&nbsp;&nbsp; clear<p />Shoes has more features other than listed above. I'll implement them on Purple Shoes step by step.<br />Let's have fun with a new color of Shoes!<p />ashbb</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Today, Purple Shoes became a minimum Shoes to have the following 10 essentials. :)1. para2&3. stacks & flows4. button5. image6. edit_line7. LINK8. background 9. Shoes.url10. clearShoes has more features other than listed above. I'll implement them...]]></excerpt:encoded>	
+
+	<wp:post_date>Fri Feb 10 17:28:00 -0800 2012</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>shoes-10-essentials-are-available-on-purple-s</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[kungfood]]></wp:comment_author>
+			<wp:comment_author_email>stest@ests.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Sun Mar 04 05:50:23 -0800 2012</wp:comment_date>
+			<wp:comment_date_gmt>Sun Mar 04 05:50:23 -0800 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Thank you for your work on purple_shoes, I am watching attentively. Whenever I try to have para and edit_line on the same line/flow, they are never on the same line. Is this a known issue? I've tried on Linux, Windows, OSX, with sun-jre and openjdk-jre, etc. all to have the same issue. Exact same code looks fine in native Shoes.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[kungfood]]></wp:comment_author>
+			<wp:comment_author_email>test@test.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Sun Mar 04 12:16:09 -0800 2012</wp:comment_date>
+			<wp:comment_date_gmt>Sun Mar 04 12:16:09 -0800 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[forgot to include ss http://imgur.com/G84bM]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[ashbb]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Sun Mar 04 14:15:41 -0800 2012</wp:comment_date>
+			<wp:comment_date_gmt>Sun Mar 04 14:15:41 -0800 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Thank you for the comment. That's not a bug, just a difference between Purple Shoes and Red Shoes. Look at this: http://ashbb.github.com/green_shoes/vs.RedShoes.html. Purple works like Green in this case. :)]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

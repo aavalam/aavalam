@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2008/09/improved-prompt-method.html">Previous</a>
+&nbsp; 
+<a href="../../../index-8.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2008/09/simplifying-profiler-and-benchmark-measuremen.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Colorizing your NT Console with Ruby.</h3>
+<div class='post_info'>
+<span class='post_time'>September  2 2008,  4:23 AM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'>I found the following snippet *( edited by me, for changes I wanted...)  Credits are in the code block.<br /><div class="CodeRay">
+  <div class="code"><pre>=begin rdocThis extends string to allow colorization based on ANSIterminal codes.  The following code actually came fromDmytro Shteflyuk's blog linked at end of this blogThanks to one of his readers for expanding it even further!Finally, here in the current incarnation on my machine.Usage: 'String content'.colorcolorize('string or text content', color_code)To get color code table, you simply call method ansi_color_table=endbeginrequire 'Win32/Console/Ansi' if PLATFORM =~ /win32/rescue LoadErrorraise 'You must gem install win32console to use color on Windows Console.'endclass String def red; colorize(self, &quot;\e[1m\e[31m&quot;); end def green; colorize(self, &quot;\e[1m\e[32m&quot;); end def dark_green; colorize(self, &quot;\e[32m&quot;); end def yellow; colorize(self, &quot;\e[1m\e[33m&quot;); end def yellow_on_black; colorize(self, &quot;\e[1m\e[33m\e[40m&quot;); end def yellow_on_drkred; colorize(self, &quot;\e[1m\e[33m\e[41m&quot;); end def blue; colorize(self, &quot;\e[1m\e[34m&quot;); end def dark_blue; colorize(self, &quot;\e[34m&quot;); end def pur; colorize(self, &quot;\e[1m\e[35m&quot;); end def colorize(text, color_code)  &quot;#{color_code}#{text}\e[0m&quot; endenddef ansi_color_table[0, 1, 4, 5, 7].each do |attr| puts '----------------------------------------------------------------' puts &quot;ESC[#{attr};Foreground;Background&quot; 30.upto(37) do |fg|   40.upto(47) do |bg|     print &quot;\033[#{attr};#{fg};#{bg}m #{fg};#{bg}  &quot;   end puts &quot;\033[0m&quot; endendreturnend</pre></div>
+</div>
+<br />I have placed this file in my [ruby installation directory]\lib\ruby\site_ruby\1.8\ directory so it can be used as a library.<p>yellow_on_black and yellow_on_drkred are on the list for showing how to create additional 'listed' colors.</p><p>Easily extended list, and many, many applications. </p><p>The side affect of installing win32console is the added benefit of RSpec and Ruby DocTest being able to show actual colors in the output while testing, too.</p><p><br />So, fun toy for color, yes... practical, definitely!</p><p>Information gathered from <a href="http://kpumuk.info/ruby-on-rails/colorizing-console-ruby-script-output/trackback/">this blog!</a></p><p></p><div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-5513877200882082103?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div></div>
+<div class='post_responses'>
+<h4>46 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

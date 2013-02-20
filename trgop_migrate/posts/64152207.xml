@@ -1,0 +1,36 @@
+<item>
+	<title>The :state style is available on Green Shoes</title>
+	<link>http://vgoff.posterous.com/the-state-style-is-available-on-green-shoes</link>
+	<pubDate>Fri Aug 05 22:57:00 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[ashbb]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/the-state-style-is-available-on-green-shoes</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p><div class='p_embed p_image_embed'>
+<a href="http://getfile4.posterous.com/getfile/files.posterous.com/vgoff/pLDqgmvnhQFxkZzZiIx03aaPvFZnRTBotfIt39rMwYC72v1jg5VGbpcvomaw/sample55.png"><img alt="Sample55" height="544" src="http://getfile5.posterous.com/getfile/files.posterous.com/vgoff/C6SMOPqIyHh1EbZZo1Tb2SLgAWPktT5nzejxcusbV9ipxorDfJRPyixjrQtf/sample55.png.scaled.500.jpg" width="500" /></a>
+</div>
+</p>
+<p>At last I found the Ruby/GTK2 method: <a href="http://ruby-gnome2.sourceforge.jp/hiki.cgi?cmd=view&amp;p=Gtk%3A%3AWidget&amp;key=modify_bas#modify_base">Gtk::Widget#modify_base</a>.<p />Then I could implemented <strong>state</strong> method for Green Shoes. Look at <a href="https://github.com/ashbb/green_shoes/blob/master/snapshots/sample55.png">sample55</a> which is the same as <a href="http://shoes-tutorial-note.heroku.com/html/00526_The__state_style.html">this</a>. ;-)<p />Have fun,<br />ashbb</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[At last I found the Ruby/GTK2 method: Gtk::Widget#modify_base.Then I could implemented state method for Green Shoes. Look at sample55 which is the same as this. ;-)Have fun,ashbb]]></excerpt:encoded>	
+
+	<wp:post_date>Fri Aug 05 22:57:00 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>the-state-style-is-available-on-green-shoes</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

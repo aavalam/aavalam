@@ -1,0 +1,38 @@
+<item>
+	<title>New Shoes Today!</title>
+	<link>http://vgoff.posterous.com/new-shoes-today</link>
+	<pubDate>Sun Sep 14 08:10:00 -0700 2008</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/new-shoes-today</guid>
+	<description></description>
+	<content:encoded><![CDATA[<a href="http://newwws.shoooes.net/2008/09/13/the-nine-seven-oh-build.html">The 970th Build</a> was released today. It includes new methods, new manual and many bugfixes.  And the following sample code becomes working well. :-D<br /><div class="CodeRay">
+  <div class="code"><pre># sample92.rbShoes.app :width =&gt; 150, :height =&gt; 100 do  @msg = para ''  nostroke   @img = image :width =&gt; 20, :height =&gt; 20,                             :left =&gt; 30, :top =&gt; 30 do    oval :radius =&gt; 10, :fill =&gt; red  end  @img.hover{ @msg.replace 'hello' }  @img.leave{ @msg.replace '' }   @o = oval :left =&gt; 60, :top =&gt; 60,            :radius =&gt; 10, :fill =&gt; blue  @o.hover{ @msg.replace 'hi' }  @o.leave{ @msg.replace '' }end</pre></div>
+</div>
+<br /><div class='p_embed p_image_embed'>
+<img alt="Media_http1bpblogspot_kbmif" height="136" src="http://getfile7.posterous.com/getfile/files.posterous.com/import-koee/qpxvuwJwzxGtcFfCbpIJJDjlgbjIDFApdolDgJeooxwJkzsgonnyictoCmJh/media_http1bpblogspot_kbmIf.png.scaled500.png" width="160" />
+</div>
+<br /># With Shoes-0.r925, the blue didn't work.<p />Cool! B-)<br />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-7129876786840212522?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[The 970th Build was released today. It includes new methods, new manual and many bugfixes. And the following sample code becomes working well. :-D # sample92.rbShoes.app :width => 150, :height => 100 do @msg = para '' nostroke @img = image :width ...]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Sep 14 08:10:00 -0700 2008</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>new-shoes-today</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

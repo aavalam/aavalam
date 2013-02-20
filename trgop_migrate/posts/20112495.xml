@@ -1,0 +1,66 @@
+<item>
+	<title>Fun with the GitHub API and Ruby - citizen428.blog()</title>
+	<link>http://vgoff.posterous.com/fun-with-the-github-api-and-ruby-citizen428bl</link>
+	<pubDate>Thu Jun 10 06:43:00 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="github"><![CDATA[github]]></category>
+	
+		<category domain="tag" nicename="ruby"><![CDATA[ruby]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/fun-with-the-github-api-and-ruby-citizen428bl</guid>
+	<description></description>
+	<content:encoded><![CDATA[<div class="posterous_bookmarklet_entry">
+<blockquote>
+<div>
+<p>Often when I want to tell someone about cool projects I’m watching on GitHub, I can’t remember their names. Now wouldn’t it be nice if I could look them up without actually having to open a browser tab, logging into the site and so on? Here’s a quick script to do just that:</p>
+<p>
+<script src="http://gist.github.com/432255.js?file=watched_repos.rb"></script>
+</p>
+<div class="CodeRay">
+<div class="code">
+<div class="CodeRay">
+  <div class="code"><pre>1 mbabineau/cloudviz: Makes nice graphs of Amazon CloudWatch data using ...   (14)
+ 2            quirkey/sinatra-gen: Rubigen based generator for new sinatra projects        (126)
+ 3                  jcoglan/heist: Scheme in as little Ruby and as much Scheme as pos...   (125)
+ 4                    red667/tecc: The Euler Coding Collective                             (7)
+ 5                   fogus/potion: _why the lucky stiff's little language                  (39)
+ 6          mattmatt/acts_as_solr: WARNING: No longer actively maintained! This plugi...   (93)
+ 7       mattrepl/clojure-twitter: Clojure client for Twitter API                          (25)
+ 8        dakrone/clojure-opennlp: Natural Language Processing in Clojure (opennlp)        (23)
+ 9               michaeledgar/amp: Version Control in Ruby. Mercurial Compatible. Big...   (75)</pre></div>
+</div>
+
+</div>
+</div>
+<p> </p>
+<p>I know that there are several gems for interacting with GitHub, but thanks to the awesome <a href="http://citizen428.net/exit.php?url_id=4778&amp;entry_id=431" title="http://httparty.rubyforge.org/">HTTParty</a> it takes about as long to just implement the relevant part of the <span>API</span> yourself as it would take to actually find said gems, install them and glance over their docs. In case this looks a bit over-engineered, I have a couple more ideas I might add in the future, so I already prepared the code for that (e.g. the API_METHODS hash). Once I do that I’ll also not hardcode the user name, separate out… who am I kidding, it’s just another throwaway script, but at least it’s somewhat useful…</p>
+</div>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="http://citizen428.net/archives/431-Fun-with-the-GitHub-API-and-Ruby.html">citizen428.net</a>
+</div>
+<p>Very nice, I was just looking at some <a href="http://github.com/defunkt/gist">http://github.com/defunkt/gist</a> code... Very useful information, and nice use of ruby and HTTParty.</p>
+</div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Often when I want to tell someone about cool projects I’m watching on GitHub, I can’t remember their names. Now wouldn’t it be nice if I could look them up without actually having to open a browser tab, logging into the site and so on? Here’s a qu...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Jun 10 06:43:00 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>fun-with-the-github-api-and-ruby-citizen428bl</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

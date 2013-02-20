@@ -1,0 +1,138 @@
+<item>
+	<title>Shoes Policeman with Ruby 1.9.1 or 1.8.7</title>
+	<link>http://vgoff.posterous.com/shoes-policeman-with-ruby-191-or-187</link>
+	<pubDate>Sun Apr 11 08:14:00 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/shoes-policeman-with-ruby-191-or-187</guid>
+	<description></description>
+	<content:encoded><![CDATA[Look at <a href="http://github.com/ashbb/shoes/commit/248027f1baffed6d206aef7f50f16977bd4c449e">the commit</a> on github. Now can build Shoes both with Ruby 1.9.1 or 1.8.7.<p /># snapshot-shoes-v-191.png<br /><div class='p_embed p_image_embed'>
+<img alt="Media_http2bpblogspot_sqlih" height="101" src="http://getfile6.posterous.com/getfile/files.posterous.com/import-koee/nkynkgppFjpakBIBoBgGEbbuqkwtuqJkJmjFzxxJIlgixgvGHgIdavGghEDj/media_http2bpblogspot_sqlIH.png.scaled500.png" width="298" />
+</div>
+<p /># snapshot-shoes-v-187.png<br /><div class='p_embed p_image_embed'>
+<img alt="Media_http3bpblogspot_qahjs" height="101" src="http://getfile7.posterous.com/getfile/files.posterous.com/import-koee/DkBaCGgnIqpHgzqpnmfowzzyAeqyujzyojEpdjpnzGHcpwEtAhIiGpbnytCC/media_http3bpblogspot_qAHJs.png.scaled500.png" width="290" />
+</div>
+<p />Although they are not so stable,.... so far. :-P<br />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-1355502454348266359?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Look at the commit on github. Now can build Shoes both with Ruby 1.9.1 or 1.8.7.# snapshot-shoes-v-191.pngAlthough they are not so stable,.... so far. :-Pashbb]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Apr 11 08:14:00 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>shoes-policeman-with-ruby-191-or-187</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Tue Jun 08 03:26:56 -0700 2010</wp:comment_date>
+			<wp:comment_date_gmt>Tue Jun 08 03:26:56 -0700 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Um...what is a shoes policeman? I'm slightly frightened ;)]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Tue Jun 08 03:32:44 -0700 2010</wp:comment_date>
+			<wp:comment_date_gmt>Tue Jun 08 03:32:44 -0700 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Don't be too afraid... It is just the codename for the next version of Shoes, which is a Graphical framework for and written in Ruby the programming language.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Tue Jun 08 03:43:51 -0700 2010</wp:comment_date>
+			<wp:comment_date_gmt>Tue Jun 08 03:43:51 -0700 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Aha! Is _why still MIA? ]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Tue Jun 08 04:25:11 -0700 2010</wp:comment_date>
+			<wp:comment_date_gmt>Tue Jun 08 04:25:11 -0700 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[_Why is still MIA... &lt;br/&gt; &lt;br/&gt;Ashbb has taken over some of the maintenance, along with some others. &lt;br/&gt;You can find more information on his profile at &lt;br/&gt;http://github.com/ashbb where he maintains shoes along with a few &lt;br/&gt;others. ]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Tom K]]></wp:comment_author>
+			<wp:comment_author_email>kempton.tom@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu Mar 24 06:54:56 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Thu Mar 24 06:54:56 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[How do I build it to work with 1.8.7 to work on windows?]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[ashbb]]></wp:comment_author>
+			<wp:comment_author_email>ashbbb@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Mar 25 19:14:01 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Fri Mar 25 19:14:01 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hi Tom,
+
+I could build Shoes-0.r1408 with ruby 1.8.7 before.
+But sorry, I've not hold all dependencies (external libraries) and lost them.
+I can't build it again for now... xx-P]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[ashbb]]></wp:comment_author>
+			<wp:comment_author_email>ashbbb@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Mar 25 19:19:01 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Fri Mar 25 19:19:01 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hi Tom,
+
+I could build Shoes-0.r1408 with ruby 1.8.7 before.
+But sorry, I've not hold all dependencies (external libraries) and lost them.
+I can't build it again for now... xx-P
+]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

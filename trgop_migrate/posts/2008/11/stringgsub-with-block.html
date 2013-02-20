@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2008/11/little-known-ways-to-ruby-mastery-by-guy-naor.html">Previous</a>
+&nbsp; 
+<a href="../../../index-9.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2008/11/easy-and-light-code-highlighter.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>String#gsub with block</h3>
+<div class='post_info'>
+<span class='post_time'>November  6 2008,  4:12 PM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'>Browsing lib/shoes.rb and Ruby files under lib/shoes is a lot of fun!<p />I can't understand what the codes are doing, but I can find lots of curious Ruby programming tips. See the following snippet. This is one of them. <p />I didn't know that String#gsub has a block... xx-P<br /><div class="CodeRay">
+  <div class="code"><pre># hack002.rbfile = 'C:/rubyprograms/shoes/shoes_hack_note/0.r1057/lib/shoes.rb'# No.1IO.read(file).each do |line|  puts line if /^(class|def|module) / =~ line.stripend# No.2IO.read(file).each do |line|  line.strip.gsub(/^(class|def|module) /){print line}end</pre></div>
+</div>
+<br />The above snippet picks up the classe, module and method that are defined in the lib/shoes.rb. No.1 and No.2 display the same outputs. Cool!<p />Enjoy,<br />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-9170283254235617026?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div></div>
+<div class='post_responses'>
+<h4>33 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

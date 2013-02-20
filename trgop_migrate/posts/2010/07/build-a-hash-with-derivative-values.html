@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/07/sing-a-song-with-bloops-sound-on-shoes.html">Previous</a>
+&nbsp; 
+<a href="../../../index-7.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/06/string-squeeze.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Build a Hash with Derivative Values </h3>
+<div class='post_info'>
+<span class='post_time'>July  3 2010,  4:16 AM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'><p>Creating a Hash from Arrays in Ruby is a pretty trivial matter.  You can use Array.zip or map or blocks, for example.</p>
+
+<p>One thing that I haven&rsquo;t found yet is how to create easily, hashes from things that have a base unit of measure, and that build upon
+themselves&hellip; for example, in the case of a Yard as a measurement, you have 1 Yard, 3 Feet, 12 Inches and so on.  The important part here is this: 1 yard is the base unit, there are 3 feet in a yard, and 12 inches in a foot.  So don&rsquo;t skip the foot unit, when thinking of inches&hellip; other wise the units will not build right in the hash.</p>
+
+<p><a href="#Ihavecreated" title="Not the two line version, this version was created by Michael Kohl, I created the original, and he reduced it to this version!">I have built</a> a not-so-well-named method that will create the values necessary for creating some nice hashes from derived values.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="keyword">def</span> <span class="function">build_hash_with_derivative_values</span>(units, property)
+  properties = (property.inject([<span class="integer">1</span>]) { |a,v| a &lt;&lt; v*a[<span class="integer">-1</span>] })[<span class="integer">1</span>..<span class="integer">-1</span>]
+  units.zip(properties).inject({}) { |h, (k,v)| h[k] = v ; h }
+<span class="keyword">end</span></pre></div>
+</div>
+
+
+<p>In order to use it, it only requires the unit names that make up the base name, and in the same order, the values that make up that unit
+from the next smaller unit, each supplied as an array.</p>
+
+<p>So, for the yard, as in the above discussion, I would do this&hellip;</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>yardstick = build_hash_with_derivative_values [<span class="symbol">:yard</span>, <span class="symbol">:foot</span>, <span class="symbol">:inch</span>], [<span class="integer">1</span>, <span class="integer">3</span>, <span class="integer">12</span>]
+<span class="comment"># =&gt; {:inch=&gt;36, :foot=&gt;3, :yard=&gt;1}</span></pre></div>
+</div>
+
+
+<p>Nice and easy sample, but it is nice and easy for more complex units
+too.  For example if you wanted to create a hash of the properties of
+a century, I may do something like this:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>century_properties = build_hash_with_derivative_values [<span class="symbol">:century</span>, <span class="symbol">:decade</span>, <span class="symbol">:year</span>,       <span class="symbol">:day</span>, <span class="symbol">:hour</span>, <span class="symbol">:minute</span>, <span class="symbol">:second</span>],
+                                                       [       <span class="integer">1</span>,      <span class="integer">10</span>,    <span class="integer">10</span>, <span class="float">365.242199</span>,    <span class="integer">24</span>,      <span class="integer">60</span>,      <span class="integer">60</span>]
+<span class="comment"># =&gt; {:second=&gt;3155692599.36, :minute=&gt;52594876.656, :hour=&gt;876581.2776, :day=&gt;36524.2199, :year=&gt;100, :decade=&gt;10, :century=&gt;1}</span></pre></div>
+</div>
+
+
+<p>You notice that I simply build it up on easy to know values, based on the next smaller unit, instead of having to really put a lot of thought into what the calculated values are.</p>
+
+<p>But the nice thing is, I really don&rsquo;t have to do a lot of calculations when I am trying to determine a Hash table based on derived values.  I just pick the base value, and go from there.</p>
+
+<p>From there, it is easy to ask those conversion questions&hellip;</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>century_properties[<span class="symbol">:minute</span>] / century_properties[<span class="symbol">:hour</span>] * <span class="integer">3</span>  <span class="comment"># how many minutes in 3 hours?</span>
+<span class="comment"># =&gt; 180</span>
+yardstick[<span class="symbol">:inch</span>] / yardstick[<span class="symbol">:foot</span>] * <span class="float">1.5</span> <span class="comment"># how many inches in 1.5 feet?</span>
+=&gt; <span class="float">18.0</span></pre></div>
+</div>
+
+
+<p>I need to explain that in an hour means &ldquo;per hour&rdquo; and of course, per means a division of units.  This is important when using this to get the answers you want.</p>
+
+<p>An exercise for the reader&hellip; create a hash using this method with 1 meter as the base, and the six other &lsquo;mostly&rsquo; common units that surround it.  For me, my mind wanted to jump units, rather than relying on the next one on the list.</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>hash, inject, justforfun, zip</div>
+</div>
+<div class='post_responses'>
+<h4>392 views and 2 responses</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jul  3 2010,  1:42 PM</div>
+<div class='response_name'>PotHix (Twitter) responded:</div>
+</div>
+<div class='response_body'>Æ!!<p>Really interesting! :D<br />I think that we have a typo on the last example. </p><p>yardstick[inch] / yardstick[:foot] * 1.5 # how many inches in 1.5 feet?</p><p>inch shoud be a symbol, right?</p><p>yardstick[:inch] / yardstick[:foot] * 1.5 # how many inches in 1.5 feet?</p><p>;)</p><p>Keep the good work guys! :)</p><p>Regards,</p><p>Willian Molinari</p></div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jul  3 2010,  3:30 PM</div>
+<div class='response_name'>Victor Goff responded:</div>
+</div>
+<div class='response_body'>You are right.  That is what I get for not using samples I actually run! :P</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

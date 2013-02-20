@@ -1,0 +1,49 @@
+<item>
+	<title>Good Clock with Red Shoes and Green Shoes</title>
+	<link>http://vgoff.posterous.com/good-clock-with-red-shoes-and-green-shoes</link>
+	<pubDate>Sun Jan 16 05:52:00 -0800 2011</pubDate>
+	
+	<dc:creator><![CDATA[ashbb]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/good-clock-with-red-shoes-and-green-shoes</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p><div class='p_embed p_image_embed'>
+<a href="http://getfile0.posterous.com/getfile/files.posterous.com/vgoff/bZuJHWqS96QLcLFmpbYRbiiwei25rL6Hpi1sXIVrHL2JBFhpXBi5UPq2J42h/good-clock-with-red-and-green.png"><img alt="Good-clock-with-red-and-green" height="284" src="http://getfile1.posterous.com/getfile/files.posterous.com/vgoff/Vy0H0oGPw5YzpL2w5Ke1gNmCjbnEIVQNmVTgFA9c6cw6UhFH7fZTBmcDoWQO/good-clock-with-red-and-green.png.scaled.500.jpg" width="500" /></a>
+</div>
+</p>
+<p>Look exactly like each other.<p />Code: <a href="https://github.com/shoes/shoes/blob/master/samples/good-clock.rb">Red Shoes</a>&nbsp; <a href="https://gist.github.com/781789">Green Shoes</a><p /> Code is almost same too. Only on different `para`.<p />But Green Shoes Clock comes to a stop after a while.... sigh.<p />I doubt Gtk::Image#clear method. Need to study more. :)<p />ashbb</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Look exactly like each other.Code: Red Shoes Green Shoes Code is almost same too. Only on different `para`.But Green Shoes Clock comes to a stop after a while.... sigh.I doubt Gtk::Image#clear method. Need to study more. :)ashbb]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Jan 16 05:52:00 -0800 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>good-clock-with-red-shoes-and-green-shoes</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[ashbb]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Wed Jan 19 05:35:46 -0800 2011</wp:comment_date>
+			<wp:comment_date_gmt>Wed Jan 19 05:35:46 -0800 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Revised Good Clock for Green Shoes. Using show and hide instead of clear. Now it continues working without a stop. :) Code is here: https://github.com/ashbb/green_shoes/blob/master/samples/sample44.rb]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

@@ -1,0 +1,32 @@
+<item>
+	<title>green_shoes gem is now on RubyGems.org</title>
+	<link>http://vgoff.posterous.com/greenshoes-gem-is-now-on-rubygemsorg</link>
+	<pubDate>Wed Feb 02 07:07:00 -0800 2011</pubDate>
+	
+	<dc:creator><![CDATA[ashbb]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/greenshoes-gem-is-now-on-rubygemsorg</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p><a href="http://ruby-gnome2.sourceforge.jp/?News_20110202_1">Ruby-GNOME2 0.90.7 released</a> : "MS-Windows" GTK+ theme by default on Windows.<p />So, quick! Thanks, Kouhei Sutou.<p />We can install and run <a href="http://rubygems.org/gems/green_shoes">Green Shoes</a> in just 3 steps.<br />Now, no more additional steps. ;-)<p /> 1. <strong>download and install</strong> <a href="http://rubyinstaller.org/downloads/">rubyinstaller-1.9.2-p136.exe</a><p />2. <strong>gem install gtk2 --no-ri --no-rdoc</strong><p />3. <strong>gem install green_shoes --no-ri --no-rdoc</strong><p />Done!<p />ashbb</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Ruby-GNOME2 0.90.7 released : "MS-Windows" GTK+ theme by default on Windows.So, quick! Thanks, Kouhei Sutou.We can install and run Green Shoes in just 3 steps.Now, no more additional steps. ;-) 1. download and install rubyinstaller-1.9.2-p136.exe2...]]></excerpt:encoded>	
+
+	<wp:post_date>Wed Feb 02 07:07:00 -0800 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>greenshoes-gem-is-now-on-rubygemsorg</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

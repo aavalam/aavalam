@@ -1,0 +1,78 @@
+<item>
+	<title>String Squeeze</title>
+	<link>http://vgoff.posterous.com/the-colonels-main-squeeze</link>
+	<pubDate>Mon Jun 28 17:19:00 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="ruby"><![CDATA[ruby]]></category>
+	
+		<category domain="tag" nicename="squeeze"><![CDATA[squeeze]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/the-colonels-main-squeeze</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>This post is about squeeze.  I know: &ldquo;Momma&rsquo;s got a squeeze box, daddy
+don&rsquo;t sleep at night.&rdquo;</p>
+
+<p>But this really has nothing to do with that song.</p>
+
+<p>What this post is about is the String class, and it&rsquo;s method: squeeze.</p>
+
+<p>The documentation says this about it: (RI Source)</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>--------------------------------------------------------- String#squeeze
+     str.squeeze([other_str]*)    =&gt; new_str
+
+     From Ruby 1.9.1
+------------------------------------------------------------------------
+     Builds a set of characters from the _other_str_ parameter(s) using
+     the procedure described for +String#count+. Returns a new string
+     where runs of the same character that occur in this set are
+     replaced by a single character. If no arguments are given, all runs
+     of identical characters are replaced by a single character.
+
+        &quot;yellow moon&quot;.squeeze                  #=&gt; &quot;yelow mon&quot;
+        &quot;  now   is  the&quot;.squeeze(&quot; &quot;)         #=&gt; &quot; now is the&quot;
+        &quot;putters shoot balls&quot;.squeeze(&quot;m-z&quot;)   #=&gt; &quot;puters shot balls&quot;</pre></div>
+</div>
+
+
+<p>Here is a sample that will use squeeze.  A little bit of experimentation, and I found that the [other_str]* means that I can use &ldquo;char,other-char,different-char&rdquo;.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>string = <span class="string"><span class="delimiter">&quot;</span><span class="content">Yo!!!!!!!! Howzzzzz UUUUUU doin??????? Weez heading to the MALL!!!!!!!!!</span><span class="delimiter">&quot;</span></span>
+string.squeeze(<span class="string"><span class="delimiter">&quot;</span><span class="content">!,U-z,?</span><span class="delimiter">&quot;</span></span>) <span class="comment"># remember that the alphabet consecutively is A-z</span></pre></div>
+</div>
+
+
+<p>When you run this, with the string message received, you will get:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>Yo! Howz U doin? Wez heading to the MALL!</pre></div>
+</div>
+
+
+<p>I think that is much more digestible.  Now to find ways to make it tolerant to two repeating characters, instead of being so &lsquo;squeezie&rsquo;</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[This post is about squeeze. I know: “Momma’s got a squeeze box, daddy don’t sleep at night.” But this really has nothing to do with that song. What this post is about is the String class, and it’s method: squeeze. The documentation says this about...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Jun 28 17:19:00 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>string-squeeze</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

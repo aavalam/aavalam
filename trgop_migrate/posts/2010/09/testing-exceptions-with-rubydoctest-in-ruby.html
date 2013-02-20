@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/09/fantastic-shoes-app-fashion-quest.html">Previous</a>
+&nbsp; 
+<a href="../../../index-6.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/08/using-titanpadcom-and-drop-box-for-collaborat.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Testing Exceptions with Rubydoctest in Ruby</h3>
+<div class='post_info'>
+<span class='post_time'>September  5 2010,  5:15 AM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'><p>Reposted:  Original post by Victor Goff &ndash; Thursday, 28 August 2008, 07:42 PM</p>
+
+<p>I was just approached by a student today, asking something like: &ldquo;How
+do I test exceptions using doctest?&rdquo;</p>
+
+<p>Here is my answer&hellip;</p>
+
+<p>You can&rsquo;t&hellip; (evil laughter) muahahaha! (/evil laughter) Oh, wait&hellip;
+you can if you work around it&hellip;</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">#    #!/usr/bin/env ruby</span>
+
+<span class="comment"># This initial solution for assignment 'borrowed' from David Miller.</span>
+<span class="comment"># modified with rescue block by Vic.</span>
+
+<span class="keyword">def</span> <span class="function">month_days</span>(month, year = <span class="constant">Date</span>.today.year)  <span class="comment"># default to current year</span>
+
+  <span class="keyword">begin</span>
+    raise <span class="string"><span class="delimiter">&quot;</span><span class="content">Months are limited to 1 - 12 inclusively.</span><span class="delimiter">&quot;</span></span> <span class="keyword">unless</span> (<span class="integer">1</span>..<span class="integer">12</span>).to_a.include?(month)
+  <span class="keyword">rescue</span>
+    <span class="keyword">return</span> <span class="string"><span class="delimiter">'</span><span class="content">RunTime Error: Month outside of range.</span><span class="delimiter">'</span></span>
+  <span class="keyword">end</span>
+  d = <span class="constant">Date</span>.civil(y=year, m=month, d=<span class="integer">1</span>)
+  d1 = d &gt;&gt; <span class="integer">1</span>
+  <span class="keyword">return</span> d1 - d
+
+<span class="keyword">end</span>
+
+<span class="comment">=begin
+doctest: Test Known Good
+&gt;&gt; month_days(2)
+=&gt; Rational(29, 1)
+doctest: Test Known Exception
+&gt;&gt; month_days(13)
+=&gt; &quot;RunTime Error: Month outside of range.&quot;
+&gt;&gt; month_days(0)
+=&gt; &quot;RunTime Error: Month outside of range.&quot;
+=end</span>
+
+puts month_days(<span class="integer">2</span>)
+puts month_days(<span class="integer">13</span>) <span class="comment"># Puts an exception and keeps plugging along!</span>
+puts month_days(<span class="integer">2</span>, <span class="integer">100</span>)</pre></div>
+</div>
+
+
+<p>Anyway, I thought it was interesting enough to share&hellip;</p>
+
+<p>Run the code, you will note an exception raised, and then the code continues to run right through it&hellip; pretty nice, if you don&rsquo;t want the program to fail out.</p>
+
+<p>Doctest it, and it tells you your exception passes (because it is raised)..</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>doctest, exceptions, ruby, testing</div>
+</div>
+<div class='post_responses'>
+<h4>1374 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

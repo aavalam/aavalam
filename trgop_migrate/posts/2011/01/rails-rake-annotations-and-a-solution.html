@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/01/sample-private-post-via-e-mail.html">Previous</a>
+&nbsp; 
+<a href="../../../index-5.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/12/lets-learn-ruby-and-shoes-with-hackety-hack-1.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Rails rake notes for RSpec files do not, and a solution...</h3>
+<div class='post_info'>
+<span class='post_time'>January  4 2011,  7:15 AM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'><p>Today we were working on the Roodle LMS project and realized that our TODO notes in our specs were not showing up in our rake notes reports.</p>
+
+<p>The first thought, was &ldquo;Just add an addendum to the rakefile task for notes.&rdquo;  Then we started to look for any Rake files provided to our application.  And realized that they all reside in the Rails Gem, and not necessarily as a &lsquo;Rakefile&rsquo; that holds them.</p>
+
+<p>The behavior, we found, is in SourceAnnotationExtractor.  It &lsquo;hard codes&rsquo; three directories, which are &lsquo;lib&rsquo;, &lsquo;app&rsquo;, and &lsquo;test&rsquo;.  Our application doesn&rsquo;t even have a test directory.  It (could have been created without, but) was deleted as soon as it was realized we forgot to exclude it when we did rails &lsquo;roodle_lms&rsquo; command to start work on our application because we knew we were going to use rspec.</p>
+
+<p>So, now what to do?  We want to extend the rake task, but we don&rsquo;t really want to monkey patch Rails.  And we want to take advantage of any patches that come in from the Rails team.</p>
+
+<p>The original code looks like this:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment"># vendor/rails/railties/lib/source_annotation_extractor.rb</span>
+<span class="comment"># line 52</span>
+
+<span class="keyword">def</span> <span class="function">find</span>(dirs=<span class="string"><span class="delimiter">%w(</span><span class="content">app lib test</span><span class="delimiter">)</span></span>
+  dirs.inject({}) { |h, dir| h.update(find_in(dir)) }
+<span class="keyword">end</span></pre></div>
+</div>
+
+
+<p>And we really could have simply added the word &lsquo;spec&rsquo; after the &lsquo;app lib test&rsquo; part of the argument.  But that would really mean that we are not letting the Rails team do their job if they decided to change this method some how.  Remember, we only want to add a little bit of functionality to this, not take it over.</p>
+
+<p>How do we do this, then?  We decided to alias the original method, add our little part, and then call the original method.  Our application still will call the same method name, but it will be our method, that will add what we need, and then call the original method so that even if Rails-core decides to update this, we get the benefit of those updates, and our own small behavior as well.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="keyword">class</span> <span class="class">SourceAnnotationExtractor</span>
+  <span class="keyword">alias</span> <span class="function">orig_find</span> <span class="function">find</span>
+
+  <span class="keyword">def</span> <span class="function">find</span>(dirs=<span class="string"><span class="delimiter">%w(</span><span class="content">app lib test</span><span class="delimiter">)</span></span>)
+    <span class="comment"># we added spec dir to rake notes task</span>
+    dirs &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">spec</span><span class="delimiter">&quot;</span></span>
+    orig_find(dirs)
+  <span class="keyword">end</span>
+<span class="keyword">end</span></pre></div>
+</div>
+
+
+<p>Where did we end up putting this additional functionality?  I put custom.rake in lib/tasks because of the comments from Rakefile.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment"># Add your own tasks in files placed in lib/tasks ending in .rake,</span>
+<span class="comment"># for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.In a file called custom.rb in the lib directory.</span></pre></div>
+</div>
+
+
+<p>Do you have any experiences with &lsquo;monkey-patching&rsquo; an established Ruby gem or other tool, and how do you deal with updates from the &lsquo;vendor&rsquo;?</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>rails, rake, rspec</div>
+</div>
+<div class='post_responses'>
+<h4>3965 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jun 24 2011,  3:23 PM</div>
+<div class='response_name'>Brent J. Nordquist responded:</div>
+</div>
+<div class='response_body'>Nice tip! Just the issue I was having, and this fixed it. I agree with using lib/tasks rather than patching the Rails code.</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

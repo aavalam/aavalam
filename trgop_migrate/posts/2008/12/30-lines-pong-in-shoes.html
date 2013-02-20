@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Ruby the Red Gem of Programming</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2008/12/code-wrapper-on-shoes-v04a.html">Previous</a>
+&nbsp; 
+<a href="../../../index-10.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2008/12/just-one-liner-solution-playing-youtube-video.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>30 lines Pong in Shoes</h3>
+<div class='post_info'>
+<span class='post_time'>December 25 2008,  5:24 PM</span>
+<span class='author'>&nbsp;by Victor Goff</span>
+</div>
+</div>
+<div class='post_body'>We could creat simple Pong in Shoes during the <a href="http://rubylearning.com/blog/2008/10/30/ruby-and-shoes-programming-a-new-course/">Shoes programming course</a> 2nd batch.<p /><a href="http://github.com/ashbb/shoes_tutorial_html/tree/master/mdowns/00704_Assignment_3_Pong_in_Shoes.mdown">Assignment 3 Pong in Shoes</a> (sample58.rb)<br /><div class="CodeRay">
+  <div class="code"><pre># sample58.rbShoes.app :width =&gt; 400, :height =&gt; 400, :resizable =&gt; false do  vx, vy = 3, 4    nostroke  @ball = oval 0, 0, 20, :fill =&gt; forestgreen  @comp = rect 0, 0, 75, 4, :curve =&gt; 2  @you = rect 0, 396, 75, 4, :curve =&gt; 2   @anim = animate 40 do    nx, ny = @ball.left + vx.to_i, @ball.top + vy.to_i        if @ball.top + 20 &lt; 0 or @ball.top &gt; 400      para strong(&quot;GAME OVER&quot;, :size =&gt; 32), &quot;\n&quot;,        @ball.top &lt; 0 ? &quot;You win!&quot; : &quot;Computer wins&quot;, :top =&gt; 140, :align =&gt; 'center'      @ball.hide and @anim.stop    end         vx = -vx  if nx + 20 &gt; 400 or nx &lt; 0        if ny + 20 &gt; 400 and nx + 20 &gt; @you.left and nx &lt; @you.left + 75      vy = -vy * 1.2      vx = (nx - @you.left - (75 / 2)) * 0.25    end        if ny &lt; 0 and nx + 20 &gt; @comp.left and nx &lt; @comp.left + 75      vy = -vy * 1.2      vx = (nx - @comp.left - (75 / 2)) * 0.25    end        @ball.move nx, ny    @you.left = mouse[1] - (75 / 2)    @comp.left += 10  if @comp.left + 75 &lt; @ball.left    @comp.left -= 10  if @ball.left + 20 &lt; @comp.left  endend</pre></div>
+</div>
+<br />Thank you so much, <span style="font-weight: bold;">_why</span> and all pong game creators!<p />We could learn Ruby and Shoes programming. And had lots of fun! :-D<p />ashbb<div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-3769564040104497860?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div></div>
+<div class='post_responses'>
+<h4>54 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

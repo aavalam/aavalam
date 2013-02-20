@@ -1,0 +1,32 @@
+<item>
+	<title>How do you get information from your system...</title>
+	<link>http://vgoff.posterous.com/how-do-you-get-information-from-your-system</link>
+	<pubDate>Mon Sep 26 22:10:14 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff (Google+)]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/how-do-you-get-information-from-your-system</guid>
+	<description></description>
+	<content:encoded><![CDATA[<div style="border: solid 1px #dfdfdf; color: #686868; font: 13px Arial;"><div style="background-color: #fff; padding: 20px;"><div style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: solid 1px #dfdfdf;"><div style="padding: 15px 0; color: #686868; font: 16px Arial;"><span style="font-weight: bold;">Victor Goff shared a post with you on Google+.</span> Google+ makes sharing on the web more like sharing in real life. <a href="http://www.google.com/+/learnmore/" style="color: #3366CC; text-decoration: none;">Learn more</a>.</div><a href="https://plus.google.com/_/notifications/ngemlink?&amp;emid=CIC-wM_UvKsCFYls3AodBDYAAA&amp;path=%2Fwelcome%3Fgpinv%3DAGXbFGxuDbtuD8y5zQG9rmyBhAIUWYSVqYsOd35TM2RnY_o5YwLxcY6Jdtv-kXdwrbSdgcs7MmYvA2Y4YHxm3_gje8Bte7Gt7Gv12zUcX5GDhT8h_j2AiTY" style="display: inline-block; padding: 7px 15px; background-color: #d44b38; color: #fff; font-size: 16px; font-weight: bold; border-radius: 2px; border: solid 1px #c43b28; text-decoration: none;">Join Google+</a></div><table><tr><td style="padding-right: 15px; vertical-align: top;"><a href="https://plus.google.com/_/notifications/ngemlink?&amp;emid=CIC-wM_UvKsCFYls3AodBDYAAA&amp;path=%2F116568773932133159290"><img src="https://lh4.googleusercontent.com/-PJ_tC585kNE/AAAAAAAAAAI/AAAAAAAACpc/E6to8yFNOkw/s75-k-a/photo.jpg" height="75" width="75" style="border: solid 1px #cccccc;" /></a></td><td style="color: #333; font: 13px Arial; vertical-align: top;"><div style="padding-bottom: 10px;">How do you get information from your system using RVM?<br />As I use RVM, and by extension, Ruby, there are a few directories that I have a .rvmrc file in that does various things. In one of the root directories of my system, I like to know some additional information the first time I come in.<p />In that directory, my .rvmrc file looks like this:<p /><br /><b>rvm use ruby-1.9.2-p290@RubyLearning</b><br /><b>erb ~/MOTD</b><p />And my erb file looks like this:<p /><br /><b>*</b> Welcome to &lt;%= `/bin/hostname -s`.strip %&gt; <b>*</b><br />There are &lt;%= `/usr/bin/who`.split(&quot;\n&quot;).size %&gt; active sessions as of &lt;%= Time.now %&gt;.<br />Remember - nothing unreal exists so if you see Santa in here, give him a wave.<p />Of course, the quote is just something fun. But knowing how many active sessions is open is a &#39;good thing to know&#39;(tm).<p />What kind of cool things are you using Ruby for on your system?</div><a href="https://plus.google.com/_/notifications/ngemlink?&amp;emid=CIC-wM_UvKsCFYls3AodBDYAAA&amp;path=%2F116568773932133159290%2Fposts%2FcprcpBjYEuG%3Fgpinv%3DAGXbFGxuDbtuD8y5zQG9rmyBhAIUWYSVqYsOd35TM2RnY_o5YwLxcY6Jdtv-kXdwrbSdgcs7MmYvA2Y4YHxm3_gje8Bte7Gt7Gv12zUcX5GDhT8h_j2AiTY%26hl%3Den" style="color: #3366CC; text-decoration: none;">View or comment on Victor Goff's post &raquo;</a></td></tr></table></div><div style="border-top: solid 1px #dfdfdf; padding: 0 20px; background-color: #f5f5f5;"><table style="height: 50px;"><tr><td style="vertical-align: middle; color: #636363; font: 11px Arial; line-height: 120%;">You received this message because <a href="https://plus.google.com/_/notifications/ngemlink?&amp;emid=CIC-wM_UvKsCFYls3AodBDYAAA&amp;path=%2F116568773932133159290%3Fgpinv%3DAGXbFGxuDbtuD8y5zQG9rmyBhAIUWYSVqYsOd35TM2RnY_o5YwLxcY6Jdtv-kXdwrbSdgcs7MmYvA2Y4YHxm3_gje8Bte7Gt7Gv12zUcX5GDhT8h_j2AiTY%26hl%3Den" style="color: #3366CC; text-decoration: none;">Victor Goff</a> shared it with <a href="mailto:posterous@vgoff.posterous.com">posterous@vgoff.posterous.com</a>. <a href="https://plus.google.com/_/notifications/ngemlink?&amp;emid=CIC-wM_UvKsCFYls3AodBDYAAA&amp;path=%2Fnonplus%2Femailsettings%3Fgpinv%3DAGXbFGxuDbtuD8y5zQG9rmyBhAIUWYSVqYsOd35TM2RnY_o5YwLxcY6Jdtv-kXdwrbSdgcs7MmYvA2Y4YHxm3_gje8Bte7Gt7Gv12zUcX5GDhT8h_j2AiTY%26est%3DADH5u8V3rRPWIJmKmk9bfPWKV0hk1BHIrJEPh6bEu0ttjfjCl3O0nDJ_Bk8YzW7gxKXBFKjjN5TsTOh889e78nhCG_fDAEiodMNgwYwYm8Wkyv40artA7lj3ac3BY-QEK0uYGcGZLxAQOVf3Q4kLewztCbcmYKeKwg%26hl%3Den" style="color: #3366CC; text-decoration: none;">Unsubscribe</a> from these emails.<br /></td><td><img src="https://ssl.gstatic.com/s2/oz/images/notifications/logo/google-plus-6617a72bb36cc548861652780c9e6ff1.png" /></td></tr></table></div></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Victor Goff shared a post with you on Google+. Google+ makes sharing on the web more like sharing in real life. Learn more.Join Google+How do you get information from your system using RVM?As I use RVM, and by extension, Ruby, there are a few dire...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Sep 26 22:10:14 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>how-do-you-get-information-from-your-system</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

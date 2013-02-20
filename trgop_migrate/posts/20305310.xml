@@ -1,0 +1,55 @@
+<item>
+	<title>Explanation of block argument on a method.</title>
+	<link>http://vgoff.posterous.com/explanation-of-block-argument-on-a-method</link>
+	<pubDate>Sun Jun 13 22:59:00 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="blocks"><![CDATA[blocks]]></category>
+	
+		<category domain="tag" nicename="methods"><![CDATA[methods]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/explanation-of-block-argument-on-a-method</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p><script src="https://gist.github.com/437118.js?file=irb_output.rb"></script></p>
+<div>This shows the IRB output when used with the my_method listed below...</div>
+<div> </div>
+<div>Notice the <span style="color: #33cccc;">puts</span> command in the block argument on line 1.  You will notice that it just isn't there in line 6, though everything else is identical.</div>
+<div> </div>
+<div>The important thing to realize here is:</div>
+<div><ol>
+<li>The return doesn't change between the two variances </li>
+<li>The puts may be appropriate, because the <em>USER</em> is placing the block there (the user in this case being the <em>developer</em>)</li>
+</ol></div>
+<div> </div>
+<div><script src="https://gist.github.com/437118.js?file=passing_block_to_method.rb"></script></div>
+<div> </div>
+<div>The magic with the block happens with the <span style="color: #33cccc;">yield</span> statement on line 4.</div>
+<div> </div>
+<div>Hope this helps you with writing your methods with blocks.  The other arguments are simply noise in this sample... they are there to show only that you can do things with arguments that can be determined outside of the methods direct control.</div>
+<div> </div>
+<div>Thanks to Edo for allowing me to answer his question about method block arguments.</div>
+<div> </div>
+<div> </div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[This shows the IRB output when used with the my_method listed below... Notice the puts command in the block argument on line 1. You will notice that it just isn't there in line 6, though everything else is identical. The important thing to realize...]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Jun 13 22:59:00 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>explanation-of-block-argument-on-a-method</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

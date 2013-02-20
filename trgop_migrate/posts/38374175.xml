@@ -1,0 +1,96 @@
+<item>
+	<title>Rails rake notes for RSpec files do not, and a solution...</title>
+	<link>http://vgoff.posterous.com/rails-rake-annotations-and-a-solution</link>
+	<pubDate>Tue Jan 04 07:15:00 -0800 2011</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="rails"><![CDATA[rails]]></category>
+	
+		<category domain="tag" nicename="rake"><![CDATA[rake]]></category>
+	
+		<category domain="tag" nicename="rspec"><![CDATA[rspec]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/rails-rake-annotations-and-a-solution</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>Today we were working on the Roodle LMS project and realized that our TODO notes in our specs were not showing up in our rake notes reports.</p>
+
+<p>The first thought, was &ldquo;Just add an addendum to the rakefile task for notes.&rdquo;  Then we started to look for any Rake files provided to our application.  And realized that they all reside in the Rails Gem, and not necessarily as a &lsquo;Rakefile&rsquo; that holds them.</p>
+
+<p>The behavior, we found, is in SourceAnnotationExtractor.  It &lsquo;hard codes&rsquo; three directories, which are &lsquo;lib&rsquo;, &lsquo;app&rsquo;, and &lsquo;test&rsquo;.  Our application doesn&rsquo;t even have a test directory.  It (could have been created without, but) was deleted as soon as it was realized we forgot to exclude it when we did rails &lsquo;roodle_lms&rsquo; command to start work on our application because we knew we were going to use rspec.</p>
+
+<p>So, now what to do?  We want to extend the rake task, but we don&rsquo;t really want to monkey patch Rails.  And we want to take advantage of any patches that come in from the Rails team.</p>
+
+<p>The original code looks like this:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment"># vendor/rails/railties/lib/source_annotation_extractor.rb</span>
+<span class="comment"># line 52</span>
+
+<span class="keyword">def</span> <span class="function">find</span>(dirs=<span class="string"><span class="delimiter">%w(</span><span class="content">app lib test</span><span class="delimiter">)</span></span>
+  dirs.inject({}) { |h, dir| h.update(find_in(dir)) }
+<span class="keyword">end</span></pre></div>
+</div>
+
+
+<p>And we really could have simply added the word &lsquo;spec&rsquo; after the &lsquo;app lib test&rsquo; part of the argument.  But that would really mean that we are not letting the Rails team do their job if they decided to change this method some how.  Remember, we only want to add a little bit of functionality to this, not take it over.</p>
+
+<p>How do we do this, then?  We decided to alias the original method, add our little part, and then call the original method.  Our application still will call the same method name, but it will be our method, that will add what we need, and then call the original method so that even if Rails-core decides to update this, we get the benefit of those updates, and our own small behavior as well.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="keyword">class</span> <span class="class">SourceAnnotationExtractor</span>
+  <span class="keyword">alias</span> <span class="function">orig_find</span> <span class="function">find</span>
+
+  <span class="keyword">def</span> <span class="function">find</span>(dirs=<span class="string"><span class="delimiter">%w(</span><span class="content">app lib test</span><span class="delimiter">)</span></span>)
+    <span class="comment"># we added spec dir to rake notes task</span>
+    dirs &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">spec</span><span class="delimiter">&quot;</span></span>
+    orig_find(dirs)
+  <span class="keyword">end</span>
+<span class="keyword">end</span></pre></div>
+</div>
+
+
+<p>Where did we end up putting this additional functionality?  I put custom.rake in lib/tasks because of the comments from Rakefile.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment"># Add your own tasks in files placed in lib/tasks ending in .rake,</span>
+<span class="comment"># for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.In a file called custom.rb in the lib directory.</span></pre></div>
+</div>
+
+
+<p>Do you have any experiences with &lsquo;monkey-patching&rsquo; an established Ruby gem or other tool, and how do you deal with updates from the &lsquo;vendor&rsquo;?</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Today we were working on the Roodle LMS project and realized that our TODO notes in our specs were not showing up in our rake notes reports. The first thought, was “Just add an addendum to the rakefile task for notes.” Then we started to look for ...]]></excerpt:encoded>	
+
+	<wp:post_date>Tue Jan 04 07:15:00 -0800 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>rails-rake-annotations-and-a-solution</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Brent J. Nordquist]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Jun 24 15:23:01 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Fri Jun 24 15:23:01 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Nice tip! Just the issue I was having, and this fixed it. I agree with using lib/tasks rather than patching the Rails code.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

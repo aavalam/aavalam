@@ -1,0 +1,35 @@
+<item>
+	<title>Why isn't this a standard option for Ruby?</title>
+	<link>http://vgoff.posterous.com/why-isnt-this-a-standard-option-for-ruby</link>
+	<pubDate>Wed Sep 03 18:16:00 -0700 2008</pubDate>
+	
+	<dc:creator><![CDATA[Victor Goff]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://vgoff.posterous.com/why-isnt-this-a-standard-option-for-ruby</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p class="mobile-photo">Hints for use:</p><p class="mobile-photo">name = 'Please enter your name'.prompt</p><p class="mobile-photo"><div class='p_embed p_image_embed'>
+<img alt="Media_http1bpblogspot_iccjf" height="121" src="http://getfile2.posterous.com/getfile/files.posterous.com/import-koee/GFiAowDJFcyAJbbFeungxrdffvbGAEGIGhartedAispamlIhrjIumhlEBmiB/media_http1bpblogspot_icCjF.jpg.scaled500.jpg" width="271" />
+</div>
+</p>I know that each time I want to ask a user for something, I need to<br />write a way to ensure that the user sees the prompt, so that an<br />appropriate answer can be provided.  It makes sense to provide a<br />method to do this, as it seems to be a pretty routine thing.<p>I do this by extending String with method prompt.  It is easy to use,<br />and ensures that stdout is flushed so that the user will get the<br />question.  If you find it useful, feel free to use it!</p><p>Maybe the method will be included some day as a core feature!</p><div class="blogger-post-footer"><img class="posterous_download_image" src="https://blogger.googleusercontent.com/tracker/2949792777916502048-8960817569281077711?l=vgoff.blogspot.com" height="1" alt="" width="1" /></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Hints for use:name = 'Please enter your name'.promptI know that each time I want to ask a user for something, I need towrite a way to ensure that the user sees the prompt, so that anappropriate answer can be provided. It makes sense to provide ame...]]></excerpt:encoded>	
+
+	<wp:post_date>Wed Sep 03 18:16:00 -0700 2008</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>why-isnt-this-a-standard-option-for-ruby</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>
