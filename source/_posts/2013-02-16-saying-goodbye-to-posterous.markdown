@@ -2,6 +2,7 @@
 layout: post
 title: "Saying Goodbye to Posterous"
 date: 2013-02-16 05:26
+author: Victor Goff
 comments: true
 categories: [Blog, Posterous, Octopress]
 ---
