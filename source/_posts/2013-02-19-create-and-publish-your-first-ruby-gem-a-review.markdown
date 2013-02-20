@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Create and Publish Your First Ruby Gem - A Review"
-author: KOTP
+author: Victor Goff
 date: 2013-02-19 01:57
 comments: true
 categories: [Ruby, Gem, Book, Review]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quick Reference to Minitest and Minitest Spec
-author: KOTP
+author: Victor Goff
 date: 2012-03-22 17:42
 comments: true
 categories: [Minitest, Testing, Spec, Ruby, Ruby19, TestUnit]

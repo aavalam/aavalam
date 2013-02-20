@@ -2,7 +2,7 @@
 layout: post
 title: Private easy git repositories using rails and gitlab
 date: 2012-10-28 03:02
-author: KOTP
+author: Victor Goff
 comments: true
 categories: [Git, Rails, Gitlab, gitolite] 
 ---
