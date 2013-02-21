@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Webby Node"
-author: 
+author: Victor Goff
 date: 2008-11-12 02:32
 comments: true
 categories: [VPS, Hosting, Beta, Xen]
@@ -30,5 +30,5 @@ We are working hard on building great software to give our customers more option
 
 You can [Sign Up Here](http://www.webbynode.com/)! Don't forget to let Carlos know I sent you!
 
-#### Update: Wed Feb 20 22:03:35
+#### Update: Wed Feb 2013 20 22:03:35
 They are no longer in Beta.  But still a service I recommand
