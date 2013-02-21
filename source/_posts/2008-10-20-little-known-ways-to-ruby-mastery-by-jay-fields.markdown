@@ -28,8 +28,10 @@ See the [rest of the interview](http://rubylearning.com/blog/2008/10/21/little-k
 
 <hr/>
 Referenced companies:
-- [Forward](http://www.forwardtechnology.co.uk/)
-- [Relevance](http://thinkrelevance.com/)
-- [Hashrocket](http://www.hashrocket.com/)
+
+* [Forward](http://www.forwardtechnology.co.uk/)
+* [Relevance](http://thinkrelevance.com/)
+* [Hashrocket](http://www.hashrocket.com/)
+
 <hr/>
 
