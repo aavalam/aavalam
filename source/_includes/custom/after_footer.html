@@ -23,7 +23,7 @@ jQuery(document).ready(function() {
                 jQuery.each(data.items, function(i,item){
                     if(item.actor.id == $google_plus_id)
                     {
-                        jQuery('.entry-content').append( "<h3>Comments?</h3><p>Join the discussion at the <a href='" + item.object.url +"'>Google+ post</a></p>");
+                        jQuery('.entry-content').append( "<h3>Have something to say?</h3><p>The discussion continues on our <a href='" + item.object.url +"'>Google+ post</a></p>");
                         return false;
                     }
                 });
