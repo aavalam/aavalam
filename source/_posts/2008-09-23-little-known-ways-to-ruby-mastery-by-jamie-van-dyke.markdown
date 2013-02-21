@@ -6,7 +6,7 @@ date: 2008-09-23 00:00
 comments: true
 categories: [Inteview, Ruby, Rails, Shoes, System Administration]
 ---
-Interview answer from Jamie van Dyke to a question posed by Yours Truly...
+Interview answer from Jamie van Dyke to a question posed by Yours Truly...<!-- more -->
 
 {% blockquote Victor Goff "Little Known Ways to Ruby Mastery" by Jamie van Dyke http://rubylearning.com/blog/2008/09/23/little-known-ways-to-ruby-mastery-by-jamie-van-dyke/ %}
 How do you see the market for Ruby Programmers in the work place, and do you see it as primarily tied to Rails and Web related work? Do you see trends in administration or other work? What’s the future for Ruby?
