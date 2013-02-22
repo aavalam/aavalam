@@ -66,10 +66,10 @@ github_skip_forks: true
 
 # Twitter
 twitter_user: kotp
-twitter_tweet_count: 5
+twitter_tweet_count: 10
 twitter_show_replies: true
 twitter_follow_button: true
-twitter_show_follower_count: false
+twitter_show_follower_count: true
 twitter_tweet_button: true
 
 # Google +1
