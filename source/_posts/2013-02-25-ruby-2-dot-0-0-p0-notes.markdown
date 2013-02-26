@@ -4,7 +4,11 @@ title: "Ruby 2.0.0-p0 Notes"
 author: Victor Goff
 date: 2013-02-25 03:39
 comments: true
-categories: [Ruby, 2.0.0, Notes]
+categories: 
+ - Ruby
+ - 2.0.0
+ - Notes
+ - Bundler
 ---
 I have been waiting for the 24th of February to see what would come of
 the planned release date for Ruby 2.0.0-p0.
