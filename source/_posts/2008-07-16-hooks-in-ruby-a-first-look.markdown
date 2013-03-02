@@ -18,3 +18,5 @@ Here is a list of the Ruby Hooks
  - singleton_added
  - method_removed
  - method_undefined
+
+The discussion starts here, but continues on our [Google+ post](https://plus.google.com/u/0/116568773932133159290/posts/PmN66RBNGjY)!

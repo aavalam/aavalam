@@ -20,3 +20,5 @@ There is a great need for sysadmins with Ruby skills. Best practices for Rails d
 
 See the [rest of the interview](http://rubylearning.com/blog/2008/10/14/little-known-ways-to-ruby-mastery-by-stuart-halloway/)!
 
+The discussion starts here but continues on our [Google+ Post](https://plus.google.com/u/0/116568773932133159290/posts/gz4vYq8uLM7)!
+
