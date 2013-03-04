@@ -5,7 +5,6 @@ author: Victor Goff
 date: 2013-03-03 21:54
 comments: true
 categories: [VIM, Configuration, Editor]
-publish: false
 ---
 What do you use to configure your editor?
 
@@ -15,7 +14,7 @@ that runs in the terminal.
 I also use [Carlhuda's Janus](https://github.com/carlhuda/janus) configuration.
 
 But there are things that I change that are simply minor things.
-
+<!-- more -->
 To do this, according to the documentation for customization, I use
 `~/.vimrc.after` and here are my settings.
 
