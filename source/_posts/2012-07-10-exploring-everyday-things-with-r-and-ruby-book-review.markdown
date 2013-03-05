@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exploring Everyday Things with R and Ruby- A Book Review
+title: Exploring Everyday Things with R and Ruby - A Book Review
 author: Victor Goff
 date: 2012-07-10 4:52
 comments: true
@@ -20,7 +20,7 @@ Ruby at an introductory level.
 {% pullquote %}
 In the first chapter, after showing how you can install Ruby and an 
 introduction to the basics of Ruby, he also provides a quick introduction
-to {" Shoes, a simple but powerful UI toolkit for Ruby "}[2] [], with installation
+to {" Shoes, a simple but powerful UI toolkit for Ruby "}[2][], with installation
 suggestions and sample code.
 {% endpullquote %}
 
@@ -82,10 +82,11 @@ course, but nothing that requires advanced math.  And the topics were fun to wo
 through.  And there is plenty of room to experiment and explore after finishing 
 the chapters.
 
-Note; This review cross posted at RubyLearnings Blog with
-permission.
+Note; This review cross posted at RubyLearnings Blog with permission.
 
-[1]: http://shop.oreilly.com/product/0636920022626.do "Exploring Everyday Things with R and Ruby - O'Reilly Media." 2012. 6 Jul. 2012
-[2]: http://my.safaribooksonline.com/book/-/9781449342203/1dot-the-hat-and-the-whip/id2776202 "Exploring Everyday Things with R and Ruby" 1. The Hat and the ... 2012. 6 Jul. 2012
-[3]: http://www.cs.cmu.edu/~enron/  "Enron Email Dataset." 2004. 6 Jul. 2012  
+The conversation starts here, and continues on [Google Plus](https://plus.google.com/u/0/116568773932133159290/posts/Hbni5EzVvzB)!
+
+[1]: http://shop.oreilly.com/product/0636920022626.do "Exploring Everyday Things with R and Ruby - O'Reilly Media. 2012. 6 Jul. 2012"
+[2]: http://my.safaribooksonline.com/book/-/9781449342203/1dot-the-hat-and-the-whip/id2776202 "Exploring Everyday Things with R and Ruby 1. The Hat and the Whip 2012. 6 Jul. 2012"
+[3]: http://www.cs.cmu.edu/~enron/ "Enron Email Dataset. - 2004. 6 Jul. 2012"
 
