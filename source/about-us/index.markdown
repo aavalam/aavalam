@@ -26,7 +26,9 @@ data-rel="publisher"></div>
     var s = document.getElementsByTagName('script')[0];
 s.parentNode.insertBefore(po, s);
   })();
-</script>
+</script><a href="http://stackexchange.com/users/225408">
+<img src="http://stackexchange.com/users/flair/225408.png" width="208" height="58" alt="profile for vgoff on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for vgoff on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+</a>
 <hr/>
 
 ##Contact Us
