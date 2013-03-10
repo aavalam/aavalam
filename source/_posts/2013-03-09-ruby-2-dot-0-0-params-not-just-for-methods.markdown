@@ -10,7 +10,7 @@ While working on documenting things I learned through a Learn Ruby By
 Testing project, I came across documenting the new Ruby 2.0 'Params'
 feature.
 
-I realized that Methods are blocks and Procs and lambda's are very
+I realized that Methods are blocks and Procs and lambdas are very
 close, so was wondering if the arguments would cross over.
 
 It turns out that it does.
@@ -44,7 +44,7 @@ hash merge to bring in default 'params'.
 But you will have likely read about that elsewhere.
 
 The thing that I was happy to discover was the "named params" are available
-for Procs and lambda.
+for Proc and lambda.
 
 This means that we can now do something like this:
 
@@ -56,8 +56,8 @@ end
 
 If you were to pass nothing at all to the Proc, you would get this: `["Joe", 23, {}]`
 
-Let's see what happens if you change the name, and give it a
-parameter:
+Let's see what happens if you change the name, and give it a some
+undetermined parameter:
 {% codeblock example_use.rb %}
 my_proc = Proc.new do |name: 'Joe', age: 42, **other_params|
   [name, age, other_params]
