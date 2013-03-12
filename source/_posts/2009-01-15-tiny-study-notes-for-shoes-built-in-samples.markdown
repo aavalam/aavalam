@@ -112,14 +112,17 @@ Define a method to\_s. In Shoes, para uses `to_s` implicitly at #10. If you comm
 \#4: <br>
 Define methods press\_0, press\_1, ..... , press\_9 with the method `define_method`. See `ri Module#define_method`. They are the same as the following.
 
+{% codeblock long_hand.rb lang:ruby %}
 	def press_0
 	  @number = @number.to_i * 10 + n
 	end
 	def press_1
 	  @number = @number.to_i * 10 + 1
 	end
-	         :
-	         : (and so on)
+{% endcodeblock %}
+
+:
+: (and so on)
 
 The `.to_i` is necessary for the case that @number is nil.
 
@@ -135,13 +138,16 @@ To clear the `number_field` at #13 (to show nothing), assign nil to `@number` in
 \#8: <br>
 Define a method press\_equals. See the following small IRB snippet.
 
+{% codeblock irb_session lang:ruby %}
 	C:\>irb --simple-prompt
 	>> 23.send '+', 5
 	=> 28
+{% endcodeblock %}
 
 \#12: <br>
 Send the value (character string) that was assigned to the local variable `method` to the object `number` that was created at #9. See the following small IRB snippet.
 
+{% codeblock irb_session.irb lang:ruby %}
 	C:\>irb --simple-prompt
 	>> class Calc
 	>>   def press_add
@@ -153,6 +159,8 @@ Send the value (character string) that was assigned to the local variable `metho
 	DEBUG: hi.
 	=> nil
 	>>
+{% endcodeblock %}
+
 
 \#13: <br>
 This line is defined within the button definition block (#11), hence every time when any button is clicked, `number_field` area will be refreshed.
@@ -162,7 +170,7 @@ Alternative Simple Calc
 -----------------------
 This is an alternative code. There is no interesting tips but it's simple, I guess. :)
 
-	#sample61.rb
+{% codeblock sample61.rb lang:ruby %}
 	Shoes.app :height => 250, :width => 200, :resizable => false do
 	  def do_calc
 	    @number = @previous.send(@op, @number)  if @op
@@ -199,6 +207,7 @@ This is an alternative code. There is no interesting tips but it's simple, I gue
 	    end
 	  end
 	end
+{% endcodeblock %}
 
 
 Policeman
