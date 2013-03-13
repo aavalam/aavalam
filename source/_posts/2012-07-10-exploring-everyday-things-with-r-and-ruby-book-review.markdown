@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exploring Everyday Things with R and Ruby - A Book Review
+title: _Exploring Everyday Things with R and Ruby_ - A Book Review
 author: Victor Goff
 date: 2012-07-10 4:52
 comments: true
@@ -9,7 +9,7 @@ categories: [R, Ruby, Book Review, Shoes]
 
 by: Victor Goff
 
-I got the opportunity to review "Exploring Everyday Things with R and Ruby" by
+I got the opportunity to review _Exploring Everyday Things with R and Ruby_ by
  Sau Sheong Chang and published by O'Reilly Media.[1] []
  
 <!-- more -->
