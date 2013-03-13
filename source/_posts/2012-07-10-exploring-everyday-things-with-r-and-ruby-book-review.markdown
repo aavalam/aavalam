@@ -1,6 +1,6 @@
 ---
 layout: post
-title: _Exploring Everyday Things with R and Ruby_ - A Book Review
+title: Exploring Everyday Things with R and Ruby - A Book Review
 author: Victor Goff
 date: 2012-07-10 4:52
 comments: true
