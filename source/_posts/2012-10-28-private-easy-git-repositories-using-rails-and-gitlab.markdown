@@ -26,7 +26,7 @@ Remove the master branch, and you will go back to the instruction page directing
 standard things for git configuration as it pertains to your
 settings.
 
-If you are wanting to play with the demo, you can from the link above... or if you would like to play with it with your own account, you can right at [gitlab.com](gitlab.com) (I don't know why that domain isn't in your face when you go to their main web page.)  They are running, as of this post, version 2.9.1.
+If you are wanting to play with the demo, you can from the link above... or if you would like to play with it with your own account, you can right at [gitlab.com](http://gitlab.com) (I don't know why that domain isn't in your face when you go to their main web page.)  They are running, as of this post, version 2.9.1.
 
 If you decide to install it or use it in the various ways that you are able to, let me know your results, how you are using it, and what you think about it.  Have you customized it?  Added a registration page, etc.?
 
