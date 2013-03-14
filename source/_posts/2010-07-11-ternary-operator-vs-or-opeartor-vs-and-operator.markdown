@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ternary Operator vs Or Opeartor vs And Operator"
+title: "Ternary Operator vs Or Operator vs And Operator"
 author: Victor Goff
 date: 2010-07-11 15:38
 comments: true
