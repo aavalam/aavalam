@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: String | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/string/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Using String's strip method rather than chomp]]></title>
+    <link href="http://aavalam.github.com/blog/2010/07/11/using-strings-strip-method-rather-than-chomp/"/>
+    <updated>2010-07-11T15:33:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2010/07/11/using-strings-strip-method-rather-than-chomp</id>
+    <content type="html"><![CDATA[<p>I have been in the habit of using <code>String#chomp</code> when interactively
+requesting input from people. I am considering using <code>String#strip</code>
+instead. <!-- more -->It does more than <code>chomp</code>, in that it will remove leading
+whitespace, trailing whitespace and still the <code>$/</code> which is to say the
+record separator. I think that it is more suitable for interactive
+input, unless you are counting on leading whitespace from someone for
+some reason.</p>
+
+<p>The statement that we always say when talking about <code>chomp</code> and <code>to_i</code> or
+<code>to_f</code> is that <code>to_i</code> and <code>to_f</code> does the same thing as <code>chomp</code>, and this is
+almost true. But <code>to_i</code> and <code>to_f</code> actually work more like strip.</p>
+
+<p>Consider this:</p>
+
+<p>``` ruby IRB Session</p>
+
+<blockquote><blockquote><p>gets.strip
+   98
+=> "98"
+gets.to_i
+   98
+=> 98
+<code>``
+As you can see, in reality</code>to_i` strips the leading whitespace, and by
+definition any trailing whitespace (though in reality all string content
+that isn’t part of the first recognizable ‘numeric-like’ string)
+including the record separator.</p></blockquote></blockquote>
+
+<p>So, I am trading in my habitual <code>String#chomp</code> use for the cleaner
+<code>String#strip</code> use, and where appropriate <code>String#strip!</code> and I believe I
+will still have fun with Ruby!</p>
+
+<p>Let me know what you think about this small movement?</p>
+]]></content>
+  </entry>
+  
+</feed>

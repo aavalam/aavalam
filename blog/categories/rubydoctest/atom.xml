@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Rubydoctest | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/rubydoctest/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Fuzzy Equality in RubyDocTest]]></title>
+    <link href="http://aavalam.github.com/blog/2008/09/11/fuzzy-equality-in-rubydoctest/"/>
+    <updated>2008-09-11T01:00:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2008/09/11/fuzzy-equality-in-rubydoctest</id>
+    <content type="html"><![CDATA[<p>I was working on some tests for a standard exercise with temperature conversion. I then realized that there was no provision for testing if something is equal to a certain precision. As happens with different math problems concerning Float, different actions and different processors can give different answers. It doesn't matter to me in this instance, as long as it is within a 'tolerance'.<!-- more --></p>
+
+<p>So, I hopped into my favorite editor, to quickly write some code to generate some ranges of acceptable answers for my method.</p>
+
+<p>I wanted my method to respond with numbers that aren't formatted to any precision, just native floating point numbers, but as this is an exercise that students are going to write, it is common for some of them to return answers that are 'correct' to the 10ths place, or 100ths place.</p>
+
+<p>I want to be able to check the work semi-automatically, and so I used this for my doctest:</p>
+
+<p>``` ruby IRB Session</p>
+
+<blockquote><blockquote><p>((37.74)..(37.8155555555556)) === convert(100.0)
+=> true
+((-17.205)..(-17.2394444444444)) === convert(1.0)
+=> true
+```</p></blockquote></blockquote>
+
+<p>And it works well... I can now use any student supplied method, and find out if their math is 'close'. But, now I can do it from different locations, so if I am working on an older system with a floating point error, my tests should pass, even if the results aren't exactly on.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using RubyDocTest for development]]></title>
+    <link href="http://aavalam.github.com/blog/2008/09/07/using-rubydoctest-for-development/"/>
+    <updated>2008-09-07T02:10:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2008/09/07/using-rubydoctest-for-development</id>
+    <content type="html"><![CDATA[<p>First of all, you must have installed rubydoctest which can be installed as a gem, or from source.  Source can be found here: <a href="http://rubyforge.org/projects/rubydoctest/">rubydoctest</a> and the handy <code>gem install rubydoctest</code> can be used as well.</p>
+
+<p>I just want to introduce you to the tool.  I find it handy when I want to verify things in irb, which I have open anyway, and it helps to document my code inline, or to have a .doctest file sitting next to my file (or in the ../tests directory) <!-- more --></p>
+
+<p>Of course, we are going to use a very contrived example.  I doubt anyone would code this way for such a simple solution (and a little bit not accurate in the calculations).  But it does show a few things about doctest.</p>
+
+<p>We have covered shortly how to acquire rubydoctest.  Now let's talk about using it.  There are two ways to use it.  Internal to your code, and external as a .doctest document.  We will be using it in line with our code.</p>
+
+<p>Our code problem will be this:  How many minutes are in a year.</p>
+
+<p>What we are going to do, just for this exercise, is setup a hash, like this:</p>
+
+<p>``` ruby minutes_in_year.rb</p>
+
+<h1>!/usr/bin/ruby</h1>
+
+<h1>Write a program that will give you minutes in a year.</h1>
+
+<p>leap = false
+TimeUnits = {:seconds => 60, :minutes => 60, :hours => 24, :days => (leap ? 30.5 : 30.4167), :months => 12}
+```
+(I warned you this was contrived!)  Obviously the first couple of things we want to confirm is that leapyear indeed affects the assignment of your constant TimeUnits value of :days.</p>
+
+<p>We can do this in IRB: (and it may be that we were playing in IRB first, testing other ideas, before we came up with this, which will be the start of our program!)</p>
+
+<p>``` ruby IRB Session</p>
+
+<blockquote><blockquote><p>leap = false
+=> false
+TimeUnits = {:seconds => 60, :minutes => 60,   :hours => 24,
+?> :days => (leap ? 30.5 : 30.4167), :months => 12}
+=> {:minutes=>60, :hours=>24, :days=>30.4167, :months=>12, :seconds=>60}</p>
+
+<p>```</p></blockquote></blockquote>
+
+<p>And as you can see, we now have the makings of our first doctest.  But it also brings up the question of "How?"</p>
+
+<p>So, a little explanation; DocTests are comments inside your code that you create to give a test name, and the results of any tests, as they are expected to be.  So, here is the format to create what we have above... (I use multi-line comments in block format (=begin, =end), you can use the hash comment style if you like).  So below my code, I place the following lines:</p>
+
+<p>``` ruby minutes_in_year.rb</p>
+
+<blockquote><blockquote><p>leap = false
+TimeUnits.merge!( {:days => (leap ? 30.5 : 30.4167)})
+=> {:minutes=>60, :hours=>24, :days=>30.4167, :months=>12, :seconds=>60}
+```</p></blockquote></blockquote>
+
+<p>You can see that this is the exact same output from IRB if you use the <code>irb --simple-prompt</code> command at your console.  As easy as copy/paste to get your tests and assertions, and I consider this a BIG plus!</p>
+
+<p>However... we are not ready to test yet.  Remember I stated that doctests are comments.  This is not a comment... so we have some setup work to do... simply we will start our comment block, above the lines shown, and name our test.  It looks like this:</p>
+
+<p>``` ruby minutes_in_year.rb
+=begin
+doctest: Setup Time Units values in hash (not leap year)</p>
+
+<blockquote><blockquote><p>leap = false
+TimeUnits.merge!( {:days => (leap ? 30.5 : 30.4167)})
+=> {:minutes=>60, :hours=>24, :days=>30.4167, :months=>12, :seconds=>60}
+=end
+```</p></blockquote></blockquote>
+
+<p>Now we have a doctest with a test name of "Setup Time Units values in hash (not leap year).  The second line of test is  >> leap = false.  You can note that there is no 'results' line underneath.  This is because we don't actually want to test for a result... we just want to setup the state in IRB.  We are assuming that the assignment here will be successful.</p>
+
+<p>Now it is time to test it.  How to do this?  We save the file, and (I will use <code>minutes_in_year.rb</code>) run <code>rubydoctest minutes_in_year.rb</code> like so:</p>
+
+<p><code>text Command Line
+c:&gt;rubydoctest minutes_in_year.rb
+=== Testing 'minutes_in_year.rb'...
+OK  | Setup Time Units values in hash (not leap year)
+1 comparisons, 1 doctests, 0 failures, 0 errors
+</code></p>
+
+<p>If you are in windows,  you may not see the color, but the OK here is green.  (In the final view of the file, you will see how I get color...  but that is mentioned in another blog post here.)  In any case... we now have the beginning of our program, complete with a test.  If we were to refactor later, obviously, we would likely need to change our test (It won't fail, due to being self contained...) but it will remind is via documentation what we were doing when we come back and look at it.</p>
+
+<p>On to the next portion of our program.</p>
+
+<p>We want to make sure that our hash is working with the ternary operator, so we type and see the following in IRB:</p>
+
+<p>``` ruby IRB Session</p>
+
+<blockquote><blockquote><p>TimeUnits[:days]
+=> 30.4167
+```</p></blockquote></blockquote>
+
+<p>And we see it is good, so we can add it to our doctest area.</p>
+
+<p>Hint:  You may be asking "Why am I testing such a simple thing?"  Extra credit for you if you do this exercise and use merge method, rather than merge! method... If you did not use this test, you would not catch that bug.</p>
+
+<p>But we also want to check if it is working for leap = true.  We must setup the constant TimeUnits again...</p>
+
+<p>``` ruby IRB Session
+=begin
+doctest: Test our leap year true case for TimeUnits</p>
+
+<blockquote><blockquote><p>leap = true
+=> true
+TimeUnits.merge!( {:days => (leap ? 30.5 : 30.4167) } )
+=> {:months=>12, :days=>30.5, :minutes=>60, :hours=>24, :seconds=>60}
+TimeUnits[:days]
+=end
+```</p></blockquote></blockquote>
+
+<p>Which we have confirmed, so we can place the lines into our doctest comments.</p>
+
+<p>We haven't changed our code at all, yet, right now, just documenting what we want it to do based on different conditions.</p>
+
+<p>So, let's think in IRB about how we are going to calculate minutes in a year.</p>
+
+<p>I end up doing this:</p>
+
+<p>``` ruby IRB Session</p>
+
+<blockquote><blockquote><p>leap = false => false
+TimeUnits.merge!( {:days => (leap ? 30.5 : 30.4167)})
+=> {:months=>12, :days=>30.4167, :minutes=>60, :hours=>24, :seconds=>60}
+x = 1
+=> 1
+TimeUnits.each_pair {|key, value| x = x * value unless key ==
+:seconds}
+=> {:months=>12, :days=>30.4167, :minutes=>60, :hours=>24, :seconds=>60}
+x => 525600.576
+```</p></blockquote></blockquote>
+
+<p>And everything looks 'ok' to me.  I am sure the result is not totally accurate... but good enough for me...</p>
+
+<p>It goes into my doctest as well, and then the code goes into my program...   I will call the test as follows:</p>
+
+<p>``` ruby minutes_in_year.rb
+doctest: Setup for minutes in non-leapyaer</p>
+
+<blockquote><blockquote><p>leap = false
+=> false
+TimeUnits.merge!( {:days => (leap ? 30.5 : 30.4167)})
+=> {:months=>12, :days=>30.4167, :minutes=>60, :hours=>24, :seconds=>60}
+doctest: compute minutes in a non-leapyear
+x = 1
+=> 1
+TimeUnits.each_pair {|key, value| x = x * value unless key ==
+:seconds}
+=> {:months=>12, :days=>30.4167, :minutes=>60, :hours=>24, :seconds=>60}
+x
+=> 525600.576
+```</p></blockquote></blockquote>
+
+<p>And hopefully if I have done everything right, with my notes, and such, you should end up with a rubydoctest that ends up something like this:</p>
+
+<p><code>text Console
+=== Testing 'minutes_in_year.rb'...
+OK  | Setup Time Units values in hash (not leap year)
+OK  | Test our leap year true case for TimeUnits
+OK  | Setup for minutes in non-leapyaer
+OK  | compute minutes in a non-leapyear
+9 comparisons, 4 doctests, 0 failures, 0 errors
+</code></p>
+
+<p>Perhaps this is almost the code you ended up with...</p>
+
+<p>``` ruby minutes_in_year.rb</p>
+
+<h1>!/usr/bin/ruby</h1>
+
+<h1>Write a program that will give you minutes in a year.</h1>
+
+<p>leap = false
+TimeUnits = {:seconds => 60, :minutes => 60,   :hours => 24,
+  :days => (leap ? 30.5 : 30.4167), :months => 12}</p>
+
+<p>=begin
+doctest: Setup Time Units values in hash (not leap year)</p>
+
+<blockquote><blockquote><p>leap = false
+TimeUnits.merge!( {:days => (leap ? 30.5 : 30.4167)})
+=> {:minutes=>60, :hours=>24, :days=>30.4167, :months=>12, :seconds=>60}
+=end</p></blockquote></blockquote>
+
+<p>=begin
+doctest: Test our leap year true case for TimeUnits</p>
+
+<blockquote><blockquote><p>leap = true
+=> true
+TimeUnits.merge!( {:days => (leap ? 30.5 : 30.4167) } )
+=> {:months=>12, :days=>30.5, :minutes=>60, :hours=>24, :seconds=>60}
+TimeUnits[:days]
+=end</p></blockquote></blockquote>
+
+<h1>some additional notes:  doctests can contain comments like this inside,</h1>
+
+<h1>for further documenting thoughts.</h1>
+
+<h1>I chose not to do this.</h1>
+
+<h1>Also, as you can see below, doctests don't have to be seperated as above,</h1>
+
+<h1>they could be as below.</h1>
+
+<p>=begin
+doctest: Setup for minutes in non-leapyaer</p>
+
+<blockquote><blockquote><p>leap = false
+=> false
+TimeUnits.merge!( {:days => (leap ? 30.5 : 30.4167)})
+=> {:months=>12, :days=>30.4167, :minutes=>60, :hours=>24, :seconds=>60}
+doctest: compute minutes in a non-leapyear
+x = 1
+=> 1
+TimeUnits.each_pair {|key, value| x = x * value unless key ==
+:seconds}
+=> {:months=>12, :days=>30.4167, :minutes=>60, :hours=>24, :seconds=>60}
+x
+=> 525600.576
+=end</p></blockquote></blockquote>
+
+<p>leap = false
+TimeUnits.merge!( {:days => (leap ? 30.5 : 30.4167)})
+x = 1
+TimeUnits.each_pair {|key, value| x = x * value unless key == :seconds}
+puts x</p>
+
+<h1>Another time, perhaps, we can explore this in a more robust area, or</h1>
+
+<h1>cover some other things.</h1>
+
+<p>```</p>
+]]></content>
+  </entry>
+  
+</feed>

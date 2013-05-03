@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Configuration | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/configuration/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My partial VIM configuration]]></title>
+    <link href="http://aavalam.github.com/blog/2013/03/03/my-partial-vim-configuration/"/>
+    <updated>2013-03-03T21:54:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/03/03/my-partial-vim-configuration</id>
+    <content type="html"><![CDATA[<p>What do you use to configure your editor?</p>
+
+<p>I am usually in VIM for my editor.  Not the graphical (gvim) version, the one
+that runs in the terminal.</p>
+
+<p>I also use <a href="https://github.com/carlhuda/janus">Carlhuda's Janus</a> configuration.</p>
+
+<p>But there are things that I change that are simply minor things.</p>
+
+<!-- more -->
+
+
+<p>To do this, according to the documentation for customization, I use
+<code>~/.vimrc.after</code> and here are my settings.</p>
+
+<p>These are miscelanious things that I wanted to have.  The relativenumber
+setting seems to not be as persistent as I would like though.
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>My Post Janus VIM Config  .vimrc.after </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="k">set</span> <span class="nb">t_Co</span><span class="p">=</span><span class="m">256</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">showcmd</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">foldmethod</span><span class="p">=</span><span class="nb">syntax</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">wildmenu</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">wildmode</span><span class="p">=</span><span class="nb">list</span>:longest
+</span><span class='line'><span class="k">set</span> <span class="nb">virtualedit</span><span class="p">=</span><span class="k">all</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">visualbell</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">relativenumber</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">wrap</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">linebreak</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">nolist</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">textwidth</span><span class="p">=</span><span class="m">0</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">wrapmargin</span><span class="p">=</span><span class="m">0</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>An abbreviation that I use pretty often.
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>My Post Janus VIM Config  .vimrc.after </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="c">&quot; rdt&lt;space&gt; does an autocompletion which gives me a rubydoctest</span>
+</span><span class='line'><span class="c">&quot; comment block</span>
+</span><span class='line'>iab <span class="nb">rdt</span> <span class="p">=</span>begin<span class="p">&lt;</span>CR<span class="p">&gt;</span>doctest: <span class="p">&lt;</span>CR<span class="p">&gt;&gt;&gt;</span> <span class="p">&lt;</span>CR<span class="p">&gt;=&gt;</span> <span class="p">&lt;</span>CR<span class="p">&gt;=</span><span class="k">end</span><span class="p">&lt;</span>CR<span class="p">&gt;&lt;</span>Up<span class="p">&gt;&lt;</span>Up<span class="p">&gt;&lt;</span>Up<span class="p">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This next line clears the highlights that happen when you search.  For me, my leader is <code>,</code>.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>My Post Janus VIM Config  .vimrc.after </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="nb">nnoremap</span> <span class="p">&lt;</span>leader<span class="p">&gt;&lt;</span>space<span class="p">&gt;</span> :<span class="k">noh</span><span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Add this in here if you really want to be enforced not to use the
+arrow keys.  Enable it for a few days and pretty soon you just don't
+reach for the arrow keys until you really need them.
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>My Post Janus VIM Config  .vimrc.after </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="nb">nnoremap</span> <span class="p">&lt;</span><span class="k">up</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">nnoremap</span> <span class="p">&lt;</span>down<span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">nnoremap</span> <span class="p">&lt;</span><span class="k">left</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">nnoremap</span> <span class="p">&lt;</span><span class="k">right</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">inoremap</span> <span class="p">&lt;</span><span class="k">up</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">inoremap</span> <span class="p">&lt;</span>down<span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">inoremap</span> <span class="p">&lt;</span><span class="k">left</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">inoremap</span> <span class="p">&lt;</span><span class="k">right</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Well, there you have it. Most of my configuration file that I have in
+addtion to the Janus configuration.</p>
+
+<p>What things do you have in your configuration that you really like to
+have?  I am sure it is more exciting than mine!</p>
+
+<p>The discussion starts here, but continues on this <a href="https://plus.google.com/u/0/116568773932133159290/posts/WhzgA38YcnB">Google+ Post</a>!</p>
+]]></content>
+  </entry>
+  
+</feed>

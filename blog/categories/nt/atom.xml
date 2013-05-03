@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: NT | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/nt/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Colorizing your NT Console with Ruby]]></title>
+    <link href="http://aavalam.github.com/blog/2008/09/02/colorizing-your-nt-console-with-ruby/"/>
+    <updated>2008-09-02T04:23:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2008/09/02/colorizing-your-nt-console-with-ruby</id>
+    <content type="html"><![CDATA[<p>I found the following snippet ( edited by me, for changes I wanted...) Credits are in the code block.</p>
+
+<!-- more -->
+
+
+<p>``` ruby Colorization based on ANSI Terminal Codes
+=begin rdoc
+This extends string to allow colorization based on ANSI
+terminal codes.  The following code actually came from
+Dmytro Shteflyuk's blog linked at end of this blog
+Thanks to one of his readers for expanding it even further!
+Finally, here in the current incarnation on my machine.</p>
+
+<p>Usage: 'String content'.color
+colorize('string or text content', color_code)</p>
+
+<p>To get color code table, you simply call method ansi_color_table
+=end</p>
+
+<p>begin
+require 'Win32/Console/Ansi' if PLATFORM =~ /win32/
+rescue LoadError
+raise 'You must gem install win32console to use color on Windows Console.'
+end</p>
+
+<p>class String
+ def red; colorize(self, "\e[1m\e[31m"); end
+ def green; colorize(self, "\e[1m\e[32m"); end
+ def dark_green; colorize(self, "\e[32m"); end
+ def yellow; colorize(self, "\e[1m\e[33m"); end
+ def yellow_on_black; colorize(self, "\e[1m\e[33m\e[40m"); end
+ def yellow_on_drkred; colorize(self, "\e[1m\e[33m\e[41m"); end
+ def blue; colorize(self, "\e[1m\e[34m"); end
+ def dark_blue; colorize(self, "\e[34m"); end
+ def pur; colorize(self, "\e[1m\e[35m"); end
+ def colorize(text, color_code)
+"#{color_code}#{text}\e[0m" end
+end</p>
+
+<p>def ansi_color_table
+[0, 1, 4, 5, 7].each do |attr|
+ puts '----------------------------------------------------------------'
+ puts "ESC[#{attr};Foreground;Background"
+ 30.upto(37) do |fg|
+   40.upto(47) do |bg|</p>
+
+<pre><code> print "\033[#{attr};#{fg};#{bg}m #{fg};#{bg}  "
+</code></pre>
+
+<p>   end
+ puts "\033[0m"
+ end
+end
+return
+end
+```</p>
+
+<p>I have placed this file in my [ruby installation directory]\lib\ruby\site_ruby\1.8\ directory so it can be used as a library.</p>
+
+<p><code>yellow_on_black</code> and <code>yellow_on_drkred</code> are on the list for showing how to create additional 'listed' colors.</p>
+
+<p>Easily extended list, and many, many applications.</p>
+
+<p>The side affect of installing win32console is the added benefit of RSpec and Ruby DocTest being able to show actual colors in the output while testing, too.</p>
+
+<p>So, fun toy for color, yes... practical, definitely!</p>
+
+<p>Information gathered from <a href="http://kpumuk.info/ruby-on-rails/colorizing-console-ruby-script-output/trackback/">this blog</a>!</p>
+]]></content>
+  </entry>
+  
+</feed>

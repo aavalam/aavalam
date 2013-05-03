@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Beta | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/beta/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Webby Node]]></title>
+    <link href="http://aavalam.github.com/blog/2008/11/12/webby-node/"/>
+    <updated>2008-11-12T02:32:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2008/11/12/webby-node</id>
+    <content type="html"><![CDATA[<p>I found a "Scalable Xen VPS Hosting for Developers" Private Beta, and I am officially inviting anyone that is interested, based on the following information. <!-- more --></p>
+
+<p><em>Why ‘beta test’ webbynode?</em></p>
+
+<p>We are working hard on building great software to give our customers more options, we are not here to provide a ‘host-in-a-box’ solution - but rather a totally custom web application to let you manage your “webbys” more efficiently, create clusters between them, move them between different data-center locations, and more. But we need feed back from experienced VPS users like you.</p>
+
+<p><em>Benefits of becoming a Beta Tester</em></p>
+
+<ul>
+<li>Get the 411 on our development progress!</li>
+<li>Participate in contests where we will be giving away free Lifetime Memberships, and iPod giveaways!</li>
+<li>Be part of a Community of developers &amp; Linux enthusiasts</li>
+<li>Access to our amazing Article Library</li>
+<li>It’s FREE!</li>
+<li>Receive 100% FREE VPS Service for the beta testing period, and up to 50% discounts when we go live.</li>
+</ul>
+
+
+<p><em>Who’s a good candidate for Beta testing?</em></p>
+
+<ul>
+<li>People with Linux &amp; Server Management experience</li>
+<li>Interest in building Linux fail-over solutions using VPS.</li>
+<li>Enough knowledge to make these “webbys” rock-and-roll!</li>
+<li>Setup your own Hosting environment, and work with us in order to set you up with Failover and Cloud Storage services.</li>
+</ul>
+
+
+<p>You can <a href="http://www.webbynode.com/">Sign Up Here</a>! Don't forget to let Carlos know I sent you!</p>
+
+<h4>Update: Wed Feb 2013 20 22:03:35</h4>
+
+<p>They are no longer in Beta.  But still a service I recommand</p>
+]]></content>
+  </entry>
+  
+</feed>

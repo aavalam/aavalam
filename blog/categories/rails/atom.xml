@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Rails | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/rails/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Private easy git repositories using rails and gitlab]]></title>
+    <link href="http://aavalam.github.com/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab/"/>
+    <updated>2012-10-28T03:02:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab</id>
+    <content type="html"><![CDATA[<p>I have installed <a href="http://gitlabhq.com/">gitlab</a> about 4 times over the last 24 hours.</p>
+
+<!-- more -->
+
+
+<p>First I started with an install from turnkey, so that I could look over a well thought out install.  And it was pretty simple aside from one timeout issue.  Easilly fixed once I looked through the configuration files.  It was running vesion 2.5.0, you can download a virtual machine install from www.turnkeylinux.org, search for gitlab,</p>
+
+<p>I then blew away the VM and installed it again and made some changes that I wanted to see, just to get a feel for how I could manipulate things and break them.</p>
+
+<p>Finally, the last time (and this screenshot) is from an install right from the gitlab instructions.  It was very straight forward, I did find one error in /home/git/.gitolite.rc which had a single quote in the wrong place, I replaced it with a slash to give it a glob pattern.  (I think it was the right thing to do).  If you are
+curious, it is on line 22.</p>
+
+<p>This is version 3.0.3 and pulled down from the stable branch.</p>
+
+<p><img src="/images/2012/10/45405183-image.png" width="812" height="748" title="Screenshot of GITLAB Dashboard" ></p>
+
+<p>From playing with it a little bit (and I found out from pushing the gitlab stable branch only) that gitlab expects and requires a master branch to be created and pushed up, otherwise it doesn't know to display even the only branch that is there.  So that took me a moment to realize.</p>
+
+<p>Remove the master branch, and you will go back to the instruction page directing you to do a git config --global username and mail
+standard things for git configuration as it pertains to your
+settings.</p>
+
+<p>If you are wanting to play with the demo, you can from the link above... or if you would like to play with it with your own account, you can right at <a href="http://gitlab.com">gitlab.com</a> (I don't know why that domain isn't in your face when you go to their main web page.)  They are running, as of this post, version 2.9.1.</p>
+
+<p>If you decide to install it or use it in the various ways that you are able to, let me know your results, how you are using it, and what you think about it.  Have you customized it?  Added a registration page, etc.?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Little Known Ways to Ruby Mastery by Ezra Zygmuntowicz]]></title>
+    <link href="http://aavalam.github.com/blog/2008/12/01/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz/"/>
+    <updated>2008-12-01T22:27:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2008/12/01/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz</id>
+    <content type="html"><![CDATA[<p>Interview answer from Ezra Zygmuntowicz to a question posed by Yours Truly... <!-- more --></p>
+
+<p><blockquote><p>How do you see the market for Ruby Programmers in the work place, and do you see it as primarily tied to Rails and Web related work? Do you see trends in administration or other work? What’s the future for Ruby?</p><footer><strong>Victor Goff, "Little Known Ways to Ruby Mastery" by Ezra Zygmuntowicz</strong> <cite><a href='http://rubylearning.com/blog/2008/12/02/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz/'>rubylearning.com/blog/2008/12/&hellip;</a></cite></footer></blockquote></p>
+
+<p><blockquote><p>I see a huge demand for Ruby programmers and not near enough supply of good developers. Of course folks are always hiring for Rails web developers but I also see lots of jobs for Ruby that are not web related. Ruby is being used more and more as enterprise glue language and I think it really shines in that space.</p><footer><strong>Ezra Zygmuntowicz, "Little Known Ways to Ruby Mastery" by Ezra Zygmuntowicz</strong> <cite><a href='http://rubylearning.com/blog/2008/12/02/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz/'>rubylearning.com/blog/2008/12/&hellip;</a></cite></footer></blockquote></p>
+
+<p>See the <a href="http://rubylearning.com/blog/2008/12/02/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz/">rest of the interview</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Little Known Ways to Ruby Mastery by Bruce Tate]]></title>
+    <link href="http://aavalam.github.com/blog/2008/11/24/little-known-ways-to-ruby-mastery-by-bruce-tate/"/>
+    <updated>2008-11-24T19:49:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2008/11/24/little-known-ways-to-ruby-mastery-by-bruce-tate</id>
+    <content type="html"><![CDATA[<p>Interview answer from Bruce Tate to a question posed by Yours Truly... <!-- more --></p>
+
+<p><blockquote><p>How do you see the market for Ruby Programmers in the work place, and do you see it as primarily tied to Rails and Web related work? Do you see trends in administration or other work? What’s the future for Ruby?</p><footer><strong>Victor Goff, "Little Known Ways to Ruby Mastery" by Bruce Tate</strong> <cite><a href='http://rubylearning.com/blog/2008/11/25/little-known-ways-to-ruby-mastery-by-bruce-tate/'>rubylearning.com/blog/2008/11/&hellip;</a></cite></footer></blockquote></p>
+
+<p><blockquote><p>It’s expanding rapidly. I’m not in the market, but there’s no shortage of consulting offers.</p><footer><strong>Bruce Tate, "Little Known Ways to Ruby Mastery" by Bruce Tate</strong> <cite><a href='http://rubylearning.com/blog/2008/11/25/little-known-ways-to-ruby-mastery-by-bruce-tate/'>rubylearning.com/blog/2008/11/&hellip;</a></cite></footer></blockquote></p>
+
+<p>See the <a href="http://rubylearning.com/blog/2008/11/25/little-known-ways-to-ruby-mastery-by-bruce-tate/">rest of the interview</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Little Known Ways to Ruby Mastery by Ian Dees]]></title>
+    <link href="http://aavalam.github.com/blog/2008/11/23/little-known-ways-to-ruby-mastery-by-ian-dees/"/>
+    <updated>2008-11-23T20:17:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2008/11/23/little-known-ways-to-ruby-mastery-by-ian-dees</id>
+    <content type="html"><![CDATA[<p>RubyLearning continues to Interview the Ruby Masters where views and
+opinions, guidance, and even sometimes the future comes to light. <!-- more --></p>
+
+<p>Read the <a href="http://rubylearning.com/blog/2008/11/18/little-known-ways-to-ruby-mastery-by-ian-dees/">interview from Ian Dees</a> even if my question was not featured!  I am sure you will enjoy it, in any case.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Little Known Ways to Ruby Mastery by Jonathan Conway]]></title>
+    <link href="http://aavalam.github.com/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway/"/>
+    <updated>2008-11-11T00:07:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway</id>
+    <content type="html"><![CDATA[<p>Interview answer from Jonathan Conway to a question posed by Yours Truly... <!-- more --></p>
+
+<p><blockquote><p>How do you see the market for Ruby Programmers in the work place, and do you see it as primarily tied to Rails and Web related work? Do you see trends in administration or other work? What’s the future for Ruby?</p><footer><strong>Victor Goff "Little Known Ways to Ruby Mastery" by Jonathan Conway</strong> <cite><a href='http://rubylearning.com/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway/'>rubylearning.com/blog/2008/11/&hellip;</a></cite></footer></blockquote></p>
+
+<p><blockquote><p>The market for Ruby programmers I feel will only get stronger. However one of the common traits of a Ruby developer is that they prefer to work freelance. This has made it considerably harder for companies to hire full time people. Not only that but Iʼve come across quite a few freelancers who have difficulty with the concepts of basic OO let alone good Ruby practices and yet have no qualms with charging the market rates for top end developers. I feel something will inevitably has to change in the future so as not to tarnish the reputation of Ruby developers and keep a healthy ecosystem of Ruby jobs alive.</p></p><p><p>Another thing is that hiring companies need to be smarter and go beyond the usual academic/paper skills when seeking out new talent. Iʼve been lucky to snap up incredibly talented people in the past who have been turned down by other larger companies. This is because unfortunately a lot of companies interviewing processes are either amateurish or outdated at best.</p></p><p><p>My personal interviewing technique is based upon psychology and technical ability designed to make the interviewee as relaxed as possible so that I can see their true abilities/potential and more importantly how theyʼll interact with others at work in a social environment. Remember a good team dynamic is crucial to successful delivery of projects.</p></p><p><p>Seeing what Jamie Van Dyke is doing at Parfa.it with regards to recruiting for clients I think is definitely going in the right direction to solve some of the problems Iʼve outlined above.</p></p><p><p>Woah, I kind of side tracked there but to keep on target I definitely see inroads into server/cloud administration with Ruby. The languages readability coupled with libraries like Puppet, Capistrano/Vlad, Thor, Vertebra and others make Ruby an Ops guys dream come true.</p><footer><strong>Jonathan Conway "Little Known Ways to Ruby Mastery" by Jonathan Conway</strong> <cite><a href='http://rubylearning.com/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway/'>rubylearning.com/blog/2008/11/&hellip;</a></cite></footer></blockquote></p>
+
+<p>See the <a href="http://rubylearning.com/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway/">rest of the interview</a>!</p>
+]]></content>
+  </entry>
+  
+</feed>

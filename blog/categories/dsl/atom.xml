@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: DSL | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/dsl/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Getting in touch with Linux]]></title>
+    <link href="http://aavalam.github.com/blog/2013/04/02/getting-in-touch-with-linux/"/>
+    <updated>2013-04-02T13:38:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2013/04/02/getting-in-touch-with-linux</id>
+    <content type="html"><![CDATA[<p>I have helped a few people get started with Linux the last couple of
+years and the tool that helped them get exposed to it, and finally
+installing Linux on their system, is called UnetBootin.  You can find
+their official homepage in the References list below this blog post.</p>
+
+<!-- More -->
+
+
+<p>The nice thing about UnetBootin is that it runs on Windows, Mac, and
+Linux.  It gives you access to many different tools and operating
+systems that you can then simply install to a USB drive.  It isn't
+limited to operating systems, but also for recovery tools,
+administration tools, and other "live" CD's.</p>
+
+<p>The current 'favorite' distribution of Linux for an install is probably
+going to be Ubuntu, as it is highly documented, has a large user base,
+there are plenty of resources that are easily found on the web.  It is
+available, of course, in the drop down list of UnetBootin as a 'Live CD'
+install, which means that you can install it to that USB thumbdrive that
+you have, you can test drive it, and if you like what you see, you can
+install it to your system.  But you won't be disappointed in it as a
+first install.</p>
+
+<h2>But I want to use the tools on my native system until I feel comfortable enough!</h2>
+
+<p>To get some of the tools that are available on Linux to your current
+system, you may want to install some software, such as LibreOffice which
+seems to be taking the place of OpenOffice as an 'Installed by Default'
+office suite for some distributions of Linux.  The OpenOffice suite is
+also a good office suite of tools, though, and LibreOffice is a
+derivative of this project.</p>
+
+<h2>DSL - The small 'Linux on a Stick' distribution</h2>
+
+<p>Now, DSL may not be exactly for the person wanting to get started or seeing
+their very first Linux experiences, but it is good to have in your tool
+box.  It will get you running and connected to the network on perhaps an
+older machine that you want to browse the internet on, or just play
+around with.  It can do some serious things, but this is an article
+written for those that want to get familiar with Linux, so it has its
+place.</p>
+
+<p>This gives you a very small Linux distribution with some basic software that
+lets you get familiar with the look and feel of a Linux environmnet.  It
+is meant to be loaded from USB stick, for a temporarily booted
+environment, but with your standard useful tools, such as Internet
+browsers, 'Office' software, etc.  It doesn't have installed by default
+the common "Office Suite" software, but is a lightweight distribution.
+And those installations are available, so you can install them.</p>
+
+<h2>Congratulations on wanting to expand your Operating Sytem Experience</h2>
+
+<p>There are many reasons to use Linux.  Linux is a workhorse operating
+system.  It is free to install, free to use, has a very long history,
+has great people working on it, and is no longer for the technically
+elite.  My children have used it from a very young age, and my mother
+started using it last year.</p>
+
+<p>There are professional grade tools, and games available on it, and the
+available software will only grow.  Much of the software available is
+free in various meanings of the word, including no monetary charge for
+use, even commercial use.</p>
+
+<p>If you are just starting out using a Unix-like system, you could be up
+and running today.  Of course, like any complex system, there is a
+learning curve, but you can start being productive with it quickly, and
+the good thing is it will open you up to a whole new world of computing.</p>
+
+<p>So congratulations on being open to Open Source Computing!</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://unetbootin.sourceforge.net/">UnetBootin</a></li>
+<li><a href="http://www.damnsmalllinux.org/">DSL - Damn Small Linux</a></li>
+<li><a href="https://www.libreoffice.org/">LibreOffice</a></li>
+<li><a href="https://www.openoffice.org/">OpenOffice</a></li>
+</ul>
+
+
+<h3>The conversation starts here.</h3>
+
+<p>But it continues on our <a href="https://plus.google.com/u/0/116568773932133159290/posts/2DsKysaa3ns">Google Plus post</a></p>
+]]></content>
+  </entry>
+  
+</feed>

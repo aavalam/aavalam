@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Prompt | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/prompt/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Improved Prompt method]]></title>
+    <link href="http://aavalam.github.com/blog/2008/09/04/improved-prompt-method/"/>
+    <updated>2008-09-04T02:03:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2008/09/04/improved-prompt-method</id>
+    <content type="html"><![CDATA[<p>Welcome to little random thoughts of Ruby... My topic tonight is about the prompt snippet I gave yesterday.  I didn't realize it, as often happens, but it was so simple, I had to add the feature.</p>
+
+<p>I realized while writing another wrapper for benchmark and profiler, that it is pretty common to add chomp() to our gets.  But there may be times when we want what gets, um... well, gets.<!-- more -->  (Who am I to assume what you may want?)  So I give an option.  I default to a plain old string that is stripped.  But you can easily get the true gets result by asking for true results.  Can you guess that the flag to get it could be 'true'?</p>
+
+<p>``` ruby improved_prompt.rb
+class String
+=begin rdoc
+usage: variable = 'String to display'.prompt
+then enter in the string you want to assign to variable.
+Alternatively, you can provide a Press Any Key to Continue"
+function.
+=end
+  def prompt(no_chomp = false)</p>
+
+<pre><code>STDOUT.flush unless STDOUT.sync
+return gets.chomp unless no_chomp
+gets
+</code></pre>
+
+<p>  end
+end
+```</p>
+
+<p>In my irb, Here are a couple of examples...
+``` ruby IRB Session</p>
+
+<blockquote><blockquote><p>'Please type something: '.prompt
+Please type something: Something
+=> "Something"
+'Please type something (This will not be stripped): '.prompt(true)
+Please type something (This will not be stripped): Something
+=> "Something\n
+```</p></blockquote></blockquote>
+
+<p>Well, I thought it was pretty cool.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why isn't this a standard option for Ruby?]]></title>
+    <link href="http://aavalam.github.com/blog/2008/09/03/why-isnt-this-a-standard-option-for-ruby/"/>
+    <updated>2008-09-03T13:16:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2008/09/03/why-isnt-this-a-standard-option-for-ruby</id>
+    <content type="html"><![CDATA[<p>Hints for use:
+<code>ruby simple useage
+name = 'Please enter your name'.prompt
+</code>
+I know that each time I want to ask a user for something, I need to
+write a way to ensure that the user sees the prompt, so that an
+appropriate answer can be provided.  <!-- more -->It makes sense to provide a method
+to do this, as it seems to be a pretty routine thing.</p>
+
+<p>I do this by extending String with method prompt.  It is easy to use,
+and ensures that stdout is flushed so that the user will get the
+question.  If you find it useful, feel free to use it!</p>
+
+<p>Maybe the method will be included some day as a core feature!</p>
+
+<p>``` ruby prompt.rb
+class String
+  def prompt</p>
+
+<pre><code>print self
+STDOUT.flush unless STDOUT.sync
+gets
+</code></pre>
+
+<p>  end
+end
+```</p>
+]]></content>
+  </entry>
+  
+</feed>

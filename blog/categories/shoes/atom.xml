@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Shoes | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/shoes/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Gravity simulator : Fantastic Green Shoes App]]></title>
+    <link href="http://aavalam.github.com/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app/"/>
+    <updated>2013-05-03T14:18:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app</id>
+    <content type="html"><![CDATA[<p>I'd love to introduce a new fantastic Green Shoes app: <a href="http://ifni.co/articles/programming/gravity_simulator">Gravity
+simulator</a></p>
+
+<!--more-->
+
+
+<p><img src="/images/2013/05/gravity_simulator.png"></p>
+
+<p>Read the <b>2D : Green Shoes</b> section. I'm honored. :)
+Watch <a href="http://ashbb.digi2.jp/Gravity_simulator.swf.html">a demo</a> I
+executed <a href="http://ifni.co/src/gsim.rb">his code</a> on my Windows 7.</p>
+
+<p>Let's have fun with Shoes! :-D</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[breaktime : Fantastic Green Shoes App]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/15/breaktime-fantastic-green-shoes-app/"/>
+    <updated>2013-02-15T07:26:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/15/breaktime-fantastic-green-shoes-app</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/2013/02/47266220-breaktime.png" width="396" height="98" title="breaktime gem" ></p>
+
+<p>I'd like to introduce <a href="https://github.com/joony">joonty's</a> fantastic project on github.</p>
+
+<p>Read this post: <a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/404416">New gem: breaktime</a></p>
+
+<p>Cool! Try it out! :-D</p>
+
+<p>--ashbb</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Play Othello with Shoes 4]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/01/play-othello-with-shoes-4/"/>
+    <updated>2013-02-01T05:19:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/01/play-othello-with-shoes-4</id>
+    <content type="html"><![CDATA[<p>Today <a href="https://github.com/shoes/shoes4">Shoes 4</a> has become able to run Othello Game.</p>
+
+<!-- More -->
+
+
+<p><img class="top" src="/images/2013/02/othello-sample50.png" width="268" height="319" title="&#34;Othello Game Board on Shoes&#34;" alt="&#34;Othello Game Board on Shoes&#34;"></p>
+
+<p>Watch <a href="http://www.rin-shun.com/shoes4/tmp/shoes4-sample50.swf.html">a demo</a>.</p>
+
+<p>Have fun with Shoes,</p>
+
+<p>ashbb</p>
+
+<p>The discussion starts here, but continues on at our <a href="https://plus.google.com/116568773932133159290/posts/MiQhgoqqMHR">Google Plus Post</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Exploring Everyday Things with R and Ruby - A Book Review]]></title>
+    <link href="http://aavalam.github.com/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review/"/>
+    <updated>2012-07-10T04:52:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review</id>
+    <content type="html"><![CDATA[<p>by: Victor Goff</p>
+
+<p>I got the opportunity to review <em>Exploring Everyday Things with R and Ruby</em> by
+ Sau Sheong Chang and published by O'Reilly Media.<a href="http://shop.oreilly.com/product/0636920022626.do" title="Exploring Everyday Things with R and Ruby - O'Reilly Media. 2012. 6 Jul. 2012">1</a>
+ </p>
+
+<!-- more -->
+
+
+<p>This book, as expected, talks about R and Ruby.  The first chapters cover
+Ruby at an introductory level.</p>
+
+<p><span class='pullquote-right' data-pullquote='Shoes, a simple but powerful UI toolkit for Ruby'>
+In the first chapter, after showing how you can install Ruby and an
+introduction to the basics of Ruby, he also provides a quick introduction
+to Shoes, a simple but powerful UI toolkit for Ruby<a href="http://my.safaribooksonline.com/book/-/9781449342203/1dot-the-hat-and-the-whip/id2776202" title="Exploring Everyday Things with R and Ruby 1. The Hat and the Whip 2012. 6 Jul. 2012">2</a>, with installation
+suggestions and sample code.
+</span></p>
+
+<p>His introduction to Ruby covers the basics and is just a little bit more than
+ enough to understand the code in the rest of his book.  I think he did a
+really good job of that.  The second part of the first chapter, covering Shoes,
+explains Shoes in a nutshell rather well, I think.  You will get to use Shoes
+in later chapters.</p>
+
+<p>He then goes on to introduce R, which I had not used before.  He covers in a
+way that was fairly straightforward to install and get running.  Within a few
+moments, I had R installed and the 'normal' graphical tools up and running and
+was able to run some sample code, and even had graphs floating around my screen
+based on data that I created from the samples.</p>
+
+<p>Shortly after that, I had R code being created in my favorite text editor, and
+executing code right from there.</p>
+
+<p>His introduction to the language is fairly quick, but again, just a bit more
+than enough to get you going.</p>
+
+<p>He also covers some statistical transformation examples to change the statistical
+data into plottable information.  That is a good thing, because throughout the book,
+you will be needing to recognize this in the examples, and will have fun producing
+your own graphical representations of data you get.</p>
+
+<p>And all that is enough to get you started creating models to solve real world problems.</p>
+
+<p>For example, do you need to convince your boss that you need more restrooms available
+for the people in your office?  You can provide some simulations and reports and graphs
+(the boss likes graphs, right?) to support your argument, or will it support his
+assertion that what you have is just the right amount?</p>
+
+<p>This gets to the fun part.  Have you ever wondered how to mine data from your own
+e-mail?  To find trends of when you send mail, or who you communicate with most?  
+Finding the most frequently used words and the trending themes in your communications?  
+You are in luck.  He will take you through the Enron Saga to lightly touch on analyzing
+that e-mail data <a href="http://www.cs.cmu.edu/~enron/" title="Enron Email Dataset. - 2004. 6 Jul. 2012">3</a>, but easily apply it to your own IMAP e-mail accounts.</p>
+
+<p>How about biometrics, recording your own heartbeat through a home made electronic
+stethoscope?  Yes, you will be able to do this, and take measurements, and analyze
+them graphically.  Combine that with pulse oximetry with your webcam and you might
+have just enough evidence to convince your boss that your cubicle is suffocating you.</p>
+
+<p>That sounds fun enough, but it will involve analyzing sound files and video files to
+get the readings and measurements that you want to produce in a graphical chart.  
+That makes it fun to the nth power, right?</p>
+
+<p>Well, what can be more fun than Boid’s... and boid is the woid in this next chapter.  
+Using Ruby Shoes you will explore the flocking of birds, you will write a simulation
+and are encouraged to continue playing on.</p>
+
+<p>What follows is an extension of the Boids and introduces the mortality and procreation
+of the boids, which were prior to this immortals in a veritable utopia.  Life
+simulated and analyzed.</p>
+
+<p>Overall, I really enjoyed this book, it was easy to read, had some math in it, of
+course, but nothing that requires advanced math.  And the topics were fun to work
+through.  And there is plenty of room to experiment and explore after finishing
+the chapters.</p>
+
+<p>Note; This review cross posted at RubyLearnings Blog with permission.</p>
+
+<p>The conversation starts here, and continues on <a href="https://plus.google.com/u/0/116568773932133159290/posts/Hbni5EzVvzB">Google Plus</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[One Way of Layer Manipulation for Shoes::Shape Instances]]></title>
+    <link href="http://aavalam.github.com/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances/"/>
+    <updated>2009-02-06T22:41:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances</id>
+    <content type="html"><![CDATA[<p>Usually the later-made Shape instances are laid out on the early-made ones.</p>
+
+<p><a href="http://github.com/ashbb/shoes_tutorial_html/blob/master/mdowns/00537_One_way_of_layer_manipulation.mdown">Sample 64</a> is one way to swap the layers between them. :)</p>
+
+<p><img src="/images/2009/02/sample64.png" title="sample64.png" ></p>
+
+<p>Ashbb</p>
+]]></content>
+  </entry>
+  
+</feed>

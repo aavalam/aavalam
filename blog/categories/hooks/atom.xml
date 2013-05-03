@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Hooks | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/hooks/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hooks in Ruby - A First Look]]></title>
+    <link href="http://aavalam.github.com/blog/2010/07/16/hooks-in-ruby-a-first-look/"/>
+    <updated>2010-07-16T07:04:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2010/07/16/hooks-in-ruby-a-first-look</id>
+    <content type="html"><![CDATA[<p>Here is a list of the Ruby Hooks</p>
+
+<ul>
+<li>const_missing</li>
+<li>included</li>
+<li>extended</li>
+<li>inherited</li>
+<li>method_missing</li>
+<li>method_added</li>
+<li>singleton_added</li>
+<li>method_removed</li>
+<li>method_undefined</li>
+</ul>
+
+
+<p>The discussion starts here, but continues on our <a href="https://plus.google.com/u/0/116568773932133159290/posts/PmN66RBNGjY">Google+ post</a>!</p>
+]]></content>
+  </entry>
+  
+</feed>

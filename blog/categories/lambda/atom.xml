@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Lambda | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/lambda/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby 2.0.0 Params Not Just for Methods]]></title>
+    <link href="http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods/"/>
+    <updated>2013-03-09T03:46:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods</id>
+    <content type="html"><![CDATA[<p>While working on documenting things I learned through a Learn Ruby By
+Testing project, I came across documenting the new Ruby 2.0 'Params'
+feature.</p>
+
+<p>I realized that Methods are blocks and Procs and lambdas are very
+close, so was wondering if the arguments would cross over.</p>
+
+<p>It turns out that it does.</p>
+
+<!-- more -->
+
+
+<p>If you are not familiar with the new "named parameters" feature, it
+works by taking a Hash argument, along with another new syntax that
+starts with a two asterisks.  Similar to the "optional argument" syntax,
+it basically accepts all other non-named hash keys that you would give
+your method.  Or, Proc or lambda.</p>
+
+<p>Let's look at the signature:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>ruby_two_oh_params.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">def</span> <span class="nf">some_method</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;Joe&#39;</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="o">**</span><span class="n">additional_params</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This describes an argument list consisting of an 0 or more arguments for
+<code>*args</code>, a named parameter called name, with the value of 'Joe' by
+default, and a named parameter of age, with a default value of 23, and
+at the end, the syntax that allows you to pass in arbitrary number of
+hash keys, with values.</p>
+
+<p>It is important to note that in order to have the **additional_params at
+the end, after the normal Hash that you may be used it, you must use the
+Ruby 1.9 syntax of <code>key: value</code>, rather than <code>:key =&gt; value</code>or it will
+break.</p>
+
+<p>Well, that is wonderful, as it means that we no longer need to do the
+hash merge to bring in default 'params'.</p>
+
+<p>But you will have likely read about that elsewhere.</p>
+
+<p>The thing that I was happy to discover was the "named params" are available
+for Proc and lambda.</p>
+
+<p>This means that we can now do something like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>named_params_for_proc_and_lambda.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">my_proc</span> <span class="o">=</span> <span class="no">Proc</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;Joe&#39;</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="o">**</span><span class="n">other_params</span><span class="o">|</span>
+</span><span class='line'>  <span class="o">[</span><span class="nb">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">other_params</span><span class="o">]</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>If you were to pass nothing at all to the Proc, you would get this: <code>["Joe", 23, {}]</code></p>
+
+<p>Let's see what happens if you change the name, and give it a some
+undetermined parameter:
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>example_use.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">my_proc</span> <span class="o">=</span> <span class="no">Proc</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;Joe&#39;</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span> <span class="o">**</span><span class="n">other_params</span><span class="o">|</span>
+</span><span class='line'>  <span class="o">[</span><span class="nb">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">other_params</span><span class="o">]</span>
+</span><span class='line'><span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;my_proc[age: 49, hobbies: [&#39;long walks&#39;, &#39;candlelight dinners&#39;, &#39;romantic comedies&#39;]]</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+We would end up with this as a return:</p>
+
+<p><code>["Joe", 49, {:hobbies=&gt;["long walks", "candlelight dinners", "romantic comedies"]}]</code></p>
+
+<p>Compared to the extra work we would have had to do to get this in Ruby
+1.9, I like it.</p>
+
+<p>Did you know that the conversation starts here, but continues on in our <a href="https://plus.google.com/u/0/116568773932133159290/posts/KJrYYhbMDLz">Google Plus+
+Post</a>?</p>
+]]></content>
+  </entry>
+  
+</feed>

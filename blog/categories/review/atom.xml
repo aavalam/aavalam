@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Review | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/review/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Create and Publish Your First Ruby Gem - A Review]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review/"/>
+    <updated>2013-02-19T01:57:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review</id>
+    <content type="html"><![CDATA[<p>A book(let) review.</p>
+
+<p>A hands on guide for Ruby newbies to create and publish their first Ruby
+gem.</p>
+
+<p>Satish has published a booklet that takes you through the steps required
+to publish your first Ruby Gem.  <a href="http://www.amazon.com/gp/product/B00BECCKYM"><img class="right" src="http://ecx.images-amazon.com/images/I/41ZtM8-8HNL.<em>BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA278_PIkin4,BottomRight,-55,22_AA300_SH20_OU01</em>.jpg" width="300" height="300" title="How Do I Create And Publish My First Ruby Gem?" ></a> Recently updated with information on
+how to 'yank' your gem in case you don't need it to be available, it is
+a good short reference to get you quickly started in the world of Ruby Gems.</p>
+
+<p>There are tools out there that do the work for you in terms of having a
+skeleton.  This booklet will cover none of those.  It will take you
+through the basics to get a gem up and running in a few short minutes.</p>
+
+<p>Yes, all the information is available for free.  And it is not that
+difficult to find it all.  But dropping a dollar to have a handy
+reference on your Kindle to support Satish's efforts on RubyLearning is
+just a small way to say "Thanks!" and a way to show some love.</p>
+]]></content>
+  </entry>
+  
+</feed>

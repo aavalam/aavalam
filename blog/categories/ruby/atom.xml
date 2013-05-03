@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ruby | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Gravity simulator : Fantastic Green Shoes App]]></title>
+    <link href="http://aavalam.github.com/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app/"/>
+    <updated>2013-05-03T14:18:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app</id>
+    <content type="html"><![CDATA[<p>I'd love to introduce a new fantastic Green Shoes app: <a href="http://ifni.co/articles/programming/gravity_simulator">Gravity
+simulator</a></p>
+
+<!--more-->
+
+
+<p><img src="/images/2013/05/gravity_simulator.png"></p>
+
+<p>Read the <b>2D : Green Shoes</b> section. I'm honored. :)
+Watch <a href="http://ashbb.digi2.jp/Gravity_simulator.swf.html">a demo</a> I
+executed <a href="http://ifni.co/src/gsim.rb">his code</a> on my Windows 7.</p>
+
+<p>Let's have fun with Shoes! :-D</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby Programming 41st Batch Registrations now open]]></title>
+    <link href="http://aavalam.github.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/"/>
+    <updated>2013-03-14T00:25:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open</id>
+    <content type="html"><![CDATA[<p>Registrations are now open for RubyLearning’s popular <a href="http://rubylearning.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/">Ruby Programming Course</a>. <!-- More -->This is an intensive (as you want it to be), online course for beginners that helps you
+get started with Ruby programming.</p>
+
+<p>The course starts on 5 April, 2013, and the first 15 students are getting a discount.</p>
+
+<p>Check out the
+<a href="http://rubylearning.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/">announcement</a> and register today!</p>
+
+<p>I'll be there!</p>
+
+<p>The discussion starts here, but continues on our <a href="https://plus.google.com/u/0/116568773932133159290/posts/19Sq6jHgVWH">Google Plus Post</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby 2.0.0 Params Not Just for Methods]]></title>
+    <link href="http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods/"/>
+    <updated>2013-03-09T03:46:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods</id>
+    <content type="html"><![CDATA[<p>While working on documenting things I learned through a Learn Ruby By
+Testing project, I came across documenting the new Ruby 2.0 'Params'
+feature.</p>
+
+<p>I realized that Methods are blocks and Procs and lambdas are very
+close, so was wondering if the arguments would cross over.</p>
+
+<p>It turns out that it does.</p>
+
+<!-- more -->
+
+
+<p>If you are not familiar with the new "named parameters" feature, it
+works by taking a Hash argument, along with another new syntax that
+starts with a two asterisks.  Similar to the "optional argument" syntax,
+it basically accepts all other non-named hash keys that you would give
+your method.  Or, Proc or lambda.</p>
+
+<p>Let's look at the signature:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>ruby_two_oh_params.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">def</span> <span class="nf">some_method</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;Joe&#39;</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="o">**</span><span class="n">additional_params</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This describes an argument list consisting of an 0 or more arguments for
+<code>*args</code>, a named parameter called name, with the value of 'Joe' by
+default, and a named parameter of age, with a default value of 23, and
+at the end, the syntax that allows you to pass in arbitrary number of
+hash keys, with values.</p>
+
+<p>It is important to note that in order to have the **additional_params at
+the end, after the normal Hash that you may be used it, you must use the
+Ruby 1.9 syntax of <code>key: value</code>, rather than <code>:key =&gt; value</code>or it will
+break.</p>
+
+<p>Well, that is wonderful, as it means that we no longer need to do the
+hash merge to bring in default 'params'.</p>
+
+<p>But you will have likely read about that elsewhere.</p>
+
+<p>The thing that I was happy to discover was the "named params" are available
+for Proc and lambda.</p>
+
+<p>This means that we can now do something like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>named_params_for_proc_and_lambda.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">my_proc</span> <span class="o">=</span> <span class="no">Proc</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;Joe&#39;</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="o">**</span><span class="n">other_params</span><span class="o">|</span>
+</span><span class='line'>  <span class="o">[</span><span class="nb">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">other_params</span><span class="o">]</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>If you were to pass nothing at all to the Proc, you would get this: <code>["Joe", 23, {}]</code></p>
+
+<p>Let's see what happens if you change the name, and give it a some
+undetermined parameter:
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>example_use.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">my_proc</span> <span class="o">=</span> <span class="no">Proc</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;Joe&#39;</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span> <span class="o">**</span><span class="n">other_params</span><span class="o">|</span>
+</span><span class='line'>  <span class="o">[</span><span class="nb">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">other_params</span><span class="o">]</span>
+</span><span class='line'><span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;my_proc[age: 49, hobbies: [&#39;long walks&#39;, &#39;candlelight dinners&#39;, &#39;romantic comedies&#39;]]</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+We would end up with this as a return:</p>
+
+<p><code>["Joe", 49, {:hobbies=&gt;["long walks", "candlelight dinners", "romantic comedies"]}]</code></p>
+
+<p>Compared to the extra work we would have had to do to get this in Ruby
+1.9, I like it.</p>
+
+<p>Did you know that the conversation starts here, but continues on in our <a href="https://plus.google.com/u/0/116568773932133159290/posts/KJrYYhbMDLz">Google Plus+
+Post</a>?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Testing multiple versions of Ruby]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/26/testing-multiple-versions-of-ruby/"/>
+    <updated>2013-02-26T17:24:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/26/testing-multiple-versions-of-ruby</id>
+    <content type="html"><![CDATA[<p>When you have code that you would like to test, it is fairly simple to
+develop your tests to allow for it to be ran in more than one version of
+Ruby. <!-- more --></p>
+
+<p>This is part of the code that I use through inspiration from the <a href="https://github.com/rubyspec/rubyspec/blob/master/core/fixnum/bit_xor_spec.rb#L63">Ruby Spec</a> project.  I haven't checked the code, so I don't believe it is identical in functionality.</p>
+
+<p>The helper.rb file is loaded with my helper file in my testing folder.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>ruby_version_is - helper.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">def</span> <span class="nf">ruby_version_is</span><span class="p">(</span><span class="n">version_string</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">version_string</span> <span class="o">==</span> <span class="no">RUBY_VERSION</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;block_given? ? yield : true </span>
+</span><span class='line'><span class="sr">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;</span><span class="sr">/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;  end</span>
+</span><span class='line'><span class="sr">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This allows me to do the identical thing you saw on line 63 of that link
+above.  In other words, I can use it with a block and it just does the
+right thing.</p>
+
+<p>Or I can use it like a query, and it will either return true or nil.</p>
+
+<p>This makes it simple for me to have tests that are version specific, yet
+won't fill my tests with failures just because of a version difference.</p>
+
+<p>It also lets me search for those things that are specific to a version.</p>
+
+<p>Ruby 2.0.0-p0 is out, and I used it to document the new to_h
+functionality</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Test using ruby_is_version - core_struct_to_h_spec.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="nb">require</span> <span class="s1">&#39;spec_helper&#39;</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;Car = Struct.new(:make, :model, :year) do</span>
+</span><span class='line'><span class="sr">  def build</span>
+</span><span class='line'><span class="sr">  end</span>
+</span><span class='line'><span class="sr">end&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="n">ruby_version_is</span> <span class="s1">&#39;2.0.0&#39;</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">describe</span> <span class="s1">&#39;Ruby 2.0.0 stuff&#39;</span> <span class="k">do</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;before :each do</span>
+</span><span class='line'><span class="sr">  @car = Car.new(&#39;Toyota&#39;, &#39;Prius&#39;, 2014)</span>
+</span><span class='line'><span class="sr">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">it &#39;converts class to hash&#39; do</span>
+</span><span class='line'><span class="sr">  @car.to_h.must_equal make: &#39;Toyota&#39;, model: &#39;Prius&#39;, year: 2014</span>
+</span><span class='line'><span class="sr">end</span>
+</span><span class='line'><span class="sr">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;</span><span class="sr">/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;  end&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Now I can run this test alongside others, and I don't have to worry
+about what version of Ruby it is testing against.</p>
+
+<p>I think that I will add some functionality though.  So I can specify a
+minimum version of Ruby, and when 3.0.0 comes out, I will know what
+things change based on the tests, because they will run against that
+version as well, while not running against previous ones.</p>
+
+<p>Anyway, how do you test against different versions of Ruby?</p>
+
+<p>Continue this conversation on our <a href="https://plus.google.com/u/0/116568773932133159290/posts/Ffzy66e8TrH">Google Plus post</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby 2.0.0-p0 Notes]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/25/ruby-2-dot-0-0-p0-notes/"/>
+    <updated>2013-02-25T03:39:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/25/ruby-2-dot-0-0-p0-notes</id>
+    <content type="html"><![CDATA[<p>I have been waiting for the 24th of February to see what would come of
+the planned release date for Ruby 2.0.0-p0.</p>
+
+<p>I wanted to apply my "Learn By Testing" repository on this new Ruby, and
+am running into a few problems. <!-- more -->  The first was Bundler 1.3.0 needs to be
+installed.  Simple enough to install.  Just go to the repository, clone
+it,  select the tagged version, then install it locally as a gem.</p>
+
+<p>Trying to use a Gemfile with Bundler though is giving me some errors.</p>
+
+<p>See, I am using Guard and I wanted to add the <code>rb-inotify</code> gem to my
+<code>Gemfile</code>.  But in doing so, I get this error:</p>
+
+<p><code>``
+~/.rvm/gems/ruby-2.0.0-p0/gems/bundler-1.3.0.pre.8/lib/bundler/lazy_specification.rb:74:in</code>method_missing': LazySpecification has not been materialized yet (calling :required_ruby_version []) (RuntimeError)</p>
+
+<pre><code>    from ~/.rvm/gems/ruby-2.0.0-p0/gems/bundler-1.3.0.pre.8/lib/bundler/match_platform.rb:11:in `match_platform'
+    …
+    from ~/.rvm/gems/ruby-2.0.0-p0/bin/ruby_noexec_wrapper:14:in `eval'
+    from ~/.rvm/gems/ruby-2.0.0-p0/bin/ruby_noexec_wrapper:14:in `&lt;main&gt;'
+</code></pre>
+
+<p>```</p>
+
+<p>The problem is that in my RVM I had a bundler 1.2 version installed in
+the @global gemset.</p>
+
+<p>Removing the global bundler, making sure that Bundler 1.3.0 was
+installed, seems to have corrected the issues.</p>
+
+<p>Now on to write tests for Ruby 2.0 and absorb some knowledge while
+recording what I have learned.</p>
+]]></content>
+  </entry>
+  
+</feed>

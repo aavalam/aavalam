@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Benchmark | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/benchmark/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Simplifying Profiler and Benchmark measurements]]></title>
+    <link href="http://aavalam.github.com/blog/2008/09/04/simplifying-profiler-and-benchmark-measurements/"/>
+    <updated>2008-09-04T02:43:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2008/09/04/simplifying-profiler-and-benchmark-measurements</id>
+    <content type="html"><![CDATA[<p>Performance should be pretty close to the end of the list of things to do when programming in Ruby.  Yes, it can be important to get the timing down on your code.  But this is after you verify that it is running as you need it to, and it is actually usable.<!-- more --></p>
+
+<p>That being said, there are two tools that can give you some pretty nice information when you want to know how your code is performing.  It can even be nice to know what is being called.  This blog will assume you know what these are, as I don't want to describe what they do, or how to use them.  I simply want to show a away to simplify using these tools for when you may want to use them.</p>
+
+<p>What I have done for my use is put together a small collection of tools I use occasionally.  One such tool is for Benchmark (in the standard library).  I put it in a file, like so... <code>../site_ruby/1.8/mytools.rb</code>, and you know the rest...</p>
+
+<p>I can then send blocks of code that I may want some time information on...</p>
+
+<p><code>v_benchmark("Loop 1 million times") {1.upto(1000000) {do whatever here}}</code></p>
+
+<p>Or your more traditional block with do..end block, etc...</p>
+
+<p>The same thing works for Profiler...</p>
+
+<p>It is used identically the same was as the <code>v_benchmark</code> sample above.</p>
+
+<p>Have fun with this, I know I have had hours of enjoyment with it... and hopefully you will too... (though hopefully not with just one run...)</p>
+
+<p>There is so much you can do with it, I will leave experiments to you...</p>
+
+<p>Here are the code blocks....</p>
+
+<p>``` ruby my_tools.rb
+require 'rubygems'
+require 'profiler'
+require 'benchmark'</p>
+
+<p>=begin rdoc
+Provide v_benchmark with a report description as a string, and a block.
+=end</p>
+
+<p>def v_benchmark(test_description, &amp;block)
+  Benchmark.bmbm(test_description.size) do |x|</p>
+
+<pre><code>x.report("#{test_description}") {yield}
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>=begin rdoc
+v_profile will give you profile information.  Provide it with a
+String argument and a block.  The String argument is used for labelling
+the report.
+=end</p>
+
+<p>def v_profile (block_description, &amp;block)
+  puts "BEGIN: #{block_description} profile:"
+  Profiler__::start_profile</p>
+
+<pre><code>yield
+</code></pre>
+
+<p>  Profiler__::print_profile($stderr)
+  puts "END: #{block_description} profile report."
+end
+```</p>
+]]></content>
+  </entry>
+  
+</feed>

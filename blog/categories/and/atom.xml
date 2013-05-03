@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: and | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/and/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ternary Operator vs Or Operator vs And Operator]]></title>
+    <link href="http://aavalam.github.com/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator/"/>
+    <updated>2010-07-11T15:38:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator</id>
+    <content type="html"><![CDATA[<h2>The Ternary Operator and the OR Operator</h2>
+
+<p>The ternary operator is not reasonable for a situation that returns true or false; if the goal is to get a result of true or false from your decision, it is better to simply evaluate the statement itself. <!-- More --></p>
+
+<p>For example, if it reduces to this statement:
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>snippet1.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">some_condition</span> <span class="p">?</span> <span class="kp">true</span> <span class="p">:</span> <span class="kp">false</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+then you are better off just simply using <code>some_condition</code> by itself, as it will evaluate to either true or false.</p>
+
+<p>If, however, you have a statement that evaluates such as</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>snippet2.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">some_condition</span> <span class="p">?</span> <span class="kp">true</span> <span class="p">:</span> <span class="p">(</span><span class="n">some_action</span> <span class="ow">or</span> <span class="n">other</span> <span class="n">value</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>What you may be asking for and really wanting is the OR Operator, rather than the ternary:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>snippet3.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">some_condition</span> <span class="o">||</span> <span class="n">do_this_if</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="s2">&quot;some_statement&quot;</span><span class="o">&lt;</span><span class="sr">/em&gt;evaluates_as_false</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>If this doesn't immediately look familiar, look at this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>snippet4.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">assign_this</span> <span class="o">=</span> <span class="n">evaluated_condition</span> <span class="p">?</span> <span class="kp">true</span> <span class="p">:</span> <span class="n">expression_if_evaluated_statement_is_false</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p> Is the same as:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>snippet5.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">assign_this</span> <span class="o">=</span> <span class="n">evaluated_statement_if_true</span> <span class="ow">or</span> <span class="n">expression_if_evaluated_statement_is_false</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>On the other side of the spectrum, when you have
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>snippet6.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">some_statement</span> <span class="p">?</span> <span class="p">(</span><span class="n">some_action</span> <span class="ow">or</span> <span class="n">other</span> <span class="n">value</span><span class="p">)</span> <span class="p">:</span> <span class="kp">false</span> <span class="c1"># or nil</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+You will want to use the AND operator:
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>snippet7.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">some_condition</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span> <span class="n">do_this_if_some_condition_evaluates_as_true</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Rather than using the ternary with a false return like:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>snippet8.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">assign_this</span> <span class="o">=</span> <span class="n">evaluated_condition</span> <span class="p">?</span>  <span class="p">(</span><span class="n">some_action</span> <span class="ow">or</span> <span class="n">other</span> <span class="n">value</span><span class="p">)</span>  <span class="p">:</span> <span class="kp">false</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Remember, the point of either is having an evaluated statement that has the possibility of being false (or nil) as well as the possibility of being true.</p>
+
+<p>If your evaluated statement never has both possibilities, then these aren't the operators for you at this moment.</p>
+
+<p>In conclusion, we use the ternary operator when we have a simple <code>if..then</code> operation that does not return either <code>true</code> or <code>false</code> itself.  We use the <code>or</code> and <code>and</code> operator when we need one evaluation or the other.  When using the ternary operator, we don't use it to return <code>true</code> or <code>false</code>, there are easier ways to do that.</p>
+
+<p>The discussion starts here, but continues in our <a href="https://plus.google.com/116568773932133159290/posts/RXLe2TkWEDa">Google Plus Post</a>!</p>
+]]></content>
+  </entry>
+  
+</feed>

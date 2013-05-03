@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Gravity simulator : Fantastic Green Shoes App]]></title>
+    <link href="http://aavalam.github.com/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app/"/>
+    <updated>2013-05-03T14:18:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app</id>
+    <content type="html"><![CDATA[<p>I&#8217;d love to introduce a new fantastic Green Shoes app: <a href="http://ifni.co/articles/programming/gravity_simulator">Gravity
+simulator</a></p>
+
+<!--more-->
+
+
+<p><img src="http://aavalam.github.com/images/2013/05/gravity_simulator.png"></p>
+
+<p>Read the <b>2D : Green Shoes</b> section. I&#8217;m honored. :)
+Watch <a href="http://ashbb.digi2.jp/Gravity_simulator.swf.html">a demo</a> I
+executed <a href="http://ifni.co/src/gsim.rb">his code</a> on my Windows 7.</p>
+
+<p>Let&#8217;s have fun with Shoes! :-D</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Getting in touch with Linux]]></title>
+    <link href="http://aavalam.github.com/blog/2013/04/02/getting-in-touch-with-linux/"/>
+    <updated>2013-04-02T13:38:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2013/04/02/getting-in-touch-with-linux</id>
+    <content type="html"><![CDATA[<p>I have helped a few people get started with Linux the last couple of
+years and the tool that helped them get exposed to it, and finally
+installing Linux on their system, is called UnetBootin.  You can find
+their official homepage in the References list below this blog post.</p>
+
+<!-- More -->
+
+
+<p>The nice thing about UnetBootin is that it runs on Windows, Mac, and
+Linux.  It gives you access to many different tools and operating
+systems that you can then simply install to a USB drive.  It isn&#8217;t
+limited to operating systems, but also for recovery tools,
+administration tools, and other &#8220;live&#8221; CD&#8217;s.</p>
+
+<p>The current &#8216;favorite&#8217; distribution of Linux for an install is probably
+going to be Ubuntu, as it is highly documented, has a large user base,
+there are plenty of resources that are easily found on the web.  It is
+available, of course, in the drop down list of UnetBootin as a &#8216;Live CD&#8217;
+install, which means that you can install it to that USB thumbdrive that
+you have, you can test drive it, and if you like what you see, you can
+install it to your system.  But you won&#8217;t be disappointed in it as a
+first install.</p>
+
+<h2>But I want to use the tools on my native system until I feel comfortable enough!</h2>
+
+<p>To get some of the tools that are available on Linux to your current
+system, you may want to install some software, such as LibreOffice which
+seems to be taking the place of OpenOffice as an &#8216;Installed by Default&#8217;
+office suite for some distributions of Linux.  The OpenOffice suite is
+also a good office suite of tools, though, and LibreOffice is a
+derivative of this project.</p>
+
+<h2>DSL - The small &#8216;Linux on a Stick&#8217; distribution</h2>
+
+<p>Now, DSL may not be exactly for the person wanting to get started or seeing
+their very first Linux experiences, but it is good to have in your tool
+box.  It will get you running and connected to the network on perhaps an
+older machine that you want to browse the internet on, or just play
+around with.  It can do some serious things, but this is an article
+written for those that want to get familiar with Linux, so it has its
+place.</p>
+
+<p>This gives you a very small Linux distribution with some basic software that
+lets you get familiar with the look and feel of a Linux environmnet.  It
+is meant to be loaded from USB stick, for a temporarily booted
+environment, but with your standard useful tools, such as Internet
+browsers, &#8216;Office&#8217; software, etc.  It doesn&#8217;t have installed by default
+the common &#8220;Office Suite&#8221; software, but is a lightweight distribution.
+And those installations are available, so you can install them.</p>
+
+<h2>Congratulations on wanting to expand your Operating Sytem Experience</h2>
+
+<p>There are many reasons to use Linux.  Linux is a workhorse operating
+system.  It is free to install, free to use, has a very long history,
+has great people working on it, and is no longer for the technically
+elite.  My children have used it from a very young age, and my mother
+started using it last year.</p>
+
+<p>There are professional grade tools, and games available on it, and the
+available software will only grow.  Much of the software available is
+free in various meanings of the word, including no monetary charge for
+use, even commercial use.</p>
+
+<p>If you are just starting out using a Unix-like system, you could be up
+and running today.  Of course, like any complex system, there is a
+learning curve, but you can start being productive with it quickly, and
+the good thing is it will open you up to a whole new world of computing.</p>
+
+<p>So congratulations on being open to Open Source Computing!</p>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://unetbootin.sourceforge.net/">UnetBootin</a></li>
+<li><a href="http://www.damnsmalllinux.org/">DSL - Damn Small Linux</a></li>
+<li><a href="https://www.libreoffice.org/">LibreOffice</a></li>
+<li><a href="https://www.openoffice.org/">OpenOffice</a></li>
+</ul>
+
+
+<h3>The conversation starts here.</h3>
+
+<p>But it continues on our <a href="https://plus.google.com/u/0/116568773932133159290/posts/2DsKysaa3ns">Google Plus post</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby Programming 41st Batch Registrations now open]]></title>
+    <link href="http://aavalam.github.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/"/>
+    <updated>2013-03-14T00:25:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open</id>
+    <content type="html"><![CDATA[<p>Registrations are now open for RubyLearning’s popular <a href="http://rubylearning.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/">Ruby Programming Course</a>. <!-- More -->This is an intensive (as you want it to be), online course for beginners that helps you
+get started with Ruby programming.</p>
+
+<p>The course starts on 5 April, 2013, and the first 15 students are getting a discount.</p>
+
+<p>Check out the
+<a href="http://rubylearning.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/">announcement</a> and register today!</p>
+
+<p>I&#8217;ll be there!</p>
+
+<p>The discussion starts here, but continues on our <a href="https://plus.google.com/u/0/116568773932133159290/posts/19Sq6jHgVWH">Google Plus Post</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby 2.0.0 Params Not Just for Methods]]></title>
+    <link href="http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods/"/>
+    <updated>2013-03-09T03:46:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods</id>
+    <content type="html"><![CDATA[<p>While working on documenting things I learned through a Learn Ruby By
+Testing project, I came across documenting the new Ruby 2.0 &#8216;Params&#8217;
+feature.</p>
+
+<p>I realized that Methods are blocks and Procs and lambdas are very
+close, so was wondering if the arguments would cross over.</p>
+
+<p>It turns out that it does.</p>
+
+<!-- more -->
+
+
+<p>If you are not familiar with the new &#8220;named parameters&#8221; feature, it
+works by taking a Hash argument, along with another new syntax that
+starts with a two asterisks.  Similar to the &#8220;optional argument&#8221; syntax,
+it basically accepts all other non-named hash keys that you would give
+your method.  Or, Proc or lambda.</p>
+
+<p>Let&#8217;s look at the signature:</p>
+
+<figure class='code'><figcaption><span>ruby_two_oh_params.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">def</span> <span class="nf">some_method</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;Joe&#39;</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="o">**</span><span class="n">additional_params</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This describes an argument list consisting of an 0 or more arguments for
+<code>*args</code>, a named parameter called name, with the value of &#8216;Joe&#8217; by
+default, and a named parameter of age, with a default value of 23, and
+at the end, the syntax that allows you to pass in arbitrary number of
+hash keys, with values.</p>
+
+<p>It is important to note that in order to have the **additional_params at
+the end, after the normal Hash that you may be used it, you must use the
+Ruby 1.9 syntax of <code>key: value</code>, rather than <code>:key =&gt; value</code>or it will
+break.</p>
+
+<p>Well, that is wonderful, as it means that we no longer need to do the
+hash merge to bring in default &#8216;params&#8217;.</p>
+
+<p>But you will have likely read about that elsewhere.</p>
+
+<p>The thing that I was happy to discover was the &#8220;named params&#8221; are available
+for Proc and lambda.</p>
+
+<p>This means that we can now do something like this:</p>
+
+<figure class='code'><figcaption><span>named_params_for_proc_and_lambda.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">my_proc</span> <span class="o">=</span> <span class="no">Proc</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;Joe&#39;</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="o">**</span><span class="n">other_params</span><span class="o">|</span>
+</span><span class='line'>  <span class="o">[</span><span class="nb">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">other_params</span><span class="o">]</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you were to pass nothing at all to the Proc, you would get this: <code>["Joe", 23, {}]</code></p>
+
+<p>Let&#8217;s see what happens if you change the name, and give it a some
+undetermined parameter:</p>
+
+<figure class='code'><figcaption><span>example_use.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">my_proc</span> <span class="o">=</span> <span class="no">Proc</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;Joe&#39;</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span> <span class="o">**</span><span class="n">other_params</span><span class="o">|</span>
+</span><span class='line'>  <span class="o">[</span><span class="nb">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">other_params</span><span class="o">]</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">my_proc</span><span class="o">[</span><span class="ss">age</span><span class="p">:</span> <span class="mi">49</span><span class="p">,</span> <span class="ss">hobbies</span><span class="p">:</span> <span class="o">[</span><span class="s1">&#39;long walks&#39;</span><span class="p">,</span> <span class="s1">&#39;candlelight dinners&#39;</span><span class="p">,</span> <span class="s1">&#39;romantic comedies&#39;</span><span class="o">]]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We would end up with this as a return:</p>
+
+<p><code>["Joe", 49, {:hobbies=&gt;["long walks", "candlelight dinners", "romantic comedies"]}]</code></p>
+
+<p>Compared to the extra work we would have had to do to get this in Ruby
+1.9, I like it.</p>
+
+<p>Did you know that the conversation starts here, but continues on in our <a href="https://plus.google.com/u/0/116568773932133159290/posts/KJrYYhbMDLz">Google Plus+
+Post</a>?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My partial VIM configuration]]></title>
+    <link href="http://aavalam.github.com/blog/2013/03/03/my-partial-vim-configuration/"/>
+    <updated>2013-03-03T21:54:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/03/03/my-partial-vim-configuration</id>
+    <content type="html"><![CDATA[<p>What do you use to configure your editor?</p>
+
+<p>I am usually in VIM for my editor.  Not the graphical (gvim) version, the one
+that runs in the terminal.</p>
+
+<p>I also use <a href="https://github.com/carlhuda/janus">Carlhuda&#8217;s Janus</a> configuration.</p>
+
+<p>But there are things that I change that are simply minor things.</p>
+
+<!-- more -->
+
+
+<p>To do this, according to the documentation for customization, I use
+<code>~/.vimrc.after</code> and here are my settings.</p>
+
+<p>These are miscelanious things that I wanted to have.  The relativenumber
+setting seems to not be as persistent as I would like though.</p>
+
+<figure class='code'><figcaption><span>My Post Janus VIM Config  .vimrc.after </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="k">set</span> <span class="nb">t_Co</span><span class="p">=</span><span class="m">256</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">showcmd</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">foldmethod</span><span class="p">=</span><span class="nb">syntax</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">wildmenu</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">wildmode</span><span class="p">=</span><span class="nb">list</span>:longest
+</span><span class='line'><span class="k">set</span> <span class="nb">virtualedit</span><span class="p">=</span><span class="k">all</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">visualbell</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">relativenumber</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">wrap</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">linebreak</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">nolist</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">textwidth</span><span class="p">=</span><span class="m">0</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">wrapmargin</span><span class="p">=</span><span class="m">0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>An abbreviation that I use pretty often.</p>
+
+<figure class='code'><figcaption><span>My Post Janus VIM Config  .vimrc.after </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="c">&quot; rdt&lt;space&gt; does an autocompletion which gives me a rubydoctest</span>
+</span><span class='line'><span class="c">&quot; comment block</span>
+</span><span class='line'>iab <span class="nb">rdt</span> <span class="p">=</span>begin<span class="p">&lt;</span>CR<span class="p">&gt;</span>doctest: <span class="p">&lt;</span>CR<span class="p">&gt;&gt;&gt;</span> <span class="p">&lt;</span>CR<span class="p">&gt;=&gt;</span> <span class="p">&lt;</span>CR<span class="p">&gt;=</span><span class="k">end</span><span class="p">&lt;</span>CR<span class="p">&gt;&lt;</span>Up<span class="p">&gt;&lt;</span>Up<span class="p">&gt;&lt;</span>Up<span class="p">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This next line clears the highlights that happen when you search.  For me, my leader is <code>,</code>.</p>
+
+<figure class='code'><figcaption><span>My Post Janus VIM Config  .vimrc.after </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="nb">nnoremap</span> <span class="p">&lt;</span>leader<span class="p">&gt;&lt;</span>space<span class="p">&gt;</span> :<span class="k">noh</span><span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Add this in here if you really want to be enforced not to use the
+arrow keys.  Enable it for a few days and pretty soon you just don&#8217;t
+reach for the arrow keys until you really need them.</p>
+
+<figure class='code'><figcaption><span>My Post Janus VIM Config  .vimrc.after </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="nb">nnoremap</span> <span class="p">&lt;</span><span class="k">up</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">nnoremap</span> <span class="p">&lt;</span>down<span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">nnoremap</span> <span class="p">&lt;</span><span class="k">left</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">nnoremap</span> <span class="p">&lt;</span><span class="k">right</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">inoremap</span> <span class="p">&lt;</span><span class="k">up</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">inoremap</span> <span class="p">&lt;</span>down<span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">inoremap</span> <span class="p">&lt;</span><span class="k">left</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span><span class='line'><span class="nb">inoremap</span> <span class="p">&lt;</span><span class="k">right</span><span class="p">&gt;</span> <span class="p">&lt;</span>nop<span class="p">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Well, there you have it. Most of my configuration file that I have in
+addtion to the Janus configuration.</p>
+
+<p>What things do you have in your configuration that you really like to
+have?  I am sure it is more exciting than mine!</p>
+
+<p>The discussion starts here, but continues on this <a href="https://plus.google.com/u/0/116568773932133159290/posts/WhzgA38YcnB">Google+ Post</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Decision Driven Fairy Tale for Kids]]></title>
+    <link href="http://aavalam.github.com/blog/2013/03/01/decision-driven-fairy-tale-for-kids/"/>
+    <updated>2013-03-01T19:19:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/03/01/decision-driven-fairy-tale-for-kids</id>
+    <content type="html"><![CDATA[<p>I&#8217;d like to introduce <a href="https://github.com/sebastjan-hribar">Sebastjan</a>&#8217;s fantastic project on github: <a href="https://github.com/sebastjan-hribar/princ">princ</a></p>
+
+<!-- more -->
+
+
+<p><img src="http://www.rin-shun.com/shoes/seba_princ.png" alt="seba_princ.png" /></p>
+
+<p>Watch <a href="http://www.rin-shun.com/shoes/seba_princ.swf.html">a little demo</a>.</p>
+
+<p>Cool! Enjoy with your kids!     <br/>
+ashbb</p>
+
+<p>The discussion starts here, but continues on our <a href="https://plus.google.com/u/0/116568773932133159290/posts/Pp5E6YB6tQE">Google+ post</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Testing multiple versions of Ruby]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/26/testing-multiple-versions-of-ruby/"/>
+    <updated>2013-02-26T17:24:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/26/testing-multiple-versions-of-ruby</id>
+    <content type="html"><![CDATA[<p>When you have code that you would like to test, it is fairly simple to
+develop your tests to allow for it to be ran in more than one version of
+Ruby. <!-- more --></p>
+
+<p>This is part of the code that I use through inspiration from the <a href="https://github.com/rubyspec/rubyspec/blob/master/core/fixnum/bit_xor_spec.rb#L63">Ruby Spec</a> project.  I haven&#8217;t checked the code, so I don&#8217;t believe it is identical in functionality.</p>
+
+<p>The helper.rb file is loaded with my helper file in my testing folder.</p>
+
+<figure class='code'><figcaption><span>ruby_version_is - helper.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">def</span> <span class="nf">ruby_version_is</span><span class="p">(</span><span class="n">version_string</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">version_string</span> <span class="o">==</span> <span class="no">RUBY_VERSION</span>
+</span><span class='line'>    <span class="nb">block_given?</span> <span class="p">?</span> <span class="k">yield</span> <span class="p">:</span> <span class="kp">true</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This allows me to do the identical thing you saw on line 63 of that link
+above.  In other words, I can use it with a block and it just does the
+right thing.</p>
+
+<p>Or I can use it like a query, and it will either return true or nil.</p>
+
+<p>This makes it simple for me to have tests that are version specific, yet
+won&#8217;t fill my tests with failures just because of a version difference.</p>
+
+<p>It also lets me search for those things that are specific to a version.</p>
+
+<p>Ruby 2.0.0-p0 is out, and I used it to document the new to_h
+functionality</p>
+
+<figure class='code'><figcaption><span>Test using ruby_is_version - core_struct_to_h_spec.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="nb">require</span> <span class="s1">&#39;spec_helper&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">Car</span> <span class="o">=</span> <span class="no">Struct</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">:make</span><span class="p">,</span> <span class="ss">:model</span><span class="p">,</span> <span class="ss">:year</span><span class="p">)</span> <span class="k">do</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">build</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ruby_version_is</span> <span class="s1">&#39;2.0.0&#39;</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">describe</span> <span class="s1">&#39;Ruby 2.0.0 stuff&#39;</span> <span class="k">do</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">before</span> <span class="ss">:each</span> <span class="k">do</span>
+</span><span class='line'>      <span class="vi">@car</span> <span class="o">=</span> <span class="no">Car</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Toyota&#39;</span><span class="p">,</span> <span class="s1">&#39;Prius&#39;</span><span class="p">,</span> <span class="mi">2014</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">it</span> <span class="s1">&#39;converts class to hash&#39;</span> <span class="k">do</span>
+</span><span class='line'>      <span class="vi">@car</span><span class="o">.</span><span class="n">to_h</span><span class="o">.</span><span class="n">must_equal</span> <span class="ss">make</span><span class="p">:</span> <span class="s1">&#39;Toyota&#39;</span><span class="p">,</span> <span class="ss">model</span><span class="p">:</span> <span class="s1">&#39;Prius&#39;</span><span class="p">,</span> <span class="ss">year</span><span class="p">:</span> <span class="mi">2014</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now I can run this test alongside others, and I don&#8217;t have to worry
+about what version of Ruby it is testing against.</p>
+
+<p>I think that I will add some functionality though.  So I can specify a
+minimum version of Ruby, and when 3.0.0 comes out, I will know what
+things change based on the tests, because they will run against that
+version as well, while not running against previous ones.</p>
+
+<p>Anyway, how do you test against different versions of Ruby?</p>
+
+<p>Continue this conversation on our <a href="https://plus.google.com/u/0/116568773932133159290/posts/Ffzy66e8TrH">Google Plus post</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby 2.0.0-p0 Notes]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/25/ruby-2-dot-0-0-p0-notes/"/>
+    <updated>2013-02-25T03:39:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/25/ruby-2-dot-0-0-p0-notes</id>
+    <content type="html"><![CDATA[<p>I have been waiting for the 24th of February to see what would come of
+the planned release date for Ruby 2.0.0-p0.</p>
+
+<p>I wanted to apply my &#8220;Learn By Testing&#8221; repository on this new Ruby, and
+am running into a few problems. <!-- more -->  The first was Bundler 1.3.0 needs to be
+installed.  Simple enough to install.  Just go to the repository, clone
+it,  select the tagged version, then install it locally as a gem.</p>
+
+<p>Trying to use a Gemfile with Bundler though is giving me some errors.</p>
+
+<p>See, I am using Guard and I wanted to add the <code>rb-inotify</code> gem to my
+<code>Gemfile</code>.  But in doing so, I get this error:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>~/.rvm/gems/ruby-2.0.0-p0/gems/bundler-1.3.0.pre.8/lib/bundler/lazy_specification.rb:74:in `method_missing': LazySpecification has not been materialized yet (calling :required_ruby_version []) (RuntimeError)
+</span><span class='line'>        from ~/.rvm/gems/ruby-2.0.0-p0/gems/bundler-1.3.0.pre.8/lib/bundler/match_platform.rb:11:in `match_platform'
+</span><span class='line'>        …
+</span><span class='line'>        from ~/.rvm/gems/ruby-2.0.0-p0/bin/ruby_noexec_wrapper:14:in `eval'
+</span><span class='line'>        from ~/.rvm/gems/ruby-2.0.0-p0/bin/ruby_noexec_wrapper:14:in `&lt;main&gt;'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The problem is that in my RVM I had a bundler 1.2 version installed in
+the @global gemset.</p>
+
+<p>Removing the global bundler, making sure that Bundler 1.3.0 was
+installed, seems to have corrected the issues.</p>
+
+<p>Now on to write tests for Ruby 2.0 and absorb some knowledge while
+recording what I have learned.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Create and Publish Your First Ruby Gem - A Review]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review/"/>
+    <updated>2013-02-19T01:57:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review</id>
+    <content type="html"><![CDATA[<p>A book(let) review.</p>
+
+<p>A hands on guide for Ruby newbies to create and publish their first Ruby
+gem.</p>
+
+<p>Satish has published a booklet that takes you through the steps required
+to publish your first Ruby Gem.  <a href="http://www.amazon.com/gp/product/B00BECCKYM"><img class="right" src="http://ecx.images-amazon.com/images/I/41ZtM8-8HNL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA278_PIkin4,BottomRight,-55,22_AA300_SH20_OU01_.jpg" width="300" height="300" title="How Do I Create And Publish My First Ruby Gem?" ></a> Recently updated with information on
+how to &#8216;yank&#8217; your gem in case you don&#8217;t need it to be available, it is
+a good short reference to get you quickly started in the world of Ruby Gems.</p>
+
+<p>There are tools out there that do the work for you in terms of having a
+skeleton.  This booklet will cover none of those.  It will take you
+through the basics to get a gem up and running in a few short minutes.</p>
+
+<p>Yes, all the information is available for free.  And it is not that
+difficult to find it all.  But dropping a dollar to have a handy
+reference on your Kindle to support Satish&#8217;s efforts on RubyLearning is
+just a small way to say &#8220;Thanks!&#8221; and a way to show some love.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Saying Goodbye to Posterous]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/16/saying-goodbye-to-posterous/"/>
+    <updated>2013-02-16T05:26:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/16/saying-goodbye-to-posterous</id>
+    <content type="html"><![CDATA[<p>When Twitter bought Posterous, I thought it was going to be a great
+thing for us.  We would have a long term platform, always improving,
+easy to use for guest blogging from those that are not necessarily
+familiar with html and markup/markdown.  But I was notified by Satoshi
+that they will be shutting down in April.</p>
+
+<!-- more -->
+
+
+<p>Co-founder Garry Tan is providing <a href="http://posthaven.com">this solution</a> for US $5.00 per month as per his tweet.  Not a bad idea.</p>
+
+<blockquote><p>Posterous Will Shut Down On April 30th, Co-Founder Garry Tan Launches Posthaven To Save Your Sites</p><footer><strong>@garrytan</strong> <cite><a href='https://twitter.com/garrytan/status/302591116224651265'>twitter.com/garrytan/status/&hellip;</a></cite></footer></blockquote>
+
+
+<p><span class='pullquote-right' data-pullquote='It was great while it lasted'></p>
+
+<p>It was a great thing for us.  It was great while it lasted, and we
+definitely emjoyed the ease to involve the people that wanted to write
+but didn&#8217;t want to necessarily have their own blog set up.  E-mail to
+our blog address, and it was as simple as that. It even let my children
+post via e-mail from their e-mail or even from their phones for the
+photos that they took occasionally.  A great idea for that kind of
+thing, easier privacy settings for the kids than Facebook without all the
+intricate settings, and just simple to use.
+</span></p>
+
+<p>For us, for right now, it looks like it is Github and Octopress.  This
+should work very well for a technical blog, it should let us express the
+things that we would like to express, and it will allow simple team
+management for those that have experience with git and markdown.</p>
+
+<p>It won&#8217;t be as simple in a lot of ways as Posterous was.  But it will
+afford us some more features and the fun of learning and playing with a
+new system.  Plus, it is fully customizable, still without the overhead
+you get with hosting your own servers, etc.</p>
+
+<p>We will miss Posterous!  But we are excited about moving on and learning
+new things.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[breaktime : Fantastic Green Shoes App]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/15/breaktime-fantastic-green-shoes-app/"/>
+    <updated>2013-02-15T07:26:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/15/breaktime-fantastic-green-shoes-app</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://aavalam.github.com/images/2013/02/47266220-breaktime.png" width="396" height="98" title="breaktime gem" ></p>
+
+<p>I&#8217;d like to introduce <a href="https://github.com/joony">joonty&#8217;s</a> fantastic project on github.</p>
+
+<p>Read this post: <a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/404416">New gem: breaktime</a></p>
+
+<p>Cool! Try it out! :-D</p>
+
+<p>&#8211;ashbb</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Play Othello with Shoes 4]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/01/play-othello-with-shoes-4/"/>
+    <updated>2013-02-01T05:19:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/01/play-othello-with-shoes-4</id>
+    <content type="html"><![CDATA[<p>Today <a href="https://github.com/shoes/shoes4">Shoes 4</a> has become able to run Othello Game.</p>
+
+<!-- More -->
+
+
+<p><img class="top" src="http://aavalam.github.com/images/2013/02/othello-sample50.png" width="268" height="319" title="&#34;Othello Game Board on Shoes&#34;" alt="&#34;Othello Game Board on Shoes&#34;"></p>
+
+<p>Watch <a href="http://www.rin-shun.com/shoes4/tmp/shoes4-sample50.swf.html">a demo</a>.</p>
+
+<p>Have fun with Shoes,</p>
+
+<p>ashbb</p>
+
+<p>The discussion starts here, but continues on at our <a href="https://plus.google.com/116568773932133159290/posts/MiQhgoqqMHR">Google Plus Post</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Private easy git repositories using rails and gitlab]]></title>
+    <link href="http://aavalam.github.com/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab/"/>
+    <updated>2012-10-28T03:02:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab</id>
+    <content type="html"><![CDATA[<p>I have installed <a href="http://gitlabhq.com/">gitlab</a> about 4 times over the last 24 hours.</p>
+
+<!-- more -->
+
+
+<p>First I started with an install from turnkey, so that I could look over a well thought out install.  And it was pretty simple aside from one timeout issue.  Easilly fixed once I looked through the configuration files.  It was running vesion 2.5.0, you can download a virtual machine install from www.turnkeylinux.org, search for gitlab,</p>
+
+<p>I then blew away the VM and installed it again and made some changes that I wanted to see, just to get a feel for how I could manipulate things and break them.</p>
+
+<p>Finally, the last time (and this screenshot) is from an install right from the gitlab instructions.  It was very straight forward, I did find one error in /home/git/.gitolite.rc which had a single quote in the wrong place, I replaced it with a slash to give it a glob pattern.  (I think it was the right thing to do).  If you are
+curious, it is on line 22.</p>
+
+<p>This is version 3.0.3 and pulled down from the stable branch.</p>
+
+<p><img src="http://aavalam.github.com/images/2012/10/45405183-image.png" width="812" height="748" title="Screenshot of GITLAB Dashboard" ></p>
+
+<p>From playing with it a little bit (and I found out from pushing the gitlab stable branch only) that gitlab expects and requires a master branch to be created and pushed up, otherwise it doesn&#8217;t know to display even the only branch that is there.  So that took me a moment to realize.</p>
+
+<p>Remove the master branch, and you will go back to the instruction page directing you to do a git config &#8211;global username and mail
+standard things for git configuration as it pertains to your
+settings.</p>
+
+<p>If you are wanting to play with the demo, you can from the link above&#8230; or if you would like to play with it with your own account, you can right at <a href="http://gitlab.com">gitlab.com</a> (I don&#8217;t know why that domain isn&#8217;t in your face when you go to their main web page.)  They are running, as of this post, version 2.9.1.</p>
+
+<p>If you decide to install it or use it in the various ways that you are able to, let me know your results, how you are using it, and what you think about it.  Have you customized it?  Added a registration page, etc.?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Exploring Everyday Things with R and Ruby - A Book Review]]></title>
+    <link href="http://aavalam.github.com/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review/"/>
+    <updated>2012-07-10T04:52:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review</id>
+    <content type="html"><![CDATA[<p>by: Victor Goff</p>
+
+<p>I got the opportunity to review <em>Exploring Everyday Things with R and Ruby</em> by
+ Sau Sheong Chang and published by O&#8217;Reilly Media.<a href="http://shop.oreilly.com/product/0636920022626.do" title="Exploring Everyday Things with R and Ruby - O'Reilly Media. 2012. 6 Jul. 2012">1</a>
+ </p>
+
+<!-- more -->
+
+
+<p>This book, as expected, talks about R and Ruby.  The first chapters cover
+Ruby at an introductory level.</p>
+
+<p><span class='pullquote-right' data-pullquote='Shoes, a simple but powerful UI toolkit for Ruby'>
+In the first chapter, after showing how you can install Ruby and an
+introduction to the basics of Ruby, he also provides a quick introduction
+to Shoes, a simple but powerful UI toolkit for Ruby<a href="http://my.safaribooksonline.com/book/-/9781449342203/1dot-the-hat-and-the-whip/id2776202" title="Exploring Everyday Things with R and Ruby 1. The Hat and the Whip 2012. 6 Jul. 2012">2</a>, with installation
+suggestions and sample code.
+</span></p>
+
+<p>His introduction to Ruby covers the basics and is just a little bit more than
+ enough to understand the code in the rest of his book.  I think he did a
+really good job of that.  The second part of the first chapter, covering Shoes,
+explains Shoes in a nutshell rather well, I think.  You will get to use Shoes
+in later chapters.</p>
+
+<p>He then goes on to introduce R, which I had not used before.  He covers in a
+way that was fairly straightforward to install and get running.  Within a few
+moments, I had R installed and the &#8216;normal&#8217; graphical tools up and running and
+was able to run some sample code, and even had graphs floating around my screen
+based on data that I created from the samples.</p>
+
+<p>Shortly after that, I had R code being created in my favorite text editor, and
+executing code right from there.</p>
+
+<p>His introduction to the language is fairly quick, but again, just a bit more
+than enough to get you going.</p>
+
+<p>He also covers some statistical transformation examples to change the statistical
+data into plottable information.  That is a good thing, because throughout the book,
+you will be needing to recognize this in the examples, and will have fun producing
+your own graphical representations of data you get.</p>
+
+<p>And all that is enough to get you started creating models to solve real world problems.</p>
+
+<p>For example, do you need to convince your boss that you need more restrooms available
+for the people in your office?  You can provide some simulations and reports and graphs
+(the boss likes graphs, right?) to support your argument, or will it support his
+assertion that what you have is just the right amount?</p>
+
+<p>This gets to the fun part.  Have you ever wondered how to mine data from your own
+e-mail?  To find trends of when you send mail, or who you communicate with most?  
+Finding the most frequently used words and the trending themes in your communications?  
+You are in luck.  He will take you through the Enron Saga to lightly touch on analyzing
+that e-mail data <a href="http://www.cs.cmu.edu/~enron/" title="Enron Email Dataset. - 2004. 6 Jul. 2012">3</a>, but easily apply it to your own IMAP e-mail accounts.</p>
+
+<p>How about biometrics, recording your own heartbeat through a home made electronic
+stethoscope?  Yes, you will be able to do this, and take measurements, and analyze
+them graphically.  Combine that with pulse oximetry with your webcam and you might
+have just enough evidence to convince your boss that your cubicle is suffocating you.</p>
+
+<p>That sounds fun enough, but it will involve analyzing sound files and video files to
+get the readings and measurements that you want to produce in a graphical chart.  
+That makes it fun to the nth power, right?</p>
+
+<p>Well, what can be more fun than Boid’s&#8230; and boid is the woid in this next chapter.  
+Using Ruby Shoes you will explore the flocking of birds, you will write a simulation
+and are encouraged to continue playing on.</p>
+
+<p>What follows is an extension of the Boids and introduces the mortality and procreation
+of the boids, which were prior to this immortals in a veritable utopia.  Life
+simulated and analyzed.</p>
+
+<p>Overall, I really enjoyed this book, it was easy to read, had some math in it, of
+course, but nothing that requires advanced math.  And the topics were fun to work
+through.  And there is plenty of room to experiment and explore after finishing
+the chapters.</p>
+
+<p>Note; This review cross posted at RubyLearnings Blog with permission.</p>
+
+<p>The conversation starts here, and continues on <a href="https://plus.google.com/u/0/116568773932133159290/posts/Hbni5EzVvzB">Google Plus</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Quick Reference to Minitest and Minitest Spec]]></title>
+    <link href="http://aavalam.github.com/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec/"/>
+    <updated>2012-03-22T17:42:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec</id>
+    <content type="html"><![CDATA[<p>I placed this in my ~/bin folder so that I could run it whenever I need a quick refresher on the available assertions. It will automatically include changes as minitest gets updated over time and versions.  <!-- more --></p>
+
+<div><script src='https://gist.github.com/2165841.js?file=minitest_assertions.rb'></script>
+<noscript><pre><code>#!/usr/bin/env ruby
+require 'test/unit'
+require 'minitest/spec'
+
+
+# Reasonable default of 3 columns
+@columns = 3
+
+puts &quot;== Spec Style&quot;
+
+
+def columnize(method)
+  @column_count ||= 1
+  print &quot;#{method}&quot;.ljust(25)
+  if @column_count == @columns
+    puts
+    @column_count = 0
+  end
+  @column_count += 1 
+end
+
+MiniTest::Spec.methods.sort.each do |method|
+  if method.to_s =~ /wont/ or method.to_s =~ /must/
+    columnize(method)
+  end
+end
+
+puts &quot;\n\n== Test Style&quot;
+column_count = 1
+
+MiniTest::Assertions.instance_methods.sort.each do |method|
+  if method =~ /assert/ or method.to_s =~ /refute/
+    columnize(method)
+  end
+end
+</code></pre></noscript></div>
+
+
+<p>Currently the list shows:</p>
+
+<div><script src='https://gist.github.com/2165841.js?file=output.txt'></script>
+<noscript><pre><code>== Spec Style
+must_be                  must_be_close_to         must_be_empty            
+must_be_instance_of      must_be_kind_of          must_be_nil              
+must_be_same_as          must_be_silent           must_be_within_delta     
+must_be_within_epsilon   must_equal               must_include             
+must_match               must_output              must_raise               
+must_respond_to          must_send                must_throw               
+wont_be                  wont_be_close_to         wont_be_empty            
+wont_be_instance_of      wont_be_kind_of          wont_be_nil              
+wont_be_same_as          wont_be_within_delta     wont_be_within_epsilon   
+wont_equal               wont_include             wont_match               
+wont_respond_to          
+
+== Test Style
+_assertions              _assertions=             
+assert                   assert_block             assert_empty             
+assert_equal             assert_in_delta          assert_in_epsilon        
+assert_includes          assert_instance_of       assert_kind_of           
+assert_match             assert_nil               assert_operator          
+assert_output            assert_raises            assert_respond_to        
+assert_same              assert_send              assert_silent            
+assert_throws            refute                   refute_empty             
+refute_equal             refute_in_delta          refute_in_epsilon        
+refute_includes          refute_instance_of       refute_kind_of           
+refute_match             refute_nil               refute_operator          
+refute_respond_to        refute_same
+
+</code></pre></noscript></div>
+
+
+<p>I placed this in my ~/bin folder so that I could run it whenever I need a quick refresher on the available assertions. It will automatically include changes as minitest gets updated over time and versions.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Programming User Interfaces]]></title>
+    <link href="http://aavalam.github.com/blog/2010/07/20/programming-user-interfaces/"/>
+    <updated>2010-07-20T01:31:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2010/07/20/programming-user-interfaces</id>
+    <content type="html"><![CDATA[<p>(Original post date: 03/Mar/2010)</p>
+
+<p>My way of programming the computer systems have been normal, albeit slower than the technology has evolved, I began by imperative programming applications in command line mode and have I kept more within the server components of the solutions that have developed or maintained.</p>
+
+<p>However, every time I make a foray into programming mode applications GUI it always suffers from too much friction and impedance. And even when you reach the end, most often it does not end up being what you expected from the beginning.</p>
+
+<!-- more -->
+
+
+<p>Leaving aside the issues connected with NPP - Non-Programmers Programming - and with the usual challenges around the lineup - Software Craftsmanship - This article addresses two issues: why is it difficult for programmers to encode good user interfaces and a possible answer to minimize this impedance ( Paper Prototyping ).</p>
+
+<p>Firstly, I have learned that 80% (or more) of the value of an application is evaluated by the user on the user interface of this application.</p>
+
+<p>Jeff Atwood in his article &#8220;The User Interface Is The Application&#8221;, says that no matter how spectacular the architecture diagrams are that exist for an application, with respect to the user of that application, the user interface is the application. It is true that the task of building a good user interface is difficult but to be taken seriously you have to go beyond and build an impressive user interface.</p>
+
+<p>And he even cites Yukihiro Matsumoto, creator of the Ruby language:</p>
+
+<p>If you have a good interface on your system, and the budget of money and time, you can work on your system. If your system has bugs or is too slow, you can improve it. But if your system has a bad interface, you have basically nothing. It will not matter if it is the work of the highest craftsmanship on the inside. If your system has a bad interface, no one will use it. So the interface or surface of the system, whether to users or other machines, is very important.</p>
+
+<p>The assumption that building a good user interface is difficult, is it reasonable to expect that any programmer with no training or experience in UI Design can build and maintain a good user interface?</p>
+
+<p>Some responses also came from another article from Jeff Atwood, <a href="http://www.codinghorror.com/blog/2005/06/ui-is-hard.html">&#8220;UI is Hard&#8221;</a>, where he writes that in part are the developers themselves primarily to blame because - like me - most programmers begin to think in code and business logic rather than begin by thinking about the user interface. And that majority is represented in part on your comments to this article.</p>
+
+<p>Other responses came from other similar articles, <a href="http://blogs.msdn.com/rick_schaut/archive/2004/04/02/106929.aspx">&#8220;UI Design&#8221;</a> blog &#8220;Buggin&#8217; My Life Away&#8221; by Rick Schaut and <a href="http://www.cooper.com/journal/2003/08/can_programmers_do_interaction.html">&#8220;Can Programmers Do Interaction Design?&#8221;</a> by Kim Goodwin of Cooper in the Journal.</p>
+
+<p>What is Rick points out that when working on software for the user it doesn&#8217;t matter if it is a web application or desktop, or add new features, the focus is in designing the user interface - first and foremost. And this is complicated because programmers are first used to implement efficient algorithms for common problems in computer science but not learned or have enough experience on how to design a good user interface. Secondly, most of the tools facilitates the rapid creation of user interfaces for most simple problems of usability , but they tend to fall short of what is needed also to facilitate the rapid creation of interfaces for a set of usage scenarios that are more complex.</p>
+
+<p>In another interesting article, <a href="http://www.codinghorror.com/blog/2004/09/the-rise-and-fall-of-homo-logicus.html">&#8220;The Rise and Fall of Homo Logicus&#8221;</a> by Jeff Atwood quotes an excerpt from the book <em>The Inmates Are Running the Asylum</em> by Alan Cooper: There is a large impedance for a programmer to design an interface for the user. Because while most developers have a more forward-thinking knowledge about how everything works, most users have only a  thought turned to the success of a task. He ends the article saying that we must stop thinking like Homo Logicus and think more like Homo Sapiens.</p>
+
+<p>The article by Kim said that instead of resulting in the lowest cost having the programmers design the user interface it has been the opposite: it is more inefficient, more costly and more likely to be a failure. And the failures is that it results in more programming, right?</p>
+
+<p>So how to avoid the impedance between what the programmer is able to create and what the user is typically waiting for?</p>
+
+<p>First, many articles recommend to start the development by creating the user interface even to the point (extreme and ironic) to appoint a methodology to be followed: FAD.</p>
+
+<p>Secondly, the use of paper prototyping - what other benefits avoids many of the pitfalls in prototyping applications - due to better mitigate the risks normally inherent in having the feedback of the users only after laborious programming tasks</p>
+
+<ul>
+<li>Posted in: <a href="http://recortis.dowedo-it.com/index.php/archives/category/docoding/">doCoding</a></li>
+<li>Author: José Carlos Monteiro</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hooks in Ruby - A First Look]]></title>
+    <link href="http://aavalam.github.com/blog/2010/07/16/hooks-in-ruby-a-first-look/"/>
+    <updated>2010-07-16T07:04:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2010/07/16/hooks-in-ruby-a-first-look</id>
+    <content type="html"><![CDATA[<p>Here is a list of the Ruby Hooks</p>
+
+<ul>
+<li>const_missing</li>
+<li>included</li>
+<li>extended</li>
+<li>inherited</li>
+<li>method_missing</li>
+<li>method_added</li>
+<li>singleton_added</li>
+<li>method_removed</li>
+<li>method_undefined</li>
+</ul>
+
+
+<p>The discussion starts here, but continues on our <a href="https://plus.google.com/u/0/116568773932133159290/posts/PmN66RBNGjY">Google+ post</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ternary Operator vs Or Operator vs And Operator]]></title>
+    <link href="http://aavalam.github.com/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator/"/>
+    <updated>2010-07-11T15:38:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator</id>
+    <content type="html"><![CDATA[<h2>The Ternary Operator and the OR Operator</h2>
+
+<p>The ternary operator is not reasonable for a situation that returns true or false; if the goal is to get a result of true or false from your decision, it is better to simply evaluate the statement itself. <!-- More --></p>
+
+<p>For example, if it reduces to this statement:</p>
+
+<figure class='code'><figcaption><span>snippet1.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">some_condition</span> <span class="p">?</span> <span class="kp">true</span> <span class="p">:</span> <span class="kp">false</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>then you are better off just simply using <code>some_condition</code> by itself, as it will evaluate to either true or false.</p>
+
+<p>If, however, you have a statement that evaluates such as</p>
+
+<figure class='code'><figcaption><span>snippet2.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">some_condition</span> <span class="p">?</span> <span class="kp">true</span> <span class="p">:</span> <span class="p">(</span><span class="n">some_action</span> <span class="ow">or</span> <span class="n">other</span> <span class="n">value</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What you may be asking for and really wanting is the OR Operator, rather than the ternary:</p>
+
+<figure class='code'><figcaption><span>snippet3.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">some_condition</span> <span class="o">||</span> <span class="n">do_this_if_</span><span class="s2">&quot;some_statement&quot;</span><span class="n">_evaluates_as_false</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If this doesn&#8217;t immediately look familiar, look at this:</p>
+
+<figure class='code'><figcaption><span>snippet4.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">assign_this</span> <span class="o">=</span> <span class="n">evaluated_condition</span> <span class="p">?</span> <span class="kp">true</span> <span class="p">:</span> <span class="n">expression_if_evaluated_statement_is_false</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> Is the same as:</p>
+
+<figure class='code'><figcaption><span>snippet5.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">assign_this</span> <span class="o">=</span> <span class="n">evaluated_statement_if_true</span> <span class="ow">or</span> <span class="n">expression_if_evaluated_statement_is_false</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>On the other side of the spectrum, when you have</p>
+
+<figure class='code'><figcaption><span>snippet6.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">some_statement</span> <span class="p">?</span> <span class="p">(</span><span class="n">some_action</span> <span class="ow">or</span> <span class="n">other</span> <span class="n">value</span><span class="p">)</span> <span class="p">:</span> <span class="kp">false</span> <span class="c1"># or nil</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You will want to use the AND operator:</p>
+
+<figure class='code'><figcaption><span>snippet7.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">some_condition</span> <span class="o">&amp;&amp;</span> <span class="n">do_this_if_some_condition_evaluates_as_true</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Rather than using the ternary with a false return like:</p>
+
+<figure class='code'><figcaption><span>snippet8.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">assign_this</span> <span class="o">=</span> <span class="n">evaluated_condition</span> <span class="p">?</span>  <span class="p">(</span><span class="n">some_action</span> <span class="ow">or</span> <span class="n">other</span> <span class="n">value</span><span class="p">)</span>  <span class="p">:</span> <span class="kp">false</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Remember, the point of either is having an evaluated statement that has the possibility of being false (or nil) as well as the possibility of being true.</p>
+
+<p>If your evaluated statement never has both possibilities, then these aren&#8217;t the operators for you at this moment.</p>
+
+<p>In conclusion, we use the ternary operator when we have a simple <code>if..then</code> operation that does not return either <code>true</code> or <code>false</code> itself.  We use the <code>or</code> and <code>and</code> operator when we need one evaluation or the other.  When using the ternary operator, we don&#8217;t use it to return <code>true</code> or <code>false</code>, there are easier ways to do that.</p>
+
+<p>The discussion starts here, but continues in our <a href="https://plus.google.com/116568773932133159290/posts/RXLe2TkWEDa">Google Plus Post</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using String's strip method rather than chomp]]></title>
+    <link href="http://aavalam.github.com/blog/2010/07/11/using-strings-strip-method-rather-than-chomp/"/>
+    <updated>2010-07-11T15:33:00-05:00</updated>
+    <id>http://aavalam.github.com/blog/2010/07/11/using-strings-strip-method-rather-than-chomp</id>
+    <content type="html"><![CDATA[<p>I have been in the habit of using <code>String#chomp</code> when interactively
+requesting input from people. I am considering using <code>String#strip</code>
+instead. <!-- more -->It does more than <code>chomp</code>, in that it will remove leading
+whitespace, trailing whitespace and still the <code>$/</code> which is to say the
+record separator. I think that it is more suitable for interactive
+input, unless you are counting on leading whitespace from someone for
+some reason.</p>
+
+<p>The statement that we always say when talking about <code>chomp</code> and <code>to_i</code> or
+<code>to_f</code> is that <code>to_i</code> and <code>to_f</code> does the same thing as <code>chomp</code>, and this is
+almost true. But <code>to_i</code> and <code>to_f</code> actually work more like strip.</p>
+
+<p>Consider this:</p>
+
+<figure class='code'><figcaption><span>IRB Session</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&gt;&gt;</span> <span class="nb">gets</span><span class="o">.</span><span class="n">strip</span>
+</span><span class='line'>   <span class="mi">98</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="s2">&quot;98&quot;</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="nb">gets</span><span class="o">.</span><span class="n">to_i</span>
+</span><span class='line'>   <span class="mi">98</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="mi">98</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As you can see, in reality <code>to_i</code> strips the leading whitespace, and by
+definition any trailing whitespace (though in reality all string content
+that isn’t part of the first recognizable ‘numeric-like’ string)
+including the record separator.</p>
+
+<p>So, I am trading in my habitual <code>String#chomp</code> use for the cleaner
+<code>String#strip</code> use, and where appropriate <code>String#strip!</code> and I believe I
+will still have fun with Ruby!</p>
+
+<p>Let me know what you think about this small movement?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[One Way of Layer Manipulation for Shoes::Shape Instances]]></title>
+    <link href="http://aavalam.github.com/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances/"/>
+    <updated>2009-02-06T22:41:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances</id>
+    <content type="html"><![CDATA[<p>Usually the later-made Shape instances are laid out on the early-made ones.</p>
+
+<p><a href="http://github.com/ashbb/shoes_tutorial_html/blob/master/mdowns/00537_One_way_of_layer_manipulation.mdown">Sample 64</a> is one way to swap the layers between them. :)</p>
+
+<p><img src="http://aavalam.github.com/images/2009/02/sample64.png" title="sample64.png" ></p>
+
+<p>Ashbb</p>
+]]></content>
+  </entry>
+  
+</feed>

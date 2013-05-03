@@ -1,0 +1,513 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Using RubyDocTest for development - The Red Gem of Programming</title>
+	<meta name="author" content="Victor and Ashbbb">
+
+	
+	<meta name="description" content="Using RubyDocTest for Development First of all, you must have installed rubydoctest which can be installed as a gem, or from source. Source can be &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/aavalam/atom.xml" rel="alternate" title="The Red Gem of Programming" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://aavalam.github.com/blog/2008/09/07/using-rubydoctest-for-development/">
+	<link href="/aavalam/favicon.png" rel="shortcut icon">
+	<link href="/aavalam/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+<a href="https://plus.google.com/102865874903694456832" rel="publisher">Google+</a>
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">	
+	<script src="/aavalam/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("keeperotphones@gmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;'");
+	</script>
+</div>
+<h1><a href="/aavalam/">The Red Gem of Programming</a></h1>
+<p class="subtitle">Ruby Thoughts for Mortals (Unless Specifically Otherwise Denoted!)</p>
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/aavalam/">Blog</a></li>
+  <li><a href="/aavalam/blog/archives">Archives</a></li>
+  <li><a href="/aavalam/about-us">About Us</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116568773932133159290?rel=author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/kotp" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/aavalam" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/aavalam/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+      
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/kotp">kotp</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/aavalam/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('kotp', 10, true);
+	})(jQuery);
+</script>
+
+
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Using RubyDocTest for Development</h1>
+	<div class="entry-content" itemprop="articleBody"><p>First of all, you must have installed rubydoctest which can be installed as a gem, or from source.  Source can be found here: <a href="http://rubyforge.org/projects/rubydoctest/">rubydoctest</a> and the handy <code>gem install rubydoctest</code> can be used as well.</p>
+
+<p>I just want to introduce you to the tool.  I find it handy when I want to verify things in irb, which I have open anyway, and it helps to document my code inline, or to have a .doctest file sitting next to my file (or in the ../tests directory) <!-- more --></p>
+
+<p>Of course, we are going to use a very contrived example.  I doubt anyone would code this way for such a simple solution (and a little bit not accurate in the calculations).  But it does show a few things about doctest.</p>
+
+<p>We have covered shortly how to acquire rubydoctest.  Now let&#8217;s talk about using it.  There are two ways to use it.  Internal to your code, and external as a .doctest document.  We will be using it in line with our code.</p>
+
+<p>Our code problem will be this:  How many minutes are in a year.</p>
+
+<p>What we are going to do, just for this exercise, is setup a hash, like this:</p>
+
+<figure class='code'><figcaption><span>minutes_in_year.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#!/usr/bin/ruby</span>
+</span><span class='line'><span class="c1"># Write a program that will give you minutes in a year.</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">leap</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'><span class="no">TimeUnits</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:seconds</span> <span class="o">=&gt;</span> <span class="mi">60</span><span class="p">,</span> <span class="ss">:minutes</span> <span class="o">=&gt;</span> <span class="mi">60</span><span class="p">,</span> <span class="ss">:hours</span> <span class="o">=&gt;</span> <span class="mi">24</span><span class="p">,</span> <span class="ss">:days</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">leap</span> <span class="p">?</span> <span class="mi">30</span><span class="o">.</span><span class="mi">5</span> <span class="p">:</span> <span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">),</span> <span class="ss">:months</span> <span class="o">=&gt;</span> <span class="mi">12</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>(I warned you this was contrived!)  Obviously the first couple of things we want to confirm is that leapyear indeed affects the assignment of your constant TimeUnits value of :days.</p>
+
+<p>We can do this in IRB: (and it may be that we were playing in IRB first, testing other ideas, before we came up with this, which will be the start of our program!)</p>
+
+<figure class='code'><figcaption><span>IRB Session</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&gt;&gt;</span> <span class="n">leap</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="kp">false</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="no">TimeUnits</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:seconds</span> <span class="o">=&gt;</span> <span class="mi">60</span><span class="p">,</span> <span class="ss">:minutes</span> <span class="o">=&gt;</span> <span class="mi">60</span><span class="p">,</span>   <span class="ss">:hours</span> <span class="o">=&gt;</span> <span class="mi">24</span><span class="p">,</span>
+</span><span class='line'><span class="sc">?&gt;</span> <span class="ss">:days</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">leap</span> <span class="p">?</span> <span class="mi">30</span><span class="o">.</span><span class="mi">5</span> <span class="p">:</span> <span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">),</span> <span class="ss">:months</span> <span class="o">=&gt;</span> <span class="mi">12</span><span class="p">}</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:minutes</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">,</span> <span class="ss">:hours</span><span class="o">=&gt;</span><span class="mi">24</span><span class="p">,</span> <span class="ss">:days</span><span class="o">=&gt;</span><span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">,</span> <span class="ss">:months</span><span class="o">=&gt;</span><span class="mi">12</span><span class="p">,</span> <span class="ss">:seconds</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">}</span>
+</span><span class='line'><span class="o">&gt;&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And as you can see, we now have the makings of our first doctest.  But it also brings up the question of &#8220;How?&#8221;</p>
+
+<p>So, a little explanation; DocTests are comments inside your code that you create to give a test name, and the results of any tests, as they are expected to be.  So, here is the format to create what we have above&#8230; (I use multi-line comments in block format (=begin, =end), you can use the hash comment style if you like).  So below my code, I place the following lines:</p>
+
+<figure class='code'><figcaption><span>minutes_in_year.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&gt;&gt;</span> <span class="n">leap</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="no">TimeUnits</span><span class="o">.</span><span class="n">merge!</span><span class="p">(</span> <span class="p">{</span><span class="ss">:days</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">leap</span> <span class="p">?</span> <span class="mi">30</span><span class="o">.</span><span class="mi">5</span> <span class="p">:</span> <span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">)})</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:minutes</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">,</span> <span class="ss">:hours</span><span class="o">=&gt;</span><span class="mi">24</span><span class="p">,</span> <span class="ss">:days</span><span class="o">=&gt;</span><span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">,</span> <span class="ss">:months</span><span class="o">=&gt;</span><span class="mi">12</span><span class="p">,</span> <span class="ss">:seconds</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can see that this is the exact same output from IRB if you use the <code>irb --simple-prompt</code> command at your console.  As easy as copy/paste to get your tests and assertions, and I consider this a BIG plus!</p>
+
+<p>However&#8230; we are not ready to test yet.  Remember I stated that doctests are comments.  This is not a comment&#8230; so we have some setup work to do&#8230; simply we will start our comment block, above the lines shown, and name our test.  It looks like this:</p>
+
+<figure class='code'><figcaption><span>minutes_in_year.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="cm">=begin </span>
+</span><span class='line'><span class="cm">doctest: Setup Time Units values in hash (not leap year)</span>
+</span><span class='line'><span class="cm">&gt;&gt; leap = false</span>
+</span><span class='line'><span class="cm">&gt;&gt; TimeUnits.merge!( {:days =&gt; (leap ? 30.5 : 30.4167)}) </span>
+</span><span class='line'><span class="cm">=&gt; {:minutes=&gt;60, :hours=&gt;24, :days=&gt;30.4167, :months=&gt;12, :seconds=&gt;60}</span>
+</span><span class='line'><span class="cm">=end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now we have a doctest with a test name of &#8220;Setup Time Units values in hash (not leap year).  The second line of test is  >> leap = false.  You can note that there is no &#8216;results&#8217; line underneath.  This is because we don&#8217;t actually want to test for a result&#8230; we just want to setup the state in IRB.  We are assuming that the assignment here will be successful.</p>
+
+<p>Now it is time to test it.  How to do this?  We save the file, and (I will use <code>minutes_in_year.rb</code>) run <code>rubydoctest minutes_in_year.rb</code> like so:</p>
+
+<figure class='code'><figcaption><span>Command Line</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>c:&gt;rubydoctest minutes_in_year.rb
+</span><span class='line'>=== Testing &#39;minutes_in_year.rb&#39;...
+</span><span class='line'>OK  | Setup Time Units values in hash (not leap year)
+</span><span class='line'>1 comparisons, 1 doctests, 0 failures, 0 errors
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you are in windows,  you may not see the color, but the OK here is green.  (In the final view of the file, you will see how I get color&#8230;  but that is mentioned in another blog post here.)  In any case&#8230; we now have the beginning of our program, complete with a test.  If we were to refactor later, obviously, we would likely need to change our test (It won&#8217;t fail, due to being self contained&#8230;) but it will remind is via documentation what we were doing when we come back and look at it.</p>
+
+<p>On to the next portion of our program.</p>
+
+<p>We want to make sure that our hash is working with the ternary operator, so we type and see the following in IRB:</p>
+
+<figure class='code'><figcaption><span>IRB Session</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&gt;&gt;</span> <span class="no">TimeUnits</span><span class="o">[</span><span class="ss">:days</span><span class="o">]</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="mi">30</span><span class="o">.</span><span class="mi">4167</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And we see it is good, so we can add it to our doctest area.</p>
+
+<p>Hint:  You may be asking &#8220;Why am I testing such a simple thing?&#8221;  Extra credit for you if you do this exercise and use merge method, rather than merge! method&#8230; If you did not use this test, you would not catch that bug.</p>
+
+<p>But we also want to check if it is working for leap = true.  We must setup the constant TimeUnits again&#8230;</p>
+
+<figure class='code'><figcaption><span>IRB Session</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="cm">=begin</span>
+</span><span class='line'><span class="cm">doctest: Test our leap year true case for TimeUnits</span>
+</span><span class='line'><span class="cm">&gt;&gt; leap = true</span>
+</span><span class='line'><span class="cm">=&gt; true</span>
+</span><span class='line'><span class="cm">&gt;&gt; TimeUnits.merge!( {:days =&gt; (leap ? 30.5 : 30.4167) } )</span>
+</span><span class='line'><span class="cm">=&gt; {:months=&gt;12, :days=&gt;30.5, :minutes=&gt;60, :hours=&gt;24, :seconds=&gt;60}</span>
+</span><span class='line'><span class="cm">&gt;&gt; TimeUnits[:days]</span>
+</span><span class='line'><span class="cm">=end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Which we have confirmed, so we can place the lines into our doctest comments.</p>
+
+<p>We haven&#8217;t changed our code at all, yet, right now, just documenting what we want it to do based on different conditions.</p>
+
+<p>So, let&#8217;s think in IRB about how we are going to calculate minutes in a year.</p>
+
+<p>I end up doing this:</p>
+
+<figure class='code'><figcaption><span>IRB Session</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&gt;&gt;</span> <span class="n">leap</span> <span class="o">=</span> <span class="kp">false</span> <span class="o">=&gt;</span> <span class="kp">false</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="no">TimeUnits</span><span class="o">.</span><span class="n">merge!</span><span class="p">(</span> <span class="p">{</span><span class="ss">:days</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">leap</span> <span class="p">?</span> <span class="mi">30</span><span class="o">.</span><span class="mi">5</span> <span class="p">:</span> <span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">)})</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:months</span><span class="o">=&gt;</span><span class="mi">12</span><span class="p">,</span> <span class="ss">:days</span><span class="o">=&gt;</span><span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">,</span> <span class="ss">:minutes</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">,</span> <span class="ss">:hours</span><span class="o">=&gt;</span><span class="mi">24</span><span class="p">,</span> <span class="ss">:seconds</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">}</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="mi">1</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="no">TimeUnits</span><span class="o">.</span><span class="n">each_pair</span> <span class="p">{</span><span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span> <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">value</span> <span class="k">unless</span> <span class="n">key</span> <span class="o">==</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="ss">:seconds</span><span class="p">}</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:months</span><span class="o">=&gt;</span><span class="mi">12</span><span class="p">,</span> <span class="ss">:days</span><span class="o">=&gt;</span><span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">,</span> <span class="ss">:minutes</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">,</span> <span class="ss">:hours</span><span class="o">=&gt;</span><span class="mi">24</span><span class="p">,</span> <span class="ss">:seconds</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">}</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="mi">525600</span><span class="o">.</span><span class="mi">576</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And everything looks &#8216;ok&#8217; to me.  I am sure the result is not totally accurate&#8230; but good enough for me&#8230;</p>
+
+<p>It goes into my doctest as well, and then the code goes into my program&#8230;   I will call the test as follows:</p>
+
+<figure class='code'><figcaption><span>minutes_in_year.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="ss">doctest</span><span class="p">:</span> <span class="no">Setup</span> <span class="k">for</span> <span class="n">minutes</span> <span class="k">in</span> <span class="n">non</span><span class="o">-</span><span class="n">leapyaer</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="n">leap</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="kp">false</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="no">TimeUnits</span><span class="o">.</span><span class="n">merge!</span><span class="p">(</span> <span class="p">{</span><span class="ss">:days</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">leap</span> <span class="p">?</span> <span class="mi">30</span><span class="o">.</span><span class="mi">5</span> <span class="p">:</span> <span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">)})</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:months</span><span class="o">=&gt;</span><span class="mi">12</span><span class="p">,</span> <span class="ss">:days</span><span class="o">=&gt;</span><span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">,</span> <span class="ss">:minutes</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">,</span> <span class="ss">:hours</span><span class="o">=&gt;</span><span class="mi">24</span><span class="p">,</span> <span class="ss">:seconds</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">}</span>
+</span><span class='line'><span class="ss">doctest</span><span class="p">:</span> <span class="n">compute</span> <span class="n">minutes</span> <span class="k">in</span> <span class="n">a</span> <span class="n">non</span><span class="o">-</span><span class="n">leapyear</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="mi">1</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="no">TimeUnits</span><span class="o">.</span><span class="n">each_pair</span> <span class="p">{</span><span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span> <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">value</span> <span class="k">unless</span> <span class="n">key</span> <span class="o">==</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="ss">:seconds</span><span class="p">}</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:months</span><span class="o">=&gt;</span><span class="mi">12</span><span class="p">,</span> <span class="ss">:days</span><span class="o">=&gt;</span><span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">,</span> <span class="ss">:minutes</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">,</span> <span class="ss">:hours</span><span class="o">=&gt;</span><span class="mi">24</span><span class="p">,</span> <span class="ss">:seconds</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">}</span>
+</span><span class='line'><span class="o">&gt;&gt;</span> <span class="n">x</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="mi">525600</span><span class="o">.</span><span class="mi">576</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And hopefully if I have done everything right, with my notes, and such, you should end up with a rubydoctest that ends up something like this:</p>
+
+<figure class='code'><figcaption><span>Console</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>=== Testing &#39;minutes_in_year.rb&#39;...
+</span><span class='line'>OK  | Setup Time Units values in hash (not leap year)
+</span><span class='line'>OK  | Test our leap year true case for TimeUnits
+</span><span class='line'>OK  | Setup for minutes in non-leapyaer
+</span><span class='line'>OK  | compute minutes in a non-leapyear
+</span><span class='line'>9 comparisons, 4 doctests, 0 failures, 0 errors
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perhaps this is almost the code you ended up with&#8230;</p>
+
+<figure class='code'><figcaption><span>minutes_in_year.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#!/usr/bin/ruby</span>
+</span><span class='line'><span class="c1"># Write a program that will give you minutes in a year.</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">leap</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'><span class="no">TimeUnits</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:seconds</span> <span class="o">=&gt;</span> <span class="mi">60</span><span class="p">,</span> <span class="ss">:minutes</span> <span class="o">=&gt;</span> <span class="mi">60</span><span class="p">,</span>   <span class="ss">:hours</span> <span class="o">=&gt;</span> <span class="mi">24</span><span class="p">,</span>
+</span><span class='line'>  <span class="ss">:days</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">leap</span> <span class="p">?</span> <span class="mi">30</span><span class="o">.</span><span class="mi">5</span> <span class="p">:</span> <span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">),</span> <span class="ss">:months</span> <span class="o">=&gt;</span> <span class="mi">12</span><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">=begin </span>
+</span><span class='line'><span class="cm">doctest: Setup Time Units values in hash (not leap year)</span>
+</span><span class='line'><span class="cm">&gt;&gt; leap = false</span>
+</span><span class='line'><span class="cm">&gt;&gt; TimeUnits.merge!( {:days =&gt; (leap ? 30.5 : 30.4167)}) </span>
+</span><span class='line'><span class="cm">=&gt; {:minutes=&gt;60, :hours=&gt;24, :days=&gt;30.4167, :months=&gt;12, :seconds=&gt;60}</span>
+</span><span class='line'><span class="cm">=end</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">=begin</span>
+</span><span class='line'><span class="cm">doctest: Test our leap year true case for TimeUnits</span>
+</span><span class='line'><span class="cm">&gt;&gt; leap = true</span>
+</span><span class='line'><span class="cm">=&gt; true</span>
+</span><span class='line'><span class="cm">&gt;&gt; TimeUnits.merge!( {:days =&gt; (leap ? 30.5 : 30.4167) } )</span>
+</span><span class='line'><span class="cm">=&gt; {:months=&gt;12, :days=&gt;30.5, :minutes=&gt;60, :hours=&gt;24, :seconds=&gt;60}</span>
+</span><span class='line'><span class="cm">&gt;&gt; TimeUnits[:days]</span>
+</span><span class='line'><span class="cm">=end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># some additional notes:  doctests can contain comments like this inside, </span>
+</span><span class='line'><span class="c1"># for further documenting thoughts.</span>
+</span><span class='line'><span class="c1"># I chose not to do this.</span>
+</span><span class='line'><span class="c1"># Also, as you can see below, doctests don&#39;t have to be seperated as above,</span>
+</span><span class='line'><span class="c1"># they could be as below.  </span>
+</span><span class='line'><span class="cm">=begin</span>
+</span><span class='line'><span class="cm">doctest: Setup for minutes in non-leapyaer</span>
+</span><span class='line'><span class="cm">&gt;&gt; leap = false</span>
+</span><span class='line'><span class="cm">=&gt; false</span>
+</span><span class='line'><span class="cm">&gt;&gt; TimeUnits.merge!( {:days =&gt; (leap ? 30.5 : 30.4167)})</span>
+</span><span class='line'><span class="cm">=&gt; {:months=&gt;12, :days=&gt;30.4167, :minutes=&gt;60, :hours=&gt;24, :seconds=&gt;60}</span>
+</span><span class='line'><span class="cm">doctest: compute minutes in a non-leapyear</span>
+</span><span class='line'><span class="cm">&gt;&gt; x = 1</span>
+</span><span class='line'><span class="cm">=&gt; 1</span>
+</span><span class='line'><span class="cm">&gt;&gt; TimeUnits.each_pair {|key, value| x = x * value unless key ==</span>
+</span><span class='line'><span class="cm">&gt;&gt; :seconds}</span>
+</span><span class='line'><span class="cm">=&gt; {:months=&gt;12, :days=&gt;30.4167, :minutes=&gt;60, :hours=&gt;24, :seconds=&gt;60}</span>
+</span><span class='line'><span class="cm">&gt;&gt; x</span>
+</span><span class='line'><span class="cm">=&gt; 525600.576</span>
+</span><span class='line'><span class="cm">=end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">leap</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'><span class="no">TimeUnits</span><span class="o">.</span><span class="n">merge!</span><span class="p">(</span> <span class="p">{</span><span class="ss">:days</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="n">leap</span> <span class="p">?</span> <span class="mi">30</span><span class="o">.</span><span class="mi">5</span> <span class="p">:</span> <span class="mi">30</span><span class="o">.</span><span class="mi">4167</span><span class="p">)})</span>
+</span><span class='line'><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span class='line'><span class="no">TimeUnits</span><span class="o">.</span><span class="n">each_pair</span> <span class="p">{</span><span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span> <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">value</span> <span class="k">unless</span> <span class="n">key</span> <span class="o">==</span> <span class="ss">:seconds</span><span class="p">}</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">x</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Another time, perhaps, we can explore this in a more robust area, or </span>
+</span><span class='line'><span class="c1"># cover some other things.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2008 - 2013 - Victor and Ashbbb -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			<script src="/aavalam/javascripts/slash.js"></script>
+<script src="/aavalam/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-5477279-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(function() {
+    //$post_title = $('header .entry-title').text();
+    //$post_domain = document.domain;
+    if( jQuery('article').hasClass('hentry') )
+    {
+        $post_link = encodeURI(jQuery(location).attr('href'));
+        $gp_url = jQuery('.social a.google').attr('href');
+        $google_plus_id = $gp_url.split('/')[3].split('?')[0] ;
+
+        $google_query_url = "https://www.googleapis.com/plus/v1/activities?query=" +
+                            $post_link +
+                            "&maxResults=20&orderBy=best&fields=id%2Citems(actor(displayName%2Cid%2Curl)" +
+                            "%2Cid%2Cobject(attachments(id%2Curl)%2Curl))%2Ctitle&key=AIzaSyC-de9hzz4-ytyVwW2RFWGark3GCHYLvaI";
+
+        jQuery.getJSON($google_query_url,
+            function(data) {
+                jQuery.each(data.items, function(i,item){
+                    if(item.actor.id == $google_plus_id)
+                    {
+                        jQuery('.entry-content').append( "<h3>Comments?</h3><p>Continue the conversation on our <a href='" + item.object.url +"'>Google+ post</a></p>");
+                        return false;
+                    }
+                });
+            });
+    };
+});
+</script>
+
+
+		</div>
+	</div>
+</body>
+</html>

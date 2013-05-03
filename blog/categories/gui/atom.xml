@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: GUI | The Red Gem of Programming]]></title>
+  <link href="http://aavalam.github.com/blog/categories/gui/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/"/>
+  <updated>2013-05-03T16:43:13-05:00</updated>
+  <id>http://aavalam.github.com/</id>
+  <author>
+    <name><![CDATA[Victor and Ashbbb]]></name>
+    <email><![CDATA[keeperotphones@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Play Othello with Shoes 4]]></title>
+    <link href="http://aavalam.github.com/blog/2013/02/01/play-othello-with-shoes-4/"/>
+    <updated>2013-02-01T05:19:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2013/02/01/play-othello-with-shoes-4</id>
+    <content type="html"><![CDATA[<p>Today <a href="https://github.com/shoes/shoes4">Shoes 4</a> has become able to run Othello Game.</p>
+
+<!-- More -->
+
+
+<p><img class="top" src="/images/2013/02/othello-sample50.png" width="268" height="319" title="&#34;Othello Game Board on Shoes&#34;" alt="&#34;Othello Game Board on Shoes&#34;"></p>
+
+<p>Watch <a href="http://www.rin-shun.com/shoes4/tmp/shoes4-sample50.swf.html">a demo</a>.</p>
+
+<p>Have fun with Shoes,</p>
+
+<p>ashbb</p>
+
+<p>The discussion starts here, but continues on at our <a href="https://plus.google.com/116568773932133159290/posts/MiQhgoqqMHR">Google Plus Post</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[One Way of Layer Manipulation for Shoes::Shape Instances]]></title>
+    <link href="http://aavalam.github.com/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances/"/>
+    <updated>2009-02-06T22:41:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances</id>
+    <content type="html"><![CDATA[<p>Usually the later-made Shape instances are laid out on the early-made ones.</p>
+
+<p><a href="http://github.com/ashbb/shoes_tutorial_html/blob/master/mdowns/00537_One_way_of_layer_manipulation.mdown">Sample 64</a> is one way to swap the layers between them. :)</p>
+
+<p><img src="/images/2009/02/sample64.png" title="sample64.png" ></p>
+
+<p>Ashbb</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Refactoring a Shoes App]]></title>
+    <link href="http://aavalam.github.com/blog/2009/01/20/refactoring-a-shoes-app/"/>
+    <updated>2009-01-20T17:45:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2009/01/20/refactoring-a-shoes-app</id>
+    <content type="html"><![CDATA[<p>Karmi's <a href="http://github.com/karmi/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20shoes_demonstration_apps/tree/master">Shoes Demonstration Apps</a> on github is so cool.  <!-- More --></p>
+
+<p>To learn Ruby and Shoes from his code, I attempted a bit refactoring and updated <a href="http://github.com/ashbb/shoes_tutorial_html/blob/master/mdowns/00800_Relevant_web_sites__Links_.mdown">Shoes Tutorial Note</a>.
+ ;-)</p>
+
+<p><img src="https://raw.github.com/ashbb/shoes_tutorial_html/master/images/sample62.png" alt="sample62.png" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mini-Footracer, Just Write it as You Like]]></title>
+    <link href="http://aavalam.github.com/blog/2009/01/16/mini-footracer-just-write-it-as-you-like/"/>
+    <updated>2009-01-16T18:42:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2009/01/16/mini-footracer-just-write-it-as-you-like</id>
+    <content type="html"><![CDATA[<h2>Assignment 2 footracer</h2>
+
+<p>The following spec is an example. <br>
+Let's imagine freely and write your own Foot Race Game.  <br></p>
+
+<p>Example spec: <br></p>
+
+<ul>
+<li>Racers run toward the goal. When the first racer meets the goal line, the game stops and then shows the winner.  <!-- More --></li>
+<li>When multiple racers meet the goal line at a time, they are all winners.</li>
+<li>User inputs racers' names.</li>
+<li>Until user selects quit the game, user can play the game repeatedly.</li>
+<li>User interface image is:</li>
+</ul>
+
+
+<p><strong>footracer_screenshot.png</strong></p>
+
+<p><img src="http://github.com/ashbb/shoes_tutorial_html/raw/master/images/footracer_screenshot.jpg" alt="footracer_screenshot.jpg" /></p>
+
+<p>Have fun!</p>
+
+<h2>mini-footracer</h2>
+
+<p><a href="https://github.com/ashbb/shoes_tutorial_html/blob/master/mdowns/00702_Assignment_2_footracer.mdown">Follow on with the Shoes Tutorial on Github</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tiny Study Notes for Shoes Built-in Samples II]]></title>
+    <link href="http://aavalam.github.com/blog/2009/01/15/tiny-study-notes-for-shoes-built-in-samples/"/>
+    <updated>2009-01-15T12:07:00-06:00</updated>
+    <id>http://aavalam.github.com/blog/2009/01/15/tiny-study-notes-for-shoes-built-in-samples</id>
+    <content type="html"><![CDATA[<p>The 2nd is simple_calc. Learned the <code>Module#define_method</code>. :-D</p>
+
+<p><img src="http://github.com/ashbb/shoes_tutorial_html/raw/master/images/simple-calc.png" alt="simple-calc.png" /></p>
+
+<!-- More -->
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>simple-calc.rb </span><a href='https://github.com/ashbb/shoes_tutorial_html/blob/master/mdowns/01202_simple-calc.mdown'>link</a></figcaption> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="n">strong</span><span class="o">&gt;</span><span class="n">simple</span><span class="o">-</span><span class="n">calc</span><span class="o">.</span><span class="n">png</span><span class="o">&lt;</span><span class="sr">/strong&gt;&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="c1"># simple-calc.rb</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">Calc</span>              <span class="c1">#1</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">initialize</span>        <span class="c1">#2</span>
+</span><span class='line'>    <span class="vi">@number</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>    <span class="vi">@previous</span> <span class="o">=</span> <span class="kp">nil</span>
+</span><span class='line'>    <span class="vi">@op</span> <span class="o">=</span> <span class="kp">nil</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">to_s</span>              <span class="c1">#3</span>
+</span><span class='line'>    <span class="vi">@number</span><span class="o">.</span><span class="n">to_s</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="p">(</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">9</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">n</span><span class="o">|</span>                              <span class="c1">#4</span>
+</span><span class='line'>    <span class="n">define_method</span> <span class="s2">&quot;press_</span><span class="si">#{</span><span class="n">n</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">do</span>
+</span><span class='line'>      <span class="vi">@number</span> <span class="o">=</span> <span class="vi">@number</span><span class="o">.</span><span class="n">to_i</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">n</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">press_clear</span>
+</span><span class='line'>    <span class="vi">@number</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="p">{</span><span class="s1">&#39;add&#39;</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="s1">&#39;+&#39;</span><span class="p">,</span> <span class="s1">&#39;sub&#39;</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;times&#39;</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;div&#39;</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="s1">&#39;/&#39;</span><span class="p">}</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">meth</span><span class="p">,</span> <span class="n">op</span><span class="o">|</span>   <span class="c1">#5</span>
+</span><span class='line'>    <span class="n">define_method</span> <span class="s2">&quot;press_</span><span class="si">#{</span><span class="n">meth</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">do</span>
+</span><span class='line'>      <span class="k">if</span> <span class="vi">@op</span>                                      <span class="c1">#6</span>
+</span><span class='line'>        <span class="n">press_equals</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>      <span class="vi">@op</span> <span class="o">=</span> <span class="n">op</span>
+</span><span class='line'>      <span class="vi">@previous</span><span class="p">,</span> <span class="vi">@number</span> <span class="o">=</span> <span class="vi">@number</span><span class="p">,</span> <span class="kp">nil</span>           <span class="c1">#7</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">press_equals</span>                                <span class="c1">#8</span>
+</span><span class='line'>    <span class="vi">@number</span> <span class="o">=</span> <span class="vi">@previous</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="vi">@op</span><span class="p">,</span> <span class="vi">@number</span><span class="o">.</span><span class="n">to_i</span><span class="p">)</span>
+</span><span class='line'>    <span class="vi">@op</span> <span class="o">=</span> <span class="kp">nil</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">number_field</span> <span class="o">=</span> <span class="kp">nil</span>
+</span><span class='line'><span class="n">number</span> <span class="o">=</span> <span class="no">Calc</span><span class="o">.</span><span class="n">new</span>                                                 <span class="c1">#9</span>
+</span><span class='line'><span class="no">Shoes</span><span class="o">.</span><span class="n">app</span> <span class="ss">:height</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">250</span><span class="p">,</span> <span class="ss">:width</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">200</span><span class="p">,</span> <span class="ss">:resizable</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="kp">false</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">background</span> <span class="s2">&quot;#EEC&quot;</span><span class="o">.</span><span class="n">.</span><span class="s2">&quot;#996&quot;</span><span class="p">,</span> <span class="ss">:curve</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">5</span><span class="p">,</span> <span class="ss">:margin</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">2</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">stack</span> <span class="ss">:margin</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">2</span> <span class="k">do</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">stack</span> <span class="ss">:margin</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">8</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">number_field</span> <span class="o">=</span> <span class="n">para</span> <span class="n">strong</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>                          <span class="c1">#10</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">flow</span> <span class="ss">:width</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">218</span><span class="p">,</span> <span class="ss">:margin</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">4</span> <span class="k">do</span>
+</span><span class='line'>      <span class="sx">%w(7 8 9 / 4 5 6 * 1 2 3 - 0 Clr = +)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">btn</span><span class="o">|</span>
+</span><span class='line'>        <span class="n">button</span> <span class="n">btn</span><span class="p">,</span> <span class="ss">:width</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">46</span><span class="p">,</span> <span class="ss">:height</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">46</span> <span class="k">do</span>                <span class="c1">#11</span>
+</span><span class='line'>          <span class="nb">method</span> <span class="o">=</span> <span class="k">case</span> <span class="n">btn</span>
+</span><span class='line'>            <span class="k">when</span> <span class="sr">/[0-9]/</span><span class="p">;</span> <span class="s1">&#39;press_&#39;</span><span class="o">+</span><span class="n">btn</span>
+</span><span class='line'>            <span class="k">when</span> <span class="s1">&#39;Clr&#39;</span><span class="p">;</span> <span class="s1">&#39;press_clear&#39;</span>
+</span><span class='line'>            <span class="k">when</span> <span class="s1">&#39;=&#39;</span><span class="p">;</span> <span class="s1">&#39;press_equals&#39;</span>
+</span><span class='line'>            <span class="k">when</span> <span class="s1">&#39;+&#39;</span><span class="p">;</span> <span class="s1">&#39;press_add&#39;</span>
+</span><span class='line'>            <span class="k">when</span> <span class="s1">&#39;-&#39;</span><span class="p">;</span> <span class="s1">&#39;press_sub&#39;</span>
+</span><span class='line'>            <span class="k">when</span> <span class="s1">&#39;*&#39;</span><span class="p">;</span> <span class="s1">&#39;press_times&#39;</span>
+</span><span class='line'>            <span class="k">when</span> <span class="s1">&#39;/&#39;</span><span class="p">;</span> <span class="s1">&#39;press_div&#39;</span>
+</span><span class='line'>          <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>          <span class="n">number</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="nb">method</span><span class="p">)</span>                                     <span class="c1">#12</span>
+</span><span class='line'>          <span class="n">number_field</span><span class="o">.</span><span class="n">replace</span> <span class="n">strong</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>                     <span class="c1">#13</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Study Note</h2>
+
+<p>#1: <br>
+Define a class Calc. This class has the following 18 methods.
+- initialize
+- to_s
+- press_0, press_1, ..... , press_9
+- press_clear
+- press_add, press_sub, press_times, press_div
+- press_equal</p>
+
+<p>#2: <br>
+Define a method initialize. This method is used once in the above code to create just one object at #9.</p>
+
+<p>#3: <br>
+Define a method to_s. In Shoes, para uses <code>to_s</code> implicitly at #10. If you comment out <code>to_s</code> definition lines, you will see the following output.</p>
+
+<p><strong>simple-calc-1.png</strong></p>
+
+<p><img src="http://github.com/ashbb/shoes_tutorial_html/raw/master/images/simple-calc-1.png" alt="simple-calc-1.png" /></p>
+
+<p>#4: <br>
+Define methods press_0, press_1, ..... , press_9 with the method <code>define_method</code>. See <code>ri Module#define_method</code>. They are the same as the following.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>long_hand.rb  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;def press_0</span>
+</span><span class='line'><span class="sr">  @number = @number.to_i * 10 + n</span>
+</span><span class='line'><span class="sr">end</span>
+</span><span class='line'><span class="sr">def press_1</span>
+</span><span class='line'><span class="sr">  @number = @number.to_i * 10 + 1</span>
+</span><span class='line'><span class="sr">end</span>
+</span><span class='line'><span class="sr">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;</span><span class="sr">/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>:
+: (and so on)</p>
+
+<p>The <code>.to_i</code> is necessary for the case that @number is nil.</p>
+
+<p>#5: <br>
+Define methods press_add, press_sub, press_times, press_div.</p>
+
+<p>#6: <br>
+Execute the previous calculation (one of +, -, *, /).</p>
+
+<p>#7: <br>
+To clear the <code>number_field</code> at #13 (to show nothing), assign nil to <code>@number</code> instead of 0.</p>
+
+<p>#8: <br>
+Define a method press_equals. See the following small IRB snippet.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb_session  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;C:\&amp;gt;irb --simple-prompt</span>
+</span><span class='line'><span class="sr">&amp;gt;&amp;gt; 23.send &#39;+&#39;, 5</span>
+</span><span class='line'><span class="sr">=&amp;gt; 28</span>
+</span><span class='line'><span class="sr">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;</span><span class="sr">/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>#12: <br>
+Send the value (character string) that was assigned to the local variable <code>method</code> to the object <code>number</code> that was created at #9. See the following small IRB snippet.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb_session.irb  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;C:\&amp;gt;irb --simple-prompt</span>
+</span><span class='line'><span class="sr">&amp;gt;&amp;gt; class Calc</span>
+</span><span class='line'><span class="sr">&amp;gt;&amp;gt;   def press_add</span>
+</span><span class='line'><span class="sr">&amp;gt;&amp;gt;     puts &#39;DEBUG: hi.&#39;</span>
+</span><span class='line'><span class="sr">&amp;gt;&amp;gt;   end</span>
+</span><span class='line'><span class="sr">&amp;gt;&amp;gt; end</span>
+</span><span class='line'><span class="sr">=&amp;gt; nil</span>
+</span><span class='line'><span class="sr">&amp;gt;&amp;gt; Calc.new.send &#39;press_add&#39;</span>
+</span><span class='line'><span class="sr">DEBUG: hi.</span>
+</span><span class='line'><span class="sr">=&amp;gt; nil</span>
+</span><span class='line'><span class="sr">&amp;gt;&amp;gt;</span>
+</span><span class='line'><span class="sr">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;</span><span class="sr">/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>#13: <br>
+This line is defined within the button definition block (#11), hence every time when any button is clicked, <code>number_field</code> area will be refreshed.</p>
+
+<h2>Alternative Simple Calc</h2>
+
+<p>This is an alternative code. There is no interesting tips but it's simple, I guess. :)</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>sample61.rb  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;Shoes.app :height =&amp;gt; 250, :width =&amp;gt; 200, :resizable =&amp;gt; false do</span>
+</span><span class='line'><span class="sr">  def do_calc</span>
+</span><span class='line'><span class="sr">    @number = @previous.send(@op, @number)  if @op</span>
+</span><span class='line'><span class="sr">    @op = nil</span>
+</span><span class='line'><span class="sr">  end</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">  @previous, @number, @op = 0, 0, nil</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">  background &quot;#EEC&quot;..&quot;#996&quot;, :curve =&amp;gt; 5, :margin =&amp;gt; 2</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">  stack :margin =&amp;gt; 2 do</span>
+</span><span class='line'><span class="sr">    stack :margin =&amp;gt; 8 do</span>
+</span><span class='line'><span class="sr">      @number_field = para strong(@number)</span>
+</span><span class='line'><span class="sr">    end</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">    flow :width =&amp;gt; 218, :margin =&amp;gt; 4 do</span>
+</span><span class='line'><span class="sr">      %w(7 8 9 /</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span> <span class="o">*</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="o">-</span> <span class="mi">0</span> <span class="no">Clr</span> <span class="o">=</span> <span class="o">+</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">btn</span><span class="o">|</span>
+</span><span class='line'>        <span class="n">button</span> <span class="n">btn</span><span class="p">,</span> <span class="ss">:width</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">46</span><span class="p">,</span> <span class="ss">:height</span> <span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">46</span> <span class="k">do</span>
+</span><span class='line'>          <span class="k">case</span> <span class="n">btn</span>
+</span><span class='line'>            <span class="k">when</span> <span class="sr">/[0-9]/</span>
+</span><span class='line'>              <span class="vi">@number</span> <span class="o">=</span> <span class="vi">@number</span><span class="o">.</span><span class="n">to_i</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">btn</span><span class="o">.</span><span class="n">to_i</span>
+</span><span class='line'>            <span class="k">when</span> <span class="s1">&#39;Clr&#39;</span>
+</span><span class='line'>              <span class="vi">@previous</span><span class="p">,</span> <span class="vi">@number</span><span class="p">,</span> <span class="vi">@op</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kp">nil</span>
+</span><span class='line'>            <span class="k">when</span> <span class="s1">&#39;=&#39;</span>
+</span><span class='line'>              <span class="n">do_calc</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>              <span class="n">do_calc</span>
+</span><span class='line'>              <span class="vi">@previous</span><span class="p">,</span> <span class="vi">@number</span> <span class="o">=</span> <span class="vi">@number</span><span class="p">,</span> <span class="kp">nil</span>
+</span><span class='line'>              <span class="vi">@op</span> <span class="o">=</span> <span class="n">btn</span>
+</span><span class='line'>          <span class="k">end</span>
+</span><span class='line'>          <span class="vi">@number_field</span><span class="o">.</span><span class="n">replace</span> <span class="n">strong</span> <span class="vi">@number</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Policeman</h2>
+
+<p>Replaced <code>:</code> to <code>;</code> for Ruby 1.9. Then the simple-calc.rb worked well with Shoes-0.r1263.</p>
+]]></content>
+  </entry>
+  
+</feed>
