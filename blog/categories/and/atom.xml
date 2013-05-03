@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: and | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/and/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/and/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Ternary Operator vs Or Operator vs And Operator]]></title>
-    <link href="http://aavalam.github.com/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator/"/>
     <updated>2010-07-11T15:38:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator</id>
+    <id>http://aavalam.github.com/aavalam/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator</id>
     <content type="html"><![CDATA[<h2>The Ternary Operator and the OR Operator</h2>
 
 <p>The ternary operator is not reasonable for a situation that returns true or false; if the goal is to get a result of true or false from your decision, it is better to simply evaluate the statement itself. <!-- More --></p>

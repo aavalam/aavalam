@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: % | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/-/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/-/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Understanding Modulo]]></title>
-    <link href="http://aavalam.github.com/blog/2008/09/08/understanding-modulo/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2008/09/08/understanding-modulo/"/>
     <updated>2008-09-08T22:11:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2008/09/08/understanding-modulo</id>
+    <id>http://aavalam.github.com/aavalam/blog/2008/09/08/understanding-modulo</id>
     <content type="html"><![CDATA[<p>I can't think of a person that isn't aware of modular counting.  We do it just about every day... well, hopefully not while we are on vacation.  But every time you look at your watch, and figure out how many hours you have left before your work day is over, and it is before noon, you do it.<!-- more -->  Every time you have to time your goodies in the oven, or on the stove, you probably have to figure out some time past the top of the hour.  Microwaves even make us do it... the kids like corn dogs (are they dorkfish?), and the directions state 70 seconds for the first one, and 40 seconds for each additional.  So, they have to figure out the time in number of minutes and seconds... This is called modular counting.</p>
 
 <p>I will place a table of calculations here that hopefully help to understand how Ruby uses the '%' method for class Fixnum.  The setup:  x is a time given in 24 hour time.  We only have a 12 hour clock on our wall... We want to know what the 12 hour time is.  The twist?  I will show you what it looks like when you have a negative 12 clock, or a negative time given, and I will show both.  It gives us four options for the format of "x mod 12" in the way of positive or negative values.</p>

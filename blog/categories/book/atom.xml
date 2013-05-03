@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Book | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/book/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/book/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Create and Publish Your First Ruby Gem - A Review]]></title>
-    <link href="http://aavalam.github.com/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review/"/>
     <updated>2013-02-19T01:57:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review</id>
     <content type="html"><![CDATA[<p>A book(let) review.</p>
 
 <p>A hands on guide for Ruby newbies to create and publish their first Ruby

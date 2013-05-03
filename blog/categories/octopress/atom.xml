@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Octopress | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/octopress/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Saying Goodbye to Posterous]]></title>
-    <link href="http://aavalam.github.com/blog/2013/02/16/saying-goodbye-to-posterous/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/16/saying-goodbye-to-posterous/"/>
     <updated>2013-02-16T05:26:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/02/16/saying-goodbye-to-posterous</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/16/saying-goodbye-to-posterous</id>
     <content type="html"><![CDATA[<p>When Twitter bought Posterous, I thought it was going to be a great
 thing for us.  We would have a long term platform, always improving,
 easy to use for guest blogging from those that are not necessarily

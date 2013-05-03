@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -14,31 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Gravity simulator : Fantastic Green Shoes App]]></title>
-    <link href="http://aavalam.github.com/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app/"/>
-    <updated>2013-05-03T14:18:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app</id>
-    <content type="html"><![CDATA[<p>I&#8217;d love to introduce a new fantastic Green Shoes app: <a href="http://ifni.co/articles/programming/gravity_simulator">Gravity
-simulator</a></p>
-
-<!--more-->
-
-
-<p><img src="http://aavalam.github.com/images/2013/05/gravity_simulator.png"></p>
-
-<p>Read the <b>2D : Green Shoes</b> section. I&#8217;m honored. :)
-Watch <a href="http://ashbb.digi2.jp/Gravity_simulator.swf.html">a demo</a> I
-executed <a href="http://ifni.co/src/gsim.rb">his code</a> on my Windows 7.</p>
-
-<p>Let&#8217;s have fun with Shoes! :-D</p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Getting in touch with Linux]]></title>
-    <link href="http://aavalam.github.com/blog/2013/04/02/getting-in-touch-with-linux/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/04/02/getting-in-touch-with-linux/"/>
     <updated>2013-04-02T13:38:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2013/04/02/getting-in-touch-with-linux</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/04/02/getting-in-touch-with-linux</id>
     <content type="html"><![CDATA[<p>I have helped a few people get started with Linux the last couple of
 years and the tool that helped them get exposed to it, and finally
 installing Linux on their system, is called UnetBootin.  You can find
@@ -127,9 +106,9 @@ the good thing is it will open you up to a whole new world of computing.</p>
   
   <entry>
     <title type="html"><![CDATA[Ruby Programming 41st Batch Registrations now open]]></title>
-    <link href="http://aavalam.github.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/"/>
     <updated>2013-03-14T00:25:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open</id>
     <content type="html"><![CDATA[<p>Registrations are now open for RubyLearning’s popular <a href="http://rubylearning.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/">Ruby Programming Course</a>. <!-- More -->This is an intensive (as you want it to be), online course for beginners that helps you
 get started with Ruby programming.</p>
 
@@ -146,9 +125,9 @@ get started with Ruby programming.</p>
   
   <entry>
     <title type="html"><![CDATA[Ruby 2.0.0 Params Not Just for Methods]]></title>
-    <link href="http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods/"/>
     <updated>2013-03-09T03:46:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods</id>
     <content type="html"><![CDATA[<p>While working on documenting things I learned through a Learn Ruby By
 Testing project, I came across documenting the new Ruby 2.0 &#8216;Params&#8217;
 feature.</p>
@@ -239,9 +218,9 @@ Post</a>?</p>
   
   <entry>
     <title type="html"><![CDATA[My partial VIM configuration]]></title>
-    <link href="http://aavalam.github.com/blog/2013/03/03/my-partial-vim-configuration/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/03/03/my-partial-vim-configuration/"/>
     <updated>2013-03-03T21:54:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/03/03/my-partial-vim-configuration</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/03/03/my-partial-vim-configuration</id>
     <content type="html"><![CDATA[<p>What do you use to configure your editor?</p>
 
 <p>I am usually in VIM for my editor.  Not the graphical (gvim) version, the one
@@ -346,9 +325,9 @@ have?  I am sure it is more exciting than mine!</p>
   
   <entry>
     <title type="html"><![CDATA[Decision Driven Fairy Tale for Kids]]></title>
-    <link href="http://aavalam.github.com/blog/2013/03/01/decision-driven-fairy-tale-for-kids/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/03/01/decision-driven-fairy-tale-for-kids/"/>
     <updated>2013-03-01T19:19:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/03/01/decision-driven-fairy-tale-for-kids</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/03/01/decision-driven-fairy-tale-for-kids</id>
     <content type="html"><![CDATA[<p>I&#8217;d like to introduce <a href="https://github.com/sebastjan-hribar">Sebastjan</a>&#8217;s fantastic project on github: <a href="https://github.com/sebastjan-hribar/princ">princ</a></p>
 
 <!-- more -->
@@ -367,9 +346,9 @@ ashbb</p>
   
   <entry>
     <title type="html"><![CDATA[Testing multiple versions of Ruby]]></title>
-    <link href="http://aavalam.github.com/blog/2013/02/26/testing-multiple-versions-of-ruby/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/26/testing-multiple-versions-of-ruby/"/>
     <updated>2013-02-26T17:24:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/02/26/testing-multiple-versions-of-ruby</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/26/testing-multiple-versions-of-ruby</id>
     <content type="html"><![CDATA[<p>When you have code that you would like to test, it is fairly simple to
 develop your tests to allow for it to be ran in more than one version of
 Ruby. <!-- more --></p>
@@ -468,9 +447,9 @@ version as well, while not running against previous ones.</p>
   
   <entry>
     <title type="html"><![CDATA[Ruby 2.0.0-p0 Notes]]></title>
-    <link href="http://aavalam.github.com/blog/2013/02/25/ruby-2-dot-0-0-p0-notes/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/25/ruby-2-dot-0-0-p0-notes/"/>
     <updated>2013-02-25T03:39:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/02/25/ruby-2-dot-0-0-p0-notes</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/25/ruby-2-dot-0-0-p0-notes</id>
     <content type="html"><![CDATA[<p>I have been waiting for the 24th of February to see what would come of
 the planned release date for Ruby 2.0.0-p0.</p>
 
@@ -509,9 +488,9 @@ recording what I have learned.</p>
   
   <entry>
     <title type="html"><![CDATA[Create and Publish Your First Ruby Gem - A Review]]></title>
-    <link href="http://aavalam.github.com/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review/"/>
     <updated>2013-02-19T01:57:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review</id>
     <content type="html"><![CDATA[<p>A book(let) review.</p>
 
 <p>A hands on guide for Ruby newbies to create and publish their first Ruby
@@ -535,9 +514,9 @@ just a small way to say &#8220;Thanks!&#8221; and a way to show some love.</p>
   
   <entry>
     <title type="html"><![CDATA[Saying Goodbye to Posterous]]></title>
-    <link href="http://aavalam.github.com/blog/2013/02/16/saying-goodbye-to-posterous/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/16/saying-goodbye-to-posterous/"/>
     <updated>2013-02-16T05:26:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/02/16/saying-goodbye-to-posterous</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/16/saying-goodbye-to-posterous</id>
     <content type="html"><![CDATA[<p>When Twitter bought Posterous, I thought it was going to be a great
 thing for us.  We would have a long term platform, always improving,
 easy to use for guest blogging from those that are not necessarily
@@ -581,10 +560,10 @@ new things.</p>
   
   <entry>
     <title type="html"><![CDATA[breaktime : Fantastic Green Shoes App]]></title>
-    <link href="http://aavalam.github.com/blog/2013/02/15/breaktime-fantastic-green-shoes-app/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/15/breaktime-fantastic-green-shoes-app/"/>
     <updated>2013-02-15T07:26:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/02/15/breaktime-fantastic-green-shoes-app</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://aavalam.github.com/images/2013/02/47266220-breaktime.png" width="396" height="98" title="breaktime gem" ></p>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/15/breaktime-fantastic-green-shoes-app</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://aavalam.github.com/aavalam/images/2013/02/47266220-breaktime.png" width="396" height="98" title="breaktime gem" ></p>
 
 <p>I&#8217;d like to introduce <a href="https://github.com/joony">joonty&#8217;s</a> fantastic project on github.</p>
 
@@ -598,15 +577,15 @@ new things.</p>
   
   <entry>
     <title type="html"><![CDATA[Play Othello with Shoes 4]]></title>
-    <link href="http://aavalam.github.com/blog/2013/02/01/play-othello-with-shoes-4/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/01/play-othello-with-shoes-4/"/>
     <updated>2013-02-01T05:19:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/02/01/play-othello-with-shoes-4</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/01/play-othello-with-shoes-4</id>
     <content type="html"><![CDATA[<p>Today <a href="https://github.com/shoes/shoes4">Shoes 4</a> has become able to run Othello Game.</p>
 
 <!-- More -->
 
 
-<p><img class="top" src="http://aavalam.github.com/images/2013/02/othello-sample50.png" width="268" height="319" title="&#34;Othello Game Board on Shoes&#34;" alt="&#34;Othello Game Board on Shoes&#34;"></p>
+<p><img class="top" src="http://aavalam.github.com/aavalam/images/2013/02/othello-sample50.png" width="268" height="319" title="&#34;Othello Game Board on Shoes&#34;" alt="&#34;Othello Game Board on Shoes&#34;"></p>
 
 <p>Watch <a href="http://www.rin-shun.com/shoes4/tmp/shoes4-sample50.swf.html">a demo</a>.</p>
 
@@ -620,9 +599,9 @@ new things.</p>
   
   <entry>
     <title type="html"><![CDATA[Private easy git repositories using rails and gitlab]]></title>
-    <link href="http://aavalam.github.com/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab/"/>
     <updated>2012-10-28T03:02:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab</id>
+    <id>http://aavalam.github.com/aavalam/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab</id>
     <content type="html"><![CDATA[<p>I have installed <a href="http://gitlabhq.com/">gitlab</a> about 4 times over the last 24 hours.</p>
 
 <!-- more -->
@@ -637,7 +616,7 @@ curious, it is on line 22.</p>
 
 <p>This is version 3.0.3 and pulled down from the stable branch.</p>
 
-<p><img src="http://aavalam.github.com/images/2012/10/45405183-image.png" width="812" height="748" title="Screenshot of GITLAB Dashboard" ></p>
+<p><img src="http://aavalam.github.com/aavalam/images/2012/10/45405183-image.png" width="812" height="748" title="Screenshot of GITLAB Dashboard" ></p>
 
 <p>From playing with it a little bit (and I found out from pushing the gitlab stable branch only) that gitlab expects and requires a master branch to be created and pushed up, otherwise it doesn&#8217;t know to display even the only branch that is there.  So that took me a moment to realize.</p>
 
@@ -653,9 +632,9 @@ settings.</p>
   
   <entry>
     <title type="html"><![CDATA[Exploring Everyday Things with R and Ruby - A Book Review]]></title>
-    <link href="http://aavalam.github.com/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review/"/>
     <updated>2012-07-10T04:52:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review</id>
+    <id>http://aavalam.github.com/aavalam/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review</id>
     <content type="html"><![CDATA[<p>by: Victor Goff</p>
 
 <p>I got the opportunity to review <em>Exploring Everyday Things with R and Ruby</em> by
@@ -741,9 +720,9 @@ the chapters.</p>
   
   <entry>
     <title type="html"><![CDATA[Quick Reference to Minitest and Minitest Spec]]></title>
-    <link href="http://aavalam.github.com/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec/"/>
     <updated>2012-03-22T17:42:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec</id>
+    <id>http://aavalam.github.com/aavalam/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec</id>
     <content type="html"><![CDATA[<p>I placed this in my ~/bin folder so that I could run it whenever I need a quick refresher on the available assertions. It will automatically include changes as minitest gets updated over time and versions.  <!-- more --></p>
 
 <div><script src='https://gist.github.com/2165841.js?file=minitest_assertions.rb'></script>
@@ -824,9 +803,9 @@ refute_respond_to        refute_same
   
   <entry>
     <title type="html"><![CDATA[Programming User Interfaces]]></title>
-    <link href="http://aavalam.github.com/blog/2010/07/20/programming-user-interfaces/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2010/07/20/programming-user-interfaces/"/>
     <updated>2010-07-20T01:31:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2010/07/20/programming-user-interfaces</id>
+    <id>http://aavalam.github.com/aavalam/blog/2010/07/20/programming-user-interfaces</id>
     <content type="html"><![CDATA[<p>(Original post date: 03/Mar/2010)</p>
 
 <p>My way of programming the computer systems have been normal, albeit slower than the technology has evolved, I began by imperative programming applications in command line mode and have I kept more within the server components of the solutions that have developed or maintained.</p>
@@ -874,9 +853,9 @@ refute_respond_to        refute_same
   
   <entry>
     <title type="html"><![CDATA[Hooks in Ruby - A First Look]]></title>
-    <link href="http://aavalam.github.com/blog/2010/07/16/hooks-in-ruby-a-first-look/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2010/07/16/hooks-in-ruby-a-first-look/"/>
     <updated>2010-07-16T07:04:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2010/07/16/hooks-in-ruby-a-first-look</id>
+    <id>http://aavalam.github.com/aavalam/blog/2010/07/16/hooks-in-ruby-a-first-look</id>
     <content type="html"><![CDATA[<p>Here is a list of the Ruby Hooks</p>
 
 <ul>
@@ -898,9 +877,9 @@ refute_respond_to        refute_same
   
   <entry>
     <title type="html"><![CDATA[Ternary Operator vs Or Operator vs And Operator]]></title>
-    <link href="http://aavalam.github.com/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator/"/>
     <updated>2010-07-11T15:38:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator</id>
+    <id>http://aavalam.github.com/aavalam/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator</id>
     <content type="html"><![CDATA[<h2>The Ternary Operator and the OR Operator</h2>
 
 <p>The ternary operator is not reasonable for a situation that returns true or false; if the goal is to get a result of true or false from your decision, it is better to simply evaluate the statement itself. <!-- More --></p>
@@ -983,9 +962,9 @@ refute_respond_to        refute_same
   
   <entry>
     <title type="html"><![CDATA[Using String's strip method rather than chomp]]></title>
-    <link href="http://aavalam.github.com/blog/2010/07/11/using-strings-strip-method-rather-than-chomp/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2010/07/11/using-strings-strip-method-rather-than-chomp/"/>
     <updated>2010-07-11T15:33:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2010/07/11/using-strings-strip-method-rather-than-chomp</id>
+    <id>http://aavalam.github.com/aavalam/blog/2010/07/11/using-strings-strip-method-rather-than-chomp</id>
     <content type="html"><![CDATA[<p>I have been in the habit of using <code>String#chomp</code> when interactively
 requesting input from people. I am considering using <code>String#strip</code>
 instead. <!-- more -->It does more than <code>chomp</code>, in that it will remove leading
@@ -1030,16 +1009,33 @@ will still have fun with Ruby!</p>
   
   <entry>
     <title type="html"><![CDATA[One Way of Layer Manipulation for Shoes::Shape Instances]]></title>
-    <link href="http://aavalam.github.com/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances/"/>
     <updated>2009-02-06T22:41:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances</id>
+    <id>http://aavalam.github.com/aavalam/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances</id>
     <content type="html"><![CDATA[<p>Usually the later-made Shape instances are laid out on the early-made ones.</p>
 
 <p><a href="http://github.com/ashbb/shoes_tutorial_html/blob/master/mdowns/00537_One_way_of_layer_manipulation.mdown">Sample 64</a> is one way to swap the layers between them. :)</p>
 
-<p><img src="http://aavalam.github.com/images/2009/02/sample64.png" title="sample64.png" ></p>
+<p><img src="http://aavalam.github.com/aavalam/images/2009/02/sample64.png" title="sample64.png" ></p>
 
 <p>Ashbb</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Updated RubyLearning Participants on Github]]></title>
+    <link href="http://aavalam.github.com/aavalam/blog/2009/01/28/updated-rubylearning-participants-on-github/"/>
+    <updated>2009-01-28T16:10:00-06:00</updated>
+    <id>http://aavalam.github.com/aavalam/blog/2009/01/28/updated-rubylearning-participants-on-github</id>
+    <content type="html"><![CDATA[<p>This is [the Participants&#8217; Country List]http://github.com/ashbb/ruby_learning_participants/tree/master of a total number of RubyLearning courses as of Jan. 28th 2009.</p>
+
+<p><img src="http://aavalam.github.com/aavalam/images/2009/01/all_courses_090128.png" alt="All Coureses 090128.png" /></p>
+
+<p>As of today, over 6800 people have registered on <a href="http://www.rubylearning.org/class/">RubyLearning</a>.</p>
+
+<p> About half of them have been learning Ruby programming. Cool!</p>
+
+<p>ashbb</p>
 ]]></content>
   </entry>
   

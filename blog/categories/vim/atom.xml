@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: VIM | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/vim/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/vim/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My partial VIM configuration]]></title>
-    <link href="http://aavalam.github.com/blog/2013/03/03/my-partial-vim-configuration/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/03/03/my-partial-vim-configuration/"/>
     <updated>2013-03-03T21:54:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/03/03/my-partial-vim-configuration</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/03/03/my-partial-vim-configuration</id>
     <content type="html"><![CDATA[<p>What do you use to configure your editor?</p>
 
 <p>I am usually in VIM for my editor.  Not the graphical (gvim) version, the one

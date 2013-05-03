@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Rubydoctest | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/rubydoctest/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/rubydoctest/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Fuzzy Equality in RubyDocTest]]></title>
-    <link href="http://aavalam.github.com/blog/2008/09/11/fuzzy-equality-in-rubydoctest/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2008/09/11/fuzzy-equality-in-rubydoctest/"/>
     <updated>2008-09-11T01:00:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2008/09/11/fuzzy-equality-in-rubydoctest</id>
+    <id>http://aavalam.github.com/aavalam/blog/2008/09/11/fuzzy-equality-in-rubydoctest</id>
     <content type="html"><![CDATA[<p>I was working on some tests for a standard exercise with temperature conversion. I then realized that there was no provision for testing if something is equal to a certain precision. As happens with different math problems concerning Float, different actions and different processors can give different answers. It doesn't matter to me in this instance, as long as it is within a 'tolerance'.<!-- more --></p>
 
 <p>So, I hopped into my favorite editor, to quickly write some code to generate some ranges of acceptable answers for my method.</p>
@@ -40,9 +40,9 @@
   
   <entry>
     <title type="html"><![CDATA[Using RubyDocTest for development]]></title>
-    <link href="http://aavalam.github.com/blog/2008/09/07/using-rubydoctest-for-development/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2008/09/07/using-rubydoctest-for-development/"/>
     <updated>2008-09-07T02:10:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2008/09/07/using-rubydoctest-for-development</id>
+    <id>http://aavalam.github.com/aavalam/blog/2008/09/07/using-rubydoctest-for-development</id>
     <content type="html"><![CDATA[<p>First of all, you must have installed rubydoctest which can be installed as a gem, or from source.  Source can be found here: <a href="http://rubyforge.org/projects/rubydoctest/">rubydoctest</a> and the handy <code>gem install rubydoctest</code> can be used as well.</p>
 
 <p>I just want to introduce you to the tool.  I find it handy when I want to verify things in irb, which I have open anyway, and it helps to document my code inline, or to have a .doctest file sitting next to my file (or in the ../tests directory) <!-- more --></p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Gitlab | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/gitlab/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/gitlab/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Private easy git repositories using rails and gitlab]]></title>
-    <link href="http://aavalam.github.com/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab/"/>
     <updated>2012-10-28T03:02:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab</id>
+    <id>http://aavalam.github.com/aavalam/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab</id>
     <content type="html"><![CDATA[<p>I have installed <a href="http://gitlabhq.com/">gitlab</a> about 4 times over the last 24 hours.</p>
 
 <!-- more -->

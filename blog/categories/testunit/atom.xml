@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: TestUnit | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/testunit/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/testunit/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Quick Reference to Minitest and Minitest Spec]]></title>
-    <link href="http://aavalam.github.com/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec/"/>
     <updated>2012-03-22T17:42:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec</id>
+    <id>http://aavalam.github.com/aavalam/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec</id>
     <content type="html"><![CDATA[<p>I placed this in my ~/bin folder so that I could run it whenever I need a quick refresher on the available assertions. It will automatically include changes as minitest gets updated over time and versions.  <!-- more --></p>
 
 <p><div><script src='https://gist.github.com/2165841.js?file=minitest_assertions.rb'></script>

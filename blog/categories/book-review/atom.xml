@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Book Review | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/book-review/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/book-review/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Exploring Everyday Things with R and Ruby - A Book Review]]></title>
-    <link href="http://aavalam.github.com/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review/"/>
     <updated>2012-07-10T04:52:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review</id>
+    <id>http://aavalam.github.com/aavalam/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review</id>
     <content type="html"><![CDATA[<p>by: Victor Goff</p>
 
 <p>I got the opportunity to review <em>Exploring Everyday Things with R and Ruby</em> by

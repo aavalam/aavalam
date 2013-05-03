@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Proc | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/proc/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/proc/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Ruby 2.0.0 Params Not Just for Methods]]></title>
-    <link href="http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods/"/>
     <updated>2013-03-09T03:46:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods</id>
     <content type="html"><![CDATA[<p>While working on documenting things I learned through a Learn Ruby By
 Testing project, I came across documenting the new Ruby 2.0 'Params'
 feature.</p>

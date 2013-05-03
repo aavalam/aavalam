@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Profiler | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/profiler/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/profiler/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Simplifying Profiler and Benchmark measurements]]></title>
-    <link href="http://aavalam.github.com/blog/2008/09/04/simplifying-profiler-and-benchmark-measurements/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2008/09/04/simplifying-profiler-and-benchmark-measurements/"/>
     <updated>2008-09-04T02:43:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2008/09/04/simplifying-profiler-and-benchmark-measurements</id>
+    <id>http://aavalam.github.com/aavalam/blog/2008/09/04/simplifying-profiler-and-benchmark-measurements</id>
     <content type="html"><![CDATA[<p>Performance should be pretty close to the end of the list of things to do when programming in Ruby.  Yes, it can be important to get the timing down on your code.  But this is after you verify that it is running as you need it to, and it is actually usable.<!-- more --></p>
 
 <p>That being said, there are two tools that can give you some pretty nice information when you want to know how your code is performing.  It can even be nice to know what is being called.  This blog will assume you know what these are, as I don't want to describe what they do, or how to use them.  I simply want to show a away to simplify using these tools for when you may want to use them.</p>

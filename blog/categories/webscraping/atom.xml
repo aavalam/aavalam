@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Webscraping | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/webscraping/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/webscraping/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Updated RubyLearning Participants on Github]]></title>
-    <link href="http://aavalam.github.com/blog/2009/01/28/updated-rubylearning-participants-on-github/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2009/01/28/updated-rubylearning-participants-on-github/"/>
     <updated>2009-01-28T16:10:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2009/01/28/updated-rubylearning-participants-on-github</id>
+    <id>http://aavalam.github.com/aavalam/blog/2009/01/28/updated-rubylearning-participants-on-github</id>
     <content type="html"><![CDATA[<p>This is [the Participants' Country List]http://github.com/ashbb/ruby_learning_participants/tree/master of a total number of RubyLearning courses as of Jan. 28th 2009.</p>
 
 <p><img src="/images/2009/01/all_courses_090128.png" alt="All Coureses 090128.png" /></p>

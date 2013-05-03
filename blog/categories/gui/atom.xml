@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: GUI | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/gui/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/gui/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Play Othello with Shoes 4]]></title>
-    <link href="http://aavalam.github.com/blog/2013/02/01/play-othello-with-shoes-4/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/01/play-othello-with-shoes-4/"/>
     <updated>2013-02-01T05:19:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/02/01/play-othello-with-shoes-4</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/01/play-othello-with-shoes-4</id>
     <content type="html"><![CDATA[<p>Today <a href="https://github.com/shoes/shoes4">Shoes 4</a> has become able to run Othello Game.</p>
 
 <!-- More -->
@@ -37,9 +37,9 @@
   
   <entry>
     <title type="html"><![CDATA[One Way of Layer Manipulation for Shoes::Shape Instances]]></title>
-    <link href="http://aavalam.github.com/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances/"/>
     <updated>2009-02-06T22:41:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances</id>
+    <id>http://aavalam.github.com/aavalam/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances</id>
     <content type="html"><![CDATA[<p>Usually the later-made Shape instances are laid out on the early-made ones.</p>
 
 <p><a href="http://github.com/ashbb/shoes_tutorial_html/blob/master/mdowns/00537_One_way_of_layer_manipulation.mdown">Sample 64</a> is one way to swap the layers between them. :)</p>
@@ -52,9 +52,9 @@
   
   <entry>
     <title type="html"><![CDATA[Refactoring a Shoes App]]></title>
-    <link href="http://aavalam.github.com/blog/2009/01/20/refactoring-a-shoes-app/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2009/01/20/refactoring-a-shoes-app/"/>
     <updated>2009-01-20T17:45:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2009/01/20/refactoring-a-shoes-app</id>
+    <id>http://aavalam.github.com/aavalam/blog/2009/01/20/refactoring-a-shoes-app</id>
     <content type="html"><![CDATA[<p>Karmi's <a href="http://github.com/karmi/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20shoes_demonstration_apps/tree/master">Shoes Demonstration Apps</a> on github is so cool.  <!-- More --></p>
 
 <p>To learn Ruby and Shoes from his code, I attempted a bit refactoring and updated <a href="http://github.com/ashbb/shoes_tutorial_html/blob/master/mdowns/00800_Relevant_web_sites__Links_.mdown">Shoes Tutorial Note</a>.
@@ -66,9 +66,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mini-Footracer, Just Write it as You Like]]></title>
-    <link href="http://aavalam.github.com/blog/2009/01/16/mini-footracer-just-write-it-as-you-like/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2009/01/16/mini-footracer-just-write-it-as-you-like/"/>
     <updated>2009-01-16T18:42:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2009/01/16/mini-footracer-just-write-it-as-you-like</id>
+    <id>http://aavalam.github.com/aavalam/blog/2009/01/16/mini-footracer-just-write-it-as-you-like</id>
     <content type="html"><![CDATA[<h2>Assignment 2 footracer</h2>
 
 <p>The following spec is an example. <br>
@@ -99,9 +99,9 @@ Let's imagine freely and write your own Foot Race Game.  <br></p>
   
   <entry>
     <title type="html"><![CDATA[Tiny Study Notes for Shoes Built-in Samples II]]></title>
-    <link href="http://aavalam.github.com/blog/2009/01/15/tiny-study-notes-for-shoes-built-in-samples/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2009/01/15/tiny-study-notes-for-shoes-built-in-samples/"/>
     <updated>2009-01-15T12:07:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2009/01/15/tiny-study-notes-for-shoes-built-in-samples</id>
+    <id>http://aavalam.github.com/aavalam/blog/2009/01/15/tiny-study-notes-for-shoes-built-in-samples</id>
     <content type="html"><![CDATA[<p>The 2nd is simple_calc. Learned the <code>Module#define_method</code>. :-D</p>
 
 <p><img src="http://github.com/ashbb/shoes_tutorial_html/raw/master/images/simple-calc.png" alt="simple-calc.png" /></p>

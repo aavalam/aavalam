@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://aavalam.github.com/sitemap.xml 
+Sitemap: http://aavalam.github.com/aavalam/sitemap.xml 

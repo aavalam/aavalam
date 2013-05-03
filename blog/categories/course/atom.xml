@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Course | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/course/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/course/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Ruby Programming 41st Batch Registrations now open]]></title>
-    <link href="http://aavalam.github.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/"/>
     <updated>2013-03-14T00:25:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open</id>
     <content type="html"><![CDATA[<p>Registrations are now open for RubyLearning’s popular <a href="http://rubylearning.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/">Ruby Programming Course</a>. <!-- More -->This is an intensive (as you want it to be), online course for beginners that helps you
 get started with Ruby programming.</p>
 

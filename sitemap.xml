@@ -1,259 +1,267 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://aavalam.github.com/blog/2008/09/02/colorizing-your-nt-console-with-ruby/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
         <loc>
-            http://aavalam.github.com/blog/2008/09/03/why-isnt-this-a-standard-option-for-ruby/
-        </loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2008/09/04/improved-prompt-method/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aavalam.github.com/blog/2008/09/04/simplifying-profiler-and-benchmark-measurements/
-        </loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2008/09/07/using-rubydoctest-for-development/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2008/09/08/understanding-modulo/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2008/09/11/fuzzy-equality-in-rubydoctest/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aavalam.github.com/blog/2008/09/23/little-known-ways-to-ruby-mastery-by-jamie-van-dyke/
+            http://aavalam.github.com/aavalam/blog/2008/09/02/colorizing-your-nt-console-with-ruby/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2008/09/30/little-known-ways-to-ruby-mastery-by-james-edward-gray-II/
+            http://aavalam.github.com/aavalam/blog/2008/09/03/why-isnt-this-a-standard-option-for-ruby/
+        </loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/blog/2008/09/04/improved-prompt-method/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2008/09/04/simplifying-profiler-and-benchmark-measurements/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2008/10/06/little-known-ways-to-ruby-mastery-by-dr_nic_williams/
+            http://aavalam.github.com/aavalam/blog/2008/09/07/using-rubydoctest-for-development/
+        </loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/blog/2008/09/08/understanding-modulo/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2008/09/11/fuzzy-equality-in-rubydoctest/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2008/10/13/little-known-ways-to-ruby-mastery-by-stuart_halloway/
+            http://aavalam.github.com/aavalam/blog/2008/09/23/little-known-ways-to-ruby-mastery-by-jamie-van-dyke/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2008/10/20/little-known-ways-to-ruby-mastery-by-jay-fields/
+            http://aavalam.github.com/aavalam/blog/2008/09/30/little-known-ways-to-ruby-mastery-by-james-edward-gray-II/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2008/10/27/little-known-ways-to-ruby-mastery-by-chris-o-sullivan/
+            http://aavalam.github.com/aavalam/blog/2008/10/06/little-known-ways-to-ruby-mastery-by-dr_nic_williams/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2008/11/03/little-known-ways-to-ruby-mastery-by-guy-naor/
+            http://aavalam.github.com/aavalam/blog/2008/10/13/little-known-ways-to-ruby-mastery-by-stuart_halloway/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway/
-        </loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2008/11/12/webby-node/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aavalam.github.com/blog/2008/11/23/little-known-ways-to-ruby-mastery-by-ian-dees/
+            http://aavalam.github.com/aavalam/blog/2008/10/20/little-known-ways-to-ruby-mastery-by-jay-fields/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2008/11/24/little-known-ways-to-ruby-mastery-by-bruce-tate/
+            http://aavalam.github.com/aavalam/blog/2008/10/27/little-known-ways-to-ruby-mastery-by-chris-o-sullivan/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2008/12/01/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz/
+            http://aavalam.github.com/aavalam/blog/2008/11/03/little-known-ways-to-ruby-mastery-by-guy-naor/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2009/01/01/the-difference-between-local-and-instance-variables-in-shoes/
+            http://aavalam.github.com/aavalam/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
-        <loc>http://aavalam.github.com/blog/2009/01/06/shoes-gui-toolkit-in-wikipedia/</loc>
+        <loc>http://aavalam.github.com/aavalam/blog/2008/11/12/webby-node/</loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2009/01/10/tiny-study-note-for-shoes-built-in-samples/
-        </loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aavalam.github.com/blog/2009/01/15/tiny-study-notes-for-shoes-built-in-samples/
+            http://aavalam.github.com/aavalam/blog/2008/11/23/little-known-ways-to-ruby-mastery-by-ian-dees/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2009/01/16/mini-footracer-just-write-it-as-you-like/
-        </loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2009/01/20/refactoring-a-shoes-app/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aavalam.github.com/blog/2009/01/28/updated-rubylearning-participants-on-github/
+            http://aavalam.github.com/aavalam/blog/2008/11/24/little-known-ways-to-ruby-mastery-by-bruce-tate/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances/
+            http://aavalam.github.com/aavalam/blog/2008/12/01/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2010/07/11/using-strings-strip-method-rather-than-chomp/
+            http://aavalam.github.com/aavalam/blog/2009/01/01/the-difference-between-local-and-instance-variables-in-shoes/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator/
-        </loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2010/07/16/hooks-in-ruby-a-first-look/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2010/07/20/programming-user-interfaces/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aavalam.github.com/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec/
+            http://aavalam.github.com/aavalam/blog/2009/01/06/shoes-gui-toolkit-in-wikipedia/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review/
+            http://aavalam.github.com/aavalam/blog/2009/01/10/tiny-study-note-for-shoes-built-in-samples/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab/
-        </loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2013/02/01/play-othello-with-shoes-4/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2013/02/15/breaktime-fantastic-green-shoes-app/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2013/02/16/saying-goodbye-to-posterous/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aavalam.github.com/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review/
-        </loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2013/02/25/ruby-2-dot-0-0-p0-notes/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2013/02/26/testing-multiple-versions-of-ruby/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2013/03/01/decision-driven-fairy-tale-for-kids/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aavalam.github.com/blog/2013/03/03/my-partial-vim-configuration/</loc>
-        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods/
+            http://aavalam.github.com/aavalam/blog/2009/01/15/tiny-study-notes-for-shoes-built-in-samples/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/
+            http://aavalam.github.com/aavalam/blog/2009/01/16/mini-footracer-just-write-it-as-you-like/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
-        <loc>http://aavalam.github.com/blog/2013/04/02/getting-in-touch-with-linux/</loc>
+        <loc>http://aavalam.github.com/aavalam/blog/2009/01/20/refactoring-a-shoes-app/</loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://aavalam.github.com/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app/
+            http://aavalam.github.com/aavalam/blog/2009/01/28/updated-rubylearning-participants-on-github/
         </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
-        <loc>http://aavalam.github.com/</loc>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2009/02/06/one-way-of-layer-manipulation-for-shoes-shape-instances/
+        </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
-        <loc>http://aavalam.github.com/blog/archives/</loc>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2010/07/11/using-strings-strip-method-rather-than-chomp/
+        </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
-        <loc>http://aavalam.github.com/about-us/</loc>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2010/07/11/ternary-operator-vs-or-opeartor-vs-and-operator/
+        </loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
     <url>
-        <loc>http://aavalam.github.com/robots.txt</loc>
+        <loc>http://aavalam.github.com/aavalam/blog/2010/07/16/hooks-in-ruby-a-first-look/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/blog/2010/07/20/programming-user-interfaces/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2012/03/22/quick-reference-to-minitest-and-minitest-spec/
+        </loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2012/07/10/exploring-everyday-things-with-r-and-ruby-book-review/
+        </loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2012/10/28/private-easy-git-repositories-using-rails-and-gitlab/
+        </loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/blog/2013/02/01/play-othello-with-shoes-4/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2013/02/15/breaktime-fantastic-green-shoes-app/
+        </loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/blog/2013/02/16/saying-goodbye-to-posterous/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review/
+        </loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/blog/2013/02/25/ruby-2-dot-0-0-p0-notes/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2013/02/26/testing-multiple-versions-of-ruby/
+        </loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2013/03/01/decision-driven-fairy-tale-for-kids/
+        </loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/blog/2013/03/03/my-partial-vim-configuration/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods/
+        </loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aavalam.github.com/aavalam/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/
+        </loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/blog/2013/04/02/getting-in-touch-with-linux/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/blog/archives/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/about-us/</loc>
+        <lastmod>2013-05-03T15:09:25-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aavalam.github.com/aavalam/robots.txt</loc>
         <lastmod>2013-05-03T15:09:25-05:00</lastmod>
     </url>
 </urlset>

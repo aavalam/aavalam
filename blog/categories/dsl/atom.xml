@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: DSL | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/dsl/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/dsl/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Getting in touch with Linux]]></title>
-    <link href="http://aavalam.github.com/blog/2013/04/02/getting-in-touch-with-linux/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/04/02/getting-in-touch-with-linux/"/>
     <updated>2013-04-02T13:38:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2013/04/02/getting-in-touch-with-linux</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/04/02/getting-in-touch-with-linux</id>
     <content type="html"><![CDATA[<p>I have helped a few people get started with Linux the last couple of
 years and the tool that helped them get exposed to it, and finally
 installing Linux on their system, is called UnetBootin.  You can find

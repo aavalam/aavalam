@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Guest Post | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/guest-post/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/guest-post/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Programming User Interfaces]]></title>
-    <link href="http://aavalam.github.com/blog/2010/07/20/programming-user-interfaces/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2010/07/20/programming-user-interfaces/"/>
     <updated>2010-07-20T01:31:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2010/07/20/programming-user-interfaces</id>
+    <id>http://aavalam.github.com/aavalam/blog/2010/07/20/programming-user-interfaces</id>
     <content type="html"><![CDATA[<p>(Original post date: 03/Mar/2010)</p>
 
 <p>My way of programming the computer systems have been normal, albeit slower than the technology has evolved, I began by imperative programming applications in command line mode and have I kept more within the server components of the solutions that have developed or maintained.</p>

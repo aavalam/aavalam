@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: System Administration | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/system-administration/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/system-administration/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Little Known Ways to Ruby Mastery by Ezra Zygmuntowicz]]></title>
-    <link href="http://aavalam.github.com/blog/2008/12/01/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2008/12/01/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz/"/>
     <updated>2008-12-01T22:27:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2008/12/01/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz</id>
+    <id>http://aavalam.github.com/aavalam/blog/2008/12/01/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz</id>
     <content type="html"><![CDATA[<p>Interview answer from Ezra Zygmuntowicz to a question posed by Yours Truly... <!-- more --></p>
 
 <p><blockquote><p>How do you see the market for Ruby Programmers in the work place, and do you see it as primarily tied to Rails and Web related work? Do you see trends in administration or other work? What’s the future for Ruby?</p><footer><strong>Victor Goff, "Little Known Ways to Ruby Mastery" by Ezra Zygmuntowicz</strong> <cite><a href='http://rubylearning.com/blog/2008/12/02/little-known-ways-to-ruby-mastery-by-ezra-zygmuntowicz/'>rubylearning.com/blog/2008/12/&hellip;</a></cite></footer></blockquote></p>
@@ -30,9 +30,9 @@
   
   <entry>
     <title type="html"><![CDATA[Little Known Ways to Ruby Mastery by Bruce Tate]]></title>
-    <link href="http://aavalam.github.com/blog/2008/11/24/little-known-ways-to-ruby-mastery-by-bruce-tate/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2008/11/24/little-known-ways-to-ruby-mastery-by-bruce-tate/"/>
     <updated>2008-11-24T19:49:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2008/11/24/little-known-ways-to-ruby-mastery-by-bruce-tate</id>
+    <id>http://aavalam.github.com/aavalam/blog/2008/11/24/little-known-ways-to-ruby-mastery-by-bruce-tate</id>
     <content type="html"><![CDATA[<p>Interview answer from Bruce Tate to a question posed by Yours Truly... <!-- more --></p>
 
 <p><blockquote><p>How do you see the market for Ruby Programmers in the work place, and do you see it as primarily tied to Rails and Web related work? Do you see trends in administration or other work? What’s the future for Ruby?</p><footer><strong>Victor Goff, "Little Known Ways to Ruby Mastery" by Bruce Tate</strong> <cite><a href='http://rubylearning.com/blog/2008/11/25/little-known-ways-to-ruby-mastery-by-bruce-tate/'>rubylearning.com/blog/2008/11/&hellip;</a></cite></footer></blockquote></p>
@@ -45,9 +45,9 @@
   
   <entry>
     <title type="html"><![CDATA[Little Known Ways to Ruby Mastery by Ian Dees]]></title>
-    <link href="http://aavalam.github.com/blog/2008/11/23/little-known-ways-to-ruby-mastery-by-ian-dees/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2008/11/23/little-known-ways-to-ruby-mastery-by-ian-dees/"/>
     <updated>2008-11-23T20:17:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2008/11/23/little-known-ways-to-ruby-mastery-by-ian-dees</id>
+    <id>http://aavalam.github.com/aavalam/blog/2008/11/23/little-known-ways-to-ruby-mastery-by-ian-dees</id>
     <content type="html"><![CDATA[<p>RubyLearning continues to Interview the Ruby Masters where views and
 opinions, guidance, and even sometimes the future comes to light. <!-- more --></p>
 
@@ -57,9 +57,9 @@ opinions, guidance, and even sometimes the future comes to light. <!-- more --><
   
   <entry>
     <title type="html"><![CDATA[Little Known Ways to Ruby Mastery by Jonathan Conway]]></title>
-    <link href="http://aavalam.github.com/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway/"/>
     <updated>2008-11-11T00:07:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway</id>
+    <id>http://aavalam.github.com/aavalam/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway</id>
     <content type="html"><![CDATA[<p>Interview answer from Jonathan Conway to a question posed by Yours Truly... <!-- more --></p>
 
 <p><blockquote><p>How do you see the market for Ruby Programmers in the work place, and do you see it as primarily tied to Rails and Web related work? Do you see trends in administration or other work? What’s the future for Ruby?</p><footer><strong>Victor Goff "Little Known Ways to Ruby Mastery" by Jonathan Conway</strong> <cite><a href='http://rubylearning.com/blog/2008/11/11/little-known-ways-to-ruby-mastery-by-jonathan-conway/'>rubylearning.com/blog/2008/11/&hellip;</a></cite></footer></blockquote></p>
@@ -72,9 +72,9 @@ opinions, guidance, and even sometimes the future comes to light. <!-- more --><
   
   <entry>
     <title type="html"><![CDATA[Little Known Ways to Ruby Mastery by Guy Naor]]></title>
-    <link href="http://aavalam.github.com/blog/2008/11/03/little-known-ways-to-ruby-mastery-by-guy-naor/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2008/11/03/little-known-ways-to-ruby-mastery-by-guy-naor/"/>
     <updated>2008-11-03T20:09:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2008/11/03/little-known-ways-to-ruby-mastery-by-guy-naor</id>
+    <id>http://aavalam.github.com/aavalam/blog/2008/11/03/little-known-ways-to-ruby-mastery-by-guy-naor</id>
     <content type="html"><![CDATA[<p>Interview answer from Guy Naor to a question posed by Yours Truly... <!-- more --></p>
 
 <p><blockquote><p>How do you see the market for Ruby Programmers in the work place, and do you see it as primarily tied to Rails and Web related work? Do you see trends in administration or other work? What’s the future for Ruby?</p><footer><strong>Victor Goff "Little Known Ways to Ruby Mastery" by Guy Naor</strong> <cite><a href='http://rubylearning.com/blog/2008/11/04/little-known-ways-to-ruby-mastery-by-guy-naor/'>rubylearning.com/blog/2008/11/&hellip;</a></cite></footer></blockquote></p>

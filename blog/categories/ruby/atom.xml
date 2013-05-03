@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Ruby | The Red Gem of Programming]]></title>
-  <link href="http://aavalam.github.com/blog/categories/ruby/atom.xml" rel="self"/>
-  <link href="http://aavalam.github.com/"/>
-  <updated>2013-05-03T16:43:13-05:00</updated>
-  <id>http://aavalam.github.com/</id>
+  <link href="http://aavalam.github.com/aavalam/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://aavalam.github.com/aavalam/"/>
+  <updated>2013-05-03T17:07:27-05:00</updated>
+  <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
     <email><![CDATA[keeperotphones@gmail.com]]></email>
@@ -14,31 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Gravity simulator : Fantastic Green Shoes App]]></title>
-    <link href="http://aavalam.github.com/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app/"/>
-    <updated>2013-05-03T14:18:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app</id>
-    <content type="html"><![CDATA[<p>I'd love to introduce a new fantastic Green Shoes app: <a href="http://ifni.co/articles/programming/gravity_simulator">Gravity
-simulator</a></p>
-
-<!--more-->
-
-
-<p><img src="/images/2013/05/gravity_simulator.png"></p>
-
-<p>Read the <b>2D : Green Shoes</b> section. I'm honored. :)
-Watch <a href="http://ashbb.digi2.jp/Gravity_simulator.swf.html">a demo</a> I
-executed <a href="http://ifni.co/src/gsim.rb">his code</a> on my Windows 7.</p>
-
-<p>Let's have fun with Shoes! :-D</p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Ruby Programming 41st Batch Registrations now open]]></title>
-    <link href="http://aavalam.github.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/"/>
     <updated>2013-03-14T00:25:00-05:00</updated>
-    <id>http://aavalam.github.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open</id>
     <content type="html"><![CDATA[<p>Registrations are now open for RubyLearning’s popular <a href="http://rubylearning.com/blog/2013/03/14/ruby-programming-41st-batch-registrations-now-open/">Ruby Programming Course</a>. <!-- More -->This is an intensive (as you want it to be), online course for beginners that helps you
 get started with Ruby programming.</p>
 
@@ -55,9 +34,9 @@ get started with Ruby programming.</p>
   
   <entry>
     <title type="html"><![CDATA[Ruby 2.0.0 Params Not Just for Methods]]></title>
-    <link href="http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods/"/>
     <updated>2013-03-09T03:46:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/03/09/ruby-2-dot-0-0-params-not-just-for-methods</id>
     <content type="html"><![CDATA[<p>While working on documenting things I learned through a Learn Ruby By
 Testing project, I came across documenting the new Ruby 2.0 'Params'
 feature.</p>
@@ -143,9 +122,9 @@ Post</a>?</p>
   
   <entry>
     <title type="html"><![CDATA[Testing multiple versions of Ruby]]></title>
-    <link href="http://aavalam.github.com/blog/2013/02/26/testing-multiple-versions-of-ruby/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/26/testing-multiple-versions-of-ruby/"/>
     <updated>2013-02-26T17:24:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/02/26/testing-multiple-versions-of-ruby</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/26/testing-multiple-versions-of-ruby</id>
     <content type="html"><![CDATA[<p>When you have code that you would like to test, it is fairly simple to
 develop your tests to allow for it to be ran in more than one version of
 Ruby. <!-- more --></p>
@@ -250,9 +229,9 @@ version as well, while not running against previous ones.</p>
   
   <entry>
     <title type="html"><![CDATA[Ruby 2.0.0-p0 Notes]]></title>
-    <link href="http://aavalam.github.com/blog/2013/02/25/ruby-2-dot-0-0-p0-notes/"/>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/25/ruby-2-dot-0-0-p0-notes/"/>
     <updated>2013-02-25T03:39:00-06:00</updated>
-    <id>http://aavalam.github.com/blog/2013/02/25/ruby-2-dot-0-0-p0-notes</id>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/25/ruby-2-dot-0-0-p0-notes</id>
     <content type="html"><![CDATA[<p>I have been waiting for the 24th of February to see what would come of
 the planned release date for Ruby 2.0.0-p0.</p>
 
@@ -285,6 +264,32 @@ installed, seems to have corrected the issues.</p>
 
 <p>Now on to write tests for Ruby 2.0 and absorb some knowledge while
 recording what I have learned.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Create and Publish Your First Ruby Gem - A Review]]></title>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review/"/>
+    <updated>2013-02-19T01:57:00-06:00</updated>
+    <id>http://aavalam.github.com/aavalam/blog/2013/02/19/create-and-publish-your-first-ruby-gem-a-review</id>
+    <content type="html"><![CDATA[<p>A book(let) review.</p>
+
+<p>A hands on guide for Ruby newbies to create and publish their first Ruby
+gem.</p>
+
+<p>Satish has published a booklet that takes you through the steps required
+to publish your first Ruby Gem.  <a href="http://www.amazon.com/gp/product/B00BECCKYM"><img class="right" src="http://ecx.images-amazon.com/images/I/41ZtM8-8HNL.<em>BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA278_PIkin4,BottomRight,-55,22_AA300_SH20_OU01</em>.jpg" width="300" height="300" title="How Do I Create And Publish My First Ruby Gem?" ></a> Recently updated with information on
+how to 'yank' your gem in case you don't need it to be available, it is
+a good short reference to get you quickly started in the world of Ruby Gems.</p>
+
+<p>There are tools out there that do the work for you in terms of having a
+skeleton.  This booklet will cover none of those.  It will take you
+through the basics to get a gem up and running in a few short minutes.</p>
+
+<p>Yes, all the information is available for free.  And it is not that
+difficult to find it all.  But dropping a dollar to have a handy
+reference on your Kindle to support Satish's efforts on RubyLearning is
+just a small way to say "Thanks!" and a way to show some love.</p>
 ]]></content>
   </entry>
   
