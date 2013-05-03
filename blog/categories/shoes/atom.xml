@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Shoes | The Red Gem of Programming]]></title>
   <link href="http://aavalam.github.com/aavalam/blog/categories/shoes/atom.xml" rel="self"/>
   <link href="http://aavalam.github.com/aavalam/"/>
-  <updated>2013-05-03T17:15:00-05:00</updated>
+  <updated>2013-05-03T17:24:12-05:00</updated>
   <id>http://aavalam.github.com/aavalam/</id>
   <author>
     <name><![CDATA[Victor and Ashbbb]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Gravity simulator : Fantastic Green Shoes App]]></title>
+    <link href="http://aavalam.github.com/aavalam/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app/"/>
+    <updated>2013-05-03T14:18:00-05:00</updated>
+    <id>http://aavalam.github.com/aavalam/blog/2013/05/03/gravity-simulator-fantastic-green-shoes-app</id>
+    <content type="html"><![CDATA[<p>I'd love to introduce a new fantastic Green Shoes app: <a href="http://ifni.co/articles/programming/gravity_simulator">Gravity
+simulator</a></p>
+
+<!--more-->
+
+
+<p><img src="/images/2013/05/gravity_simulator.png"></p>
+
+<p>Read the <b>2D : Green Shoes</b> section. I'm honored. :)
+Watch <a href="http://ashbb.digi2.jp/Gravity_simulator.swf.html">a demo</a> I
+executed <a href="http://ifni.co/src/gsim.rb">his code</a> on my Windows 7.</p>
+
+<p>Let's have fun with Shoes! :-D</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[breaktime : Fantastic Green Shoes App]]></title>
@@ -152,23 +173,6 @@ the chapters.</p>
 <p><img src="/images/2009/02/sample64.png" title="sample64.png" ></p>
 
 <p>Ashbb</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Updated RubyLearning Participants on Github]]></title>
-    <link href="http://aavalam.github.com/aavalam/blog/2009/01/28/updated-rubylearning-participants-on-github/"/>
-    <updated>2009-01-28T16:10:00-06:00</updated>
-    <id>http://aavalam.github.com/aavalam/blog/2009/01/28/updated-rubylearning-participants-on-github</id>
-    <content type="html"><![CDATA[<p>This is [the Participants' Country List]http://github.com/ashbb/ruby_learning_participants/tree/master of a total number of RubyLearning courses as of Jan. 28th 2009.</p>
-
-<p><img src="/images/2009/01/all_courses_090128.png" alt="All Coureses 090128.png" /></p>
-
-<p>As of today, over 6800 people have registered on <a href="http://www.rubylearning.org/class/">RubyLearning</a>.</p>
-
-<p> About half of them have been learning Ruby programming. Cool!</p>
-
-<p>ashbb</p>
 ]]></content>
   </entry>
   
