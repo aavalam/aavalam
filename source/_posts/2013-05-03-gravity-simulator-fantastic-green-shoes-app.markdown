@@ -19,3 +19,6 @@ executed [his code](http://ifni.co/src/gsim.rb) on my Windows 7.
 
 
 Let's have fun with Shoes! :-D
+
+The discussion starts here but continues on our [Google Plus post](https://plus.google.com/u/0/116568773932133159290/posts/XgqvnbwKJhn)!
+
